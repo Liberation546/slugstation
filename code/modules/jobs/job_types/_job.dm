@@ -203,6 +203,19 @@
 /datum/outfit/job
 	name = "Standard Gear"
 
+ 	var/jobtype = null
+ 
+ 	uniform = /obj/item/clothing/under/color/grey
+ 	ears = /obj/item/radio/headset
+ 	back = /obj/item/storage/backpack
+ 	shoes = /obj/item/clothing/shoes/sneakers/black
+ 	box = /obj/item/storage/box/survival
+ 
+	var/obj/item/id_type = /obj/item/card/id
+	var/obj/item/pda_type = /obj/item/pda
+ 	var/backpack = /obj/item/storage/backpack
+ 	var/satchel  = /obj/item/storage/backpack/satchel
+ 	var/duffelbag = /obj/item/storage/backpack/duffelbag
 	var/jobtype = null
 
 	uniform = /obj/item/clothing/under/color/grey
@@ -246,6 +259,13 @@
 
 	if (isplasmaman(H) && !(visualsOnly)) //this is a plasmaman fix to stop having two boxes
 		box = null
+ 	if(!J)
+ 		J = SSjob.GetJob(H.job)
+ 
+	var/obj/item/card/id/C = new id_type()
+ 	if(istype(C))
+ 		C.access = J.get_access()
+ 		shuffle_inplace(C.access) // Shuffle access list to make NTNet passkeys less predictable
 	if(DIGITIGRADE in H.dna.species.species_traits)
 		if(IS_COMMAND(H)) // command gets snowflake shoes too.
 			shoes = alt_shoes_c
@@ -263,40 +283,33 @@
 		J = SSjob.GetJob(H.job)
 
 	var/obj/item/card/id/C = H.wear_id
-	if(istype(C))
-		C.access = J.get_access()
-		shuffle_inplace(C.access) // Shuffle access list to make NTNet passkeys less predictable
-		C.registered_name = H.real_name
-		if(H.mind?.role_alt_title)
-			C.assignment = H.mind.role_alt_title
-		else
-			C.assignment = J.title
-		if(H.mind?.assigned_role)
-			C.originalassignment = H.mind.assigned_role
-		else
-			C.originalassignment = J.title
-		if(H.age)
-			C.registered_age = H.age
-		C.update_label()
-		for(var/A in SSeconomy.bank_accounts)
-			var/datum/bank_account/B = A
-			if(B.account_id == H.account_id)
-				C.registered_account = B
-				B.bank_cards += C
-				break
-		H.sec_hud_set_ID()
+ 				break
+ 		H.sec_hud_set_ID()
+ 
+	var/obj/item/pda/PDA = new pda_type()
+ 	if(istype(PDA))
+ 		PDA.owner = H.real_name
+ 		if(H.mind?.role_alt_title)
+ 			PDA.ownjob = H.mind.role_alt_title
+ 		else
+ 			PDA.ownjob = J.title
 
-	var/obj/item/pda/PDA = H.get_item_by_slot(pda_slot)
-	if(istype(PDA))
-		PDA.owner = H.real_name
-		if(H.mind?.role_alt_title)
-			PDA.ownjob = H.mind.role_alt_title
-		else
-			PDA.ownjob = J.title
-		PDA.update_label()
-
-/datum/outfit/job/get_chameleon_disguise_info()
-	var/list/types = ..()
+		if (H.id_in_pda)
+			PDA.InsertID(C)
+			H.equip_to_slot_if_possible(PDA, SLOT_WEAR_ID)
+		else // just in case you hate change
+			H.equip_to_slot_if_possible(PDA, pda_slot)
+			H.equip_to_slot_if_possible(C, SLOT_WEAR_ID)
+		
+ 		PDA.update_label()
+		PDA.update_icon()
+		PDA.update_filters()
+		
+	else
+		H.equip_to_slot_if_possible(C, SLOT_WEAR_ID)
+ 
+ /datum/outfit/job/get_chameleon_disguise_info()
+ 	var/list/types = ..()
 	types -= /obj/item/storage/backpack //otherwise this will override the actual backpacks
 	types += backpack
 	types += satchel
@@ -308,3 +321,4 @@
 	if(CONFIG_GET(flag/security_has_maint_access))
 		return list(ACCESS_MAINT_TUNNELS)
 	return list()
+
