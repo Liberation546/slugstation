@@ -26,12 +26,12 @@
 	return TRUE
 
 /datum/outfit/job/clerk
-	name = "Clerk"
-	jobtype = /datum/job/clerk
-
-	belt = /obj/item/pda
-	ears = /obj/item/radio/headset/headset_srv
-	uniform = /obj/item/clothing/under/yogs/rank/clerk
-	shoes = /obj/item/clothing/shoes/sneakers/black
+ 	name = "Clerk"
+ 	jobtype = /datum/job/clerk
+ 
+ 	ears = /obj/item/radio/headset/headset_srv
+ 	uniform = /obj/item/clothing/under/yogs/rank/clerk
+ 	shoes = /obj/item/clothing/shoes/sneakers/black
 	head = /obj/item/clothing/head/yogs/clerkcap
 	backpack_contents = list(/obj/item/circuitboard/machine/paystand = 1)
+
