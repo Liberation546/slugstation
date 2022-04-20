@@ -34,12 +34,14 @@
 	supervisors = "the head of personnel"
 
 /datum/outfit/job/cargo_tech
-	name = "Cargo Technician"
-	jobtype = /datum/job/cargo_tech
+ 	name = "Cargo Technician"
+ 	jobtype = /datum/job/cargo_tech
+ 
+	pda_type = /obj/item/pda/cargo
 
-	belt = /obj/item/pda/cargo
-	ears = /obj/item/radio/headset/headset_cargo
-	uniform = /obj/item/clothing/under/rank/cargotech
-	uniform_skirt = /obj/item/clothing/under/rank/cargotech/skirt
+ 	ears = /obj/item/radio/headset/headset_cargo
+ 	uniform = /obj/item/clothing/under/rank/cargotech
+ 	uniform_skirt = /obj/item/clothing/under/rank/cargotech/skirt
 	l_hand = /obj/item/export_scanner
+
 
