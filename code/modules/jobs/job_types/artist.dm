@@ -18,15 +18,16 @@
 
 	display_order = JOB_DISPLAY_ORDER_ARTIST
 
-/datum/outfit/job/artist
-	name = "Artist"
-	jobtype = /datum/job/artist
-	
-	head = /obj/item/clothing/head/frenchberet
-	belt = /obj/item/pda/artist
-	ears = /obj/item/radio/headset/headset_srv
-	uniform = /obj/item/clothing/under/rank/artist
-	uniform_skirt = /obj/item/clothing/under/rank/artist/skirt
+ /datum/outfit/job/artist
+ 	name = "Artist"
+ 	jobtype = /datum/job/artist
+
+	pda_type = /obj/item/pda/artist
+ 	
+ 	head = /obj/item/clothing/head/frenchberet
+ 	ears = /obj/item/radio/headset/headset_srv
+ 	uniform = /obj/item/clothing/under/rank/artist
+ 	uniform_skirt = /obj/item/clothing/under/rank/artist/skirt
 	gloves = /obj/item/clothing/gloves/fingerless
 	neck = /obj/item/clothing/neck/artist
 	l_pocket = /obj/item/laser_pointer
@@ -36,3 +37,4 @@
 		/obj/item/storage/crayons = 1,
 		/obj/item/camera = 1
 	)
+
