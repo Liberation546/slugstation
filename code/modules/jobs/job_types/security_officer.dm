@@ -103,6 +103,13 @@ GLOBAL_LIST_INIT(available_depts_sec, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICA
 		U.attach_accessory(new accessory)
 	if(ears)
 		if(H.ears)
+ 			qdel(H.ears)
+ 		H.equip_to_slot_or_del(new ears(H),SLOT_EARS)
+ 
+	var/obj/item/card/id/W = H.get_idcard()
+ 	W.access |= dep_access
+ 
+ 	var/teleport = 0
 			qdel(H.ears)
 		H.equip_to_slot_or_del(new ears(H),SLOT_EARS)
 
@@ -128,20 +135,14 @@ GLOBAL_LIST_INIT(available_depts_sec, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICA
 				else
 					break
 	if(department)
-		to_chat(M, "<b>You have been assigned to [department]!</b>")
-	else
-		to_chat(M, "<b>You have not been assigned to any department. Patrol the halls and help where needed.</b>")
+ 	name = "Security Officer"
+ 	jobtype = /datum/job/officer
+ 
+	pda_type = /obj/item/pda/security
 
-
-
-/datum/outfit/job/security
-	name = "Security Officer"
-	jobtype = /datum/job/officer
-
-	belt = /obj/item/pda/security
-	ears = /obj/item/radio/headset/headset_sec/alt
-	uniform = /obj/item/clothing/under/rank/security
-	uniform_skirt = /obj/item/clothing/under/rank/security/skirt
+ 	ears = /obj/item/radio/headset/headset_sec/alt
+ 	uniform = /obj/item/clothing/under/rank/security
+ 	uniform_skirt = /obj/item/clothing/under/rank/security/skirt
 	gloves = /obj/item/clothing/gloves/color/black
 	head = /obj/item/clothing/head/helmet/sec
 	suit = /obj/item/clothing/suit/armor/vest/alt
@@ -187,3 +188,4 @@ GLOBAL_LIST_INIT(available_depts_sec, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICA
 /obj/item/radio/headset/headset_sec/alt/department/service
 	keyslot = new /obj/item/encryptionkey/headset_sec
 	keyslot2 = new /obj/item/encryptionkey/headset_service
+
