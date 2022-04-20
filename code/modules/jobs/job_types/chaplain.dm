@@ -153,13 +153,15 @@
 	SSblackbox.record_feedback("text", "religion_deity", 1, "[new_deity]", 1)
 
 /datum/outfit/job/chaplain
-	name = "Chaplain"
-	jobtype = /datum/job/chaplain
+ 	name = "Chaplain"
+ 	jobtype = /datum/job/chaplain
+ 
+	pda_type = /obj/item/pda/chaplain
 
-	belt = /obj/item/pda/chaplain
-	ears = /obj/item/radio/headset/headset_srv
-	uniform = /obj/item/clothing/under/rank/chaplain
-	uniform_skirt = /obj/item/clothing/under/rank/chaplain/skirt
+ 	ears = /obj/item/radio/headset/headset_srv
+ 	uniform = /obj/item/clothing/under/rank/chaplain
+ 	uniform_skirt = /obj/item/clothing/under/rank/chaplain/skirt
 	backpack_contents = list(/obj/item/camera/spooky = 1)
 	backpack = /obj/item/storage/backpack/cultpack
 	satchel = /obj/item/storage/backpack/cultpack
+
