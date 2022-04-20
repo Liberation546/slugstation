@@ -32,10 +32,12 @@
 	spawn_positions = 2
 
 /datum/outfit/job/janitor
-	name = "Janitor"
-	jobtype = /datum/job/janitor
+ 	name = "Janitor"
+ 	jobtype = /datum/job/janitor
+ 
+	pda_type = /obj/item/pda/janitor
 
-	belt = /obj/item/pda/janitor
-	ears = /obj/item/radio/headset/headset_srv
-	uniform = /obj/item/clothing/under/rank/janitor
-	uniform_skirt = /obj/item/clothing/under/rank/janitor/skirt
+ 	ears = /obj/item/radio/headset/headset_srv
+ 	uniform = /obj/item/clothing/under/rank/janitor
+ 	uniform_skirt = /obj/item/clothing/under/rank/janitor/skirt
+
