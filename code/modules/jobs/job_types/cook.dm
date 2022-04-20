@@ -32,13 +32,14 @@
 	spawn_positions = 3
 
 /datum/outfit/job/cook
-	name = "Cook"
-	jobtype = /datum/job/cook
+ 	name = "Cook"
+ 	jobtype = /datum/job/cook
+ 
+	pda_type = /obj/item/pda/cook
 
-	belt = /obj/item/pda/cook
-	ears = /obj/item/radio/headset/headset_srv
-	uniform = /obj/item/clothing/under/rank/chef
-	uniform_skirt = /obj/item/clothing/under/rank/chef/skirt
+ 	ears = /obj/item/radio/headset/headset_srv
+ 	uniform = /obj/item/clothing/under/rank/chef
+ 	uniform_skirt = /obj/item/clothing/under/rank/chef/skirt
 	suit = /obj/item/clothing/suit/toggle/chef
 	head = /obj/item/clothing/head/chefhat
 	mask = /obj/item/clothing/mask/fakemoustache/italian
@@ -64,4 +65,5 @@
 	H.equip_to_slot_or_del(I,SLOT_IN_BACKPACK)
 	var/datum/martial_art/cqc/under_siege/justacook = new
 	justacook.teach(H)
+
 
