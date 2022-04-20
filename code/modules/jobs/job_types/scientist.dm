@@ -35,13 +35,14 @@
 	supervisors = "the captain and the head of personnel"
 
 /datum/outfit/job/scientist
-	name = "Scientist"
-	jobtype = /datum/job/scientist
+ 	name = "Scientist"
+ 	jobtype = /datum/job/scientist
+ 
+	pda_type = /obj/item/pda/toxins
 
-	belt = /obj/item/pda/toxins
-	ears = /obj/item/radio/headset/headset_sci
-	uniform = /obj/item/clothing/under/rank/scientist
-	uniform_skirt = /obj/item/clothing/under/rank/scientist/skirt
+ 	ears = /obj/item/radio/headset/headset_sci
+ 	uniform = /obj/item/clothing/under/rank/scientist
+ 	uniform_skirt = /obj/item/clothing/under/rank/scientist/skirt
 	shoes = /obj/item/clothing/shoes/sneakers/white
 	suit = /obj/item/clothing/suit/toggle/labcoat/science
 
@@ -52,3 +53,4 @@
 	..()
 	if(prob(0.4))
 		neck = /obj/item/clothing/neck/tie/horrible
+
