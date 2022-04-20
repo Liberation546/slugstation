@@ -1,27 +1,119 @@
 /datum/outfit/job/plasmaman/bartender
 	name = "Plasmaman Bartender"
+ 	
+ 	jobtype = /datum/job/bartender
+ 
+	pda_type = /obj/item/pda/bar
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
 	
 	jobtype = /datum/job/bartender
 
 	head = /obj/item/clothing/head/helmet/space/plasmaman
+ 	ears = /obj/item/radio/headset/headset_srv
+ 	shoes = /obj/item/clothing/shoes/laceup
+ 	glasses = /obj/item/clothing/glasses/sunglasses/reagent
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+ /datum/outfit/job/plasmaman/cook
+ 	name = "Plasmaman Cook"
+ 	
+ 	jobtype = /datum/job/cook
+
+	pda_type = /obj/item/pda/cook
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
+ 	uniform = /obj/item/clothing/under/plasmaman/chef
+ 	suit = /obj/item/clothing/suit/toggle/chef
+ 	ears = /obj/item/radio/headset/headset_srv
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+ /datum/outfit/job/plasmaman/botanist
 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	
+ 	jobtype = /datum/job/hydro
+ 
+	pda_type = /obj/item/pda/botanist
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman/blue
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
 	mask = /obj/item/clothing/mask/breath
 	uniform = /obj/item/clothing/under/plasmaman/enviroslacks
 	suit = /obj/item/clothing/suit/armor/vest
 	ears = /obj/item/radio/headset/headset_srv
 	shoes = /obj/item/clothing/shoes/laceup
 	glasses = /obj/item/clothing/glasses/sunglasses/reagent
+ 	suit_store = /obj/item/plant_analyzer
+ 	backpack = /obj/item/storage/backpack/botany
+ 	satchel = /obj/item/storage/backpack/satchel/hyd
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+ /datum/outfit/job/plasmaman/curator
+ 	
+ 	jobtype = /datum/job/curator
+ 
+	pda_type = /obj/item/pda/curator
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman/curator
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
 	belt = /obj/item/pda/bar
 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
 
 /datum/outfit/job/plasmaman/cook
 	name = "Plasmaman Cook"
+ 	r_pocket = /obj/item/key/displaycase
+ 	l_pocket = /obj/item/laser_pointer
+ 	accessory = /obj/item/clothing/accessory/pocketprotector/full
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+ /datum/outfit/job/plasmaman/chaplain
+ 	
+ 	jobtype = /datum/job/chaplain
+ 
+	pda_type = /obj/item/pda/chaplain
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
 	
 	jobtype = /datum/job/cook
 		
+ 	ears = /obj/item/radio/headset/headset_srv
+ 	backpack = /obj/item/storage/backpack/cultpack
+ 	satchel = /obj/item/storage/backpack/cultpack
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+ /datum/outfit/job/plasmaman/janitor
+ 	
+ 	jobtype = /datum/job/janitor
+ 
+	pda_type = /obj/item/pda/janitor
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
+ 	uniform = /obj/item/clothing/under/plasmaman/janitor
+ 	ears = /obj/item/radio/headset/headset_srv
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+ 
 	head = /obj/item/clothing/head/helmet/space/plasmaman
 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
 	mask = /obj/item/clothing/mask/breath
+ 	
+ 	jobtype = /datum/job/officer
+ 
+	pda_type = /obj/item/pda/security
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman/security
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/gas/sechailer
 	uniform = /obj/item/clothing/under/plasmaman/chef
 	suit = /obj/item/clothing/suit/toggle/chef
 	ears = /obj/item/radio/headset/headset_srv
@@ -32,12 +124,40 @@
 	name = "Plasmaman Botanist"
 	
 	jobtype = /datum/job/hydro
+ 	backpack = /obj/item/storage/backpack/security
+ 	satchel = /obj/item/storage/backpack/satchel/sec
+ 	duffelbag = /obj/item/storage/backpack/duffelbag/sec
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+ /datum/outfit/job/plasmaman/detective
+ 	
+ 	jobtype = /datum/job/detective
+ 
+	pda_type = /obj/item/pda/detective
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
 
 	head = /obj/item/clothing/head/helmet/space/plasmaman/blue
 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
 	mask = /obj/item/clothing/mask/breath
 	uniform = /obj/item/clothing/under/plasmaman/botany
 	ears = /obj/item/radio/headset/headset_srv
+ 	suit = /obj/item/clothing/suit/det_suit
+ 	gloves = /obj/item/clothing/gloves/color/black
+ 	l_pocket = /obj/item/toy/crayon/white
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+ /datum/outfit/job/plasmaman/warden
+ 	
+ 	jobtype = /datum/job/warden
+ 
+	pda_type = /obj/item/pda/warden
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman/security
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/gas/sechailer
 	suit = /obj/item/clothing/suit/apron
 	gloves  =/obj/item/clothing/gloves/botanic_leather
 	suit_store = /obj/item/plant_analyzer
@@ -49,13 +169,55 @@
 /datum/outfit/job/plasmaman/curator
 	name = "Plasmaman Curator"
 	
+ 	backpack = /obj/item/storage/backpack/security
+ 	satchel = /obj/item/storage/backpack/satchel/sec
+ 	duffelbag = /obj/item/storage/backpack/duffelbag/sec
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+ 
 	jobtype = /datum/job/curator
+ 	
+ 	jobtype = /datum/job/cargo_tech
+ 
+	pda_type = /obj/item/pda/cargo
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
+ 	uniform = /obj/item/clothing/under/plasmaman/cargo
+ 	ears = /obj/item/radio/headset/headset_cargo
+ 	l_hand = /obj/item/export_scanner
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+ /datum/outfit/job/plasmaman/quartermaster
 
 	head = /obj/item/clothing/head/helmet/space/plasmaman/curator
+ 	
+ 	jobtype = /datum/job/qm
+ 
+	pda_type = /obj/item/pda/quartermaster
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
 	mask = /obj/item/clothing/mask/breath
 	uniform = /obj/item/clothing/under/plasmaman/curator
 	ears = /obj/item/radio/headset/headset_srv
+ 	shoes = /obj/item/clothing/shoes/sneakers/brown
+ 	glasses = /obj/item/clothing/glasses/sunglasses
+ 	l_hand = /obj/item/clipboard
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+ /datum/outfit/job/plasmaman/miner
+ 	
+ 	jobtype = /datum/job/mining
+ 
+	pda_type = /obj/item/pda/shaftminer
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
 	l_hand = /obj/item/storage/bag/books
 	r_pocket = /obj/item/key/displaycase
 	l_pocket = /obj/item/laser_pointer
@@ -64,7 +226,21 @@
 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
 
 /datum/outfit/job/plasmaman/chaplain
+ 	backpack = /obj/item/storage/backpack/explorer
+ 	satchel = /obj/item/storage/backpack/satchel/explorer
+ 	duffelbag = /obj/item/storage/backpack/duffelbag
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+ 
 	name = "Plasmaman Chaplain"
+ 	
+ 	jobtype = /datum/job/lawyer
+ 
+	pda_type = /obj/item/pda/lawyer
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
 	
 	jobtype = /datum/job/chaplain
 
@@ -73,7 +249,21 @@
 	mask = /obj/item/clothing/mask/breath
 	uniform = /obj/item/clothing/under/plasmaman/chaplain
 	ears = /obj/item/radio/headset/headset_srv
+ 	l_hand = /obj/item/storage/briefcase/lawyer
+ 	l_pocket = /obj/item/laser_pointer
+ 	r_pocket = /obj/item/clothing/accessory/lawyers_badge
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+ 
 	backpack = /obj/item/storage/backpack/cultpack
+ 	
+ 	jobtype = /datum/job/doctor
+ 
+	pda_type = /obj/item/pda/medical
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman/blue
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
 	satchel = /obj/item/storage/backpack/cultpack
 	belt = /obj/item/pda/chaplain
 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
@@ -81,6 +271,20 @@
 /datum/outfit/job/plasmaman/janitor
 	name = "Plasmaman Janitor"
 	
+ 	backpack = /obj/item/storage/backpack/medic
+ 	satchel = /obj/item/storage/backpack/satchel/med
+ 	duffelbag = /obj/item/storage/backpack/duffelbag/med
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+ /datum/outfit/job/plasmaman/virologist
+ 	
+ 	jobtype = /datum/job/virologist
+ 
+	pda_type = /obj/item/pda/viro
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman/viro
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
 	jobtype = /datum/job/janitor
 
 	head = /obj/item/clothing/head/helmet/space/plasmaman
@@ -88,6 +292,20 @@
 	mask = /obj/item/clothing/mask/breath
 	uniform = /obj/item/clothing/under/plasmaman/janitor
 	ears = /obj/item/radio/headset/headset_srv
+ 	backpack = /obj/item/storage/backpack/virology
+ 	satchel = /obj/item/storage/backpack/satchel/vir
+ 	duffelbag = /obj/item/storage/backpack/duffelbag/med
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+ /datum/outfit/job/plasmaman/chemist
+ 	
+ 	jobtype = /datum/job/chemist
+ 
+	pda_type = /obj/item/pda/chemist
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman/blue
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
 	belt = /obj/item/pda/janitor
 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
 
@@ -95,6 +313,20 @@
 /datum/outfit/job/plasmaman/security
 	name = "Plasmaman Security Officer"
 	
+ 	backpack = /obj/item/storage/backpack/chemistry
+ 	satchel = /obj/item/storage/backpack/satchel/chem
+ 	duffelbag = /obj/item/storage/backpack/duffelbag/med
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+ /datum/outfit/job/plasmaman/geneticist
+ 	
+ 	jobtype = /datum/job/geneticist
+ 
+	pda_type = /obj/item/pda/geneticist
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman/blue
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
 	jobtype = /datum/job/officer
 
 	head = /obj/item/clothing/head/helmet/space/plasmaman/security
@@ -103,17 +335,62 @@
 	uniform = /obj/item/clothing/under/plasmaman/security
 	ears = /obj/item/radio/headset/headset_sec/alt
 	gloves = /obj/item/clothing/gloves/color/black
+ 	backpack = /obj/item/storage/backpack/genetics
+ 	satchel = /obj/item/storage/backpack/satchel/gen
+ 	duffelbag = /obj/item/storage/backpack/duffelbag/med
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+ 
 	suit = /obj/item/clothing/suit/armor/vest/alt
+ 	
+ 	jobtype = /datum/job/scientist
+ 
+	pda_type = /obj/item/pda/toxins
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/restraints/handcuffs
 	r_pocket = /obj/item/assembly/flash/handheld
 	suit_store = /obj/item/gun/energy/disabler
 	backpack = /obj/item/storage/backpack/security
+ 	suit = /obj/item/clothing/suit/toggle/labcoat/science
+ 	backpack = /obj/item/storage/backpack/science
+ 	satchel = /obj/item/storage/backpack/satchel/tox
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+ /datum/outfit/job/plasmaman/roboticist
+ 	
+ 	jobtype = /datum/job/roboticist
+ 
+	pda_type = /obj/item/pda/roboticist
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
 	satchel = /obj/item/storage/backpack/satchel/sec
 	duffelbag = /obj/item/storage/backpack/duffelbag/sec
 	belt = /obj/item/pda/security
 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
 
+ 	suit = /obj/item/clothing/suit/toggle/labcoat
+ 	backpack = /obj/item/storage/backpack/science
+ 	satchel = /obj/item/storage/backpack/satchel/tox
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+	pda_slot = SLOT_L_STORE
+ 
+ /datum/outfit/job/plasmaman/engineer
+ 	name = "Plasmaman Station Engineer"
+ 	
+ 	jobtype = /datum/job/engineer
+ 
+	pda_type = /obj/item/pda/engineering
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman/engineering
+ 	uniform = /obj/item/clothing/under/plasmaman/engineering
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
 /datum/outfit/job/plasmaman/detective
 	name = "Plasmaman Detective"
 	
@@ -121,6 +398,23 @@
 
 	head = /obj/item/clothing/head/helmet/space/plasmaman
 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	backpack = /obj/item/storage/backpack/industrial
+ 	satchel = /obj/item/storage/backpack/satchel/eng
+ 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+	pda_slot = SLOT_L_STORE
+
+ /datum/outfit/job/plasmaman/atmos
+ 	name = "Plasmaman Atmospheric Technician"
+ 	
+ 	jobtype = /datum/job/atmos
+ 
+	pda_type = /obj/item/pda/atmos
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman/engineering
+ 	uniform = /obj/item/clothing/under/plasmaman/atmospherics
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
 	mask = /obj/item/clothing/mask/breath
 	uniform = /obj/item/clothing/under/plasmaman/enviroslacks
 	ears = /obj/item/radio/headset/headset_sec/alt
@@ -128,23 +422,80 @@
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 	suit = /obj/item/clothing/suit/det_suit
 	gloves = /obj/item/clothing/gloves/color/black
+ 	backpack = /obj/item/storage/backpack/industrial
+ 	satchel = /obj/item/storage/backpack/satchel/eng
+ 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+	pda_slot = SLOT_L_STORE
+
+ /datum/outfit/job/plasmaman/mime
+ 	name = "Plasmaman Mime"
+ 	
+ 	jobtype = /datum/job/mime
+ 
+	pda_type = /obj/item/pda/mime
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman/mime
+ 	uniform = /obj/item/clothing/under/plasmaman/mime
+ 	mask = /obj/item/clothing/mask/gas/mime
 	l_pocket = /obj/item/toy/crayon/white
 	belt = /obj/item/pda/detective
 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
 
 /datum/outfit/job/plasmaman/warden
 	name = "Plasmaman Warden"
+ 	suit = /obj/item/clothing/suit/suspenders
+ 	backpack = /obj/item/storage/backpack/mime
+ 	satchel = /obj/item/storage/backpack/mime
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+ /datum/outfit/job/plasmaman/clown
+ 	
+ 	jobtype = /datum/job/clown
+ 
+	pda_type = /obj/item/pda/clown
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman/clown
+ 	uniform = /obj/item/clothing/under/plasmaman/clown
+ 	mask = /obj/item/clothing/mask/gas/clown_hat
 	
 	jobtype = /datum/job/warden
 
+ 	ears = /obj/item/radio/headset/headset_srv
+ 	shoes = /obj/item/clothing/shoes/clown_shoes
+ 	l_pocket = /obj/item/bikehorn
+ 	backpack = /obj/item/storage/backpack/clown
+ 	satchel = /obj/item/storage/backpack/clown
+ 	duffelbag = /obj/item/storage/backpack/duffelbag/clown
 	head = /obj/item/clothing/head/helmet/space/plasmaman/security
 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
 	mask = /obj/item/clothing/mask/gas/sechailer
+ 	
+ 	jobtype = /datum/job/signal_tech
+ 
+	pda_type = /obj/item/pda/signaltech
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman/engineering
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
+ 	belt = /obj/item/storage/belt/utility/full
+ 	ears = /obj/item/radio/headset/headset_eng
+ 	uniform = /obj/item/clothing/under/plasmaman/engineering
+ 	suit = /obj/item/clothing/suit/hooded/wintercoat/engineering/tcomms
 	uniform = /obj/item/clothing/under/plasmaman/security/warden
 	ears = /obj/item/radio/headset/headset_sec/alt
 	shoes = /obj/item/clothing/shoes/jackboots
 	suit = /obj/item/clothing/suit/armor/vest/warden/alt
 	gloves = /obj/item/clothing/gloves/color/black
+ 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+	pda_slot = SLOT_L_STORE
+
+ /datum/outfit/job/plasmaman/miningmedic
+ 	name = "Plasmaman Mining Medic"
+ 	
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	r_pocket = /obj/item/assembly/flash/handheld
 	l_pocket = /obj/item/restraints/handcuffs
@@ -165,6 +516,26 @@
 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
 	mask = /obj/item/clothing/mask/breath
 	uniform = /obj/item/clothing/under/plasmaman/cargo
+ 	satchel = /obj/item/storage/backpack/satchel/med
+ 	duffelbag = /obj/item/storage/backpack/duffelbag/med
+ 
+	pda_slot = SLOT_L_STORE
+
+ /datum/outfit/job/plasmaman/paramedic
+ 	name = "Plasmaman Paramedic"
+ 	
+ 	jobtype = /datum/job/paramedic
+ 
+	pda_type = /obj/item/pda/para
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman/blue
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
+ 	backpack_contents = list(/obj/item/storage/firstaid/regular = 1,\
+ 		/obj/item/storage/box/plasmaman = 1)
+ 	ears = /obj/item/radio/headset/headset_med
+ 	uniform = /obj/item/clothing/under/plasmaman/medical
+ 	suit = /obj/item/clothing/suit/toggle/labcoat/emt
 	ears = /obj/item/radio/headset/headset_cargo
 	l_hand = /obj/item/export_scanner
 	belt = /obj/item/pda/cargo
@@ -186,7 +557,26 @@
 	belt = /obj/item/pda/quartermaster
 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
 
+ 	uniform = /obj/item/clothing/under/plasmaman/enviroslacks
+ 	l_hand = /obj/item/storage/briefcase
+ 	glasses = /obj/item/clothing/glasses/regular
+ 	ears = /obj/item/radio/headset/headset_med
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
 /datum/outfit/job/plasmaman/miner
+ 	
+ 	jobtype = /datum/job/brigphysician
+ 
+	pda_type = /obj/item/pda/physician
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman/blue
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
+ 	backpack_contents = list(/obj/item/roller = 1,\
+ 		/obj/item/storage/box/plasmaman = 1)
+ 	ears = /obj/item/radio/headset/headset_medsec
+ 	glasses = /obj/item/clothing/glasses/hud/health/sunglasses
+ 	shoes = /obj/item/clothing/shoes/jackboots
 	name = "Plasmaman Shaft Miner"
 	
 	jobtype = /datum/job/mining
@@ -201,6 +591,12 @@
 	l_pocket = /obj/item/reagent_containers/hypospray/medipen/survival
 	r_pocket = /obj/item/flashlight/seclite
 	backpack = /obj/item/storage/backpack/explorer
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
+ 	ears = /obj/item/radio/headset/headset_srv
+ 	uniform = /obj/item/clothing/under/plasmaman/enviroslacks
+ 	shoes = /obj/item/clothing/shoes/sneakers/black
 	satchel = /obj/item/storage/backpack/satchel/explorer
 	duffelbag = /obj/item/storage/backpack/duffelbag
 	belt = /obj/item/pda/shaftminer
@@ -211,6 +607,12 @@
 	name = "Plasmaman Laywer"
 	
 	jobtype = /datum/job/lawyer
+ 	uniform = /obj/item/clothing/under/plasmaman
+ 	shoes = /obj/item/clothing/shoes/sneakers/black
+ 	ears = /obj/item/radio/headset
+ 	backpack_contents = list(/obj/item/camera_film, /obj/item/stack/spacecash/c20, /obj/item/stack/spacecash/c20, /obj/item/stack/spacecash/c20, /obj/item/storage/box/plasmaman = 1)
+ 	l_hand =  /obj/item/camera
+ 	l_pocket = /obj/item/camera_film
 
 	head = /obj/item/clothing/head/helmet/space/plasmaman
 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
@@ -221,6 +623,26 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	ears = /obj/item/radio/headset/headset_srvsec
 	suit = /obj/item/clothing/suit/toggle/lawyer
+ 	uniform = /obj/item/clothing/under/plasmaman
+ 	shoes = /obj/item/clothing/shoes/sneakers/black
+ 	ears = /obj/item/radio/headset
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+ /datum/outfit/job/plasmaman/artist
+ 	
+ 	jobtype = /datum/job/artist
+ 
+	id_type = /obj/item/card/id/silver
+	pda_type = /obj/item/pda/artist
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
+ 	uniform = /obj/item/clothing/under/plasmaman
+ 	shoes = /obj/item/clothing/shoes/sneakers/black
+ 	ears = /obj/item/radio/headset/headset_srv
+ 	gloves = /obj/item/clothing/gloves/fingerless
+ 	neck = /obj/item/clothing/neck/artist
 	l_hand = /obj/item/storage/briefcase/lawyer
 	l_pocket = /obj/item/laser_pointer
 	r_pocket = /obj/item/clothing/accessory/lawyers_badge
@@ -228,6 +650,15 @@
 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
 
 
+ 	
+ 	jobtype = /datum/job/chief_engineer
+ 
+	id_type = /obj/item/card/id/silver
+	pda_type = /obj/item/pda/heads/ce
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman/engineering
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
 /datum/outfit/job/plasmaman/doctor
 	name = "Plasmaman Medical Doctor"
 	
@@ -235,389 +666,27 @@
 
 	head = /obj/item/clothing/head/helmet/space/plasmaman/blue
 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	backpack = /obj/item/storage/backpack/industrial
+ 	satchel = /obj/item/storage/backpack/satchel/eng
+ 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
+ 	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
+ 
+ /datum/outfit/job/plasmaman/rd
+ 	
+ 	jobtype = /datum/job/rd
+ 
+	id_type = /obj/item/card/id/silver
+	pda_type = /obj/item/pda/heads/rd
+
+ 	head = /obj/item/clothing/head/helmet/space/plasmaman
+ 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+ 	mask = /obj/item/clothing/mask/breath
 	mask = /obj/item/clothing/mask/breath
 	uniform = /obj/item/clothing/under/plasmaman/medical
 	ears = /obj/item/radio/headset/headset_med
-	suit =  /obj/item/clothing/suit/toggle/labcoat/md
-	l_hand = /obj/item/storage/firstaid/medical
-	suit_store = /obj/item/flashlight/pen
-	backpack = /obj/item/storage/backpack/medic
-	satchel = /obj/item/storage/backpack/satchel/med
-	duffelbag = /obj/item/storage/backpack/duffelbag/med
-	belt = /obj/item/pda/medical
-	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
-
-/datum/outfit/job/plasmaman/virologist
-	name = "Plasmaman Virologist"
-	
-	jobtype = /datum/job/virologist
-
-	head = /obj/item/clothing/head/helmet/space/plasmaman/viro
-	r_hand= /obj/item/tank/internals/plasmaman/belt/full
-	mask = /obj/item/clothing/mask/breath
-	uniform = /obj/item/clothing/under/plasmaman/viro
-	ears = /obj/item/radio/headset/headset_med
-	shoes = /obj/item/clothing/shoes/sneakers/white
-	suit =  /obj/item/clothing/suit/toggle/labcoat/virologist
-	suit_store =  /obj/item/flashlight/pen
-	backpack = /obj/item/storage/backpack/virology
-	satchel = /obj/item/storage/backpack/satchel/vir
-	duffelbag = /obj/item/storage/backpack/duffelbag/med
-	belt = /obj/item/pda/viro
-	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
-
-/datum/outfit/job/plasmaman/chemist
-	name = "Plasmaman Chemist"
-	
-	jobtype = /datum/job/chemist
-
-	head = /obj/item/clothing/head/helmet/space/plasmaman/blue
-	r_hand= /obj/item/tank/internals/plasmaman/belt/full
-	mask = /obj/item/clothing/mask/breath
-	uniform = /obj/item/clothing/under/plasmaman/chemist
-	glasses = /obj/item/clothing/glasses/science
-	ears = /obj/item/radio/headset/headset_med
-	shoes = /obj/item/clothing/shoes/sneakers/white
-	suit =  /obj/item/clothing/suit/toggle/labcoat/chemist
-	backpack = /obj/item/storage/backpack/chemistry
-	satchel = /obj/item/storage/backpack/satchel/chem
-	duffelbag = /obj/item/storage/backpack/duffelbag/med
-	belt = /obj/item/pda/chemist
-	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
-
-/datum/outfit/job/plasmaman/geneticist
-	name = "Plasmaman Geneticist"
-	
-	jobtype = /datum/job/geneticist
-
-	head = /obj/item/clothing/head/helmet/space/plasmaman/blue
-	r_hand= /obj/item/tank/internals/plasmaman/belt/full
-	mask = /obj/item/clothing/mask/breath
-	uniform = /obj/item/clothing/under/plasmaman/genetics
-	ears = /obj/item/radio/headset/headset_medsci
-	shoes = /obj/item/clothing/shoes/sneakers/white
-	suit =  /obj/item/clothing/suit/toggle/labcoat/genetics
-	suit_store =  /obj/item/flashlight/pen
-	l_pocket = /obj/item/sequence_scanner
-	backpack = /obj/item/storage/backpack/genetics
-	satchel = /obj/item/storage/backpack/satchel/gen
-	duffelbag = /obj/item/storage/backpack/duffelbag/med
-	belt = /obj/item/pda/geneticist
-	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
-
-
-/datum/outfit/job/plasmaman/scientist
-	name = "Plasmaman Scientist"
-	
-	jobtype = /datum/job/scientist
-
-	head = /obj/item/clothing/head/helmet/space/plasmaman
-	r_hand= /obj/item/tank/internals/plasmaman/belt/full
-	mask = /obj/item/clothing/mask/breath
-	uniform = /obj/item/clothing/under/plasmaman/science
-	ears = /obj/item/radio/headset/headset_sci
-	shoes = /obj/item/clothing/shoes/sneakers/white
-	suit = /obj/item/clothing/suit/toggle/labcoat/science
-	backpack = /obj/item/storage/backpack/science
-	satchel = /obj/item/storage/backpack/satchel/tox
-	belt = /obj/item/pda/toxins
-	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
-
-/datum/outfit/job/plasmaman/roboticist
-	name = "Plasmaman Roboticist"
-	
-	jobtype = /datum/job/roboticist
-
-	head = /obj/item/clothing/head/helmet/space/plasmaman
-	r_hand= /obj/item/tank/internals/plasmaman/belt/full
-	mask = /obj/item/clothing/mask/breath
-	uniform = /obj/item/clothing/under/plasmaman/robotics
-	belt = /obj/item/storage/belt/utility/full
-	ears = /obj/item/radio/headset/headset_sci
-	suit = /obj/item/clothing/suit/toggle/labcoat
-	backpack = /obj/item/storage/backpack/science
-	satchel = /obj/item/storage/backpack/satchel/tox
-	l_pocket = /obj/item/pda/roboticist
-	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
-
-
-/datum/outfit/job/plasmaman/engineer
-	name = "Plasmaman Station Engineer"
-	
-	jobtype = /datum/job/engineer
-
-	head = /obj/item/clothing/head/helmet/space/plasmaman/engineering
-	uniform = /obj/item/clothing/under/plasmaman/engineering
-	r_hand= /obj/item/tank/internals/plasmaman/belt/full
-	mask = /obj/item/clothing/mask/breath
-	belt = /obj/item/storage/belt/utility/full/engi
-	ears = /obj/item/radio/headset/headset_eng
-	shoes = /obj/item/clothing/shoes/workboots
-	r_pocket = /obj/item/t_scanner
-	backpack = /obj/item/storage/backpack/industrial
-	satchel = /obj/item/storage/backpack/satchel/eng
-	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
-	l_pocket = /obj/item/pda/engineering
-	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
-
-/datum/outfit/job/plasmaman/atmos
-	name = "Plasmaman Atmospheric Technician"
-	
-	jobtype = /datum/job/atmos
-
-	head = /obj/item/clothing/head/helmet/space/plasmaman/engineering
-	uniform = /obj/item/clothing/under/plasmaman/atmospherics
-	r_hand= /obj/item/tank/internals/plasmaman/belt/full
-	mask = /obj/item/clothing/mask/breath
-	belt = /obj/item/storage/belt/utility/atmostech
-	ears = /obj/item/radio/headset/headset_eng
-	r_pocket = /obj/item/analyzer
-	backpack = /obj/item/storage/backpack/industrial
-	satchel = /obj/item/storage/backpack/satchel/eng
-	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
-	l_pocket = /obj/item/pda/atmos
-	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
-
-/datum/outfit/job/plasmaman/mime
-	name = "Plasmaman Mime"
-	
-	jobtype = /datum/job/mime
-
-	head = /obj/item/clothing/head/helmet/space/plasmaman/mime
-	uniform = /obj/item/clothing/under/plasmaman/mime
-	mask = /obj/item/clothing/mask/gas/mime
-	r_hand= /obj/item/tank/internals/plasmaman/belt/full
-	ears = /obj/item/radio/headset/headset_srv
-	gloves = /obj/item/clothing/gloves/color/white
-	suit = /obj/item/clothing/suit/suspenders
-	backpack = /obj/item/storage/backpack/mime
-	satchel = /obj/item/storage/backpack/mime
-	belt = /obj/item/pda/mime
-	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
-
-/datum/outfit/job/plasmaman/clown
-	name = "Plasmaman Clown"
-	
-	jobtype = /datum/job/clown
-
-	head = /obj/item/clothing/head/helmet/space/plasmaman/clown
-	uniform = /obj/item/clothing/under/plasmaman/clown
-	mask = /obj/item/clothing/mask/gas/clown_hat
-	r_hand= /obj/item/tank/internals/plasmaman/belt/full
-	ears = /obj/item/radio/headset/headset_srv
-	shoes = /obj/item/clothing/shoes/clown_shoes
-	l_pocket = /obj/item/bikehorn
-	belt = /obj/item/pda/clown
-	backpack = /obj/item/storage/backpack/clown
-	satchel = /obj/item/storage/backpack/clown
-	duffelbag = /obj/item/storage/backpack/duffelbag/clown
-	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
-
-/datum/outfit/job/plasmaman/sigtech
-	name = "Plasmaman Signal Technician"
-	
-	jobtype = /datum/job/signal_tech
-
-	head = /obj/item/clothing/head/helmet/space/plasmaman/engineering
-	r_hand= /obj/item/tank/internals/plasmaman/belt/full
-	mask = /obj/item/clothing/mask/breath
-	belt = /obj/item/storage/belt/utility/full
-	l_pocket = /obj/item/pda/signaltech
-	ears = /obj/item/radio/headset/headset_eng
-	uniform = /obj/item/clothing/under/plasmaman/engineering
-	suit = /obj/item/clothing/suit/hooded/wintercoat/engineering/tcomms
-	gloves = /obj/item/clothing/gloves/color/black
-	shoes = /obj/item/clothing/shoes/workboots
-	backpack = /obj/item/storage/backpack/industrial
-	satchel = /obj/item/storage/backpack/satchel/eng
-	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
-	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
-
-/datum/outfit/job/plasmaman/miningmedic
-	name = "Plasmaman Mining Medic"
-	
-	jobtype = /datum/job/miningmedic
-
-	head = /obj/item/clothing/head/helmet/space/plasmaman/blue
-	r_hand= /obj/item/tank/internals/plasmaman/belt/full
-	mask = /obj/item/clothing/mask/breath
-	backpack_contents = list(/obj/item/roller = 1,\
-		/obj/item/kitchen/knife/combat/survival = 1,\
-		/obj/item/gps/mining = 1,\
-		/obj/item/storage/box/plasmaman = 1)
-	belt = /obj/item/storage/belt/medical/mining
-	ears = /obj/item/radio/headset/headset_medcargo
-	glasses = /obj/item/clothing/glasses/hud/health/meson
-	shoes = /obj/item/clothing/shoes/workboots/mining
-	uniform = /obj/item/clothing/under/plasmaman/mining
-	l_hand = /obj/item/storage/firstaid/regular
-	l_pocket =  /obj/item/pda/medical
-	gloves = /obj/item/clothing/gloves/color/latex
-	backpack = /obj/item/storage/backpack/medic
-	satchel = /obj/item/storage/backpack/satchel/med
-	duffelbag = /obj/item/storage/backpack/duffelbag/med
-
-/datum/outfit/job/plasmaman/paramedic
-	name = "Plasmaman Paramedic"
-	
-	jobtype = /datum/job/paramedic
-
-	head = /obj/item/clothing/head/helmet/space/plasmaman/blue
-	r_hand= /obj/item/tank/internals/plasmaman/belt/full
-	mask = /obj/item/clothing/mask/breath
-	backpack_contents = list(/obj/item/storage/firstaid/regular = 1,\
-		/obj/item/storage/box/plasmaman = 1)
-	belt = /obj/item/pda/para
-	ears = /obj/item/radio/headset/headset_med
-	uniform = /obj/item/clothing/under/plasmaman/medical
-	suit = /obj/item/clothing/suit/toggle/labcoat/emt
-	shoes = /obj/item/clothing/shoes/sneakers/white
-	l_hand = /obj/item/roller
-	l_pocket = /obj/item/flashlight
-	r_pocket = /obj/item/gps
-	backpack = /obj/item/storage/backpack/medic
-	satchel = /obj/item/storage/backpack/satchel/med
-	duffelbag = /obj/item/storage/backpack/duffelbag/med
-
-
-/datum/outfit/job/plasmaman/psych
-	name = "Plasmaman Psych"
-	
-	jobtype = /datum/job/psych
-
-	head = /obj/item/clothing/head/helmet/space/plasmaman
-	r_hand= /obj/item/tank/internals/plasmaman/belt/full
-	mask = /obj/item/clothing/mask/breath
-	shoes = /obj/item/clothing/shoes/sneakers/brown
-	uniform = /obj/item/clothing/under/plasmaman/enviroslacks
-	l_hand = /obj/item/storage/briefcase
-	glasses = /obj/item/clothing/glasses/regular
-	belt = /obj/item/pda
-	ears = /obj/item/radio/headset/headset_med
-	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
-
-/datum/outfit/job/plasmaman/brigphysician
-	name = "Plasmaman Brig Physician"
-	
-	jobtype = /datum/job/brigphysician
-
-	head = /obj/item/clothing/head/helmet/space/plasmaman/blue
-	r_hand= /obj/item/tank/internals/plasmaman/belt/full
-	mask = /obj/item/clothing/mask/breath
-	backpack_contents = list(/obj/item/roller = 1,\
-		/obj/item/storage/box/plasmaman = 1)
-	belt = /obj/item/pda/physician
-	ears = /obj/item/radio/headset/headset_medsec
-	glasses = /obj/item/clothing/glasses/hud/health/sunglasses
-	shoes = /obj/item/clothing/shoes/jackboots
-	uniform = /obj/item/clothing/under/plasmaman/medical
-	suit = /obj/item/clothing/suit/toggle/labcoat/emt/physician
-	l_hand = /obj/item/storage/firstaid/regular
-	gloves = /obj/item/clothing/gloves/color/latex
-	backpack = /obj/item/storage/backpack/medic
-	satchel = /obj/item/storage/backpack/satchel/med
-	duffelbag = /obj/item/storage/backpack/duffelbag/med
-
-/datum/outfit/job/plasmaman/clerk
-	name = "Plasmaman Clerk"
-	
-	jobtype = /datum/job/clerk
-
-	head = /obj/item/clothing/head/helmet/space/plasmaman
-	r_hand= /obj/item/tank/internals/plasmaman/belt/full
-	mask = /obj/item/clothing/mask/breath
-	belt = /obj/item/pda
-	ears = /obj/item/radio/headset/headset_srv
-	uniform = /obj/item/clothing/under/plasmaman/enviroslacks
-	shoes = /obj/item/clothing/shoes/sneakers/black
-	backpack_contents = list(/obj/item/circuitboard/machine/paystand = 1,\
-		/obj/item/storage/box/plasmaman = 1)
-
-/datum/outfit/job/plasmaman/tourist
-	name = "Plasmaman Tourist"
-	
-	jobtype = /datum/job/tourist
-
-	head = /obj/item/clothing/head/helmet/space/plasmaman
-	r_hand= /obj/item/tank/internals/plasmaman/belt/full
-	mask = /obj/item/clothing/mask/breath
-	uniform = /obj/item/clothing/under/plasmaman
-	shoes = /obj/item/clothing/shoes/sneakers/black
-	ears = /obj/item/radio/headset
-	belt = /obj/item/pda
-	backpack_contents = list(/obj/item/camera_film, /obj/item/stack/spacecash/c20, /obj/item/stack/spacecash/c20, /obj/item/stack/spacecash/c20, /obj/item/storage/box/plasmaman = 1)
-	l_hand =  /obj/item/camera
-	l_pocket = /obj/item/camera_film
-	r_pocket = /obj/item/camera_film
-	box = /obj/item/storage/box/plasmaman
-
-/datum/outfit/job/plasmaman/assistant
-	name = "Plasmaman Assistant"
-	
-	jobtype = /datum/job/assistant
-
-	head = /obj/item/clothing/head/helmet/space/plasmaman
-	r_hand= /obj/item/tank/internals/plasmaman/belt/full
-	mask = /obj/item/clothing/mask/breath
-	uniform = /obj/item/clothing/under/plasmaman
-	shoes = /obj/item/clothing/shoes/sneakers/black
-	ears = /obj/item/radio/headset
-	belt = /obj/item/pda
-	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
-
-/datum/outfit/job/plasmaman/artist
-	name = "Plasmaman Artist"
-	
-	jobtype = /datum/job/artist
-
-	head = /obj/item/clothing/head/helmet/space/plasmaman
-	r_hand= /obj/item/tank/internals/plasmaman/belt/full
-	mask = /obj/item/clothing/mask/breath
-	uniform = /obj/item/clothing/under/plasmaman
-	shoes = /obj/item/clothing/shoes/sneakers/black
-	belt = /obj/item/pda/artist
-	ears = /obj/item/radio/headset/headset_srv
-	gloves = /obj/item/clothing/gloves/fingerless
-	neck = /obj/item/clothing/neck/artist
-	l_pocket = /obj/item/laser_pointer
-	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
-
-/datum/outfit/job/plasmaman/ce
-	name = "Plasmaman Chief Engineer"
-	
-	jobtype = /datum/job/chief_engineer
-
-	id = /obj/item/card/id/silver
-	head = /obj/item/clothing/head/helmet/space/plasmaman/engineering
-	r_hand= /obj/item/tank/internals/plasmaman/belt/full
-	mask = /obj/item/clothing/mask/breath
-	uniform = /obj/item/clothing/under/plasmaman/engineering
-	shoes = /obj/item/clothing/shoes/sneakers/brown
-	ears = /obj/item/radio/headset/heads/ce
-	gloves = /obj/item/clothing/gloves/color/black/ce
-	belt = /obj/item/storage/belt/utility/chief/full
-	backpack = /obj/item/storage/backpack/industrial
-	satchel = /obj/item/storage/backpack/satchel/eng
-	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
-	l_pocket = /obj/item/pda/heads/ce
-	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
-
-/datum/outfit/job/plasmaman/rd
-	name = "Plasmaman Research Director"
-	
-	jobtype = /datum/job/rd
-
-	id = /obj/item/card/id/silver
-	head = /obj/item/clothing/head/helmet/space/plasmaman
-	r_hand= /obj/item/tank/internals/plasmaman/belt/full
-	mask = /obj/item/clothing/mask/breath
-	uniform = /obj/item/clothing/under/plasmaman/science
-	shoes = /obj/item/clothing/shoes/sneakers/brown
-	ears = /obj/item/radio/headset/heads/rd
-	glasses = /obj/item/clothing/glasses/hud/diagnostic/sunglasses
-	belt = /obj/item/pda/heads/rd
-	suit = /obj/item/clothing/suit/toggle/labcoat/science
-	backpack = /obj/item/storage/backpack/science
-	satchel = /obj/item/storage/backpack/satchel/tox
-	backpack_contents = list(/obj/item/storage/box/plasmaman = 1)
-
+ 	shoes = /obj/item/clothing/shoes/sneakers/brown
+ 	ears = /obj/item/radio/headset/heads/rd
+ 	glasses = /obj/item/clothing/glasses/hud/diagnostic/sunglasses
+ 	suit = /obj/item/clothing/suit/toggle/labcoat/science
+ 	backpack = /obj/item/storage/backpack/science
+ 	satchel = /obj/item/storage/backpack/satchel/tox
