@@ -26,17 +26,19 @@
 	return TRUE
 
 /datum/outfit/job/quartermaster
-	name = "Quartermaster"
-	jobtype = /datum/job/qm
+ 	name = "Quartermaster"
+ 	jobtype = /datum/job/qm
+ 
+	pda_type = /obj/item/pda/quartermaster
 
-	belt = /obj/item/pda/quartermaster
-	ears = /obj/item/radio/headset/headset_cargo
-	uniform = /obj/item/clothing/under/rank/cargo
-	uniform_skirt = /obj/item/clothing/under/rank/cargo/skirt
+ 	ears = /obj/item/radio/headset/headset_cargo
+ 	uniform = /obj/item/clothing/under/rank/cargo
+ 	uniform_skirt = /obj/item/clothing/under/rank/cargo/skirt
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 	glasses = /obj/item/clothing/glasses/sunglasses
 	l_hand = /obj/item/clipboard
 	l_pocket = /obj/item/export_scanner
 
 	chameleon_extras = /obj/item/stamp/qm
+
 
