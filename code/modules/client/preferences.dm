@@ -41,6 +41,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/ghost_hud = 1
 	var/inquisitive_ghost = 1
 	var/allow_midround_antag = 1
+ 	var/preferred_map = null
+ 	var/pda_style = MONO
+ 	var/pda_color = "#808000"
+	var/id_in_pda = FALSE
+ 	var/show_credits = TRUE
+ 	var/uses_glasses_colour = 0
+ 
 	var/preferred_map = null
 	var/pda_style = MONO
 	var/pda_color = "#808000"
@@ -650,6 +657,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>tgui Window Placement:</b> <a href='?_src_=prefs;preference=tgui_lock'>[(tgui_lock) ? "Primary monitor" : "Free (default)"]</a><br>"
 			dat += "<b>Show Runechat Chat Bubbles:</b> <a href='?_src_=prefs;preference=chat_on_map'>[chat_on_map ? "Enabled" : "Disabled"]</a><br>"
 			dat += "<b>Runechat message char limit:</b> <a href='?_src_=prefs;preference=max_chat_length;task=input'>[max_chat_length]</a><br>"
+ 			dat += "<br>"
+ 			dat += "<b>PDA Color:</b> <span style='border:1px solid #161616; background-color: [pda_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=pda_color;task=input'>Change</a><BR>"
+ 			dat += "<b>PDA Style:</b> <a href='?_src_=prefs;task=input;preference=pda_style'>[pda_style]</a><br>"
+			dat += "<b>PDA Starts in ID Slot:</b> <a href='?_src_=prefs;task=input;preference=id_in_pda'>[id_in_pda ? "Enabled" : "Disabled"]</a><br>"
+ 			dat += "<b>Skillcape:</b> <a href='?_src_=prefs;task=input;preference=skillcape'>[(skillcape_id != "None") ? "[GLOB.skillcapes[skillcape_id]]" : "None"] </a><br>"
+ 			dat += "<b>Flare:</b> <a href='?_src_=prefs;task=input;preference=flare'>[flare ? "Enabled" : "Disabled"]</a><br>"
+ 			dat += "<b>Map:</b> <a href='?_src_=prefs;task=input;preference=map'>[map ? "Enabled" : "Disabled"]</a><br>"
 			dat += "<b>See Runechat for non-mobs:</b> <a href='?_src_=prefs;preference=see_chat_non_mob'>[see_chat_non_mob ? "Enabled" : "Disabled"]</a><br>"
 			dat += "<b>See Runechat emotes:</b> <a href='?_src_=prefs;preference=see_rc_emotes'>[see_rc_emotes ? "Enabled" : "Disabled"]</a><br>"
 			dat += "<br>"
@@ -1827,6 +1841,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						clientfps = desiredfps
 						parent.fps = desiredfps
 				if("ui")
+ 					var/pickedPDAColor = input(user, "Choose your PDA Interface color.", "Character Preference",pda_color) as color|null
+ 					if(pickedPDAColor)
+ 						pda_color = pickedPDAColor
+				if("id_in_pda")
+					id_in_pda = !id_in_pda
+ 				if("skillcape")
+ 					var/list/selectablecapes = list()
+ 					var/max_eligable = TRUE
 					var/pickedui = input(user, "Choose your UI style.", "Character Preference", UI_style)  as null|anything in GLOB.available_ui_styles
 					if(pickedui)
 						UI_style = pickedui
@@ -2109,30 +2131,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/obj/item/organ/eyes/organ_eyes = character.getorgan(/obj/item/organ/eyes)
 	if(organ_eyes)
 		if(!initial(organ_eyes.eye_color))
-			organ_eyes.eye_color = eye_color
-		organ_eyes.old_eye_color = eye_color
-	character.hair_color = hair_color
-	character.facial_hair_color = facial_hair_color
-	character.grad_color = features["gradientcolor"]
-
-	character.skin_tone = skin_tone
-	character.hair_style = hair_style
-	character.facial_hair_style = facial_hair_style
-	character.grad_style = features["gradientstyle"]
-	character.underwear = underwear
-	character.undershirt = undershirt
-	character.socks = socks
-
-	character.backbag = backbag
-
-	character.jumpsuit_style = jumpsuit_style
-
-	var/datum/species/chosen_species
-	chosen_species = pref_species.type
-	if(roundstart_checks && !(pref_species.id in GLOB.roundstart_races) &&  (!(pref_species.id in GLOB.mentor_races) && !is_mentor(character))  && !(pref_species.id in (CONFIG_GET(keyed_list/roundstart_no_hard_check))))
-		chosen_species = /datum/species/human
-		pref_species = new /datum/species/human
-		save_character()
+ 	character.backbag = backbag
+ 
+ 	character.jumpsuit_style = jumpsuit_style
+	character.id_in_pda = id_in_pda
+ 
+ 	var/datum/species/chosen_species
+ 	chosen_species = pref_species.type
 
 	character.dna.features = features.Copy()
 	character.set_species(chosen_species, icon_update = FALSE, pref_load = TRUE)
@@ -2185,3 +2190,4 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			return
 		else
 			custom_names[name_id] = sanitized_name
+
