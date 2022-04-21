@@ -140,3 +140,4 @@ GLOBAL_LIST_INIT(available_depts_eng, list(ENG_DEPT_MEDICAL, ENG_DEPT_SCIENCE, E
 /obj/item/radio/headset/headset_eng/department/service
 	keyslot = new /obj/item/encryptionkey/headset_eng
 	keyslot2 = new /obj/item/encryptionkey/headset_service
+

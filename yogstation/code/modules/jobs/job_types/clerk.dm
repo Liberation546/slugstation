@@ -35,3 +35,4 @@
 	shoes = /obj/item/clothing/shoes/sneakers/black
 	head = /obj/item/clothing/head/yogs/clerkcap
 	backpack_contents = list(/obj/item/circuitboard/machine/paystand = 1)
+

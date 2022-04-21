@@ -27,3 +27,4 @@
 	r_hand =  /obj/item/camera
 	l_pocket = /obj/item/camera_film
 	r_pocket = /obj/item/camera_film
+

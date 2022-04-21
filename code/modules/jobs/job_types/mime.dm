@@ -91,3 +91,4 @@
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/conjure/mime_box(null))
 	to_chat(usr, span_notice("The book disappears into thin air."))
 	qdel(src)
+

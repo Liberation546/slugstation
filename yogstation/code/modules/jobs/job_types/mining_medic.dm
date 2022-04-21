@@ -49,3 +49,4 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 	box = /obj/item/storage/box/survival_mining
 	pda_slot = SLOT_L_STORE
+

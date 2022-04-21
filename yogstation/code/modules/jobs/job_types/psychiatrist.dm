@@ -35,3 +35,4 @@
 	glasses = /obj/item/clothing/glasses/regular
 	belt = /obj/item/pda
 	ears = /obj/item/radio/headset/headset_med
+
