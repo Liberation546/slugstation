@@ -1458,3 +1458,4 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	user.status_flags &= ~GODMODE
 	user.update_mobility()
 	sleep(40)
+
