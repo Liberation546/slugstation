@@ -2473,6 +2473,7 @@
 #include "code\modules\mob\living\simple_animal\hostile\pirate.dm"
 #include "code\modules\mob\living\simple_animal\hostile\russian.dm"
 #include "code\modules\mob\living\simple_animal\hostile\skeleton.dm"
+#include "code\modules\mob\living\simple_animal\hostile\smspider.dm"
 #include "code\modules\mob\living\simple_animal\hostile\statue.dm"
 #include "code\modules\mob\living\simple_animal\hostile\stickman.dm"
 #include "code\modules\mob\living\simple_animal\hostile\syndicate.dm"
@@ -3739,3 +3740,4 @@
 #include "yogstation\code\modules\xenoarch\loot\guns.dm"
 #include "yogstation\interface\interface.dm"
 // END_INCLUDE
+

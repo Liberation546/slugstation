@@ -115,7 +115,9 @@ GLOBAL_VAR_INIT(ghost_role_flags, (~0))
 #define GHOSTROLE_SPAWNER			(1<<1)
 //ie mind monkeys, sentience potion
 #define GHOSTROLE_STATION_SENTIENCE	(1<<2)
+#define GHOSTROLE_STATION_SENTIENCE	(1<<2)
 //ie pais, posibrains
 #define GHOSTROLE_SILICONS			(1<<3)
 //ie mafia, ctf
 #define GHOSTROLE_MINIGAME			(1<<4)
+
