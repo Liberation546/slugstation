@@ -81,6 +81,9 @@
 #define ADMIN_PUNISHMENT_MCNUGGET "Nugget"
 #define ADMIN_PUNISHMENT_CRACK ":B:oneless"
 #define ADMIN_PUNISHMENT_BLEED ":B:loodless"
+#define ADMIN_PUNISHMENT_BLEED ":B:loodless"
+#define ADMIN_PUNISHMENT_PERFORATE ":B:erforate"
+#define ADMIN_PUNISHMENT_SCARIFY "Scarify"
 #define ADMIN_PUNISHMENT_PERFORATE ":B:erforate"
 #define ADMIN_PUNISHMENT_SCARIFY "Scarify"
 
@@ -114,8 +117,7 @@ GLOBAL_VAR_INIT(ghost_role_flags, (~0))
 //ie ashwalkers, free golems, beach bums
 #define GHOSTROLE_SPAWNER			(1<<1)
 //ie mind monkeys, sentience potion
-#define GHOSTROLE_STATION_SENTIENCE	(1<<2)
 //ie pais, posibrains
 #define GHOSTROLE_SILICONS			(1<<3)
 //ie mafia, ctf
-#define GHOSTROLE_MINIGAME			(1<<4)
+undefined
