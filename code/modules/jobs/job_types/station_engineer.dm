@@ -79,7 +79,7 @@ GLOBAL_LIST_INIT(available_depts_eng, list(ENG_DEPT_MEDICAL, ENG_DEPT_SCIENCE, E
 			qdel(H.ears)
 		H.equip_to_slot_or_del(new ears(H),SLOT_EARS)
 
-	var/obj/item/card/id/W = H.wear_id
+	var/obj/item/card/id/W = H.get_idcard()
 	W.access |= dep_access
 
 	if(department)
@@ -87,28 +87,28 @@ GLOBAL_LIST_INIT(available_depts_eng, list(ENG_DEPT_MEDICAL, ENG_DEPT_SCIENCE, E
 	else
 		to_chat(M, "<b>You have not been assigned to any department. Patrol the halls and help where needed.</b>")
 
-/datum/outfit/job/engineer
 	name = "Station Engineer"
 	jobtype = /datum/job/engineer
 
+	pda_type = /obj/item/pda/engineering
+
 	belt = /obj/item/storage/belt/utility/full/engi
-	l_pocket = /obj/item/pda/engineering
 	ears = /obj/item/radio/headset/headset_eng
 	uniform = /obj/item/clothing/under/rank/engineer
 	uniform_skirt = /obj/item/clothing/under/rank/engineer/skirt
 	shoes = /obj/item/clothing/shoes/workboots
 	head = /obj/item/clothing/head/hardhat
 	r_pocket = /obj/item/t_scanner
-
-	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	box = /obj/item/storage/box/engineer
-	pda_slot = SLOT_L_STORE
 	backpack_contents = list(/obj/item/modular_computer/tablet/pda/preset/basic=1)
+
+	pda_slot = SLOT_L_STORE
 
 /datum/outfit/job/engineer/gloved
 	name = "Station Engineer (Gloves)"
+	gloves = /obj/item/clothing/gloves/color/yellow
 	gloves = /obj/item/clothing/gloves/color/yellow
 
 /datum/outfit/job/engineer/gloved/rig
@@ -140,4 +140,3 @@ GLOBAL_LIST_INIT(available_depts_eng, list(ENG_DEPT_MEDICAL, ENG_DEPT_SCIENCE, E
 /obj/item/radio/headset/headset_eng/department/service
 	keyslot = new /obj/item/encryptionkey/headset_eng
 	keyslot2 = new /obj/item/encryptionkey/headset_service
-

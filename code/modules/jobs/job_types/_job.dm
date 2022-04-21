@@ -206,13 +206,13 @@
 	var/jobtype = null
 
 	uniform = /obj/item/clothing/under/color/grey
-	id = /obj/item/card/id
 	ears = /obj/item/radio/headset
-	belt = /obj/item/pda
 	back = /obj/item/storage/backpack
 	shoes = /obj/item/clothing/shoes/sneakers/black
 	box = /obj/item/storage/box/survival
 
+	var/obj/item/id_type = /obj/item/card/id
+	var/obj/item/pda_type = /obj/item/pda
 	var/backpack = /obj/item/storage/backpack
 	var/satchel  = /obj/item/storage/backpack/satchel
 	var/duffelbag = /obj/item/storage/backpack/duffelbag
@@ -257,13 +257,13 @@
 /datum/outfit/job/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	if(visualsOnly)
 		return
-
-	var/datum/job/J = SSjob.GetJobType(jobtype)
 	if(!J)
 		J = SSjob.GetJob(H.job)
 
-	var/obj/item/card/id/C = H.wear_id
+	var/obj/item/card/id/C = new id_type()
 	if(istype(C))
+		C.access = J.get_access()
+		shuffle_inplace(C.access) // Shuffle access list to make NTNet passkeys less predictable
 		C.access = J.get_access()
 		shuffle_inplace(C.access) // Shuffle access list to make NTNet passkeys less predictable
 		C.registered_name = H.real_name
@@ -280,32 +280,31 @@
 		C.update_label()
 		for(var/A in SSeconomy.bank_accounts)
 			var/datum/bank_account/B = A
-			if(B.account_id == H.account_id)
-				C.registered_account = B
-				B.bank_cards += C
 				break
 		H.sec_hud_set_ID()
 
-	var/obj/item/pda/PDA = H.get_item_by_slot(pda_slot)
+	var/obj/item/pda/PDA = new pda_type()
 	if(istype(PDA))
 		PDA.owner = H.real_name
 		if(H.mind?.role_alt_title)
 			PDA.ownjob = H.mind.role_alt_title
 		else
 			PDA.ownjob = J.title
+
+		if (H.id_in_pda)
+			PDA.InsertID(C)
+			H.equip_to_slot_if_possible(PDA, SLOT_WEAR_ID)
+		else // just in case you hate change
+			H.equip_to_slot_if_possible(PDA, pda_slot)
+			H.equip_to_slot_if_possible(C, SLOT_WEAR_ID)
+		
 		PDA.update_label()
+		PDA.update_icon()
+		PDA.update_filters()
+		
+	else
+		H.equip_to_slot_if_possible(C, SLOT_WEAR_ID)
 
 /datum/outfit/job/get_chameleon_disguise_info()
 	var/list/types = ..()
-	types -= /obj/item/storage/backpack //otherwise this will override the actual backpacks
-	types += backpack
-	types += satchel
-	types += duffelbag
-	return types
-
-//Warden and regular officers add this result to their get_access()
-/datum/job/proc/check_config_for_sec_maint()
-	if(CONFIG_GET(flag/security_has_maint_access))
-		return list(ACCESS_MAINT_TUNNELS)
 	return list()
-

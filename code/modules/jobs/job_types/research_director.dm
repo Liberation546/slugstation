@@ -44,12 +44,12 @@
 	name = "Research Director"
 	jobtype = /datum/job/rd
 
-	id = /obj/item/card/id/silver
-	belt = /obj/item/pda/heads/rd
+	id_type = /obj/item/card/id/silver
+	pda_type = /obj/item/pda/heads/rd
+
 	ears = /obj/item/radio/headset/heads/rd
 	glasses = /obj/item/clothing/glasses/hud/diagnostic/sunglasses
 	uniform = /obj/item/clothing/under/rank/research_director
-	uniform_skirt = /obj/item/clothing/under/rank/research_director/skirt
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 	alt_shoes = /obj/item/clothing/shoes/xeno_wraps/command // Provides Command shoes to digitigrade species
 	suit = /obj/item/clothing/suit/toggle/labcoat
@@ -70,4 +70,3 @@
 	suit = /obj/item/clothing/suit/space/hardsuit/rd
 	suit_store = /obj/item/tank/internals/oxygen
 	internals_slot = SLOT_S_STORE
-

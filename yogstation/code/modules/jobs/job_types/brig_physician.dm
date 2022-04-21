@@ -34,12 +34,12 @@
 	name = "Brig Physician"
 	jobtype = /datum/job/brigphysician
 
+	pda_type = /obj/item/pda/physician
+
 	backpack_contents = list(/obj/item/roller = 1)
-	belt = /obj/item/pda/physician
 	ears = /obj/item/radio/headset/headset_medsec
 	glasses = /obj/item/clothing/glasses/hud/health/sunglasses
 	shoes = /obj/item/clothing/shoes/jackboots
-	uniform = /obj/item/clothing/under/yogs/rank/miner/medic
 	suit = /obj/item/clothing/suit/toggle/labcoat/emt/physician
 	l_hand = /obj/item/storage/firstaid/regular
 	gloves = /obj/item/clothing/gloves/color/latex
@@ -50,4 +50,3 @@
 	box = /obj/item/storage/box/survival
 
 	implants = list(/obj/item/implant/mindshield)
-
