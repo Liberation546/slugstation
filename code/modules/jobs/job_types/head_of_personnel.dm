@@ -46,9 +46,9 @@
 
 /datum/outfit/job/hop
 	name = "Head of Personnel"
+	name = "Head of Personnel"
 	jobtype = /datum/job/hop
 
-	id = /obj/item/card/id/silver
 	belt = /obj/item/pda/heads/hop
 	ears = /obj/item/radio/headset/heads/hop
 	uniform = /obj/item/clothing/under/rank/head_of_personnel
@@ -59,3 +59,5 @@
 		/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/phone/preset/advanced/command=1) //yogs - removes serv budget
 
 	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/hop)
+
+undefined

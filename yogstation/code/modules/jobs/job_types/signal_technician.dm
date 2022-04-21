@@ -29,6 +29,9 @@
 
 /datum/outfit/job/signal_tech
 	name = "Signal Technician"
+	name = "Signal Technician"
+	jobtype = /datum/job/signal_tech
+
 	jobtype = /datum/job/signal_tech
 
 	belt = /obj/item/storage/belt/utility/full
@@ -40,8 +43,8 @@
 	shoes = /obj/item/clothing/shoes/workboots
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
 
-	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	box = /obj/item/storage/box/engineer
-	pda_slot = SLOT_L_STORE
+undefined
+undefined

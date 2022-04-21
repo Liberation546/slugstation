@@ -204,6 +204,14 @@
 	name = "Standard Gear"
 
 	var/jobtype = null
+	var/jobtype = null
+
+	uniform = /obj/item/clothing/under/color/grey
+	ears = /obj/item/radio/headset
+	back = /obj/item/storage/backpack
+	shoes = /obj/item/clothing/shoes/sneakers/black
+	box = /obj/item/storage/box/survival
+
 
 	uniform = /obj/item/clothing/under/color/grey
 	id = /obj/item/card/id
@@ -252,6 +260,9 @@
 		else if(IS_SECURITY(H) || find_job(H) == "Brig Physician") // Special shoes for sec and brig phys, roll first to avoid defaulting
 			shoes = alt_shoes_s
 		else if(find_job(H) == "Shaft Miner" || find_job(H) == "Mining Medic" || IS_ENGINEERING(H)) // Check to assign default digitigrade shoes to special cases
+	if(!J)
+		J = SSjob.GetJob(H.job)
+
 			shoes = alt_shoes
 
 /datum/outfit/job/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -273,20 +284,9 @@
 			C.assignment = J.title
 		if(H.mind?.assigned_role)
 			C.originalassignment = H.mind.assigned_role
-		else
-			C.originalassignment = J.title
-		if(H.age)
-			C.registered_age = H.age
-		C.update_label()
-		for(var/A in SSeconomy.bank_accounts)
-			var/datum/bank_account/B = A
-			if(B.account_id == H.account_id)
-				C.registered_account = B
-				B.bank_cards += C
 				break
 		H.sec_hud_set_ID()
 
-	var/obj/item/pda/PDA = H.get_item_by_slot(pda_slot)
 	if(istype(PDA))
 		PDA.owner = H.real_name
 		if(H.mind?.role_alt_title)
@@ -308,3 +308,17 @@
 	if(CONFIG_GET(flag/security_has_maint_access))
 		return list(ACCESS_MAINT_TUNNELS)
 	return list()
+
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined

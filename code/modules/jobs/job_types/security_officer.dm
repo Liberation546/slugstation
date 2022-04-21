@@ -104,6 +104,9 @@ GLOBAL_LIST_INIT(available_depts_sec, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICA
 	if(ears)
 		if(H.ears)
 			qdel(H.ears)
+			qdel(H.ears)
+		H.equip_to_slot_or_del(new ears(H),SLOT_EARS)
+
 		H.equip_to_slot_or_del(new ears(H),SLOT_EARS)
 
 	var/obj/item/card/id/W = H.wear_id
@@ -133,12 +136,9 @@ GLOBAL_LIST_INIT(available_depts_sec, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICA
 		to_chat(M, "<b>You have not been assigned to any department. Patrol the halls and help where needed.</b>")
 
 
-
-/datum/outfit/job/security
 	name = "Security Officer"
 	jobtype = /datum/job/officer
 
-	belt = /obj/item/pda/security
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/rank/security
 	uniform_skirt = /obj/item/clothing/under/rank/security/skirt
@@ -187,3 +187,5 @@ GLOBAL_LIST_INIT(available_depts_sec, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICA
 /obj/item/radio/headset/headset_sec/alt/department/service
 	keyslot = new /obj/item/encryptionkey/headset_sec
 	keyslot2 = new /obj/item/encryptionkey/headset_service
+
+undefined

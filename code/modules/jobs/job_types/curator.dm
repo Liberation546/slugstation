@@ -22,9 +22,9 @@
 
 /datum/outfit/job/curator
 	name = "Curator"
+	name = "Curator"
 	jobtype = /datum/job/curator
 
-	belt = /obj/item/pda/curator
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/curator
 	uniform_skirt = /obj/item/clothing/under/rank/curator/skirt
@@ -45,3 +45,5 @@
 		return
 
 	H.grant_all_languages(TRUE, TRUE, TRUE, LANGUAGE_CURATOR)
+
+undefined
