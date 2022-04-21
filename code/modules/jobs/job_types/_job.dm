@@ -204,6 +204,7 @@
 	name = "Standard Gear"
 
 	var/jobtype = null
+	var/jobtype = null
 
 	uniform = /obj/item/clothing/under/color/grey
 	ears = /obj/item/radio/headset
@@ -216,7 +217,6 @@
 	var/backpack = /obj/item/storage/backpack
 	var/satchel  = /obj/item/storage/backpack/satchel
 	var/duffelbag = /obj/item/storage/backpack/duffelbag
-
 	var/uniform_skirt = null
 
 	var/pda_slot = SLOT_BELT
@@ -257,6 +257,7 @@
 /datum/outfit/job/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	if(visualsOnly)
 		return
+
 	if(!J)
 		J = SSjob.GetJob(H.job)
 
@@ -264,7 +265,6 @@
 	if(istype(C))
 		C.access = J.get_access()
 		shuffle_inplace(C.access) // Shuffle access list to make NTNet passkeys less predictable
-		C.access = J.get_access()
 		shuffle_inplace(C.access) // Shuffle access list to make NTNet passkeys less predictable
 		C.registered_name = H.real_name
 		if(H.mind?.role_alt_title)
@@ -280,6 +280,7 @@
 		C.update_label()
 		for(var/A in SSeconomy.bank_accounts)
 			var/datum/bank_account/B = A
+			if(B.account_id == H.account_id)
 				break
 		H.sec_hud_set_ID()
 
@@ -307,4 +308,3 @@
 
 /datum/outfit/job/get_chameleon_disguise_info()
 	var/list/types = ..()
-	return list()

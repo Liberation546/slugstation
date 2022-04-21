@@ -38,6 +38,7 @@
 
 /datum/outfit/job/detective
 	name = "Detective"
+	name = "Detective"
 	jobtype = /datum/job/detective
 
 	pda_type = /obj/item/pda/detective
@@ -45,7 +46,6 @@
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/rank/det
 	uniform_skirt = /obj/item/clothing/under/rank/det/skirt
-	shoes = /obj/item/clothing/shoes/sneakers/brown
 	suit = /obj/item/clothing/suit/det_suit
 	gloves = /obj/item/clothing/gloves/color/black/forensic
 	head = /obj/item/clothing/head/fedora/det_hat

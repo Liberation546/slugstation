@@ -33,6 +33,7 @@
 
 /datum/outfit/job/janitor
 	name = "Janitor"
+	name = "Janitor"
 	jobtype = /datum/job/janitor
 
 	pda_type = /obj/item/pda/janitor

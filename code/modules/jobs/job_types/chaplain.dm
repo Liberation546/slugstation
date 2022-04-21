@@ -154,6 +154,7 @@
 
 /datum/outfit/job/chaplain
 	name = "Chaplain"
+	name = "Chaplain"
 	jobtype = /datum/job/chaplain
 
 	pda_type = /obj/item/pda/chaplain
@@ -161,5 +162,4 @@
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/chaplain
 	uniform_skirt = /obj/item/clothing/under/rank/chaplain/skirt
-	backpack = /obj/item/storage/backpack/cultpack
 	satchel = /obj/item/storage/backpack/cultpack

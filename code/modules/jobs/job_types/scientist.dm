@@ -36,6 +36,7 @@
 
 /datum/outfit/job/scientist
 	name = "Scientist"
+	name = "Scientist"
 	jobtype = /datum/job/scientist
 
 	pda_type = /obj/item/pda/toxins
@@ -43,7 +44,6 @@
 	ears = /obj/item/radio/headset/headset_sci
 	uniform = /obj/item/clothing/under/rank/scientist
 	uniform_skirt = /obj/item/clothing/under/rank/scientist/skirt
-	suit = /obj/item/clothing/suit/toggle/labcoat/science
 
 	backpack = /obj/item/storage/backpack/science
 	satchel = /obj/item/storage/backpack/satchel/tox

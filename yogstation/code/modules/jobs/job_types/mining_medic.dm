@@ -28,6 +28,7 @@
 	spawn_positions = 1
 
 /datum/outfit/job/miningmedic
+/datum/outfit/job/miningmedic
 	name = "Mining Medic"
 	jobtype = /datum/job/miningmedic
 	
@@ -35,15 +36,14 @@
 
 	backpack_contents = list(/obj/item/roller = 1,\
 		/obj/item/kitchen/knife/combat/survival = 1,\
-	ears = /obj/item/radio/headset/headset_medcargo
 	glasses = /obj/item/clothing/glasses/hud/health/meson
 	shoes = /obj/item/clothing/shoes/workboots/mining
+	suit = /obj/item/clothing/suit/toggle/labcoat/emt/explorer
 	suit = /obj/item/clothing/suit/toggle/labcoat/emt/explorer
 	uniform = /obj/item/clothing/under/yogs/rank/miner/medic
 	l_hand = /obj/item/storage/firstaid/regular
 	gloves = /obj/item/clothing/gloves/color/latex
 	head = /obj/item/clothing/head/soft/emt/mining
-	backpack = /obj/item/storage/backpack/medic
 	backpack = /obj/item/storage/backpack/medic
 	satchel = /obj/item/storage/backpack/satchel/med
 	duffelbag = /obj/item/storage/backpack/duffelbag/med

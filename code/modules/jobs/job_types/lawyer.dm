@@ -28,6 +28,7 @@
 
 /datum/outfit/job/lawyer
 	name = "Lawyer"
+	name = "Lawyer"
 	jobtype = /datum/job/lawyer
 
 	pda_type = /obj/item/pda/lawyer
@@ -35,7 +36,6 @@
 	ears = /obj/item/radio/headset/headset_srvsec
 	uniform = /obj/item/clothing/under/lawyer/bluesuit
 	uniform_skirt = /obj/item/clothing/under/lawyer/bluesuit/skirt
-	shoes = /obj/item/clothing/shoes/laceup
 	l_hand = /obj/item/storage/briefcase/lawyer
 	l_pocket = /obj/item/laser_pointer
 	r_pocket = /obj/item/clothing/accessory/lawyers_badge

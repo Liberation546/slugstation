@@ -37,6 +37,7 @@
 
 /datum/outfit/job/cmo
 	name = "Chief Medical Officer"
+	name = "Chief Medical Officer"
 	jobtype = /datum/job/cmo
 
 	id_type = /obj/item/card/id/silver
@@ -45,7 +46,6 @@
 	l_pocket = /obj/item/pinpointer/crew
 	ears = /obj/item/radio/headset/heads/cmo
 	uniform = /obj/item/clothing/under/rank/chief_medical_officer
-	shoes = /obj/item/clothing/shoes/sneakers/brown
 	alt_shoes = /obj/item/clothing/shoes/xeno_wraps/command // Provides Command shoes to digitigrade species
 	suit = /obj/item/clothing/suit/toggle/labcoat/cmo
 	l_hand = /obj/item/storage/firstaid/medical

@@ -37,6 +37,7 @@
 
 /datum/outfit/job/captain
 	name = "Captain"
+	name = "Captain"
 	jobtype = /datum/job/captain
 
 	id_type = /obj/item/card/id/gold
@@ -45,7 +46,6 @@
 	glasses = /obj/item/clothing/glasses/sunglasses
 	ears = /obj/item/radio/headset/heads/captain/alt
 	gloves = /obj/item/clothing/gloves/color/captain
-	uniform_skirt = /obj/item/clothing/under/rank/captain/skirt
 	suit = /obj/item/clothing/suit/armor/vest/capcarapace
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 	head = /obj/item/clothing/head/caphat

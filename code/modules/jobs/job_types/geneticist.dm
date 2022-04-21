@@ -32,6 +32,7 @@
 
 /datum/outfit/job/geneticist
 	name = "Geneticist"
+	name = "Geneticist"
 	jobtype = /datum/job/geneticist
 
 	pda_type = /obj/item/pda/geneticist
@@ -39,7 +40,6 @@
 	ears = /obj/item/radio/headset/headset_medsci
 	uniform = /obj/item/clothing/under/rank/geneticist
 	uniform_skirt = /obj/item/clothing/under/rank/geneticist
-	suit =  /obj/item/clothing/suit/toggle/labcoat/genetics
 	suit_store =  /obj/item/flashlight/pen
 	l_pocket = /obj/item/sequence_scanner
 

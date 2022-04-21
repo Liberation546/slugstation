@@ -34,6 +34,7 @@
 
 /datum/outfit/job/ce
 	name = "Chief Engineer"
+	name = "Chief Engineer"
 	jobtype = /datum/job/chief_engineer
 
 	id_type = /obj/item/card/id/silver
@@ -43,11 +44,11 @@
 	ears = /obj/item/radio/headset/heads/ce
 	uniform = /obj/item/clothing/under/rank/chief_engineer
 	uniform_skirt = /obj/item/clothing/under/rank/chief_engineer/skirt
-	alt_shoes = /obj/item/clothing/shoes/xeno_wraps/command // Provides Command shoes to digitigrade species
 	head = /obj/item/clothing/head/hardhat/white
 	gloves = /obj/item/clothing/gloves/color/black/ce
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/phone/preset/advanced/command/atmos=1) //yogs - removes eng budget
 	glasses = /obj/item/clothing/glasses/meson/sunglasses
+
 	satchel = /obj/item/storage/backpack/satchel/eng
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	box = /obj/item/storage/box/engineer
@@ -57,7 +58,6 @@
 
 /datum/outfit/job/ce/rig
 	name = "Chief Engineer (Hardsuit)"
-
 
 	mask = /obj/item/clothing/mask/breath
 	suit = /obj/item/clothing/suit/space/hardsuit/engine/elite

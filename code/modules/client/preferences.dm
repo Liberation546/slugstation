@@ -42,12 +42,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/inquisitive_ghost = 1
 	var/allow_midround_antag = 1
 	var/preferred_map = null
+	var/preferred_map = null
 	var/pda_style = MONO
 	var/pda_color = "#808000"
 	var/id_in_pda = FALSE
 	var/show_credits = TRUE
 	var/uses_glasses_colour = 0
-
 
 	///Whether emotes will be displayed on runechat. Requires chat_on_map to have effect. Boolean.
 	var/see_rc_emotes = TRUE
@@ -656,13 +656,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Action Buttons:</b> <a href='?_src_=prefs;preference=action_buttons'>[(buttons_locked) ? "Locked In Place" : "Unlocked"]</a><br>"
 			//dat += "<b>Keybindings:</b> <a href='?_src_=prefs;preference=hotkeys'>[(hotkeys) ? "Hotkeys" : "Default"]</a><br>" // yogs - Custom keybindings
 			dat += "<br>"
+			dat += "<br>"
 			dat += "<b>PDA Color:</b> <span style='border:1px solid #161616; background-color: [pda_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=pda_color;task=input'>Change</a><BR>"
 			dat += "<b>PDA Style:</b> <a href='?_src_=prefs;task=input;preference=pda_style'>[pda_style]</a><br>"
 			dat += "<b>PDA Starts in ID Slot:</b> <a href='?_src_=prefs;task=input;preference=id_in_pda'>[id_in_pda ? "Enabled" : "Disabled"]</a><br>"
 			dat += "<b>Skillcape:</b> <a href='?_src_=prefs;task=input;preference=skillcape'>[(skillcape_id != "None") ? "[GLOB.skillcapes[skillcape_id]]" : "None"] </a><br>"
 			dat += "<b>Flare:</b> <a href='?_src_=prefs;task=input;preference=flare'>[flare ? "Enabled" : "Disabled"]</a><br>"
 			dat += "<b>Map:</b> <a href='?_src_=prefs;task=input;preference=map'>[map ? "Enabled" : "Disabled"]</a><br>"
-			dat += "<br>"
 			dat += "<b>Ghost Ears:</b> <a href='?_src_=prefs;preference=ghost_ears'>[(chat_toggles & CHAT_GHOSTEARS) ? "All Speech" : "Nearest Creatures"]</a><br>"
 			dat += "<b>Ghost Radio:</b> <a href='?_src_=prefs;preference=ghost_radio'>[(chat_toggles & CHAT_GHOSTRADIO) ? "All Messages":"No Messages"]</a><br>"
 			dat += "<b>Ghost Sight:</b> <a href='?_src_=prefs;preference=ghost_sight'>[(chat_toggles & CHAT_GHOSTSIGHT) ? "All Emotes" : "Nearest Creatures"]</a><br>"
@@ -1838,6 +1838,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						pda_style = pickedPDAStyle
 				if("pda_color")
 					var/pickedPDAColor = input(user, "Choose your PDA Interface color.", "Character Preference",pda_color) as color|null
+					var/pickedPDAColor = input(user, "Choose your PDA Interface color.", "Character Preference",pda_color) as color|null
 					if(pickedPDAColor)
 						pda_color = pickedPDAColor
 				if("id_in_pda")
@@ -1845,7 +1846,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				if("skillcape")
 					var/list/selectablecapes = list()
 					var/max_eligable = TRUE
-						if(!A.job)
 							continue
 						if(user.client.prefs.exp[A.job] >= A.minutes)
 							selectablecapes += A
@@ -2124,13 +2124,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.socks = socks
 
 	character.backbag = backbag
+	character.backbag = backbag
 
 	character.jumpsuit_style = jumpsuit_style
 	character.id_in_pda = id_in_pda
 
 	var/datum/species/chosen_species
 	chosen_species = pref_species.type
-		chosen_species = /datum/species/human
 		pref_species = new /datum/species/human
 		save_character()
 

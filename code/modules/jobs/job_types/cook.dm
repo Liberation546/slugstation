@@ -33,6 +33,7 @@
 
 /datum/outfit/job/cook
 	name = "Cook"
+	name = "Cook"
 	jobtype = /datum/job/cook
 
 	pda_type = /obj/item/pda/cook
@@ -40,7 +41,6 @@
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/chef
 	uniform_skirt = /obj/item/clothing/under/rank/chef/skirt
-	head = /obj/item/clothing/head/chefhat
 	mask = /obj/item/clothing/mask/fakemoustache/italian
 	backpack_contents = list(/obj/item/sharpener = 1)
 

@@ -25,6 +25,7 @@
 
 /datum/outfit/job/mime
 	name = "Mime"
+	name = "Mime"
 	jobtype = /datum/job/mime
 
 	pda_type = /obj/item/pda/mime
@@ -32,7 +33,6 @@
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/mime
 	uniform_skirt = /obj/item/clothing/under/rank/mime/skirt
-	gloves = /obj/item/clothing/gloves/color/white
 	head = /obj/item/clothing/head/frenchberet
 	suit = /obj/item/clothing/suit/suspenders
 	backpack_contents = list(

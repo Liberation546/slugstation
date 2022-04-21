@@ -32,6 +32,7 @@
 
 /datum/outfit/job/brigphysician
 	name = "Brig Physician"
+	name = "Brig Physician"
 	jobtype = /datum/job/brigphysician
 
 	pda_type = /obj/item/pda/physician
@@ -40,7 +41,6 @@
 	ears = /obj/item/radio/headset/headset_medsec
 	glasses = /obj/item/clothing/glasses/hud/health/sunglasses
 	shoes = /obj/item/clothing/shoes/jackboots
-	suit = /obj/item/clothing/suit/toggle/labcoat/emt/physician
 	l_hand = /obj/item/storage/firstaid/regular
 	gloves = /obj/item/clothing/gloves/color/latex
 	head = /obj/item/clothing/head/soft/emt/phys

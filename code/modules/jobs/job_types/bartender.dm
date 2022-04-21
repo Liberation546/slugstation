@@ -28,6 +28,7 @@
 
 /datum/outfit/job/bartender
 	name = "Bartender"
+	name = "Bartender"
 	jobtype = /datum/job/bartender
 
 	pda_type = /obj/item/pda/bar
@@ -36,7 +37,6 @@
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/bartender
 	uniform_skirt = /obj/item/clothing/under/rank/bartender/skirt
-	backpack_contents = list(/obj/item/storage/box/beanbag=1)
 	shoes = /obj/item/clothing/shoes/laceup
 	
 /datum/outfit/job/bartender/post_equip(mob/living/carbon/human/H, visualsOnly)
