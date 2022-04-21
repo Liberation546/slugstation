@@ -213,14 +213,6 @@
 	box = /obj/item/storage/box/survival
 
 
-	uniform = /obj/item/clothing/under/color/grey
-	id = /obj/item/card/id
-	ears = /obj/item/radio/headset
-	belt = /obj/item/pda
-	back = /obj/item/storage/backpack
-	shoes = /obj/item/clothing/shoes/sneakers/black
-	box = /obj/item/storage/box/survival
-
 	var/backpack = /obj/item/storage/backpack
 	var/satchel  = /obj/item/storage/backpack/satchel
 	var/duffelbag = /obj/item/storage/backpack/duffelbag
@@ -260,9 +252,6 @@
 		else if(IS_SECURITY(H) || find_job(H) == "Brig Physician") // Special shoes for sec and brig phys, roll first to avoid defaulting
 			shoes = alt_shoes_s
 		else if(find_job(H) == "Shaft Miner" || find_job(H) == "Mining Medic" || IS_ENGINEERING(H)) // Check to assign default digitigrade shoes to special cases
-	if(!J)
-		J = SSjob.GetJob(H.job)
-
 			shoes = alt_shoes
 
 /datum/outfit/job/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -271,9 +260,9 @@
 
 	var/datum/job/J = SSjob.GetJobType(jobtype)
 	if(!J)
+	if(!J)
 		J = SSjob.GetJob(H.job)
 
-	var/obj/item/card/id/C = H.wear_id
 	if(istype(C))
 		C.access = J.get_access()
 		shuffle_inplace(C.access) // Shuffle access list to make NTNet passkeys less predictable
@@ -284,6 +273,17 @@
 			C.assignment = J.title
 		if(H.mind?.assigned_role)
 			C.originalassignment = H.mind.assigned_role
+		else
+			C.originalassignment = J.title
+		if(H.age)
+			C.registered_age = H.age
+		C.update_label()
+		for(var/A in SSeconomy.bank_accounts)
+			var/datum/bank_account/B = A
+			if(B.account_id == H.account_id)
+				C.registered_account = B
+				B.bank_cards += C
+				break
 				break
 		H.sec_hud_set_ID()
 
@@ -293,7 +293,20 @@
 			PDA.ownjob = H.mind.role_alt_title
 		else
 			PDA.ownjob = J.title
+
+		if (H.id_in_pda)
+			PDA.InsertID(C)
+			H.equip_to_slot_if_possible(PDA, SLOT_WEAR_ID)
+		else // just in case you hate change
+			H.equip_to_slot_if_possible(PDA, pda_slot)
+			H.equip_to_slot_if_possible(C, SLOT_WEAR_ID)
+		
 		PDA.update_label()
+		PDA.update_icon()
+		PDA.update_filters()
+		
+	else
+		H.equip_to_slot_if_possible(C, SLOT_WEAR_ID)
 
 /datum/outfit/job/get_chameleon_disguise_info()
 	var/list/types = ..()
@@ -309,16 +322,3 @@
 		return list(ACCESS_MAINT_TUNNELS)
 	return list()
 
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined
-undefined

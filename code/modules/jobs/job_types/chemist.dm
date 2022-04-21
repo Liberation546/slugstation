@@ -37,7 +37,8 @@
 	name = "Chemist"
 	jobtype = /datum/job/chemist
 
-	belt = /obj/item/pda/chemist
+
+	glasses = /obj/item/clothing/glasses/science
 	ears = /obj/item/radio/headset/headset_med
 	uniform = /obj/item/clothing/under/rank/chemist
 	uniform_skirt = /obj/item/clothing/under/rank/chemist/skirt
@@ -50,4 +51,3 @@
 	chameleon_extras = /obj/item/gun/syringe
 
 
-undefined

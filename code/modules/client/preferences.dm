@@ -45,9 +45,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/preferred_map = null
 	var/pda_style = MONO
 	var/pda_color = "#808000"
-	var/pda_style = MONO
-	var/pda_color = "#808000"
-	var/show_credits = TRUE
 	var/uses_glasses_colour = 0
 
 	var/list/player_alt_titles = new()
@@ -657,9 +654,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>See Runechat emotes:</b> <a href='?_src_=prefs;preference=see_rc_emotes'>[see_rc_emotes ? "Enabled" : "Disabled"]</a><br>"
 			dat += "<br>"
 			dat += "<b>Action Buttons:</b> <a href='?_src_=prefs;preference=action_buttons'>[(buttons_locked) ? "Locked In Place" : "Unlocked"]</a><br>"
-			dat += "<br>"
-			dat += "<b>PDA Color:</b> <span style='border:1px solid #161616; background-color: [pda_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=pda_color;task=input'>Change</a><BR>"
-			dat += "<b>PDA Style:</b> <a href='?_src_=prefs;task=input;preference=pda_style'>[pda_style]</a><br>"
 			//dat += "<b>Keybindings:</b> <a href='?_src_=prefs;preference=hotkeys'>[(hotkeys) ? "Hotkeys" : "Default"]</a><br>" // yogs - Custom keybindings
 			dat += "<br>"
 			dat += "<b>PDA Color:</b> <span style='border:1px solid #161616; background-color: [pda_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=pda_color;task=input'>Change</a><BR>"
@@ -1840,9 +1834,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							parent.mob.hud_used.update_ui_style(ui_style2icon(UI_style))
 				if("pda_style")
 					var/pickedPDAStyle = input(user, "Choose your PDA style.", "Character Preference", pda_style)  as null|anything in GLOB.pda_styles
-					var/pickedPDAColor = input(user, "Choose your PDA Interface color.", "Character Preference",pda_color) as color|null
-					if(pickedPDAColor)
-						pda_color = pickedPDAColor
 					if(pickedPDAStyle)
 						pda_style = pickedPDAStyle
 				if("pda_color")
@@ -2128,9 +2119,23 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.hair_style = hair_style
 	character.facial_hair_style = facial_hair_style
 	character.grad_style = features["gradientstyle"]
+	character.underwear = underwear
+	character.undershirt = undershirt
+	character.socks = socks
+
+	character.backbag = backbag
+	character.undershirt = undershirt
+	character.socks = socks
+
 	character.backbag = backbag
 
 	character.jumpsuit_style = jumpsuit_style
+	character.id_in_pda = id_in_pda
+
+	var/datum/species/chosen_species
+	chosen_species = pref_species.type
+	if(roundstart_checks && !(pref_species.id in GLOB.roundstart_races) &&  (!(pref_species.id in GLOB.mentor_races) && !is_mentor(character))  && !(pref_species.id in (CONFIG_GET(keyed_list/roundstart_no_hard_check))))
+		chosen_species = /datum/species/human
 		pref_species = new /datum/species/human
 		save_character()
 
@@ -2186,8 +2191,3 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 		else
 			custom_names[name_id] = sanitized_name
 
-undefined
-undefined
-undefined
-undefined
-undefined

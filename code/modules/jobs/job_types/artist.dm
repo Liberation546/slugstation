@@ -22,8 +22,9 @@
 /datum/outfit/job/artist
 	name = "Artist"
 	jobtype = /datum/job/artist
+	pda_type = /obj/item/pda/artist
+	
 	head = /obj/item/clothing/head/frenchberet
-	belt = /obj/item/pda/artist
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/artist
 	uniform_skirt = /obj/item/clothing/under/rank/artist/skirt
@@ -37,4 +38,3 @@
 		/obj/item/camera = 1
 	)
 
-undefined

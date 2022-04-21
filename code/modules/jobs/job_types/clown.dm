@@ -30,6 +30,7 @@
 	name = "Clown"
 	jobtype = /datum/job/clown
 
+
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/clown
 	shoes = /obj/item/clothing/shoes/clown_shoes
@@ -67,4 +68,3 @@
 	for(var/datum/mutation/human/clumsy/M in H.dna.mutations)
 		M.mutadone_proof = TRUE
 
-undefined

@@ -40,6 +40,7 @@
 	name = "Medical Doctor"
 	jobtype = /datum/job/doctor
 
+
 	ears = /obj/item/radio/headset/headset_med
 	uniform = /obj/item/clothing/under/rank/medical
 	uniform_skirt = /obj/item/clothing/under/rank/medical/skirt
@@ -54,4 +55,3 @@
 
 	chameleon_extras = /obj/item/gun/syringe
 
-undefined

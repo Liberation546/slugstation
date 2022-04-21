@@ -39,6 +39,7 @@
 	name = "Scientist"
 	jobtype = /datum/job/scientist
 
+
 	ears = /obj/item/radio/headset/headset_sci
 	uniform = /obj/item/clothing/under/rank/scientist
 	uniform_skirt = /obj/item/clothing/under/rank/scientist/skirt
@@ -53,4 +54,3 @@
 	if(prob(0.4))
 		neck = /obj/item/clothing/neck/tie/horrible
 
-undefined

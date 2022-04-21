@@ -31,6 +31,7 @@
 	name = "Lawyer"
 	jobtype = /datum/job/lawyer
 
+
 	ears = /obj/item/radio/headset/headset_srvsec
 	uniform = /obj/item/clothing/under/lawyer/bluesuit
 	uniform_skirt = /obj/item/clothing/under/lawyer/bluesuit/skirt
@@ -54,4 +55,3 @@
 		uniform = /obj/item/clothing/under/lawyer/purpsuit
 		suit = /obj/item/clothing/suit/toggle/lawyer/purple
 
-undefined

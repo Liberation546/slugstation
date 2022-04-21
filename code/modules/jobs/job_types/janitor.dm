@@ -36,8 +36,8 @@
 	name = "Janitor"
 	jobtype = /datum/job/janitor
 
+
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/janitor
 	uniform_skirt = /obj/item/clothing/under/rank/janitor/skirt
 
-undefined

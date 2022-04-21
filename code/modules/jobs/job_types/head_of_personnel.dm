@@ -49,7 +49,8 @@
 	name = "Head of Personnel"
 	jobtype = /datum/job/hop
 
-	belt = /obj/item/pda/heads/hop
+	pda_type = /obj/item/pda/heads/hop
+
 	ears = /obj/item/radio/headset/heads/hop
 	uniform = /obj/item/clothing/under/rank/head_of_personnel
 	uniform_skirt = /obj/item/clothing/under/rank/head_of_personnel/skirt
@@ -60,4 +61,3 @@
 
 	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/hop)
 
-undefined

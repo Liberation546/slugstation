@@ -35,7 +35,8 @@
 	name = "Brig Physician"
 	jobtype = /datum/job/brigphysician
 
-	belt = /obj/item/pda/physician
+
+	backpack_contents = list(/obj/item/roller = 1)
 	ears = /obj/item/radio/headset/headset_medsec
 	glasses = /obj/item/clothing/glasses/hud/health/sunglasses
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -51,4 +52,3 @@
 
 	implants = list(/obj/item/implant/mindshield)
 
-undefined

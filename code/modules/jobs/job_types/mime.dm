@@ -28,6 +28,7 @@
 	name = "Mime"
 	jobtype = /datum/job/mime
 
+
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/mime
 	uniform_skirt = /obj/item/clothing/under/rank/mime/skirt
@@ -92,4 +93,3 @@
 	to_chat(usr, span_notice("The book disappears into thin air."))
 	qdel(src)
 
-undefined

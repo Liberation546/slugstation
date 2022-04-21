@@ -40,7 +40,8 @@
 	name = "Captain"
 	jobtype = /datum/job/captain
 
-	belt = /obj/item/pda/captain
+	pda_type = /obj/item/pda/captain
+	
 	glasses = /obj/item/clothing/glasses/sunglasses
 	ears = /obj/item/radio/headset/heads/captain/alt
 	gloves = /obj/item/clothing/gloves/color/captain
@@ -67,4 +68,3 @@
 	suit = /obj/item/clothing/suit/space/hardsuit/swat/captain
 	suit_store = /obj/item/tank/internals/oxygen
 
-undefined

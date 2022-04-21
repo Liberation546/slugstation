@@ -36,6 +36,7 @@
 	var/socks = "Nude" //Which socks the player wants
 	var/backbag = DBACKPACK		//Which backpack type the player has chosen.
 	var/jumpsuit_style = PREF_SUIT //suit/skirt
+
 	//Equipment slots
 	var/obj/item/clothing/wear_suit = null
 	var/obj/item/clothing/w_uniform = null
@@ -63,4 +64,3 @@
 	var/xylophone = 0 //For the spoooooooky xylophone cooldown
 	var/blood_in_hands = 0
 
-undefined

@@ -25,6 +25,7 @@
 	name = "Curator"
 	jobtype = /datum/job/curator
 
+
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/curator
 	uniform_skirt = /obj/item/clothing/under/rank/curator/skirt
@@ -46,4 +47,3 @@
 
 	H.grant_all_languages(TRUE, TRUE, TRUE, LANGUAGE_CURATOR)
 
-undefined

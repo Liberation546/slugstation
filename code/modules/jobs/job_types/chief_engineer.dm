@@ -37,9 +37,6 @@
 	name = "Chief Engineer"
 	jobtype = /datum/job/chief_engineer
 
-	jobtype = /datum/job/chief_engineer
-
-	id = /obj/item/card/id/silver
 	belt = /obj/item/storage/belt/utility/chief/full
 	l_pocket = /obj/item/pda/heads/ce
 	ears = /obj/item/radio/headset/heads/ce
@@ -52,11 +49,16 @@
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/phone/preset/advanced/command/atmos=1) //yogs - removes eng budget
 	glasses = /obj/item/clothing/glasses/meson/sunglasses
 
+	backpack = /obj/item/storage/backpack/industrial
+	satchel = /obj/item/storage/backpack/satchel/eng
 	satchel = /obj/item/storage/backpack/satchel/eng
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	box = /obj/item/storage/box/engineer
 	chameleon_extras = /obj/item/stamp/ce
 
+	pda_slot = SLOT_L_STORE
+
+/datum/outfit/job/ce/rig
 	name = "Chief Engineer (Hardsuit)"
 
 	mask = /obj/item/clothing/mask/breath
@@ -68,5 +70,3 @@
 	head = null
 	internals_slot = SLOT_S_STORE
 
-undefined
-undefined

@@ -45,6 +45,7 @@
 	name = "Warden"
 	jobtype = /datum/job/warden
 
+
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/rank/warden
 	uniform_skirt = /obj/item/clothing/under/rank/warden/skirt
@@ -68,4 +69,3 @@
 	chameleon_extras = /obj/item/gun/ballistic/shotgun/automatic/combat/compact
 
 
-undefined
