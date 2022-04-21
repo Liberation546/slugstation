@@ -28,10 +28,11 @@
 
 /datum/outfit/job/roboticist
 	name = "Roboticist"
+	name = "Roboticist"
 	jobtype = /datum/job/roboticist
 
+
 	belt = /obj/item/storage/belt/utility/full
-	l_pocket = /obj/item/pda/roboticist
 	ears = /obj/item/radio/headset/headset_sci
 	uniform = /obj/item/clothing/under/rank/roboticist
 	uniform_skirt = /obj/item/clothing/under/rank/roboticist/skirt
@@ -41,3 +42,4 @@
 	satchel = /obj/item/storage/backpack/satchel/tox
 
 	pda_slot = SLOT_L_STORE
+

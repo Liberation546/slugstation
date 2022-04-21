@@ -204,14 +204,14 @@
 	name = "Standard Gear"
 
 	var/jobtype = null
+	var/jobtype = null
 
 	uniform = /obj/item/clothing/under/color/grey
-	id = /obj/item/card/id
 	ears = /obj/item/radio/headset
-	belt = /obj/item/pda
 	back = /obj/item/storage/backpack
 	shoes = /obj/item/clothing/shoes/sneakers/black
 	box = /obj/item/storage/box/survival
+
 
 	var/backpack = /obj/item/storage/backpack
 	var/satchel  = /obj/item/storage/backpack/satchel
@@ -260,9 +260,9 @@
 
 	var/datum/job/J = SSjob.GetJobType(jobtype)
 	if(!J)
+	if(!J)
 		J = SSjob.GetJob(H.job)
 
-	var/obj/item/card/id/C = H.wear_id
 	if(istype(C))
 		C.access = J.get_access()
 		shuffle_inplace(C.access) // Shuffle access list to make NTNet passkeys less predictable
@@ -284,16 +284,29 @@
 				C.registered_account = B
 				B.bank_cards += C
 				break
+				break
 		H.sec_hud_set_ID()
 
-	var/obj/item/pda/PDA = H.get_item_by_slot(pda_slot)
 	if(istype(PDA))
 		PDA.owner = H.real_name
 		if(H.mind?.role_alt_title)
 			PDA.ownjob = H.mind.role_alt_title
 		else
 			PDA.ownjob = J.title
+
+		if (H.id_in_pda)
+			PDA.InsertID(C)
+			H.equip_to_slot_if_possible(PDA, SLOT_WEAR_ID)
+		else // just in case you hate change
+			H.equip_to_slot_if_possible(PDA, pda_slot)
+			H.equip_to_slot_if_possible(C, SLOT_WEAR_ID)
+		
 		PDA.update_label()
+		PDA.update_icon()
+		PDA.update_filters()
+		
+	else
+		H.equip_to_slot_if_possible(C, SLOT_WEAR_ID)
 
 /datum/outfit/job/get_chameleon_disguise_info()
 	var/list/types = ..()
@@ -308,3 +321,4 @@
 	if(CONFIG_GET(flag/security_has_maint_access))
 		return list(ACCESS_MAINT_TUNNELS)
 	return list()
+

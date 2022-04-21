@@ -42,9 +42,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/inquisitive_ghost = 1
 	var/allow_midround_antag = 1
 	var/preferred_map = null
+	var/preferred_map = null
 	var/pda_style = MONO
 	var/pda_color = "#808000"
-	var/show_credits = TRUE
 	var/uses_glasses_colour = 0
 
 	var/list/player_alt_titles = new()
@@ -2124,8 +2124,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.socks = socks
 
 	character.backbag = backbag
+	character.undershirt = undershirt
+	character.socks = socks
+
+	character.backbag = backbag
 
 	character.jumpsuit_style = jumpsuit_style
+	character.id_in_pda = id_in_pda
 
 	var/datum/species/chosen_species
 	chosen_species = pref_species.type
@@ -2185,3 +2190,4 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			return
 		else
 			custom_names[name_id] = sanitized_name
+
