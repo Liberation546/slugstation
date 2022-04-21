@@ -101,11 +101,13 @@ GLOBAL_LIST_INIT(available_depts_eng, list(ENG_DEPT_MEDICAL, ENG_DEPT_SCIENCE, E
 	r_pocket = /obj/item/t_scanner
 
 	backpack = /obj/item/storage/backpack/industrial
+	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	box = /obj/item/storage/box/engineer
-	pda_slot = SLOT_L_STORE
 	backpack_contents = list(/obj/item/modular_computer/tablet/pda/preset/basic=1)
+
+	pda_slot = SLOT_L_STORE
 
 /datum/outfit/job/engineer/gloved
 	name = "Station Engineer (Gloves)"
@@ -140,3 +142,4 @@ GLOBAL_LIST_INIT(available_depts_eng, list(ENG_DEPT_MEDICAL, ENG_DEPT_SCIENCE, E
 /obj/item/radio/headset/headset_eng/department/service
 	keyslot = new /obj/item/encryptionkey/headset_eng
 	keyslot2 = new /obj/item/encryptionkey/headset_service
+
