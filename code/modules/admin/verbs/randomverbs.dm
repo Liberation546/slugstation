@@ -1098,6 +1098,9 @@ Traitors and the like can also be revived with the previous role mostly intact.
 									ADMIN_PUNISHMENT_CLUWNE,
 									ADMIN_PUNISHMENT_MCNUGGET,
 									ADMIN_PUNISHMENT_CRACK,
+									ADMIN_PUNISHMENT_CRACK,
+									ADMIN_PUNISHMENT_BLEED,
+									ADMIN_PUNISHMENT_PERFORATE,
 									ADMIN_PUNISHMENT_BLEED,
 									ADMIN_PUNISHMENT_PERFORATE,
 									ADMIN_PUNISHMENT_SCARIFY
@@ -1186,6 +1189,9 @@ Traitors and the like can also be revived with the previous role mostly intact.
 				M.whistle()
 		if(ADMIN_PUNISHMENT_CLUWNE)
 			var/confirm = alert(usr, "Send Cluwne Message?", "Cluwne Message", "Yes", "No")
+				to_chat(target, span_reallybigphobia("HENK!! HENK!! HENK!! YOU DID SOMETHING EXTREMELY DUMB, AND MADE GOD MAD. CRY ABOUT IT."))
+			var/mob/living/carbon/human/H = target
+			H?.cluwneify()
 			if(confirm == "Yes")
 				to_chat(target, span_reallybigphobia("HENK!! HENK!! HENK!! YOU DID SOMETHING EXTREMELY DUMB, AND MADE GOD MAD. CRY ABOUT IT."))
 			var/mob/living/carbon/human/H = target
@@ -1280,15 +1286,9 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	if(!target.get_bodypart(body_zone))
 		return
 	playsound(target, 'sound/weapons/revolver357shot.ogg', 100)
-	var/obj/item/projectile/bullet/smite/divine_wrath = new(source_turf)
-	divine_wrath.damage = damage
-	divine_wrath.wound_bonus = wound_bonus
-	divine_wrath.original = target
-	divine_wrath.def_zone = body_zone
-	divine_wrath.spread = 0
-	divine_wrath.preparePixelProjectile(target, source_turf)
-	divine_wrath.fire()
-
+  * * wound_bonus- the wounding power we're assigning to the bullet, since we don't care about the base one
+  * * damage- the damage we're assigning to the bullet, since we don't care about the base one
+  */
 /client/proc/punish_log(var/whom, var/punishment)
 	var/msg = "[key_name(usr)] punished [key_name_admin(whom)] with [punishment]." //yogs - Yog tickets
 	message_admins(msg)
@@ -1458,3 +1458,17 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	user.status_flags &= ~GODMODE
 	user.update_mobility()
 	sleep(40)
+
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
