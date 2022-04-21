@@ -1,1 +1,145 @@
-L2RhdHVtL2pvYi9lbmdpbmVlcgoJdGl0bGUgPSAiU3RhdGlvbiBFbmdpbmVlciIKCWZsYWcgPSBFTkdJTkVFUgoJZGVwYXJ0bWVudF9oZWFkID0gbGlzdCgiQ2hpZWYgRW5naW5lZXIiKQoJZGVwYXJ0bWVudF9mbGFnID0gRU5HU0VDCglmYWN0aW9uID0gIlN0YXRpb24iCgl0b3RhbF9wb3NpdGlvbnMgPSA1CglzcGF3bl9wb3NpdGlvbnMgPSA1CglzdXBlcnZpc29ycyA9ICJ0aGUgY2hpZWYgZW5naW5lZXIiCglzZWxlY3Rpb25fY29sb3IgPSAiI2ZmZjVjYyIKCWV4cF9yZXF1aXJlbWVudHMgPSAxODAKCWV4cF90eXBlID0gRVhQX1RZUEVfQ1JFVwoJYWx0X3RpdGxlcyA9IGxpc3QoIkVuZ2luZSBUZWNobmljaWFuIiwgIlNvbGFyIEVuZ2luZWVyIiwgIlByb2plY3QgRW5naW5lZXIiLCAiSnVuaW9yIEVuZ2luZWVyIiwgIkNvbnN0cnVjdGlvbiBTcGVjaWFsaXN0IikKCglvdXRmaXQgPSAvZGF0dW0vb3V0Zml0L2pvYi9lbmdpbmVlcgoKCWFjY2VzcyA9IGxpc3QoQUNDRVNTX0VOR0lORSwgQUNDRVNTX0VOR0lORV9FUVVJUCwgQUNDRVNTX1RFQ0hfU1RPUkFHRSwgQUNDRVNTX01BSU5UX1RVTk5FTFMsIEFDQ0VTU19NRUNIX0VOR0lORSwKCQkJCQkJCQkJQUNDRVNTX0VYVEVSTkFMX0FJUkxPQ0tTLCBBQ0NFU1NfQ09OU1RSVUNUSU9OLCBBQ0NFU1NfQVRNT1NQSEVSSUNTLCBBQ0NFU1NfVENPTVNBVCwgQUNDRVNTX01JTkVSQUxfU1RPUkVST09NKQoJbWluaW1hbF9hY2Nlc3MgPSBsaXN0KEFDQ0VTU19FTkdJTkUsIEFDQ0VTU19FTkdJTkVfRVFVSVAsIEFDQ0VTU19URUNIX1NUT1JBR0UsIEFDQ0VTU19NQUlOVF9UVU5ORUxTLCBBQ0NFU1NfTUVDSF9FTkdJTkUsCgkJCQkJCQkJCUFDQ0VTU19FWFRFUk5BTF9BSVJMT0NLUywgQUNDRVNTX0NPTlNUUlVDVElPTiwgQUNDRVNTX1RDT01TQVQsIEFDQ0VTU19NSU5FUkFMX1NUT1JFUk9PTSkKCXBheWNoZWNrID0gUEFZQ0hFQ0tfTUVESVVNCglwYXljaGVja19kZXBhcnRtZW50ID0gQUNDT1VOVF9FTkcKCglkaXNwbGF5X29yZGVyID0gSk9CX0RJU1BMQVlfT1JERVJfU1RBVElPTl9FTkdJTkVFUgoKCWNoYW5nZWRfbWFwcyA9IGxpc3QoIkVjbGlwc2VTdGF0aW9uIiwgIk9tZWdhU3RhdGlvbiIpCgovZGF0dW0vam9iL2VuZ2luZWVyL3Byb2MvRWNsaXBzZVN0YXRpb25DaGFuZ2VzKCkKCXRvdGFsX3Bvc2l0aW9ucyA9IDYKCXNwYXduX3Bvc2l0aW9ucyA9IDUKCi9kYXR1bS9qb2IvZW5naW5lZXIvcHJvYy9PbWVnYVN0YXRpb25DaGFuZ2VzKCkKCXRvdGFsX3Bvc2l0aW9ucyA9IDIKCXNwYXduX3Bvc2l0aW9ucyA9IDIKCWFjY2VzcyA9IGxpc3QoQUNDRVNTX0VWQSwgQUNDRVNTX0VOR0lORSwgQUNDRVNTX0VOR0lORV9FUVVJUCwgQUNDRVNTX1RFQ0hfU1RPUkFHRSwgQUNDRVNTX01BSU5UX1RVTk5FTFMsIEFDQ0VTU19FWFRFUk5BTF9BSVJMT0NLUywgQUNDRVNTX0NPTlNUUlVDVElPTiwgQUNDRVNTX0FUTU9TUEhFUklDUyApCgltaW5pbWFsX2FjY2VzcyA9IGxpc3QoQUNDRVNTX0VWQSwgQUNDRVNTX0VOR0lORSwgQUNDRVNTX0VOR0lORV9FUVVJUCwgQUNDRVNTX1RFQ0hfU1RPUkFHRSwgQUNDRVNTX01BSU5UX1RVTk5FTFMsIEFDQ0VTU19FWFRFUk5BTF9BSVJMT0NLUywgQUNDRVNTX0NPTlNUUlVDVElPTiwgQUNDRVNTX0FUTU9TUEhFUklDUyApCglzdXBlcnZpc29ycyA9ICJ0aGUgY2FwdGFpbiBhbmQgdGhlIGhlYWQgb2YgcGVyc29ubmVsIgoKR0xPQkFMX0xJU1RfSU5JVChhdmFpbGFibGVfZGVwdHNfZW5nLCBsaXN0KEVOR19ERVBUX01FRElDQUwsIEVOR19ERVBUX1NDSUVOQ0UsIEVOR19ERVBUX1NVUFBMWSwgRU5HX0RFUFRfU0VSVklDRSkpCgovZGF0dW0vam9iL2VuZ2luZWVyL2FmdGVyX3NwYXduKG1vYi9saXZpbmcvY2FyYm9uL2h1bWFuL0gsIG1vYi9NKQoJLiA9IC4uKCkKCS8vIEFzc2lnbiBkZXBhcnRtZW50IGVuZ2luZWVyaW5nCgl2YXIvZGVwYXJ0bWVudAoJaWYoTSAmJiBNLmNsaWVudCAmJiBNLmNsaWVudC5wcmVmcykKCQlkZXBhcnRtZW50ID0gTS5jbGllbnQucHJlZnMucHJlZmVyZWRfZW5naW5lZXJpbmdfZGVwYXJ0bWVudAoJCWlmKCFMQVpZTEVOKEdMT0IuYXZhaWxhYmxlX2RlcHRzX2VuZykgfHwgZGVwYXJ0bWVudCA9PSAiTm9uZSIpCgkJCXJldHVybgoJCWVsc2UgaWYoZGVwYXJ0bWVudCBpbiBHTE9CLmF2YWlsYWJsZV9kZXB0c19lbmcpCgkJCUxBWllSRU1PVkUoR0xPQi5hdmFpbGFibGVfZGVwdHNfZW5nLCBkZXBhcnRtZW50KQoJCWVsc2UKCQkJZGVwYXJ0bWVudCA9IHBpY2tfbl90YWtlKEdMT0IuYXZhaWxhYmxlX2RlcHRzX2VuZykKCXZhci9lYXJzID0gbnVsbAoJdmFyL2FjY2Vzc29yeSA9IG51bGwKCXZhci9saXN0L2RlcF9hY2Nlc3MgPSBudWxsCglzd2l0Y2goZGVwYXJ0bWVudCkKCQlpZihFTkdfREVQVF9TVVBQTFkpCgkJCWVhcnMgPSAvb2JqL2l0ZW0vcmFkaW8vaGVhZHNldC9oZWFkc2V0X2VuZy9kZXBhcnRtZW50L3N1cHBseQoJCQlkZXBfYWNjZXNzID0gbGlzdChBQ0NFU1NfTUFJTFNPUlRJTkcsIEFDQ0VTU19NSU5JTkcsIEFDQ0VTU19NSU5JTkdfU1RBVElPTiwgQUNDRVNTX0NBUkdPKQoJCQlhY2Nlc3NvcnkgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvYWNjZXNzb3J5L2FybWJhbmQvY2FyZ28KCQlpZihFTkdfREVQVF9NRURJQ0FMKQoJCQllYXJzID0gL29iai9pdGVtL3JhZGlvL2hlYWRzZXQvaGVhZHNldF9lbmcvZGVwYXJ0bWVudC9tZWQKCQkJZGVwX2FjY2VzcyA9IGxpc3QoQUNDRVNTX01FRElDQUwsIEFDQ0VTU19NT1JHVUUsIEFDQ0VTU19TVVJHRVJZLCBBQ0NFU1NfQ0xPTklORywgQUNDRVNTX1ZJUk9MT0dZLCBBQ0NFU1NfR0VORVRJQ1MpCgkJCWFjY2Vzc29yeSA9ICAvb2JqL2l0ZW0vY2xvdGhpbmcvYWNjZXNzb3J5L2FybWJhbmQvbWVkYmx1ZQoJCWlmKEVOR19ERVBUX1NDSUVOQ0UpCgkJCWVhcnMgPSAvb2JqL2l0ZW0vcmFkaW8vaGVhZHNldC9oZWFkc2V0X2VuZy9kZXBhcnRtZW50L3NjaQoJCQlkZXBfYWNjZXNzID0gbGlzdChBQ0NFU1NfUkVTRUFSQ0gsIEFDQ0VTU19UT1gsIEFDQ0VTU19YRU5PQklPTE9HWSwgQUNDRVNTX1RPWF9TVE9SQUdFKQoJCQlhY2Nlc3NvcnkgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvYWNjZXNzb3J5L2FybWJhbmQvc2NpZW5jZQoJCWlmKEVOR19ERVBUX1NFUlZJQ0UpCgkJCWVhcnMgPSAvb2JqL2l0ZW0vcmFkaW8vaGVhZHNldC9oZWFkc2V0X2VuZy9kZXBhcnRtZW50L3NlcnZpY2UKCQkJZGVwX2FjY2VzcyA9IGxpc3QoQUNDRVNTX0hZRFJPUE9OSUNTLCBBQ0NFU1NfQkFSLCBBQ0NFU1NfS0lUQ0hFTiwgQUNDRVNTX0xJQlJBUlksIEFDQ0VTU19USEVBVFJFLCBBQ0NFU1NfSkFOSVRPUiwgQUNDRVNTX0NIQVBFTF9PRkZJQ0UsIEFDQ0VTU19NQU5VRkFDVFVSSU5HKQoJCQlhY2Nlc3NvcnkgPSAgL29iai9pdGVtL2Nsb3RoaW5nL2FjY2Vzc29yeS9hcm1iYW5kL3NlcnZpY2UKCglpZihhY2Nlc3NvcnkpCgkJdmFyL29iai9pdGVtL2Nsb3RoaW5nL3VuZGVyL1UgPSBILndfdW5pZm9ybQoJCVUuYXR0YWNoX2FjY2Vzc29yeShuZXcgYWNjZXNzb3J5KQoJaWYoZWFycykKCQlpZihILmVhcnMpCgkJCXFkZWwoSC5lYXJzKQoJCQlxZGVsKEguZWFycykKCQlILmVxdWlwX3RvX3Nsb3Rfb3JfZGVsKG5ldyBlYXJzKEgpLFNMT1RfRUFSUykKCgkJSC5lcXVpcF90b19zbG90X29yX2RlbChuZXcgZWFycyhIKSxTTE9UX0VBUlMpCgoJdmFyL29iai9pdGVtL2NhcmQvaWQvVyA9IEgud2Vhcl9pZAoJVy5hY2Nlc3MgfD0gZGVwX2FjY2VzcwoKCWlmKGRlcGFydG1lbnQpCgkJdG9fY2hhdChNLCAiPGI+WW91IGhhdmUgYmVlbiBhc3NpZ25lZCB0byBbZGVwYXJ0bWVudF0hPC9iPiIpCgllbHNlCgkJdG9fY2hhdChNLCAiPGI+WW91IGhhdmUgbm90IGJlZW4gYXNzaWduZWQgdG8gYW55IGRlcGFydG1lbnQuIFBhdHJvbCB0aGUgaGFsbHMgYW5kIGhlbHAgd2hlcmUgbmVlZGVkLjwvYj4iKQoJbmFtZSA9ICJTdGF0aW9uIEVuZ2luZWVyIgoJam9idHlwZSA9IC9kYXR1bS9qb2IvZW5naW5lZXIKCgovZGF0dW0vb3V0Zml0L2pvYi9lbmdpbmVlcgoJbmFtZSA9ICJTdGF0aW9uIEVuZ2luZWVyIgoJam9idHlwZSA9IC9kYXR1bS9qb2IvZW5naW5lZXIKCgliZWx0ID0gL29iai9pdGVtL3N0b3JhZ2UvYmVsdC91dGlsaXR5L2Z1bGwvZW5naQoJbF9wb2NrZXQgPSAvb2JqL2l0ZW0vcGRhL2VuZ2luZWVyaW5nCgllYXJzID0gL29iai9pdGVtL3JhZGlvL2hlYWRzZXQvaGVhZHNldF9lbmcKCXVuaWZvcm0gPSAvb2JqL2l0ZW0vY2xvdGhpbmcvdW5kZXIvcmFuay9lbmdpbmVlcgoJdW5pZm9ybV9za2lydCA9IC9vYmovaXRlbS9jbG90aGluZy91bmRlci9yYW5rL2VuZ2luZWVyL3NraXJ0CglzaG9lcyA9IC9vYmovaXRlbS9jbG90aGluZy9zaG9lcy93b3JrYm9vdHMKCXNhdGNoZWwgPSAvb2JqL2l0ZW0vc3RvcmFnZS9iYWNrcGFjay9zYXRjaGVsL2VuZwoJZHVmZmVsYmFnID0gL29iai9pdGVtL3N0b3JhZ2UvYmFja3BhY2svZHVmZmVsYmFnL2VuZ2luZWVyaW5nCglib3ggPSAvb2JqL2l0ZW0vc3RvcmFnZS9ib3gvZW5naW5lZXIKCWJhY2twYWNrX2NvbnRlbnRzID0gbGlzdCgvb2JqL2l0ZW0vbW9kdWxhcl9jb21wdXRlci90YWJsZXQvcGRhL3ByZXNldC9iYXNpYz0xKQoKCW5hbWUgPSAiU3RhdGlvbiBFbmdpbmVlciAoR2xvdmVzKSIKCWdsb3ZlcyA9IC9vYmovaXRlbS9jbG90aGluZy9nbG92ZXMvY29sb3IveWVsbG93CgovZGF0dW0vb3V0Zml0L2pvYi9lbmdpbmVlci9nbG92ZWQvcmlnCgluYW1lID0gIlN0YXRpb24gRW5naW5lZXIgKEhhcmRzdWl0KSIKCW1hc2sgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvbWFzay9icmVhdGgKCXN1aXQgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvc3VpdC9zcGFjZS9oYXJkc3VpdC9lbmdpbmUKCXN1aXRfc3RvcmUgPSAvb2JqL2l0ZW0vdGFuay9pbnRlcm5hbHMvb3h5Z2VuCgloZWFkID0gbnVsbAoJaW50ZXJuYWxzX3Nsb3QgPSBTTE9UX1NfU1RPUkUKCi9vYmovaXRlbS9yYWRpby9oZWFkc2V0L2hlYWRzZXRfZW5nL2RlcGFydG1lbnQvSW5pdGlhbGl6ZSgpCgkuID0gLi4oKQoJd2lyZXMgPSBuZXcvZGF0dW0vd2lyZXMvcmFkaW8oc3JjKQoJc2VjdXJlX3JhZGlvX2Nvbm5lY3Rpb25zID0gbmV3CglyZWNhbGN1bGF0ZUNoYW5uZWxzKCkKCi9vYmovaXRlbS9yYWRpby9oZWFkc2V0L2hlYWRzZXRfZW5nL2RlcGFydG1lbnQvc3VwcGx5CglrZXlzbG90ID0gbmV3IC9vYmovaXRlbS9lbmNyeXB0aW9ua2V5L2hlYWRzZXRfZW5nCglrZXlzbG90MiA9IG5ldyAvb2JqL2l0ZW0vZW5jcnlwdGlvbmtleS9oZWFkc2V0X2NhcmdvCgovb2JqL2l0ZW0vcmFkaW8vaGVhZHNldC9oZWFkc2V0X2VuZy9kZXBhcnRtZW50L21lZAoJa2V5c2xvdCA9IG5ldyAvb2JqL2l0ZW0vZW5jcnlwdGlvbmtleS9oZWFkc2V0X2VuZwoJa2V5c2xvdDIgPSBuZXcgL29iai9pdGVtL2VuY3J5cHRpb25rZXkvaGVhZHNldF9tZWQKCi9vYmovaXRlbS9yYWRpby9oZWFkc2V0L2hlYWRzZXRfZW5nL2RlcGFydG1lbnQvc2NpCglrZXlzbG90ID0gbmV3IC9vYmovaXRlbS9lbmNyeXB0aW9ua2V5L2hlYWRzZXRfZW5nCglrZXlzbG90MiA9IG5ldyAvb2JqL2l0ZW0vZW5jcnlwdGlvbmtleS9oZWFkc2V0X3NjaQoKL29iai9pdGVtL3JhZGlvL2hlYWRzZXQvaGVhZHNldF9lbmcvZGVwYXJ0bWVudC9zZXJ2aWNlCglrZXlzbG90ID0gbmV3IC9vYmovaXRlbS9lbmNyeXB0aW9ua2V5L2hlYWRzZXRfZW5nCglrZXlzbG90MiA9IG5ldyAvb2JqL2l0ZW0vZW5jcnlwdGlvbmtleS9oZWFkc2V0X3NlcnZpY2UKCnVuZGVmaW5lZAp1bmRlZmluZWQK
+/datum/job/engineer
+	title = "Station Engineer"
+	flag = ENGINEER
+	department_head = list("Chief Engineer")
+	department_flag = ENGSEC
+	faction = "Station"
+	total_positions = 5
+	spawn_positions = 5
+	supervisors = "the chief engineer"
+	selection_color = "#fff5cc"
+	exp_requirements = 180
+	exp_type = EXP_TYPE_CREW
+	alt_titles = list("Engine Technician", "Solar Engineer", "Project Engineer", "Junior Engineer", "Construction Specialist")
+
+	outfit = /datum/outfit/job/engineer
+
+	access = list(ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_MECH_ENGINE,
+									ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_ATMOSPHERICS, ACCESS_TCOMSAT, ACCESS_MINERAL_STOREROOM)
+	minimal_access = list(ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_MECH_ENGINE,
+									ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_TCOMSAT, ACCESS_MINERAL_STOREROOM)
+	paycheck = PAYCHECK_MEDIUM
+	paycheck_department = ACCOUNT_ENG
+
+	display_order = JOB_DISPLAY_ORDER_STATION_ENGINEER
+
+	changed_maps = list("EclipseStation", "OmegaStation")
+
+/datum/job/engineer/proc/EclipseStationChanges()
+	total_positions = 6
+	spawn_positions = 5
+
+/datum/job/engineer/proc/OmegaStationChanges()
+	total_positions = 2
+	spawn_positions = 2
+	access = list(ACCESS_EVA, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_ATMOSPHERICS )
+	minimal_access = list(ACCESS_EVA, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_ATMOSPHERICS )
+	supervisors = "the captain and the head of personnel"
+
+GLOBAL_LIST_INIT(available_depts_eng, list(ENG_DEPT_MEDICAL, ENG_DEPT_SCIENCE, ENG_DEPT_SUPPLY, ENG_DEPT_SERVICE))
+
+/datum/job/engineer/after_spawn(mob/living/carbon/human/H, mob/M)
+	. = ..()
+	// Assign department engineering
+	var/department
+	if(M && M.client && M.client.prefs)
+		department = M.client.prefs.prefered_engineering_department
+		if(!LAZYLEN(GLOB.available_depts_eng) || department == "None")
+			return
+		else if(department in GLOB.available_depts_eng)
+			LAZYREMOVE(GLOB.available_depts_eng, department)
+		else
+			department = pick_n_take(GLOB.available_depts_eng)
+	var/ears = null
+	var/accessory = null
+	var/list/dep_access = null
+	switch(department)
+		if(ENG_DEPT_SUPPLY)
+			ears = /obj/item/radio/headset/headset_eng/department/supply
+			dep_access = list(ACCESS_MAILSORTING, ACCESS_MINING, ACCESS_MINING_STATION, ACCESS_CARGO)
+			accessory = /obj/item/clothing/accessory/armband/cargo
+		if(ENG_DEPT_MEDICAL)
+			ears = /obj/item/radio/headset/headset_eng/department/med
+			dep_access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_SURGERY, ACCESS_CLONING, ACCESS_VIROLOGY, ACCESS_GENETICS)
+			accessory =  /obj/item/clothing/accessory/armband/medblue
+		if(ENG_DEPT_SCIENCE)
+			ears = /obj/item/radio/headset/headset_eng/department/sci
+			dep_access = list(ACCESS_RESEARCH, ACCESS_TOX, ACCESS_XENOBIOLOGY, ACCESS_TOX_STORAGE)
+			accessory = /obj/item/clothing/accessory/armband/science
+		if(ENG_DEPT_SERVICE)
+			ears = /obj/item/radio/headset/headset_eng/department/service
+			dep_access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_LIBRARY, ACCESS_THEATRE, ACCESS_JANITOR, ACCESS_CHAPEL_OFFICE, ACCESS_MANUFACTURING)
+			accessory =  /obj/item/clothing/accessory/armband/service
+
+	if(accessory)
+		var/obj/item/clothing/under/U = H.w_uniform
+		U.attach_accessory(new accessory)
+	if(ears)
+		if(H.ears)
+			qdel(H.ears)
+			qdel(H.ears)
+		H.equip_to_slot_or_del(new ears(H),SLOT_EARS)
+
+		H.equip_to_slot_or_del(new ears(H),SLOT_EARS)
+
+	var/obj/item/card/id/W = H.wear_id
+	W.access |= dep_access
+
+	if(department)
+		to_chat(M, "<b>You have been assigned to [department]!</b>")
+	else
+		to_chat(M, "<b>You have not been assigned to any department. Patrol the halls and help where needed.</b>")
+	name = "Station Engineer"
+	jobtype = /datum/job/engineer
+
+
+/datum/outfit/job/engineer
+	name = "Station Engineer"
+	jobtype = /datum/job/engineer
+
+	belt = /obj/item/storage/belt/utility/full/engi
+	l_pocket = /obj/item/pda/engineering
+	ears = /obj/item/radio/headset/headset_eng
+	uniform = /obj/item/clothing/under/rank/engineer
+	uniform_skirt = /obj/item/clothing/under/rank/engineer/skirt
+	shoes = /obj/item/clothing/shoes/workboots
+	satchel = /obj/item/storage/backpack/satchel/eng
+	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
+	box = /obj/item/storage/box/engineer
+	backpack_contents = list(/obj/item/modular_computer/tablet/pda/preset/basic=1)
+
+	name = "Station Engineer (Gloves)"
+	gloves = /obj/item/clothing/gloves/color/yellow
+
+/datum/outfit/job/engineer/gloved/rig
+	name = "Station Engineer (Hardsuit)"
+	mask = /obj/item/clothing/mask/breath
+	suit = /obj/item/clothing/suit/space/hardsuit/engine
+	suit_store = /obj/item/tank/internals/oxygen
+	head = null
+	internals_slot = SLOT_S_STORE
+
+/obj/item/radio/headset/headset_eng/department/Initialize()
+	. = ..()
+	wires = new/datum/wires/radio(src)
+	secure_radio_connections = new
+	recalculateChannels()
+
+/obj/item/radio/headset/headset_eng/department/supply
+	keyslot = new /obj/item/encryptionkey/headset_eng
+	keyslot2 = new /obj/item/encryptionkey/headset_cargo
+
+/obj/item/radio/headset/headset_eng/department/med
+	keyslot = new /obj/item/encryptionkey/headset_eng
+	keyslot2 = new /obj/item/encryptionkey/headset_med
+
+/obj/item/radio/headset/headset_eng/department/sci
+	keyslot = new /obj/item/encryptionkey/headset_eng
+	keyslot2 = new /obj/item/encryptionkey/headset_sci
+
+/obj/item/radio/headset/headset_eng/department/service
+	keyslot = new /obj/item/encryptionkey/headset_eng
+	keyslot2 = new /obj/item/encryptionkey/headset_service
+
+undefined
+undefined

@@ -1,1 +1,45 @@
-L2RhdHVtL2pvYi9yb2JvdGljaXN0Cgl0aXRsZSA9ICJSb2JvdGljaXN0IgoJZmxhZyA9IFJPQk9USUNJU1QKCWRlcGFydG1lbnRfaGVhZCA9IGxpc3QoIlJlc2VhcmNoIERpcmVjdG9yIikKCWRlcGFydG1lbnRfZmxhZyA9IE1FRFNDSQoJZmFjdGlvbiA9ICJTdGF0aW9uIgoJdG90YWxfcG9zaXRpb25zID0gMgoJc3Bhd25fcG9zaXRpb25zID0gMgoJc3VwZXJ2aXNvcnMgPSAidGhlIHJlc2VhcmNoIGRpcmVjdG9yIgoJc2VsZWN0aW9uX2NvbG9yID0gIiNmZmVlZmYiCglleHBfcmVxdWlyZW1lbnRzID0gNjAKCWV4cF90eXBlID0gRVhQX1RZUEVfQ1JFVwoJYWx0X3RpdGxlcyA9IGxpc3QoIkF1Z21lbnRhdGlvbiBUaGVvcmlzdCIsICJDeWJvcmcgTWFpbnRhaW5lciIsICJSb2JvdGljcyBJbnRlcm4iLCAiQmlvbWVjaGFuaWNhbCBFbmdpbmVlciIsICJNZWNoYXRyb25pYyBFbmdpbmVlciIpCgoJb3V0Zml0ID0gL2RhdHVtL291dGZpdC9qb2Ivcm9ib3RpY2lzdAoKCWFjY2VzcyA9IGxpc3QoQUNDRVNTX1JPQk9USUNTLCBBQ0NFU1NfVE9YLCBBQ0NFU1NfVE9YX1NUT1JBR0UsIEFDQ0VTU19URUNIX1NUT1JBR0UsIEFDQ0VTU19NT1JHVUUsIEFDQ0VTU19NRUNIX1NDSUVOQ0UsIEFDQ0VTU19SRVNFQVJDSCwgQUNDRVNTX01JTkVSQUxfU1RPUkVST09NLCBBQ0NFU1NfWEVOT0JJT0xPR1ksIEFDQ0VTU19HRU5FVElDUykKCW1pbmltYWxfYWNjZXNzID0gbGlzdChBQ0NFU1NfUk9CT1RJQ1MsIEFDQ0VTU19URUNIX1NUT1JBR0UsIEFDQ0VTU19NT1JHVUUsIEFDQ0VTU19SRVNFQVJDSCwgQUNDRVNTX01FQ0hfU0NJRU5DRSwgQUNDRVNTX01JTkVSQUxfU1RPUkVST09NKQoJcGF5Y2hlY2sgPSBQQVlDSEVDS19NRURJVU0KCXBheWNoZWNrX2RlcGFydG1lbnQgPSBBQ0NPVU5UX1NDSQoKCWRpc3BsYXlfb3JkZXIgPSBKT0JfRElTUExBWV9PUkRFUl9ST0JPVElDSVNUCgoJY2hhbmdlZF9tYXBzID0gbGlzdCgiT21lZ2FTdGF0aW9uIikKCi9kYXR1bS9qb2Ivcm9ib3RpY2lzdC9wcm9jL09tZWdhU3RhdGlvbkNoYW5nZXMoKQoJc3VwZXJ2aXNvcnMgPSAidGhlIGNhcHRhaW4gYW5kIHRoZSBoZWFkIG9mIHBlcnNvbm5lbCIKCi9kYXR1bS9vdXRmaXQvam9iL3JvYm90aWNpc3QKCW5hbWUgPSAiUm9ib3RpY2lzdCIKCW5hbWUgPSAiUm9ib3RpY2lzdCIKCWpvYnR5cGUgPSAvZGF0dW0vam9iL3JvYm90aWNpc3QKCglsX3BvY2tldCA9IC9vYmovaXRlbS9wZGEvcm9ib3RpY2lzdAoJZWFycyA9IC9vYmovaXRlbS9yYWRpby9oZWFkc2V0L2hlYWRzZXRfc2NpCgl1bmlmb3JtID0gL29iai9pdGVtL2Nsb3RoaW5nL3VuZGVyL3Jhbmsvcm9ib3RpY2lzdAoJdW5pZm9ybV9za2lydCA9IC9vYmovaXRlbS9jbG90aGluZy91bmRlci9yYW5rL3JvYm90aWNpc3Qvc2tpcnQKCXN1aXQgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvc3VpdC90b2dnbGUvbGFiY29hdAoKCWJhY2twYWNrID0gL29iai9pdGVtL3N0b3JhZ2UvYmFja3BhY2svc2NpZW5jZQoJc2F0Y2hlbCA9IC9vYmovaXRlbS9zdG9yYWdlL2JhY2twYWNrL3NhdGNoZWwvdG94CgoJcGRhX3Nsb3QgPSBTTE9UX0xfU1RPUkUKCnVuZGVmaW5lZAo=
+/datum/job/roboticist
+	title = "Roboticist"
+	flag = ROBOTICIST
+	department_head = list("Research Director")
+	department_flag = MEDSCI
+	faction = "Station"
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "the research director"
+	selection_color = "#ffeeff"
+	exp_requirements = 60
+	exp_type = EXP_TYPE_CREW
+	alt_titles = list("Augmentation Theorist", "Cyborg Maintainer", "Robotics Intern", "Biomechanical Engineer", "Mechatronic Engineer")
+
+	outfit = /datum/outfit/job/roboticist
+
+	access = list(ACCESS_ROBOTICS, ACCESS_TOX, ACCESS_TOX_STORAGE, ACCESS_TECH_STORAGE, ACCESS_MORGUE, ACCESS_MECH_SCIENCE, ACCESS_RESEARCH, ACCESS_MINERAL_STOREROOM, ACCESS_XENOBIOLOGY, ACCESS_GENETICS)
+	minimal_access = list(ACCESS_ROBOTICS, ACCESS_TECH_STORAGE, ACCESS_MORGUE, ACCESS_RESEARCH, ACCESS_MECH_SCIENCE, ACCESS_MINERAL_STOREROOM)
+	paycheck = PAYCHECK_MEDIUM
+	paycheck_department = ACCOUNT_SCI
+
+	display_order = JOB_DISPLAY_ORDER_ROBOTICIST
+
+	changed_maps = list("OmegaStation")
+
+/datum/job/roboticist/proc/OmegaStationChanges()
+	supervisors = "the captain and the head of personnel"
+
+/datum/outfit/job/roboticist
+	name = "Roboticist"
+	name = "Roboticist"
+	jobtype = /datum/job/roboticist
+
+	l_pocket = /obj/item/pda/roboticist
+	ears = /obj/item/radio/headset/headset_sci
+	uniform = /obj/item/clothing/under/rank/roboticist
+	uniform_skirt = /obj/item/clothing/under/rank/roboticist/skirt
+	suit = /obj/item/clothing/suit/toggle/labcoat
+
+	backpack = /obj/item/storage/backpack/science
+	satchel = /obj/item/storage/backpack/satchel/tox
+
+	pda_slot = SLOT_L_STORE
+
+undefined

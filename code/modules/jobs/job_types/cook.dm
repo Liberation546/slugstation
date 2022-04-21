@@ -1,1 +1,69 @@
-L2RhdHVtL2pvYi9jb29rCgl0aXRsZSA9ICJDb29rIgoJZmxhZyA9IENPT0sKCWRlcGFydG1lbnRfaGVhZCA9IGxpc3QoIkhlYWQgb2YgUGVyc29ubmVsIikKCWRlcGFydG1lbnRfZmxhZyA9IENJVklMSUFOCglmYWN0aW9uID0gIlN0YXRpb24iCgl0b3RhbF9wb3NpdGlvbnMgPSAyCglzcGF3bl9wb3NpdGlvbnMgPSAxCglzdXBlcnZpc29ycyA9ICJ0aGUgaGVhZCBvZiBwZXJzb25uZWwiCglzZWxlY3Rpb25fY29sb3IgPSAiI2JiZTI5MSIKCXZhci9jb29rcyA9IDAgLy9Db3VudHMgY29va3MgYW1vdW50CgoJb3V0Zml0ID0gL2RhdHVtL291dGZpdC9qb2IvY29vawoKCWFsdF90aXRsZXMgPSBsaXN0KCJDaGVmIiwgIkhhc2ggU2xpbmdlciIsICJTb3VzLWNoZWYiLCAiQ3VsaW5hcnkgQXJ0aXN0IikKCglhY2Nlc3MgPSBsaXN0KEFDQ0VTU19IWURST1BPTklDUywgQUNDRVNTX0JBUiwgQUNDRVNTX0tJVENIRU4sIEFDQ0VTU19NT1JHVUUsIEFDQ0VTU19NSU5FUkFMX1NUT1JFUk9PTSkKCW1pbmltYWxfYWNjZXNzID0gbGlzdChBQ0NFU1NfS0lUQ0hFTiwgQUNDRVNTX01PUkdVRSwgQUNDRVNTX01JTkVSQUxfU1RPUkVST09NKQoJcGF5Y2hlY2sgPSBQQVlDSEVDS19FQVNZCglwYXljaGVja19kZXBhcnRtZW50ID0gQUNDT1VOVF9TUlYKCglkaXNwbGF5X29yZGVyID0gSk9CX0RJU1BMQVlfT1JERVJfQ09PSwoKCWNoYW5nZWRfbWFwcyA9IGxpc3QoIk9tZWdhU3RhdGlvbiIsICJFY2xpcHNlU3RhdGlvbiIpCgovZGF0dW0vam9iL2Nvb2svcHJvYy9PbWVnYVN0YXRpb25DaGFuZ2VzKCkKCWFjY2VzcyA9IGxpc3QoQUNDRVNTX0hZRFJPUE9OSUNTLCBBQ0NFU1NfQkFSLCBBQ0NFU1NfS0lUQ0hFTiwgQUNDRVNTX01PUkdVRSkKCW1pbmltYWxfYWNjZXNzID0gbGlzdChBQ0NFU1NfSFlEUk9QT05JQ1MsIEFDQ0VTU19CQVIsIEFDQ0VTU19LSVRDSEVOLCBBQ0NFU1NfTU9SR1VFKQoKL2RhdHVtL2pvYi9jb29rL3Byb2MvRWNsaXBzZVN0YXRpb25DaGFuZ2VzKCkKCXRvdGFsX3Bvc2l0aW9ucyA9IDQKCXNwYXduX3Bvc2l0aW9ucyA9IDMKCi9kYXR1bS9vdXRmaXQvam9iL2Nvb2sKCW5hbWUgPSAiQ29vayIKCW5hbWUgPSAiQ29vayIKCWpvYnR5cGUgPSAvZGF0dW0vam9iL2Nvb2sKCgllYXJzID0gL29iai9pdGVtL3JhZGlvL2hlYWRzZXQvaGVhZHNldF9zcnYKCXVuaWZvcm0gPSAvb2JqL2l0ZW0vY2xvdGhpbmcvdW5kZXIvcmFuay9jaGVmCgl1bmlmb3JtX3NraXJ0ID0gL29iai9pdGVtL2Nsb3RoaW5nL3VuZGVyL3JhbmsvY2hlZi9za2lydAoJc3VpdCA9IC9vYmovaXRlbS9jbG90aGluZy9zdWl0L3RvZ2dsZS9jaGVmCgloZWFkID0gL29iai9pdGVtL2Nsb3RoaW5nL2hlYWQvY2hlZmhhdAoJbWFzayA9IC9vYmovaXRlbS9jbG90aGluZy9tYXNrL2Zha2Vtb3VzdGFjaGUvaXRhbGlhbgoJYmFja3BhY2tfY29udGVudHMgPSBsaXN0KC9vYmovaXRlbS9zaGFycGVuZXIgPSAxKQoKL2RhdHVtL291dGZpdC9qb2IvY29vay9wcmVfZXF1aXAobW9iL2xpdmluZy9jYXJib24vaHVtYW4vSCwgdmlzdWFsc09ubHkgPSBGQUxTRSkKCS4uKCkKCXZhci9kYXR1bS9qb2IvY29vay9KID0gU1Nqb2IuR2V0Sm9iVHlwZShqb2J0eXBlKQoJaWYoSikgLy8gRml4IGZvciBydW50aW1lIGNhdXNlZCBieSBpbnZhbGlkIGpvYiBiZWluZyBwYXNzZWQKCQlpZihKLmNvb2tzPjApLy9Db29rcwoJCQlzdWl0ID0gL29iai9pdGVtL2Nsb3RoaW5nL3N1aXQvYXByb24vY2hlZgoJCQloZWFkID0gL29iai9pdGVtL2Nsb3RoaW5nL2hlYWQvc29mdC9taW1lCgkJaWYoIXZpc3VhbHNPbmx5KQoJCQlKLmNvb2tzKysKCi9kYXR1bS9vdXRmaXQvam9iL2Nvb2svcG9zdF9lcXVpcChtb2IvbGl2aW5nL2NhcmJvbi9odW1hbi9ILCB2aXN1YWxzT25seSA9IEZBTFNFKQoJLi4oKQoJaWYodmlzdWFsc09ubHkpCgkJcmV0dXJuCgl2YXIvbGlzdC9wb3NzaWJsZV9ib3hlcyA9IHN1YnR5cGVzb2YoL29iai9pdGVtL3N0b3JhZ2UvYm94L2luZ3JlZGllbnRzKQoJdmFyL2Nob3Nlbl9ib3ggPSBwaWNrKHBvc3NpYmxlX2JveGVzKQoJdmFyL29iai9pdGVtL3N0b3JhZ2UvYm94L0kgPSBuZXcgY2hvc2VuX2JveChzcmMpCglILmVxdWlwX3RvX3Nsb3Rfb3JfZGVsKEksU0xPVF9JTl9CQUNLUEFDSykKCXZhci9kYXR1bS9tYXJ0aWFsX2FydC9jcWMvdW5kZXJfc2llZ2UvanVzdGFjb29rID0gbmV3CglqdXN0YWNvb2sudGVhY2goSCkKCgp1bmRlZmluZWQK
+/datum/job/cook
+	title = "Cook"
+	flag = COOK
+	department_head = list("Head of Personnel")
+	department_flag = CIVILIAN
+	faction = "Station"
+	total_positions = 2
+	spawn_positions = 1
+	supervisors = "the head of personnel"
+	selection_color = "#bbe291"
+	var/cooks = 0 //Counts cooks amount
+
+	outfit = /datum/outfit/job/cook
+
+	alt_titles = list("Chef", "Hash Slinger", "Sous-chef", "Culinary Artist")
+
+	access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_MORGUE, ACCESS_MINERAL_STOREROOM)
+	minimal_access = list(ACCESS_KITCHEN, ACCESS_MORGUE, ACCESS_MINERAL_STOREROOM)
+	paycheck = PAYCHECK_EASY
+	paycheck_department = ACCOUNT_SRV
+
+	display_order = JOB_DISPLAY_ORDER_COOK
+
+	changed_maps = list("OmegaStation", "EclipseStation")
+
+/datum/job/cook/proc/OmegaStationChanges()
+	access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_MORGUE)
+	minimal_access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_MORGUE)
+
+/datum/job/cook/proc/EclipseStationChanges()
+	total_positions = 4
+	spawn_positions = 3
+
+/datum/outfit/job/cook
+	name = "Cook"
+	name = "Cook"
+	jobtype = /datum/job/cook
+
+	ears = /obj/item/radio/headset/headset_srv
+	uniform = /obj/item/clothing/under/rank/chef
+	uniform_skirt = /obj/item/clothing/under/rank/chef/skirt
+	suit = /obj/item/clothing/suit/toggle/chef
+	head = /obj/item/clothing/head/chefhat
+	mask = /obj/item/clothing/mask/fakemoustache/italian
+	backpack_contents = list(/obj/item/sharpener = 1)
+
+/datum/outfit/job/cook/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	var/datum/job/cook/J = SSjob.GetJobType(jobtype)
+	if(J) // Fix for runtime caused by invalid job being passed
+		if(J.cooks>0)//Cooks
+			suit = /obj/item/clothing/suit/apron/chef
+			head = /obj/item/clothing/head/soft/mime
+		if(!visualsOnly)
+			J.cooks++
+
+/datum/outfit/job/cook/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	var/list/possible_boxes = subtypesof(/obj/item/storage/box/ingredients)
+	var/chosen_box = pick(possible_boxes)
+	var/obj/item/storage/box/I = new chosen_box(src)
+	H.equip_to_slot_or_del(I,SLOT_IN_BACKPACK)
+	var/datum/martial_art/cqc/under_siege/justacook = new
+	justacook.teach(H)
+
+
+undefined

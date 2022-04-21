@@ -1,1 +1,74 @@
-L2RhdHVtL2pvYi9yZAoJdGl0bGUgPSAiUmVzZWFyY2ggRGlyZWN0b3IiCglmbGFnID0gUkRfSkYKCWF1dG9fZGVhZG1pbl9yb2xlX2ZsYWdzID0gREVBRE1JTl9QT1NJVElPTl9IRUFECglkZXBhcnRtZW50X2hlYWQgPSBsaXN0KCJDYXB0YWluIikKCWRlcGFydG1lbnRfZmxhZyA9IE1FRFNDSQoJaGVhZF9hbm5vdW5jZSA9IGxpc3QoIlNjaWVuY2UiKQoJZmFjdGlvbiA9ICJTdGF0aW9uIgoJdG90YWxfcG9zaXRpb25zID0gMQoJc3Bhd25fcG9zaXRpb25zID0gMQoJc3VwZXJ2aXNvcnMgPSAidGhlIGNhcHRhaW4iCglzZWxlY3Rpb25fY29sb3IgPSAiI2ZmZGRmZiIKCXJlcV9hZG1pbl9ub3RpZnkgPSAxCgltaW5pbWFsX3BsYXllcl9hZ2UgPSA3CglleHBfdHlwZV9kZXBhcnRtZW50ID0gRVhQX1RZUEVfU0NJRU5DRQoJZXhwX3JlcXVpcmVtZW50cyA9IDE4MAoJZXhwX3R5cGUgPSBFWFBfVFlQRV9DUkVXCglleHBfdHlwZV9kZXBhcnRtZW50ID0gRVhQX1RZUEVfU0NJRU5DRQoJYWx0X3RpdGxlcyA9IGxpc3QoIkNoaWVmIFNjaWVuY2UgT2ZmaWNlciIsICJIZWFkIG9mIFJlc2VhcmNoIikKCglvdXRmaXQgPSAvZGF0dW0vb3V0Zml0L2pvYi9yZAoKCWFjY2VzcyA9IGxpc3QoQUNDRVNTX1JELCBBQ0NFU1NfSEVBRFMsIEFDQ0VTU19UT1gsIEFDQ0VTU19HRU5FVElDUywgQUNDRVNTX01PUkdVRSwKCQkJICAgICAgICAgICAgQUNDRVNTX1RPWF9TVE9SQUdFLCBBQ0NFU1NfVEVMRVBPUlRFUiwgQUNDRVNTX1NFQ19ET09SUywgQUNDRVNTX01FQ0hfU0NJRU5DRSwKCQkJICAgICAgICAgICAgQUNDRVNTX1JFU0VBUkNILCBBQ0NFU1NfUk9CT1RJQ1MsIEFDQ0VTU19YRU5PQklPTE9HWSwgQUNDRVNTX0FJX1VQTE9BRCwKCQkJICAgICAgICAgICAgQUNDRVNTX1JDX0FOTk9VTkNFLCBBQ0NFU1NfS0VZQ0FSRF9BVVRILCBBQ0NFU1NfR0FURVdBWSwgQUNDRVNTX01JTkVSQUxfU1RPUkVST09NLAoJCQkgICAgICAgICAgICBBQ0NFU1NfVEVDSF9TVE9SQUdFLCBBQ0NFU1NfTUlOSVNBVCwgQUNDRVNTX01BSU5UX1RVTk5FTFMsIEFDQ0VTU19ORVRXT1JLKQoJbWluaW1hbF9hY2Nlc3MgPSBsaXN0KEFDQ0VTU19SRCwgQUNDRVNTX0hFQURTLCBBQ0NFU1NfVE9YLCBBQ0NFU1NfR0VORVRJQ1MsIEFDQ0VTU19NT1JHVUUsCgkJCSAgICAgICAgICAgIEFDQ0VTU19UT1hfU1RPUkFHRSwgQUNDRVNTX1RFTEVQT1JURVIsIEFDQ0VTU19TRUNfRE9PUlMsIEFDQ0VTU19NRUNIX1NDSUVOQ0UsCgkJCSAgICAgICAgICAgIEFDQ0VTU19SRVNFQVJDSCwgQUNDRVNTX1JPQk9USUNTLCBBQ0NFU1NfWEVOT0JJT0xPR1ksIEFDQ0VTU19BSV9VUExPQUQsCgkJCSAgICAgICAgICAgIEFDQ0VTU19SQ19BTk5PVU5DRSwgQUNDRVNTX0tFWUNBUkRfQVVUSCwgQUNDRVNTX0dBVEVXQVksIEFDQ0VTU19NSU5FUkFMX1NUT1JFUk9PTSwKCQkJICAgICAgICAgICAgQUNDRVNTX1RFQ0hfU1RPUkFHRSwgQUNDRVNTX01JTklTQVQsIEFDQ0VTU19NQUlOVF9UVU5ORUxTLCBBQ0NFU1NfTkVUV09SSykKCXBheWNoZWNrID0gUEFZQ0hFQ0tfQ09NTUFORAoJcGF5Y2hlY2tfZGVwYXJ0bWVudCA9IEFDQ09VTlRfU0NJCgoJZGlzcGxheV9vcmRlciA9IEpPQl9ESVNQTEFZX09SREVSX1JFU0VBUkNIX0RJUkVDVE9SCgoJY2hhbmdlZF9tYXBzID0gbGlzdCgiT21lZ2FTdGF0aW9uIikKCi9kYXR1bS9qb2IvcmQvcHJvYy9PbWVnYVN0YXRpb25DaGFuZ2VzKCkKCXJldHVybiBUUlVFCgovZGF0dW0vb3V0Zml0L2pvYi9yZAoJbmFtZSA9ICJSZXNlYXJjaCBEaXJlY3RvciIKCW5hbWUgPSAiUmVzZWFyY2ggRGlyZWN0b3IiCglqb2J0eXBlID0gL2RhdHVtL2pvYi9yZAoKCWJlbHQgPSAvb2JqL2l0ZW0vcGRhL2hlYWRzL3JkCgllYXJzID0gL29iai9pdGVtL3JhZGlvL2hlYWRzZXQvaGVhZHMvcmQKCWdsYXNzZXMgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvZ2xhc3Nlcy9odWQvZGlhZ25vc3RpYy9zdW5nbGFzc2VzCgl1bmlmb3JtID0gL29iai9pdGVtL2Nsb3RoaW5nL3VuZGVyL3JhbmsvcmVzZWFyY2hfZGlyZWN0b3IKCXVuaWZvcm1fc2tpcnQgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvdW5kZXIvcmFuay9yZXNlYXJjaF9kaXJlY3Rvci9za2lydAoJc2hvZXMgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvc2hvZXMvc25lYWtlcnMvYnJvd24KCWFsdF9zaG9lcyA9IC9vYmovaXRlbS9jbG90aGluZy9zaG9lcy94ZW5vX3dyYXBzL2NvbW1hbmQgLy8gUHJvdmlkZXMgQ29tbWFuZCBzaG9lcyB0byBkaWdpdGlncmFkZSBzcGVjaWVzCglzdWl0ID0gL29iai9pdGVtL2Nsb3RoaW5nL3N1aXQvdG9nZ2xlL2xhYmNvYXQKCWxfaGFuZCA9IC9vYmovaXRlbS9jbGlwYm9hcmQKCWxfcG9ja2V0ID0gL29iai9pdGVtL2xhc2VyX3BvaW50ZXIKCWJhY2twYWNrX2NvbnRlbnRzID0gbGlzdCgvb2JqL2l0ZW0vbWVsZWUvY2xhc3NpY19iYXRvbi90ZWxlc2NvcGljPTEsIC9vYmovaXRlbS9tb2R1bGFyX2NvbXB1dGVyL3RhYmxldC9waG9uZS9wcmVzZXQvYWR2YW5jZWQvY29tbWFuZD0xKSAvL3lvZ3MgLSByZW1vdmVzIHNjaSBidWRnZXQKCgliYWNrcGFjayA9IC9vYmovaXRlbS9zdG9yYWdlL2JhY2twYWNrL3NjaWVuY2UKCXNhdGNoZWwgPSAvb2JqL2l0ZW0vc3RvcmFnZS9iYWNrcGFjay9zYXRjaGVsL3RveAoKCWNoYW1lbGVvbl9leHRyYXMgPSAvb2JqL2l0ZW0vc3RhbXAvcmQKCi9kYXR1bS9vdXRmaXQvam9iL3JkL3JpZwoJbmFtZSA9ICJSZXNlYXJjaCBEaXJlY3RvciAoSGFyZHN1aXQpIgoKCWxfaGFuZCA9IG51bGwKCW1hc2sgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvbWFzay9icmVhdGgKCXN1aXQgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvc3VpdC9zcGFjZS9oYXJkc3VpdC9yZAoJc3VpdF9zdG9yZSA9IC9vYmovaXRlbS90YW5rL2ludGVybmFscy9veHlnZW4KCWludGVybmFsc19zbG90ID0gU0xPVF9TX1NUT1JFCgp1bmRlZmluZWQK
+/datum/job/rd
+	title = "Research Director"
+	flag = RD_JF
+	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
+	department_head = list("Captain")
+	department_flag = MEDSCI
+	head_announce = list("Science")
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the captain"
+	selection_color = "#ffddff"
+	req_admin_notify = 1
+	minimal_player_age = 7
+	exp_type_department = EXP_TYPE_SCIENCE
+	exp_requirements = 180
+	exp_type = EXP_TYPE_CREW
+	exp_type_department = EXP_TYPE_SCIENCE
+	alt_titles = list("Chief Science Officer", "Head of Research")
+
+	outfit = /datum/outfit/job/rd
+
+	access = list(ACCESS_RD, ACCESS_HEADS, ACCESS_TOX, ACCESS_GENETICS, ACCESS_MORGUE,
+			            ACCESS_TOX_STORAGE, ACCESS_TELEPORTER, ACCESS_SEC_DOORS, ACCESS_MECH_SCIENCE,
+			            ACCESS_RESEARCH, ACCESS_ROBOTICS, ACCESS_XENOBIOLOGY, ACCESS_AI_UPLOAD,
+			            ACCESS_RC_ANNOUNCE, ACCESS_KEYCARD_AUTH, ACCESS_GATEWAY, ACCESS_MINERAL_STOREROOM,
+			            ACCESS_TECH_STORAGE, ACCESS_MINISAT, ACCESS_MAINT_TUNNELS, ACCESS_NETWORK)
+	minimal_access = list(ACCESS_RD, ACCESS_HEADS, ACCESS_TOX, ACCESS_GENETICS, ACCESS_MORGUE,
+			            ACCESS_TOX_STORAGE, ACCESS_TELEPORTER, ACCESS_SEC_DOORS, ACCESS_MECH_SCIENCE,
+			            ACCESS_RESEARCH, ACCESS_ROBOTICS, ACCESS_XENOBIOLOGY, ACCESS_AI_UPLOAD,
+			            ACCESS_RC_ANNOUNCE, ACCESS_KEYCARD_AUTH, ACCESS_GATEWAY, ACCESS_MINERAL_STOREROOM,
+			            ACCESS_TECH_STORAGE, ACCESS_MINISAT, ACCESS_MAINT_TUNNELS, ACCESS_NETWORK)
+	paycheck = PAYCHECK_COMMAND
+	paycheck_department = ACCOUNT_SCI
+
+	display_order = JOB_DISPLAY_ORDER_RESEARCH_DIRECTOR
+
+	changed_maps = list("OmegaStation")
+
+/datum/job/rd/proc/OmegaStationChanges()
+	return TRUE
+
+/datum/outfit/job/rd
+	name = "Research Director"
+	name = "Research Director"
+	jobtype = /datum/job/rd
+
+	belt = /obj/item/pda/heads/rd
+	ears = /obj/item/radio/headset/heads/rd
+	glasses = /obj/item/clothing/glasses/hud/diagnostic/sunglasses
+	uniform = /obj/item/clothing/under/rank/research_director
+	uniform_skirt = /obj/item/clothing/under/rank/research_director/skirt
+	shoes = /obj/item/clothing/shoes/sneakers/brown
+	alt_shoes = /obj/item/clothing/shoes/xeno_wraps/command // Provides Command shoes to digitigrade species
+	suit = /obj/item/clothing/suit/toggle/labcoat
+	l_hand = /obj/item/clipboard
+	l_pocket = /obj/item/laser_pointer
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/phone/preset/advanced/command=1) //yogs - removes sci budget
+
+	backpack = /obj/item/storage/backpack/science
+	satchel = /obj/item/storage/backpack/satchel/tox
+
+	chameleon_extras = /obj/item/stamp/rd
+
+/datum/outfit/job/rd/rig
+	name = "Research Director (Hardsuit)"
+
+	l_hand = null
+	mask = /obj/item/clothing/mask/breath
+	suit = /obj/item/clothing/suit/space/hardsuit/rd
+	suit_store = /obj/item/tank/internals/oxygen
+	internals_slot = SLOT_S_STORE
+
+undefined

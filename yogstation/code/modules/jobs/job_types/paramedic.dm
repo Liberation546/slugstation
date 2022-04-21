@@ -1,1 +1,51 @@
-L2RhdHVtL2pvYi9wYXJhbWVkaWMKCXRpdGxlID0gIlBhcmFtZWRpYyIKCWZsYWcgPSBQQVJBTUVESUMKCWRlcGFydG1lbnRfaGVhZCA9IGxpc3QoIkNoaWVmIE1lZGljYWwgT2ZmaWNlciIpCglkZXBhcnRtZW50X2ZsYWcgPSBNRURTQ0kKCWZhY3Rpb24gPSAiU3RhdGlvbiIKCXRvdGFsX3Bvc2l0aW9ucyA9IDMKCXNwYXduX3Bvc2l0aW9ucyA9IDIKCXN1cGVydmlzb3JzID0gInRoZSBjaGllZiBtZWRpY2FsIG9mZmljZXIiCglzZWxlY3Rpb25fY29sb3IgPSAiI2Q0ZWJmMiIKCWFsdF90aXRsZXMgPSBsaXN0KCJFTVQiLCAiUGFyYW1lZGljIFRyYWluZWUiLCAiUmFwaWQgUmVzcG9uc2UgTWVkaWMiKQoKCW91dGZpdCA9IC9kYXR1bS9vdXRmaXQvam9iL3BhcmFtZWRpYwoKCW1pbmltYWxfY2hhcmFjdGVyX2FnZSA9IDI0IC8vICJBY2NvcmRpbmcgdG8gYWdlIHN0YXRpc3RpY3MgcHVibGlzaGVkIGJ5IHRoZSBBc3NvY2lhdGlvbiBvZiBBbWVyaWNhbiBNZWRpY2FsIENvbGxlZ2VzLCB0aGUgYXZlcmFnZSBhZ2UgYW1vbmcgbWVkaWNhbCBzdHVkZW50cyB3aG8gbWF0cmljdWxhdGVkIGF0IFUuUy4gbWVkaWNhbCBzY2hvb2xzIGluIHRoZSAyMDE3LTIwMTggc2Nob29sIHllYXIgd2FzIDI0IgoKCWFjY2VzcyA9IGxpc3QoQUNDRVNTX01FRElDQUwsIEFDQ0VTU19NT1JHVUUsIEFDQ0VTU19NQUlOVF9UVU5ORUxTLCBBQ0NFU1NfRVhURVJOQUxfQUlSTE9DS1MsIEFDQ0VTU19QQVJBTUVESUMsIEFDQ0VTU19DTE9OSU5HLCBBQ0NFU1NfTUVDSF9NRURJQ0FMKQoJbWluaW1hbF9hY2Nlc3MgPSBsaXN0KEFDQ0VTU19NRURJQ0FMLCBBQ0NFU1NfTU9SR1VFLCBBQ0NFU1NfTUFJTlRfVFVOTkVMUywgQUNDRVNTX0VYVEVSTkFMX0FJUkxPQ0tTLCBBQ0NFU1NfUEFSQU1FRElDLCBBQ0NFU1NfTUVDSF9NRURJQ0FMKQoJcGF5Y2hlY2sgPSBQQVlDSEVDS19NRURJVU0KCXBheWNoZWNrX2RlcGFydG1lbnQgPSBBQ0NPVU5UX01FRAoJZGlzcGxheV9vcmRlciA9IEpPQl9ESVNQTEFZX09SREVSX1BBUkFNRURJQwoKCWNoYW5nZWRfbWFwcyA9IGxpc3QoIk9tZWdhU3RhdGlvbiIsICJFY2xpcHNlU3RhdGlvbiIpCgovZGF0dW0vam9iL3BhcmFtZWRpYy9wcm9jL09tZWdhU3RhdGlvbkNoYW5nZXMoKQoJdG90YWxfcG9zaXRpb25zID0gMQoJc3Bhd25fcG9zaXRpb25zID0gMQoJc3VwZXJ2aXNvcnMgPSAidGhlIGNhcHRhaW4gYW5kIHRoZSBoZWFkIG9mIHBlcnNvbm5lbCIKCi9kYXR1bS9qb2IvcGFyYW1lZGljL3Byb2MvRWNsaXBzZVN0YXRpb25DaGFuZ2VzKCkKCXRvdGFsX3Bvc2l0aW9ucyA9IDQKCXNwYXduX3Bvc2l0aW9ucyA9IDIKCi9kYXR1bS9vdXRmaXQvam9iL3BhcmFtZWRpYwoJbmFtZSA9ICJQYXJhbWVkaWMiCgluYW1lID0gIlBhcmFtZWRpYyIKCWpvYnR5cGUgPSAvZGF0dW0vam9iL3BhcmFtZWRpYwoKCWJlbHQgPSAvb2JqL2l0ZW0vcGRhL3BhcmEKCWVhcnMgPSAvb2JqL2l0ZW0vcmFkaW8vaGVhZHNldC9oZWFkc2V0X21lZAoJdW5pZm9ybSA9IC9vYmovaXRlbS9jbG90aGluZy91bmRlci9yYW5rL21lZGljYWwKCXN1aXQgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvc3VpdC90b2dnbGUvbGFiY29hdC9lbXQKCXNob2VzID0gL29iai9pdGVtL2Nsb3RoaW5nL3Nob2VzL3NuZWFrZXJzL3doaXRlCglsX2hhbmQgPSAvb2JqL2l0ZW0vcm9sbGVyCglsX3BvY2tldCA9IC9vYmovaXRlbS9mbGFzaGxpZ2h0L3Blbi9wYXJhbWVkaWMKCXJfcG9ja2V0ID0gL29iai9pdGVtL2dwcwoJYmFja3BhY2sgPSAvb2JqL2l0ZW0vc3RvcmFnZS9iYWNrcGFjay9tZWRpYwoJc2F0Y2hlbCA9IC9vYmovaXRlbS9zdG9yYWdlL2JhY2twYWNrL3NhdGNoZWwvbWVkCglkdWZmZWxiYWcgPSAvb2JqL2l0ZW0vc3RvcmFnZS9iYWNrcGFjay9kdWZmZWxiYWcvbWVkCgp1bmRlZmluZWQK
+/datum/job/paramedic
+	title = "Paramedic"
+	flag = PARAMEDIC
+	department_head = list("Chief Medical Officer")
+	department_flag = MEDSCI
+	faction = "Station"
+	total_positions = 3
+	spawn_positions = 2
+	supervisors = "the chief medical officer"
+	selection_color = "#d4ebf2"
+	alt_titles = list("EMT", "Paramedic Trainee", "Rapid Response Medic")
+
+	outfit = /datum/outfit/job/paramedic
+
+	minimal_character_age = 24 // "According to age statistics published by the Association of American Medical Colleges, the average age among medical students who matriculated at U.S. medical schools in the 2017-2018 school year was 24"
+
+	access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_PARAMEDIC, ACCESS_CLONING, ACCESS_MECH_MEDICAL)
+	minimal_access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_PARAMEDIC, ACCESS_MECH_MEDICAL)
+	paycheck = PAYCHECK_MEDIUM
+	paycheck_department = ACCOUNT_MED
+	display_order = JOB_DISPLAY_ORDER_PARAMEDIC
+
+	changed_maps = list("OmegaStation", "EclipseStation")
+
+/datum/job/paramedic/proc/OmegaStationChanges()
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the captain and the head of personnel"
+
+/datum/job/paramedic/proc/EclipseStationChanges()
+	total_positions = 4
+	spawn_positions = 2
+
+/datum/outfit/job/paramedic
+	name = "Paramedic"
+	name = "Paramedic"
+	jobtype = /datum/job/paramedic
+
+	belt = /obj/item/pda/para
+	ears = /obj/item/radio/headset/headset_med
+	uniform = /obj/item/clothing/under/rank/medical
+	suit = /obj/item/clothing/suit/toggle/labcoat/emt
+	shoes = /obj/item/clothing/shoes/sneakers/white
+	l_hand = /obj/item/roller
+	l_pocket = /obj/item/flashlight/pen/paramedic
+	r_pocket = /obj/item/gps
+	backpack = /obj/item/storage/backpack/medic
+	satchel = /obj/item/storage/backpack/satchel/med
+	duffelbag = /obj/item/storage/backpack/duffelbag/med
+
+undefined

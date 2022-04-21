@@ -1,1 +1,70 @@
-L2RhdHVtL2pvYi9jYXB0YWluCgl0aXRsZSA9ICJDYXB0YWluIgoJZmxhZyA9IENBUFRBSU4KCWF1dG9fZGVhZG1pbl9yb2xlX2ZsYWdzID0gREVBRE1JTl9QT1NJVElPTl9IRUFEfERFQURNSU5fUE9TSVRJT05fU0VDVVJJVFl8REVBRE1JTl9QT1NJVElPTl9DUklUSUNBTAoJZGVwYXJ0bWVudF9oZWFkID0gbGlzdCgiQ2VudENvbSIpCglkZXBhcnRtZW50X2ZsYWcgPSBFTkdTRUMKCWZhY3Rpb24gPSAiU3RhdGlvbiIKCXRvdGFsX3Bvc2l0aW9ucyA9IDEKCXNwYXduX3Bvc2l0aW9ucyA9IDEKCXN1cGVydmlzb3JzID0gIk5hbm9UcmFzZW4gb2ZmaWNlcnMgYW5kIFNwYWNlIGxhdyIgLy9DaGFuZ2VkIHRvIG9mZmljZXIgdG8gc2VwYXJhdGUgZnJvbSBDZW50Q29tIG9mZmljaWFscyBiZWluZyB0aGVpciBzdXBlcmlvci4KCXNlbGVjdGlvbl9jb2xvciA9ICIjY2NjY2ZmIgoJcmVxX2FkbWluX25vdGlmeSA9IDEKCXNwYWNlX2xhd19ub3RpZnkgPSAxIC8vWW9ncwoJbWluaW1hbF9wbGF5ZXJfYWdlID0gMTQKCWV4cF9yZXF1aXJlbWVudHMgPSAxODAKCWV4cF90eXBlID0gRVhQX1RZUEVfQ1JFVwoJZXhwX3R5cGVfZGVwYXJ0bWVudCA9IEVYUF9UWVBFX0NPTU1BTkQKCWFsdF90aXRsZXMgPSBsaXN0KCJTdGF0aW9uIENvbW1hbmRlciIsICJGYWNpbGl0eSBEaXJlY3RvciIpCgoJb3V0Zml0ID0gL2RhdHVtL291dGZpdC9qb2IvY2FwdGFpbgoKCWFjY2VzcyA9IGxpc3QoKSAJCQkvL1NlZSBnZXRfYWNjZXNzKCkKCW1pbmltYWxfYWNjZXNzID0gbGlzdCgpIAkvL1NlZSBnZXRfYWNjZXNzKCkKCXBheWNoZWNrID0gUEFZQ0hFQ0tfQ09NTUFORAoJcGF5Y2hlY2tfZGVwYXJ0bWVudCA9IEFDQ09VTlRfU0VDCgoJbWluZF90cmFpdHMgPSBsaXN0KFRSQUlUX0RJU0tfVkVSSUZJRVIpCgoJZGlzcGxheV9vcmRlciA9IEpPQl9ESVNQTEFZX09SREVSX0NBUFRBSU4KCi9kYXR1bS9qb2IvY2FwdGFpbi9nZXRfYWNjZXNzKCkKCXJldHVybiBnZXRfYWxsX2FjY2Vzc2VzKCkKCi9kYXR1bS9qb2IvY2FwdGFpbi9hbm5vdW5jZShtb2IvbGl2aW5nL2NhcmJvbi9odW1hbi9IKQoJLi4oKQoJU1N0aWNrZXIuT25Sb3VuZHN0YXJ0KENBTExCQUNLKEdMT0JBTF9QUk9DLCAucHJvYy9taW5vcl9hbm5vdW5jZSwgIkNhcHRhaW4gW0gucmVhbF9uYW1lXSBvbiBkZWNrISIpKQoKL2RhdHVtL291dGZpdC9qb2IvY2FwdGFpbgoJbmFtZSA9ICJDYXB0YWluIgoJbmFtZSA9ICJDYXB0YWluIgoJam9idHlwZSA9IC9kYXR1bS9qb2IvY2FwdGFpbgoKCWJlbHQgPSAvb2JqL2l0ZW0vcGRhL2NhcHRhaW4KCWdsYXNzZXMgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvZ2xhc3Nlcy9zdW5nbGFzc2VzCgllYXJzID0gL29iai9pdGVtL3JhZGlvL2hlYWRzZXQvaGVhZHMvY2FwdGFpbi9hbHQKCWdsb3ZlcyA9IC9vYmovaXRlbS9jbG90aGluZy9nbG92ZXMvY29sb3IvY2FwdGFpbgoJdW5pZm9ybSA9ICAvb2JqL2l0ZW0vY2xvdGhpbmcvdW5kZXIvcmFuay9jYXB0YWluCgl1bmlmb3JtX3NraXJ0ID0gL29iai9pdGVtL2Nsb3RoaW5nL3VuZGVyL3JhbmsvY2FwdGFpbi9za2lydAoJc3VpdCA9IC9vYmovaXRlbS9jbG90aGluZy9zdWl0L2FybW9yL3Zlc3QvY2FwY2FyYXBhY2UKCXNob2VzID0gL29iai9pdGVtL2Nsb3RoaW5nL3Nob2VzL3NuZWFrZXJzL2Jyb3duCgloZWFkID0gL29iai9pdGVtL2Nsb3RoaW5nL2hlYWQvY2FwaGF0CgliYWNrcGFja19jb250ZW50cyA9IGxpc3QoL29iai9pdGVtL21lbGVlL2NsYXNzaWNfYmF0b24vdGVsZXNjb3BpYz0xLCAvb2JqL2l0ZW0vc3RhdGlvbl9jaGFydGVyPTEsIC9vYmovaXRlbS9ndW4vZW5lcmd5L2VfZ3VuPTEsIC9vYmovaXRlbS9tb2R1bGFyX2NvbXB1dGVyL3RhYmxldC9waG9uZS9wcmVzZXQvYWR2YW5jZWQvY29tbWFuZD0xKSAvL3lvZ3MgLSBhZGRzIGVndW4vcmVtb3ZlcyBjaXYgYnVkZ2V0CgoJYmFja3BhY2sgPSAvb2JqL2l0ZW0vc3RvcmFnZS9iYWNrcGFjay9jYXB0YWluCglzYXRjaGVsID0gL29iai9pdGVtL3N0b3JhZ2UvYmFja3BhY2svc2F0Y2hlbC9jYXAKCWR1ZmZlbGJhZyA9IC9vYmovaXRlbS9zdG9yYWdlL2JhY2twYWNrL2R1ZmZlbGJhZy9jYXB0YWluCgoJaW1wbGFudHMgPSBsaXN0KC9vYmovaXRlbS9pbXBsYW50L21pbmRzaGllbGQpCglhY2Nlc3NvcnkgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvYWNjZXNzb3J5L21lZGFsL2dvbGQvY2FwdGFpbgoKCWNoYW1lbGVvbl9leHRyYXMgPSBsaXN0KC9vYmovaXRlbS9ndW4vZW5lcmd5L2VfZ3VuLCAvb2JqL2l0ZW0vc3RhbXAvY2FwdGFpbikKCi9kYXR1bS9vdXRmaXQvam9iL2NhcHRhaW4vaGFyZHN1aXQKCW5hbWUgPSAiQ2FwdGFpbiAoSGFyZHN1aXQpIgoKCW1hc2sgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvbWFzay9nYXMvc2VjaGFpbGVyCglzdWl0ID0gL29iai9pdGVtL2Nsb3RoaW5nL3N1aXQvc3BhY2UvaGFyZHN1aXQvc3dhdC9jYXB0YWluCglzdWl0X3N0b3JlID0gL29iai9pdGVtL3RhbmsvaW50ZXJuYWxzL294eWdlbgoKdW5kZWZpbmVkCg==
+/datum/job/captain
+	title = "Captain"
+	flag = CAPTAIN
+	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD|DEADMIN_POSITION_SECURITY|DEADMIN_POSITION_CRITICAL
+	department_head = list("CentCom")
+	department_flag = ENGSEC
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "NanoTrasen officers and Space law" //Changed to officer to separate from CentCom officials being their superior.
+	selection_color = "#ccccff"
+	req_admin_notify = 1
+	space_law_notify = 1 //Yogs
+	minimal_player_age = 14
+	exp_requirements = 180
+	exp_type = EXP_TYPE_CREW
+	exp_type_department = EXP_TYPE_COMMAND
+	alt_titles = list("Station Commander", "Facility Director")
+
+	outfit = /datum/outfit/job/captain
+
+	access = list() 			//See get_access()
+	minimal_access = list() 	//See get_access()
+	paycheck = PAYCHECK_COMMAND
+	paycheck_department = ACCOUNT_SEC
+
+	mind_traits = list(TRAIT_DISK_VERIFIER)
+
+	display_order = JOB_DISPLAY_ORDER_CAPTAIN
+
+/datum/job/captain/get_access()
+	return get_all_accesses()
+
+/datum/job/captain/announce(mob/living/carbon/human/H)
+	..()
+	SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, .proc/minor_announce, "Captain [H.real_name] on deck!"))
+
+/datum/outfit/job/captain
+	name = "Captain"
+	name = "Captain"
+	jobtype = /datum/job/captain
+
+	belt = /obj/item/pda/captain
+	glasses = /obj/item/clothing/glasses/sunglasses
+	ears = /obj/item/radio/headset/heads/captain/alt
+	gloves = /obj/item/clothing/gloves/color/captain
+	uniform =  /obj/item/clothing/under/rank/captain
+	uniform_skirt = /obj/item/clothing/under/rank/captain/skirt
+	suit = /obj/item/clothing/suit/armor/vest/capcarapace
+	shoes = /obj/item/clothing/shoes/sneakers/brown
+	head = /obj/item/clothing/head/caphat
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/station_charter=1, /obj/item/gun/energy/e_gun=1, /obj/item/modular_computer/tablet/phone/preset/advanced/command=1) //yogs - adds egun/removes civ budget
+
+	backpack = /obj/item/storage/backpack/captain
+	satchel = /obj/item/storage/backpack/satchel/cap
+	duffelbag = /obj/item/storage/backpack/duffelbag/captain
+
+	implants = list(/obj/item/implant/mindshield)
+	accessory = /obj/item/clothing/accessory/medal/gold/captain
+
+	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/captain)
+
+/datum/outfit/job/captain/hardsuit
+	name = "Captain (Hardsuit)"
+
+	mask = /obj/item/clothing/mask/gas/sechailer
+	suit = /obj/item/clothing/suit/space/hardsuit/swat/captain
+	suit_store = /obj/item/tank/internals/oxygen
+
+undefined

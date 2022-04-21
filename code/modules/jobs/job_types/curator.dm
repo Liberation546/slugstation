@@ -1,1 +1,49 @@
-L2RhdHVtL2pvYi9jdXJhdG9yCgl0aXRsZSA9ICJDdXJhdG9yIgoJZmxhZyA9IENVUkFUT1IKCWRlcGFydG1lbnRfaGVhZCA9IGxpc3QoIkhlYWQgb2YgUGVyc29ubmVsIikKCWRlcGFydG1lbnRfZmxhZyA9IENJVklMSUFOCglmYWN0aW9uID0gIlN0YXRpb24iCgl0b3RhbF9wb3NpdGlvbnMgPSAxCglzcGF3bl9wb3NpdGlvbnMgPSAxCglzdXBlcnZpc29ycyA9ICJ0aGUgaGVhZCBvZiBwZXJzb25uZWwiCglzZWxlY3Rpb25fY29sb3IgPSAiI2RkZGRkZCIKCglvdXRmaXQgPSAvZGF0dW0vb3V0Zml0L2pvYi9jdXJhdG9yCgoJYWx0X3RpdGxlcyA9IGxpc3QoIkxpYnJhcmlhbiIsICJKb3VybmFsaXN0IiwgIkFyY2hpdmlzdCIpCgoJYWNjZXNzID0gbGlzdChBQ0NFU1NfTElCUkFSWSwgQUNDRVNTX0NPTlNUUlVDVElPTiwgQUNDRVNTX01JTklOR19TVEFUSU9OKQoJbWluaW1hbF9hY2Nlc3MgPSBsaXN0KEFDQ0VTU19MSUJSQVJZLCBBQ0NFU1NfQ09OU1RSVUNUSU9OLCBBQ0NFU1NfTUlOSU5HX1NUQVRJT04pCglwYXljaGVjayA9IFBBWUNIRUNLX0VBU1kKCXBheWNoZWNrX2RlcGFydG1lbnQgPSBBQ0NPVU5UX0NJVgoKCWRpc3BsYXlfb3JkZXIgPSBKT0JfRElTUExBWV9PUkRFUl9DVVJBVE9SCgovZGF0dW0vb3V0Zml0L2pvYi9jdXJhdG9yCgluYW1lID0gIkN1cmF0b3IiCgluYW1lID0gIkN1cmF0b3IiCglqb2J0eXBlID0gL2RhdHVtL2pvYi9jdXJhdG9yCgoJZWFycyA9IC9vYmovaXRlbS9yYWRpby9oZWFkc2V0L2hlYWRzZXRfc3J2Cgl1bmlmb3JtID0gL29iai9pdGVtL2Nsb3RoaW5nL3VuZGVyL3JhbmsvY3VyYXRvcgoJdW5pZm9ybV9za2lydCA9IC9vYmovaXRlbS9jbG90aGluZy91bmRlci9yYW5rL2N1cmF0b3Ivc2tpcnQKCWxfaGFuZCA9IC9vYmovaXRlbS9zdG9yYWdlL2JhZy9ib29rcwoJcl9wb2NrZXQgPSAvb2JqL2l0ZW0va2V5L2Rpc3BsYXljYXNlCglsX3BvY2tldCA9IC9vYmovaXRlbS9sYXNlcl9wb2ludGVyCglhY2Nlc3NvcnkgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvYWNjZXNzb3J5L3BvY2tldHByb3RlY3Rvci9mdWxsCgliYWNrcGFja19jb250ZW50cyA9IGxpc3QoCgkJL29iai9pdGVtL2Nob2ljZV9iZWFjb24vaGVybyA9IDEsCgkJL29iai9pdGVtL3NvYXBzdG9uZSA9IDEsCgkJL29iai9pdGVtL2JhcmNvZGVzY2FubmVyID0gMQoJKQoKL2RhdHVtL291dGZpdC9qb2IvY3VyYXRvci9wb3N0X2VxdWlwKG1vYi9saXZpbmcvY2FyYm9uL2h1bWFuL0gsIHZpc3VhbHNPbmx5ID0gRkFMU0UpCgkuLigpCgoJaWYodmlzdWFsc09ubHkpCgkJcmV0dXJuCgoJSC5ncmFudF9hbGxfbGFuZ3VhZ2VzKFRSVUUsIFRSVUUsIFRSVUUsIExBTkdVQUdFX0NVUkFUT1IpCgp1bmRlZmluZWQK
+/datum/job/curator
+	title = "Curator"
+	flag = CURATOR
+	department_head = list("Head of Personnel")
+	department_flag = CIVILIAN
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the head of personnel"
+	selection_color = "#dddddd"
+
+	outfit = /datum/outfit/job/curator
+
+	alt_titles = list("Librarian", "Journalist", "Archivist")
+
+	access = list(ACCESS_LIBRARY, ACCESS_CONSTRUCTION, ACCESS_MINING_STATION)
+	minimal_access = list(ACCESS_LIBRARY, ACCESS_CONSTRUCTION, ACCESS_MINING_STATION)
+	paycheck = PAYCHECK_EASY
+	paycheck_department = ACCOUNT_CIV
+
+	display_order = JOB_DISPLAY_ORDER_CURATOR
+
+/datum/outfit/job/curator
+	name = "Curator"
+	name = "Curator"
+	jobtype = /datum/job/curator
+
+	ears = /obj/item/radio/headset/headset_srv
+	uniform = /obj/item/clothing/under/rank/curator
+	uniform_skirt = /obj/item/clothing/under/rank/curator/skirt
+	l_hand = /obj/item/storage/bag/books
+	r_pocket = /obj/item/key/displaycase
+	l_pocket = /obj/item/laser_pointer
+	accessory = /obj/item/clothing/accessory/pocketprotector/full
+	backpack_contents = list(
+		/obj/item/choice_beacon/hero = 1,
+		/obj/item/soapstone = 1,
+		/obj/item/barcodescanner = 1
+	)
+
+/datum/outfit/job/curator/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+
+	if(visualsOnly)
+		return
+
+	H.grant_all_languages(TRUE, TRUE, TRUE, LANGUAGE_CURATOR)
+
+undefined

@@ -1,1 +1,29 @@
-L2RhdHVtL2pvYi90b3VyaXN0Cgl0aXRsZSA9ICJUb3VyaXN0IgoJZmxhZyA9IFRPVVIKCWRlcGFydG1lbnRfZmxhZyA9IENJVklMSUFOCglmYWN0aW9uID0gIlN0YXRpb24iCgl0b3RhbF9wb3NpdGlvbnMgPSAtMQoJc3Bhd25fcG9zaXRpb25zID0gMAoJc3VwZXJ2aXNvcnMgPSAidGhlIGhlYWQgb2YgcGVyc29ubmVsIgoJc2VsZWN0aW9uX2NvbG9yID0gIiNkZGRkZGQiCglhY2Nlc3MgPSBsaXN0KCkKCW1pbmltYWxfYWNjZXNzID0gbGlzdCgpCglhbHRfdGl0bGVzID0gbGlzdCgiVmlzaXRvciIsICJUcmF2ZWxlciIsICJTaXRlc2VlciIpCglvdXRmaXQgPSAvZGF0dW0vb3V0Zml0L2pvYi90b3VyaXN0CglwYXljaGVjayA9IFBBWUNIRUNLX0VBU1kKCXBheWNoZWNrX2RlcGFydG1lbnQgPSBBQ0NPVU5UX0NJVgoJZGlzcGxheV9vcmRlciA9IEpPQl9ESVNQTEFZX09SREVSX1RPVVJJU1QKCi9kYXR1bS9vdXRmaXQvam9iL3RvdXJpc3QKCW5hbWUgPSAiVG91cmlzdCIKCWpvYnR5cGUgPSAvZGF0dW0vam9iL3RvdXJpc3QKCgl1bmlmb3JtID0gL29iai9pdGVtL2Nsb3RoaW5nL3VuZGVyL3lvZ3MvdG91cmlzdAoJdW5pZm9ybSA9IC9vYmovaXRlbS9jbG90aGluZy91bmRlci95b2dzL3RvdXJpc3QKCXNob2VzID0gL29iai9pdGVtL2Nsb3RoaW5nL3Nob2VzL3NuZWFrZXJzL2JsYWNrCgllYXJzID0gL29iai9pdGVtL3JhZGlvL2hlYWRzZXQKCWJhY2twYWNrX2NvbnRlbnRzID0gbGlzdCgvb2JqL2l0ZW0vY2FtZXJhX2ZpbG0sIC9vYmovaXRlbS9zdGFjay9zcGFjZWNhc2gvYzIwLCAvb2JqL2l0ZW0vc3RhY2svc3BhY2VjYXNoL2MyMCwgL29iai9pdGVtL3N0YWNrL3NwYWNlY2FzaC9jMjApCglyX2hhbmQgPSAgL29iai9pdGVtL2NhbWVyYQoJbF9wb2NrZXQgPSAvb2JqL2l0ZW0vY2FtZXJhX2ZpbG0KCXJfcG9ja2V0ID0gL29iai9pdGVtL2NhbWVyYV9maWxtCg==
+/datum/job/tourist
+	title = "Tourist"
+	flag = TOUR
+	department_flag = CIVILIAN
+	faction = "Station"
+	total_positions = -1
+	spawn_positions = 0
+	supervisors = "the head of personnel"
+	selection_color = "#dddddd"
+	access = list()
+	minimal_access = list()
+	alt_titles = list("Visitor", "Traveler", "Siteseer")
+	outfit = /datum/outfit/job/tourist
+	paycheck = PAYCHECK_EASY
+	paycheck_department = ACCOUNT_CIV
+	display_order = JOB_DISPLAY_ORDER_TOURIST
+
+/datum/outfit/job/tourist
+	name = "Tourist"
+	jobtype = /datum/job/tourist
+
+	uniform = /obj/item/clothing/under/yogs/tourist
+	uniform = /obj/item/clothing/under/yogs/tourist
+	shoes = /obj/item/clothing/shoes/sneakers/black
+	ears = /obj/item/radio/headset
+	backpack_contents = list(/obj/item/camera_film, /obj/item/stack/spacecash/c20, /obj/item/stack/spacecash/c20, /obj/item/stack/spacecash/c20)
+	r_hand =  /obj/item/camera
+	l_pocket = /obj/item/camera_film
+	r_pocket = /obj/item/camera_film

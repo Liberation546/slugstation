@@ -1,1 +1,57 @@
-L2RhdHVtL2pvYi9kb2N0b3IKCXRpdGxlID0gIk1lZGljYWwgRG9jdG9yIgoJZmxhZyA9IERPQ1RPUgoJZGVwYXJ0bWVudF9oZWFkID0gbGlzdCgiQ2hpZWYgTWVkaWNhbCBPZmZpY2VyIikKCWRlcGFydG1lbnRfZmxhZyA9IE1FRFNDSQoJZmFjdGlvbiA9ICJTdGF0aW9uIgoJdG90YWxfcG9zaXRpb25zID0gNQoJc3Bhd25fcG9zaXRpb25zID0gMwoJc3VwZXJ2aXNvcnMgPSAidGhlIGNoaWVmIG1lZGljYWwgb2ZmaWNlciIKCXNlbGVjdGlvbl9jb2xvciA9ICIjZDRlYmYyIgoJZXhwX3JlcXVpcmVtZW50cyA9IDE4MAoJZXhwX3R5cGUgPSBFWFBfVFlQRV9DUkVXCglhbHRfdGl0bGVzID0gbGlzdCgiUGh5c2ljaWFuIiwgIlN1cmdlb24iLCAiTnVyc2UiLCAiTWVkaWNhbCBSZXNpZGVudCIsICJBdHRlbmRpbmcgUGh5c2ljaWFuIiwgIkdlbmVyYWwgUHJhY3RpdGlvbmVyIikKCglvdXRmaXQgPSAvZGF0dW0vb3V0Zml0L2pvYi9kb2N0b3IKCglhY2Nlc3MgPSBsaXN0KEFDQ0VTU19NRURJQ0FMLCBBQ0NFU1NfTU9SR1VFLCBBQ0NFU1NfU1VSR0VSWSwgQUNDRVNTX0NIRU1JU1RSWSwgQUNDRVNTX0dFTkVUSUNTLCBBQ0NFU1NfQ0xPTklORywgQUNDRVNTX01FQ0hfTUVESUNBTCwgQUNDRVNTX01JTkVSQUxfU1RPUkVST09NKQoJbWluaW1hbF9hY2Nlc3MgPSBsaXN0KEFDQ0VTU19NRURJQ0FMLCBBQ0NFU1NfTU9SR1VFLCBBQ0NFU1NfU1VSR0VSWSwgQUNDRVNTX0NMT05JTkcsIEFDQ0VTU19NRUNIX01FRElDQUwsIEFDQ0VTU19NSU5FUkFMX1NUT1JFUk9PTSkKCXBheWNoZWNrID0gUEFZQ0hFQ0tfTUVESVVNCglwYXljaGVja19kZXBhcnRtZW50ID0gQUNDT1VOVF9NRUQKCglkaXNwbGF5X29yZGVyID0gSk9CX0RJU1BMQVlfT1JERVJfTUVESUNBTF9ET0NUT1IKCgljaGFuZ2VkX21hcHMgPSBsaXN0KCJFY2xpcHNlU3RhdGlvbiIsICJPbWVnYVN0YXRpb24iKQoKL2RhdHVtL2pvYi9kb2N0b3IvcHJvYy9FY2xpcHNlU3RhdGlvbkNoYW5nZXMoKQoJdG90YWxfcG9zaXRpb25zID0gNgoJc3Bhd25fcG9zaXRpb25zID0gNQoKL2RhdHVtL2pvYi9kb2N0b3IvcHJvYy9PbWVnYVN0YXRpb25DaGFuZ2VzKCkKCXNlbGVjdGlvbl9jb2xvciA9ICIjZmZmZmZmIgoJdG90YWxfcG9zaXRpb25zID0gMwoJc3Bhd25fcG9zaXRpb25zID0gMwoJYWNjZXNzID0gbGlzdChBQ0NFU1NfTUVESUNBTCwgQUNDRVNTX01PUkdVRSwgQUNDRVNTX1NVUkdFUlksIEFDQ0VTU19DSEVNSVNUUlksIEFDQ0VTU19WSVJPTE9HWSwgQUNDRVNTX0dFTkVUSUNTKQoJbWluaW1hbF9hY2Nlc3MgPSBsaXN0KEFDQ0VTU19NRURJQ0FMLCBBQ0NFU1NfTU9SR1VFLCBBQ0NFU1NfU1VSR0VSWSwgQUNDRVNTX0NIRU1JU1RSWSwgQUNDRVNTX1ZJUk9MT0dZLCBBQ0NFU1NfR0VORVRJQ1MpCglzdXBlcnZpc29ycyA9ICJ0aGUgY2FwdGFpbiBhbmQgdGhlIGhlYWQgb2YgcGVyc29ubmVsIgoKL2RhdHVtL291dGZpdC9qb2IvZG9jdG9yCgluYW1lID0gIk1lZGljYWwgRG9jdG9yIgoJbmFtZSA9ICJNZWRpY2FsIERvY3RvciIKCWpvYnR5cGUgPSAvZGF0dW0vam9iL2RvY3RvcgoKCWVhcnMgPSAvb2JqL2l0ZW0vcmFkaW8vaGVhZHNldC9oZWFkc2V0X21lZAoJdW5pZm9ybSA9IC9vYmovaXRlbS9jbG90aGluZy91bmRlci9yYW5rL21lZGljYWwKCXVuaWZvcm1fc2tpcnQgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvdW5kZXIvcmFuay9tZWRpY2FsL3NraXJ0CglzaG9lcyA9IC9vYmovaXRlbS9jbG90aGluZy9zaG9lcy9zbmVha2Vycy93aGl0ZQoJc3VpdCA9ICAvb2JqL2l0ZW0vY2xvdGhpbmcvc3VpdC90b2dnbGUvbGFiY29hdC9tZAoJbF9oYW5kID0gL29iai9pdGVtL3N0b3JhZ2UvZmlyc3RhaWQvbWVkaWNhbAoJc3VpdF9zdG9yZSA9IC9vYmovaXRlbS9mbGFzaGxpZ2h0L3BlbgoKCWJhY2twYWNrID0gL29iai9pdGVtL3N0b3JhZ2UvYmFja3BhY2svbWVkaWMKCXNhdGNoZWwgPSAvb2JqL2l0ZW0vc3RvcmFnZS9iYWNrcGFjay9zYXRjaGVsL21lZAoJZHVmZmVsYmFnID0gL29iai9pdGVtL3N0b3JhZ2UvYmFja3BhY2svZHVmZmVsYmFnL21lZAoKCWNoYW1lbGVvbl9leHRyYXMgPSAvb2JqL2l0ZW0vZ3VuL3N5cmluZ2UKCnVuZGVmaW5lZAo=
+/datum/job/doctor
+	title = "Medical Doctor"
+	flag = DOCTOR
+	department_head = list("Chief Medical Officer")
+	department_flag = MEDSCI
+	faction = "Station"
+	total_positions = 5
+	spawn_positions = 3
+	supervisors = "the chief medical officer"
+	selection_color = "#d4ebf2"
+	exp_requirements = 180
+	exp_type = EXP_TYPE_CREW
+	alt_titles = list("Physician", "Surgeon", "Nurse", "Medical Resident", "Attending Physician", "General Practitioner")
+
+	outfit = /datum/outfit/job/doctor
+
+	access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_SURGERY, ACCESS_CHEMISTRY, ACCESS_GENETICS, ACCESS_CLONING, ACCESS_MECH_MEDICAL, ACCESS_MINERAL_STOREROOM)
+	minimal_access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_SURGERY, ACCESS_CLONING, ACCESS_MECH_MEDICAL, ACCESS_MINERAL_STOREROOM)
+	paycheck = PAYCHECK_MEDIUM
+	paycheck_department = ACCOUNT_MED
+
+	display_order = JOB_DISPLAY_ORDER_MEDICAL_DOCTOR
+
+	changed_maps = list("EclipseStation", "OmegaStation")
+
+/datum/job/doctor/proc/EclipseStationChanges()
+	total_positions = 6
+	spawn_positions = 5
+
+/datum/job/doctor/proc/OmegaStationChanges()
+	selection_color = "#ffffff"
+	total_positions = 3
+	spawn_positions = 3
+	access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_SURGERY, ACCESS_CHEMISTRY, ACCESS_VIROLOGY, ACCESS_GENETICS)
+	minimal_access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_SURGERY, ACCESS_CHEMISTRY, ACCESS_VIROLOGY, ACCESS_GENETICS)
+	supervisors = "the captain and the head of personnel"
+
+/datum/outfit/job/doctor
+	name = "Medical Doctor"
+	name = "Medical Doctor"
+	jobtype = /datum/job/doctor
+
+	ears = /obj/item/radio/headset/headset_med
+	uniform = /obj/item/clothing/under/rank/medical
+	uniform_skirt = /obj/item/clothing/under/rank/medical/skirt
+	shoes = /obj/item/clothing/shoes/sneakers/white
+	suit =  /obj/item/clothing/suit/toggle/labcoat/md
+	l_hand = /obj/item/storage/firstaid/medical
+	suit_store = /obj/item/flashlight/pen
+
+	backpack = /obj/item/storage/backpack/medic
+	satchel = /obj/item/storage/backpack/satchel/med
+	duffelbag = /obj/item/storage/backpack/duffelbag/med
+
+	chameleon_extras = /obj/item/gun/syringe
+
+undefined
