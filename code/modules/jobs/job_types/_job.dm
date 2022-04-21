@@ -286,14 +286,27 @@
 				break
 		H.sec_hud_set_ID()
 
-	var/obj/item/pda/PDA = H.get_item_by_slot(pda_slot)
+	var/obj/item/pda/PDA = new pda_type()
 	if(istype(PDA))
 		PDA.owner = H.real_name
 		if(H.mind?.role_alt_title)
 			PDA.ownjob = H.mind.role_alt_title
 		else
 			PDA.ownjob = J.title
+
+		if (H.id_in_pda)
+			PDA.InsertID(C)
+			H.equip_to_slot_if_possible(PDA, SLOT_WEAR_ID)
+		else // just in case you hate change
+			H.equip_to_slot_if_possible(PDA, pda_slot)
+			H.equip_to_slot_if_possible(C, SLOT_WEAR_ID)
+		
 		PDA.update_label()
+		PDA.update_icon()
+		PDA.update_filters()
+		
+	else
+		H.equip_to_slot_if_possible(C, SLOT_WEAR_ID)
 
 /datum/outfit/job/get_chameleon_disguise_info()
 	var/list/types = ..()
@@ -308,3 +321,4 @@
 	if(CONFIG_GET(flag/security_has_maint_access))
 		return list(ACCESS_MAINT_TUNNELS)
 	return list()
+

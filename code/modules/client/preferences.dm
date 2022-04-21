@@ -2123,9 +2123,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.undershirt = undershirt
 	character.socks = socks
 
+	character.underwear = underwear
+	character.undershirt = undershirt
+	character.socks = socks
+
 	character.backbag = backbag
 
 	character.jumpsuit_style = jumpsuit_style
+	character.id_in_pda = id_in_pda
 
 	var/datum/species/chosen_species
 	chosen_species = pref_species.type
@@ -2185,3 +2190,4 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			return
 		else
 			custom_names[name_id] = sanitized_name
+
