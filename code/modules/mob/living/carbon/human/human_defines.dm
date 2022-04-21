@@ -33,6 +33,7 @@
 	var/underwear = "Nude"	//Which underwear the player wants
 	var/undershirt = "Nude" //Which undershirt the player wants
 	var/socks = "Nude" //Which socks the player wants
+	var/socks = "Nude" //Which socks the player wants
 	var/backbag = DBACKPACK		//Which backpack type the player has chosen.
 	var/jumpsuit_style = PREF_SUIT //suit/skirt
 
@@ -62,3 +63,4 @@
 	var/account_id
 	var/xylophone = 0 //For the spoooooooky xylophone cooldown
 	var/blood_in_hands = 0
+

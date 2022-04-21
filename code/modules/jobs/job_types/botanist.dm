@@ -31,9 +31,10 @@
 
 /datum/outfit/job/botanist
 	name = "Botanist"
+	name = "Botanist"
 	jobtype = /datum/job/hydro
 
-	belt = /obj/item/pda/botanist
+
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/hydroponics
 	uniform_skirt = /obj/item/clothing/under/rank/hydroponics/skirt
@@ -43,5 +44,6 @@
 
 	backpack = /obj/item/storage/backpack/botany
 	satchel = /obj/item/storage/backpack/satchel/hyd
+
 
 

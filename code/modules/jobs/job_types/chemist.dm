@@ -34,10 +34,11 @@
 
 /datum/outfit/job/chemist
 	name = "Chemist"
+	name = "Chemist"
 	jobtype = /datum/job/chemist
 
+
 	glasses = /obj/item/clothing/glasses/science
-	belt = /obj/item/pda/chemist
 	ears = /obj/item/radio/headset/headset_med
 	uniform = /obj/item/clothing/under/rank/chemist
 	uniform_skirt = /obj/item/clothing/under/rank/chemist/skirt
@@ -48,4 +49,5 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 
 	chameleon_extras = /obj/item/gun/syringe
+
 

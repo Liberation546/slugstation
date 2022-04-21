@@ -37,10 +37,11 @@
 
 /datum/outfit/job/cmo
 	name = "Chief Medical Officer"
+	name = "Chief Medical Officer"
 	jobtype = /datum/job/cmo
 
-	id = /obj/item/card/id/silver
-	belt = /obj/item/pda/heads/cmo
+	pda_type = /obj/item/pda/heads/cmo
+
 	l_pocket = /obj/item/pinpointer/crew
 	ears = /obj/item/radio/headset/heads/cmo
 	uniform = /obj/item/clothing/under/rank/chief_medical_officer
@@ -66,3 +67,4 @@
 	suit = /obj/item/clothing/suit/space/hardsuit/medical
 	suit_store = /obj/item/tank/internals/oxygen
 	r_pocket = /obj/item/flashlight/pen/paramedic
+

@@ -25,9 +25,10 @@
 
 /datum/outfit/job/mime
 	name = "Mime"
+	name = "Mime"
 	jobtype = /datum/job/mime
 
-	belt = /obj/item/pda/mime
+
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/mime
 	uniform_skirt = /obj/item/clothing/under/rank/mime/skirt
@@ -91,3 +92,4 @@
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/conjure/mime_box(null))
 	to_chat(usr, span_notice("The book disappears into thin air."))
 	qdel(src)
+

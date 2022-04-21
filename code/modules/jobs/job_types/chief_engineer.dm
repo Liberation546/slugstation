@@ -34,9 +34,9 @@
 
 /datum/outfit/job/ce
 	name = "Chief Engineer"
+	name = "Chief Engineer"
 	jobtype = /datum/job/chief_engineer
 
-	id = /obj/item/card/id/silver
 	belt = /obj/item/storage/belt/utility/chief/full
 	l_pocket = /obj/item/pda/heads/ce
 	ears = /obj/item/radio/headset/heads/ce
@@ -51,10 +51,12 @@
 
 	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng
+	satchel = /obj/item/storage/backpack/satchel/eng
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	box = /obj/item/storage/box/engineer
-	pda_slot = SLOT_L_STORE
 	chameleon_extras = /obj/item/stamp/ce
+
+	pda_slot = SLOT_L_STORE
 
 /datum/outfit/job/ce/rig
 	name = "Chief Engineer (Hardsuit)"
@@ -67,3 +69,4 @@
 	gloves = /obj/item/clothing/gloves/color/yellow
 	head = null
 	internals_slot = SLOT_S_STORE
+
