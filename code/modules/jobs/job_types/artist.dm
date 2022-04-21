@@ -19,9 +19,9 @@
 	display_order = JOB_DISPLAY_ORDER_ARTIST
 
 /datum/outfit/job/artist
+/datum/outfit/job/artist
 	name = "Artist"
 	jobtype = /datum/job/artist
-	
 	head = /obj/item/clothing/head/frenchberet
 	belt = /obj/item/pda/artist
 	ears = /obj/item/radio/headset/headset_srv
@@ -36,3 +36,5 @@
 		/obj/item/storage/crayons = 1,
 		/obj/item/camera = 1
 	)
+
+undefined

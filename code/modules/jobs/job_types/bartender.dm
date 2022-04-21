@@ -28,9 +28,9 @@
 
 /datum/outfit/job/bartender
 	name = "Bartender"
+	name = "Bartender"
 	jobtype = /datum/job/bartender
 
-	glasses = /obj/item/clothing/glasses/sunglasses/reagent
 	belt = /obj/item/pda/bar
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/bartender
@@ -46,3 +46,5 @@
 	if(H.age < AGE_MINOR)
 		W.registered_age = AGE_MINOR
 		to_chat(H, span_notice("You're not technically old enough to access or serve alcohol, but your ID has been discreetly modified to display your age as [AGE_MINOR]. Try to keep that a secret!"))
+
+undefined

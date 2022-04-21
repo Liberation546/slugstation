@@ -210,6 +210,9 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	READ_FILE(S["menuoptions"], menuoptions)
 	READ_FILE(S["enable_tips"], enable_tips)
 	READ_FILE(S["tip_delay"], tip_delay)
+	READ_FILE(S["tip_delay"], tip_delay)
+	READ_FILE(S["pda_style"], pda_style)
+	READ_FILE(S["pda_color"], pda_color)
 	READ_FILE(S["pda_style"], pda_style)
 	READ_FILE(S["pda_color"], pda_color)
 
@@ -344,12 +347,9 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["pixel_size"], pixel_size)
 	WRITE_FILE(S["scaling_method"], scaling_method)
 	WRITE_FILE(S["menuoptions"], menuoptions)
-	WRITE_FILE(S["enable_tips"], enable_tips)
 	WRITE_FILE(S["tip_delay"], tip_delay)
 	WRITE_FILE(S["pda_style"], pda_style)
 	WRITE_FILE(S["pda_color"], pda_color)
-	WRITE_FILE(S["skillcape"], skillcape)
-	WRITE_FILE(S["skillcape_id"], skillcape_id)
 	WRITE_FILE(S["show_credits"], show_credits)
 	WRITE_FILE(S["map"], map)
 	WRITE_FILE(S["flare"], flare)
@@ -646,3 +646,6 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S.ImportText("/",file("[path].txt"))
 
 #endif
+
+undefined
+undefined
