@@ -1,1 +1,44 @@
-L2RhdHVtL2pvYi9xbQoJdGl0bGUgPSAiUXVhcnRlcm1hc3RlciIKCWZsYWcgPSBRVUFSVEVSTUFTVEVSCglkZXBhcnRtZW50X2hlYWQgPSBsaXN0KCJIZWFkIG9mIFBlcnNvbm5lbCIpCglkZXBhcnRtZW50X2ZsYWcgPSBDSVZJTElBTgoJZmFjdGlvbiA9ICJTdGF0aW9uIgoJdG90YWxfcG9zaXRpb25zID0gMQoJc3Bhd25fcG9zaXRpb25zID0gMQoJc3VwZXJ2aXNvcnMgPSAidGhlIGhlYWQgb2YgcGVyc29ubmVsIgoJc2VsZWN0aW9uX2NvbG9yID0gIiNkN2IwODgiCgoJb3V0Zml0ID0gL2RhdHVtL291dGZpdC9qb2IvcXVhcnRlcm1hc3RlcgoKCWFsdF90aXRsZXMgPSBsaXN0KCJTdG9jayBDb250cm9sbGVyIiwgIkNhcmdvIENvb3JkaW5hdG9yIiwgIlNoaXBwaW5nIE92ZXJzZWVyIikKCglhY2Nlc3MgPSBsaXN0KEFDQ0VTU19NQUlOVF9UVU5ORUxTLCBBQ0NFU1NfTUFJTFNPUlRJTkcsIEFDQ0VTU19DQVJHTywgQUNDRVNTX1FNLCBBQ0NFU1NfTUlOSU5HLCBBQ0NFU1NfTUVDSF9NSU5JTkcsIEFDQ0VTU19NSU5JTkdfU1RBVElPTiwgQUNDRVNTX01JTkVSQUxfU1RPUkVST09NLCBBQ0NFU1NfVkFVTFQpCgltaW5pbWFsX2FjY2VzcyA9IGxpc3QoQUNDRVNTX01BSU5UX1RVTk5FTFMsIEFDQ0VTU19NQUlMU09SVElORywgQUNDRVNTX0NBUkdPLCBBQ0NFU1NfUU0sIEFDQ0VTU19NSU5JTkcsIEFDQ0VTU19NRUNIX01JTklORywgQUNDRVNTX01JTklOR19TVEFUSU9OLCBBQ0NFU1NfTUlORVJBTF9TVE9SRVJPT00sIEFDQ0VTU19WQVVMVCkKCXBheWNoZWNrID0gUEFZQ0hFQ0tfTUVESVVNCglwYXljaGVja19kZXBhcnRtZW50ID0gQUNDT1VOVF9DQVIKCglkaXNwbGF5X29yZGVyID0gSk9CX0RJU1BMQVlfT1JERVJfUVVBUlRFUk1BU1RFUgoKCWNoYW5nZWRfbWFwcyA9IGxpc3QoIk9tZWdhU3RhdGlvbiIpCgovZGF0dW0vam9iL3FtL3Byb2MvT21lZ2FTdGF0aW9uQ2hhbmdlcygpCglyZXR1cm4gVFJVRQoKL2RhdHVtL291dGZpdC9qb2IvcXVhcnRlcm1hc3RlcgoJbmFtZSA9ICJRdWFydGVybWFzdGVyIgoJbmFtZSA9ICJRdWFydGVybWFzdGVyIgoJam9idHlwZSA9IC9kYXR1bS9qb2IvcW0KCgllYXJzID0gL29iai9pdGVtL3JhZGlvL2hlYWRzZXQvaGVhZHNldF9jYXJnbwoJdW5pZm9ybSA9IC9vYmovaXRlbS9jbG90aGluZy91bmRlci9yYW5rL2NhcmdvCgl1bmlmb3JtX3NraXJ0ID0gL29iai9pdGVtL2Nsb3RoaW5nL3VuZGVyL3JhbmsvY2FyZ28vc2tpcnQKCXNob2VzID0gL29iai9pdGVtL2Nsb3RoaW5nL3Nob2VzL3NuZWFrZXJzL2Jyb3duCglnbGFzc2VzID0gL29iai9pdGVtL2Nsb3RoaW5nL2dsYXNzZXMvc3VuZ2xhc3NlcwoJbF9oYW5kID0gL29iai9pdGVtL2NsaXBib2FyZAoJbF9wb2NrZXQgPSAvb2JqL2l0ZW0vZXhwb3J0X3NjYW5uZXIKCgljaGFtZWxlb25fZXh0cmFzID0gL29iai9pdGVtL3N0YW1wL3FtCgoKdW5kZWZpbmVkCg==
+/datum/job/qm
+	title = "Quartermaster"
+	flag = QUARTERMASTER
+	department_head = list("Head of Personnel")
+	department_flag = CIVILIAN
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the head of personnel"
+	selection_color = "#d7b088"
+
+	outfit = /datum/outfit/job/quartermaster
+
+	alt_titles = list("Stock Controller", "Cargo Coordinator", "Shipping Overseer")
+
+	access = list(ACCESS_MAINT_TUNNELS, ACCESS_MAILSORTING, ACCESS_CARGO, ACCESS_QM, ACCESS_MINING, ACCESS_MECH_MINING, ACCESS_MINING_STATION, ACCESS_MINERAL_STOREROOM, ACCESS_VAULT)
+	minimal_access = list(ACCESS_MAINT_TUNNELS, ACCESS_MAILSORTING, ACCESS_CARGO, ACCESS_QM, ACCESS_MINING, ACCESS_MECH_MINING, ACCESS_MINING_STATION, ACCESS_MINERAL_STOREROOM, ACCESS_VAULT)
+	paycheck = PAYCHECK_MEDIUM
+	paycheck_department = ACCOUNT_CAR
+
+	display_order = JOB_DISPLAY_ORDER_QUARTERMASTER
+
+	changed_maps = list("OmegaStation")
+
+/datum/job/qm/proc/OmegaStationChanges()
+	return TRUE
+
+/datum/outfit/job/quartermaster
+	name = "Quartermaster"
+	name = "Quartermaster"
+	jobtype = /datum/job/qm
+
+	ears = /obj/item/radio/headset/headset_cargo
+	uniform = /obj/item/clothing/under/rank/cargo
+	uniform_skirt = /obj/item/clothing/under/rank/cargo/skirt
+	shoes = /obj/item/clothing/shoes/sneakers/brown
+	glasses = /obj/item/clothing/glasses/sunglasses
+	l_hand = /obj/item/clipboard
+	l_pocket = /obj/item/export_scanner
+
+	chameleon_extras = /obj/item/stamp/qm
+
+
+undefined

@@ -1,1 +1,72 @@
-L2RhdHVtL2pvYi9jaGllZl9lbmdpbmVlcgoJdGl0bGUgPSAiQ2hpZWYgRW5naW5lZXIiCglmbGFnID0gQ0hJRUYKCWF1dG9fZGVhZG1pbl9yb2xlX2ZsYWdzID0gREVBRE1JTl9QT1NJVElPTl9IRUFECglkZXBhcnRtZW50X2hlYWQgPSBsaXN0KCJDYXB0YWluIikKCWRlcGFydG1lbnRfZmxhZyA9IEVOR1NFQwoJaGVhZF9hbm5vdW5jZSA9IGxpc3QoIkVuZ2luZWVyaW5nIikKCWZhY3Rpb24gPSAiU3RhdGlvbiIKCXRvdGFsX3Bvc2l0aW9ucyA9IDEKCXNwYXduX3Bvc2l0aW9ucyA9IDEKCXN1cGVydmlzb3JzID0gInRoZSBjYXB0YWluIgoJc2VsZWN0aW9uX2NvbG9yID0gIiNmZmVlYWEiCglyZXFfYWRtaW5fbm90aWZ5ID0gMQoJbWluaW1hbF9wbGF5ZXJfYWdlID0gNwoJZXhwX3JlcXVpcmVtZW50cyA9IDE4MAoJZXhwX3R5cGUgPSBFWFBfVFlQRV9DUkVXCglleHBfdHlwZV9kZXBhcnRtZW50ID0gRVhQX1RZUEVfRU5HSU5FRVJJTkcKCWFsdF90aXRsZXMgPSBsaXN0KCJFbmdpbmVlcmluZyBEaXJlY3RvciIsICJIZWFkIG9mIEVuZ2luZWVyaW5nIikKCglvdXRmaXQgPSAvZGF0dW0vb3V0Zml0L2pvYi9jZQoKCWFjY2VzcyA9IGxpc3QoQUNDRVNTX0VOR0lORSwgQUNDRVNTX0VOR0lORV9FUVVJUCwgQUNDRVNTX1RFQ0hfU1RPUkFHRSwgQUNDRVNTX01BSU5UX1RVTk5FTFMsCgkJCSAgICAgICAgICAgIEFDQ0VTU19FWFRFUk5BTF9BSVJMT0NLUywgQUNDRVNTX0FUTU9TUEhFUklDUywgQUNDRVNTX0VWQSwKCQkJICAgICAgICAgICAgQUNDRVNTX0hFQURTLCBBQ0NFU1NfQ09OU1RSVUNUSU9OLCBBQ0NFU1NfU0VDX0RPT1JTLCBBQ0NFU1NfTUlOSVNBVCwgQUNDRVNTX01FQ0hfRU5HSU5FLAoJCQkgICAgICAgICAgICBBQ0NFU1NfQ0UsIEFDQ0VTU19SQ19BTk5PVU5DRSwgQUNDRVNTX0tFWUNBUkRfQVVUSCwgQUNDRVNTX1RDT01TQVQsIEFDQ0VTU19NSU5FUkFMX1NUT1JFUk9PTSkKCW1pbmltYWxfYWNjZXNzID0gbGlzdChBQ0NFU1NfRU5HSU5FLCBBQ0NFU1NfRU5HSU5FX0VRVUlQLCBBQ0NFU1NfVEVDSF9TVE9SQUdFLCBBQ0NFU1NfTUFJTlRfVFVOTkVMUywKCQkJICAgICAgICAgICAgQUNDRVNTX0VYVEVSTkFMX0FJUkxPQ0tTLCBBQ0NFU1NfQVRNT1NQSEVSSUNTLCBBQ0NFU1NfRVZBLAoJCQkgICAgICAgICAgICBBQ0NFU1NfSEVBRFMsIEFDQ0VTU19DT05TVFJVQ1RJT04sIEFDQ0VTU19TRUNfRE9PUlMsIEFDQ0VTU19NSU5JU0FULCBBQ0NFU1NfTUVDSF9FTkdJTkUsCgkJCSAgICAgICAgICAgIEFDQ0VTU19DRSwgQUNDRVNTX1JDX0FOTk9VTkNFLCBBQ0NFU1NfS0VZQ0FSRF9BVVRILCBBQ0NFU1NfVENPTVNBVCwgQUNDRVNTX01JTkVSQUxfU1RPUkVST09NKQoJcGF5Y2hlY2sgPSBQQVlDSEVDS19DT01NQU5ECglwYXljaGVja19kZXBhcnRtZW50ID0gQUNDT1VOVF9FTkcKCglkaXNwbGF5X29yZGVyID0gSk9CX0RJU1BMQVlfT1JERVJfQ0hJRUZfRU5HSU5FRVIKCi9kYXR1bS9vdXRmaXQvam9iL2NlCgluYW1lID0gIkNoaWVmIEVuZ2luZWVyIgoJbmFtZSA9ICJDaGllZiBFbmdpbmVlciIKCWpvYnR5cGUgPSAvZGF0dW0vam9iL2NoaWVmX2VuZ2luZWVyCgoJam9idHlwZSA9IC9kYXR1bS9qb2IvY2hpZWZfZW5naW5lZXIKCglpZCA9IC9vYmovaXRlbS9jYXJkL2lkL3NpbHZlcgoJYmVsdCA9IC9vYmovaXRlbS9zdG9yYWdlL2JlbHQvdXRpbGl0eS9jaGllZi9mdWxsCglsX3BvY2tldCA9IC9vYmovaXRlbS9wZGEvaGVhZHMvY2UKCWVhcnMgPSAvb2JqL2l0ZW0vcmFkaW8vaGVhZHNldC9oZWFkcy9jZQoJdW5pZm9ybSA9IC9vYmovaXRlbS9jbG90aGluZy91bmRlci9yYW5rL2NoaWVmX2VuZ2luZWVyCgl1bmlmb3JtX3NraXJ0ID0gL29iai9pdGVtL2Nsb3RoaW5nL3VuZGVyL3JhbmsvY2hpZWZfZW5naW5lZXIvc2tpcnQKCXNob2VzID0gL29iai9pdGVtL2Nsb3RoaW5nL3Nob2VzL3NuZWFrZXJzL2Jyb3duCglhbHRfc2hvZXMgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvc2hvZXMveGVub193cmFwcy9jb21tYW5kIC8vIFByb3ZpZGVzIENvbW1hbmQgc2hvZXMgdG8gZGlnaXRpZ3JhZGUgc3BlY2llcwoJaGVhZCA9IC9vYmovaXRlbS9jbG90aGluZy9oZWFkL2hhcmRoYXQvd2hpdGUKCWdsb3ZlcyA9IC9vYmovaXRlbS9jbG90aGluZy9nbG92ZXMvY29sb3IvYmxhY2svY2UKCWJhY2twYWNrX2NvbnRlbnRzID0gbGlzdCgvb2JqL2l0ZW0vbWVsZWUvY2xhc3NpY19iYXRvbi90ZWxlc2NvcGljPTEsIC9vYmovaXRlbS9tb2R1bGFyX2NvbXB1dGVyL3RhYmxldC9waG9uZS9wcmVzZXQvYWR2YW5jZWQvY29tbWFuZC9hdG1vcz0xKSAvL3lvZ3MgLSByZW1vdmVzIGVuZyBidWRnZXQKCWdsYXNzZXMgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvZ2xhc3Nlcy9tZXNvbi9zdW5nbGFzc2VzCgoJc2F0Y2hlbCA9IC9vYmovaXRlbS9zdG9yYWdlL2JhY2twYWNrL3NhdGNoZWwvZW5nCglkdWZmZWxiYWcgPSAvb2JqL2l0ZW0vc3RvcmFnZS9iYWNrcGFjay9kdWZmZWxiYWcvZW5naW5lZXJpbmcKCWJveCA9IC9vYmovaXRlbS9zdG9yYWdlL2JveC9lbmdpbmVlcgoJY2hhbWVsZW9uX2V4dHJhcyA9IC9vYmovaXRlbS9zdGFtcC9jZQoKCW5hbWUgPSAiQ2hpZWYgRW5naW5lZXIgKEhhcmRzdWl0KSIKCgltYXNrID0gL29iai9pdGVtL2Nsb3RoaW5nL21hc2svYnJlYXRoCglzdWl0ID0gL29iai9pdGVtL2Nsb3RoaW5nL3N1aXQvc3BhY2UvaGFyZHN1aXQvZW5naW5lL2VsaXRlCglzaG9lcyA9IC9vYmovaXRlbS9jbG90aGluZy9zaG9lcy9tYWdib290cy9hZHZhbmNlCglzdWl0X3N0b3JlID0gL29iai9pdGVtL3RhbmsvaW50ZXJuYWxzL294eWdlbgoJZ2xhc3NlcyA9IC9vYmovaXRlbS9jbG90aGluZy9nbGFzc2VzL21lc29uL3N1bmdsYXNzZXMKCWdsb3ZlcyA9IC9vYmovaXRlbS9jbG90aGluZy9nbG92ZXMvY29sb3IveWVsbG93CgloZWFkID0gbnVsbAoJaW50ZXJuYWxzX3Nsb3QgPSBTTE9UX1NfU1RPUkUKCnVuZGVmaW5lZAp1bmRlZmluZWQK
+/datum/job/chief_engineer
+	title = "Chief Engineer"
+	flag = CHIEF
+	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
+	department_head = list("Captain")
+	department_flag = ENGSEC
+	head_announce = list("Engineering")
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the captain"
+	selection_color = "#ffeeaa"
+	req_admin_notify = 1
+	minimal_player_age = 7
+	exp_requirements = 180
+	exp_type = EXP_TYPE_CREW
+	exp_type_department = EXP_TYPE_ENGINEERING
+	alt_titles = list("Engineering Director", "Head of Engineering")
+
+	outfit = /datum/outfit/job/ce
+
+	access = list(ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS,
+			            ACCESS_EXTERNAL_AIRLOCKS, ACCESS_ATMOSPHERICS, ACCESS_EVA,
+			            ACCESS_HEADS, ACCESS_CONSTRUCTION, ACCESS_SEC_DOORS, ACCESS_MINISAT, ACCESS_MECH_ENGINE,
+			            ACCESS_CE, ACCESS_RC_ANNOUNCE, ACCESS_KEYCARD_AUTH, ACCESS_TCOMSAT, ACCESS_MINERAL_STOREROOM)
+	minimal_access = list(ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS,
+			            ACCESS_EXTERNAL_AIRLOCKS, ACCESS_ATMOSPHERICS, ACCESS_EVA,
+			            ACCESS_HEADS, ACCESS_CONSTRUCTION, ACCESS_SEC_DOORS, ACCESS_MINISAT, ACCESS_MECH_ENGINE,
+			            ACCESS_CE, ACCESS_RC_ANNOUNCE, ACCESS_KEYCARD_AUTH, ACCESS_TCOMSAT, ACCESS_MINERAL_STOREROOM)
+	paycheck = PAYCHECK_COMMAND
+	paycheck_department = ACCOUNT_ENG
+
+	display_order = JOB_DISPLAY_ORDER_CHIEF_ENGINEER
+
+/datum/outfit/job/ce
+	name = "Chief Engineer"
+	name = "Chief Engineer"
+	jobtype = /datum/job/chief_engineer
+
+	jobtype = /datum/job/chief_engineer
+
+	id = /obj/item/card/id/silver
+	belt = /obj/item/storage/belt/utility/chief/full
+	l_pocket = /obj/item/pda/heads/ce
+	ears = /obj/item/radio/headset/heads/ce
+	uniform = /obj/item/clothing/under/rank/chief_engineer
+	uniform_skirt = /obj/item/clothing/under/rank/chief_engineer/skirt
+	shoes = /obj/item/clothing/shoes/sneakers/brown
+	alt_shoes = /obj/item/clothing/shoes/xeno_wraps/command // Provides Command shoes to digitigrade species
+	head = /obj/item/clothing/head/hardhat/white
+	gloves = /obj/item/clothing/gloves/color/black/ce
+	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/phone/preset/advanced/command/atmos=1) //yogs - removes eng budget
+	glasses = /obj/item/clothing/glasses/meson/sunglasses
+
+	satchel = /obj/item/storage/backpack/satchel/eng
+	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
+	box = /obj/item/storage/box/engineer
+	chameleon_extras = /obj/item/stamp/ce
+
+	name = "Chief Engineer (Hardsuit)"
+
+	mask = /obj/item/clothing/mask/breath
+	suit = /obj/item/clothing/suit/space/hardsuit/engine/elite
+	shoes = /obj/item/clothing/shoes/magboots/advance
+	suit_store = /obj/item/tank/internals/oxygen
+	glasses = /obj/item/clothing/glasses/meson/sunglasses
+	gloves = /obj/item/clothing/gloves/color/yellow
+	head = null
+	internals_slot = SLOT_S_STORE
+
+undefined
+undefined

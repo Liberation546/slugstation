@@ -1,1 +1,90 @@
-L2RhdHVtL2pvYi9taW5pbmcKCXRpdGxlID0gIlNoYWZ0IE1pbmVyIgoJZmxhZyA9IE1JTkVSCglkZXBhcnRtZW50X2hlYWQgPSBsaXN0KCJIZWFkIG9mIFBlcnNvbm5lbCIpCglkZXBhcnRtZW50X2ZsYWcgPSBDSVZJTElBTgoJZmFjdGlvbiA9ICJTdGF0aW9uIgoJdG90YWxfcG9zaXRpb25zID0gMwoJc3Bhd25fcG9zaXRpb25zID0gMwoJc3VwZXJ2aXNvcnMgPSAidGhlIHF1YXJ0ZXJtYXN0ZXIgYW5kIHRoZSBoZWFkIG9mIHBlcnNvbm5lbCIKCXNlbGVjdGlvbl9jb2xvciA9ICIjZGNiYTk3IgoJYWx0X3RpdGxlcyA9IGxpc3QoIkxhdmFsYW5kIFNjb3V0IiwgIlByb3NwZWN0b3IiLCAiSnVuaW9yIE1pbmVyIiwgIk1ham9yIE1pbmVyIikKCglvdXRmaXQgPSAvZGF0dW0vb3V0Zml0L2pvYi9taW5lcgoKCWFjY2VzcyA9IGxpc3QoQUNDRVNTX01BSU5UX1RVTk5FTFMsIEFDQ0VTU19NQUlMU09SVElORywgQUNDRVNTX0NBUkdPLCBBQ0NFU1NfUU0sIEFDQ0VTU19NSU5JTkcsIEFDQ0VTU19NRUNIX01JTklORywgQUNDRVNTX01JTklOR19TVEFUSU9OLCBBQ0NFU1NfTUlORVJBTF9TVE9SRVJPT00pCgltaW5pbWFsX2FjY2VzcyA9IGxpc3QoQUNDRVNTX01JTklORywgQUNDRVNTX01FQ0hfTUlOSU5HLCBBQ0NFU1NfTUlOSU5HX1NUQVRJT04sIEFDQ0VTU19NQUlMU09SVElORywgQUNDRVNTX01JTkVSQUxfU1RPUkVST09NKQoJcGF5Y2hlY2sgPSBQQVlDSEVDS19IQVJECglwYXljaGVja19kZXBhcnRtZW50ID0gQUNDT1VOVF9DQVIKCglkaXNwbGF5X29yZGVyID0gSk9CX0RJU1BMQVlfT1JERVJfU0hBRlRfTUlORVIKCgljaGFuZ2VkX21hcHMgPSBsaXN0KCJFY2xpcHNlU3RhdGlvbiIsICJPbWVnYVN0YXRpb24iKQoKL2RhdHVtL2pvYi9taW5pbmcvcHJvYy9PbWVnYVN0YXRpb25DaGFuZ2VzKCkKCXRvdGFsX3Bvc2l0aW9ucyA9IDIKCXNwYXduX3Bvc2l0aW9ucyA9IDIKCWFjY2VzcyA9IGxpc3QoQUNDRVNTX01BSU5UX1RVTk5FTFMsIEFDQ0VTU19NQUlMU09SVElORywgQUNDRVNTX0NBUkdPLCBBQ0NFU1NfUU0sIEFDQ0VTU19NSU5JTkcsIEFDQ0VTU19NSU5JTkdfU1RBVElPTiwgQUNDRVNTX01JTkVSQUxfU1RPUkVST09NKQoJbWluaW1hbF9hY2Nlc3MgPSBsaXN0KEFDQ0VTU19NQUlOVF9UVU5ORUxTLCBBQ0NFU1NfTUFJTFNPUlRJTkcsIEFDQ0VTU19DQVJHTywgQUNDRVNTX1FNLCBBQ0NFU1NfTUlOSU5HLCBBQ0NFU1NfTUlOSU5HX1NUQVRJT04sIEFDQ0VTU19NSU5FUkFMX1NUT1JFUk9PTSkKCXN1cGVydmlzb3JzID0gInRoZSBoZWFkIG9mIHBlcnNvbm5lbCIKCgovZGF0dW0vam9iL21pbmluZy9wcm9jL0VjbGlwc2VTdGF0aW9uQ2hhbmdlcygpCgl0b3RhbF9wb3NpdGlvbnMgPSA2CglzcGF3bl9wb3NpdGlvbnMgPSA0CgovZGF0dW0vb3V0Zml0L2pvYi9taW5lcgoJbmFtZSA9ICJTaGFmdCBNaW5lciIKCW5hbWUgPSAiU2hhZnQgTWluZXIiCglqb2J0eXBlID0gL2RhdHVtL2pvYi9taW5pbmcKCgllYXJzID0gL29iai9pdGVtL3JhZGlvL2hlYWRzZXQvaGVhZHNldF9jYXJnby9taW5pbmcKCXNob2VzID0gL29iai9pdGVtL2Nsb3RoaW5nL3Nob2VzL3dvcmtib290cy9taW5pbmcKCWdsb3ZlcyA9IC9vYmovaXRlbS9jbG90aGluZy9nbG92ZXMvY29sb3IvYmxhY2sKCXVuaWZvcm0gPSAvb2JqL2l0ZW0vY2xvdGhpbmcvdW5kZXIvcmFuay9taW5lci9sYXZhbGFuZAoJbmVjayA9IC9vYmovaXRlbS9jbG90aGluZy9uZWNrL2JvZHljYW0vbWluZXIKCWxfcG9ja2V0ID0gL29iai9pdGVtL3JlYWdlbnRfY29udGFpbmVycy9oeXBvc3ByYXkvbWVkaXBlbi9zdXJ2aXZhbAoJcl9wb2NrZXQgPSAvb2JqL2l0ZW0vZmxhc2hsaWdodC9zZWNsaXRlCgliYWNrcGFja19jb250ZW50cyA9IGxpc3QoCgkJL29iai9pdGVtL3N0b3JhZ2UvYmFnL29yZT0xLFwKCQkvb2JqL2l0ZW0va2l0Y2hlbi9rbmlmZS9jb21iYXQvc3Vydml2YWw9MSxcCgkJL29iai9pdGVtL21pbmluZ192b3VjaGVyPTEsXAoJCS9vYmovaXRlbS9zdGFjay9tYXJrZXJfYmVhY29uL3Rlbj0xKQoKCWJhY2twYWNrID0gL29iai9pdGVtL3N0b3JhZ2UvYmFja3BhY2svZXhwbG9yZXIKCXNhdGNoZWwgPSAvb2JqL2l0ZW0vc3RvcmFnZS9iYWNrcGFjay9zYXRjaGVsL2V4cGxvcmVyCglkdWZmZWxiYWcgPSAvb2JqL2l0ZW0vc3RvcmFnZS9iYWNrcGFjay9kdWZmZWxiYWcKCWJveCA9IC9vYmovaXRlbS9zdG9yYWdlL2JveC9zdXJ2aXZhbF9taW5pbmcKCgljaGFtZWxlb25fZXh0cmFzID0gL29iai9pdGVtL2d1bi9lbmVyZ3kva2luZXRpY19hY2NlbGVyYXRvcgoKL2RhdHVtL291dGZpdC9qb2IvbWluZXIvZXF1aXBwZWQKCW5hbWUgPSAiU2hhZnQgTWluZXIgKEVxdWlwbWVudCkiCglzdWl0ID0gL29iai9pdGVtL2Nsb3RoaW5nL3N1aXQvaG9vZGVkL2V4cGxvcmVyCgltYXNrID0gL29iai9pdGVtL2Nsb3RoaW5nL21hc2svZ2FzL2V4cGxvcmVyCglnbGFzc2VzID0gL29iai9pdGVtL2Nsb3RoaW5nL2dsYXNzZXMvbWVzb24KCXN1aXRfc3RvcmUgPSAvb2JqL2l0ZW0vdGFuay9pbnRlcm5hbHMvb3h5Z2VuCglpbnRlcm5hbHNfc2xvdCA9IFNMT1RfU19TVE9SRQoJYmFja3BhY2tfY29udGVudHMgPSBsaXN0KAoJCS9vYmovaXRlbS9zdG9yYWdlL2JhZy9vcmU9MSwKCQkvb2JqL2l0ZW0va2l0Y2hlbi9rbmlmZS9jb21iYXQvc3Vydml2YWw9MSwKCQkvb2JqL2l0ZW0vbWluaW5nX3ZvdWNoZXI9MSwKCQkvb2JqL2l0ZW0vdF9zY2FubmVyL2Fkdl9taW5pbmdfc2Nhbm5lci9sZXNzZXI9MSwKCQkvb2JqL2l0ZW0vZ3VuL2VuZXJneS9raW5ldGljX2FjY2VsZXJhdG9yPTEsXAoJCS9vYmovaXRlbS9zdGFjay9tYXJrZXJfYmVhY29uL3Rlbj0xKQoKL2RhdHVtL291dGZpdC9qb2IvbWluZXIvZXF1aXBwZWQvcG9zdF9lcXVpcChtb2IvbGl2aW5nL2NhcmJvbi9odW1hbi9ILCB2aXN1YWxzT25seSA9IEZBTFNFKQoJLi4oKQoJaWYodmlzdWFsc09ubHkpCgkJcmV0dXJuCglpZihpc3R5cGUoSC53ZWFyX3N1aXQsIC9vYmovaXRlbS9jbG90aGluZy9zdWl0L2hvb2RlZCkpCgkJdmFyL29iai9pdGVtL2Nsb3RoaW5nL3N1aXQvaG9vZGVkL1MgPSBILndlYXJfc3VpdAoJCVMuVG9nZ2xlSG9vZCgpCgovZGF0dW0vb3V0Zml0L2pvYi9taW5lci9lcXVpcHBlZC9oYXJkc3VpdAoJbmFtZSA9ICJTaGFmdCBNaW5lciAoRXF1aXBtZW50ICsgSGFyZHN1aXQpIgoJc3VpdCA9IC9vYmovaXRlbS9jbG90aGluZy9zdWl0L3NwYWNlL2hhcmRzdWl0L21pbmluZwoJbWFzayA9IC9vYmovaXRlbS9jbG90aGluZy9tYXNrL2JyZWF0aAoKCnVuZGVmaW5lZAo=
+/datum/job/mining
+	title = "Shaft Miner"
+	flag = MINER
+	department_head = list("Head of Personnel")
+	department_flag = CIVILIAN
+	faction = "Station"
+	total_positions = 3
+	spawn_positions = 3
+	supervisors = "the quartermaster and the head of personnel"
+	selection_color = "#dcba97"
+	alt_titles = list("Lavaland Scout", "Prospector", "Junior Miner", "Major Miner")
+
+	outfit = /datum/outfit/job/miner
+
+	access = list(ACCESS_MAINT_TUNNELS, ACCESS_MAILSORTING, ACCESS_CARGO, ACCESS_QM, ACCESS_MINING, ACCESS_MECH_MINING, ACCESS_MINING_STATION, ACCESS_MINERAL_STOREROOM)
+	minimal_access = list(ACCESS_MINING, ACCESS_MECH_MINING, ACCESS_MINING_STATION, ACCESS_MAILSORTING, ACCESS_MINERAL_STOREROOM)
+	paycheck = PAYCHECK_HARD
+	paycheck_department = ACCOUNT_CAR
+
+	display_order = JOB_DISPLAY_ORDER_SHAFT_MINER
+
+	changed_maps = list("EclipseStation", "OmegaStation")
+
+/datum/job/mining/proc/OmegaStationChanges()
+	total_positions = 2
+	spawn_positions = 2
+	access = list(ACCESS_MAINT_TUNNELS, ACCESS_MAILSORTING, ACCESS_CARGO, ACCESS_QM, ACCESS_MINING, ACCESS_MINING_STATION, ACCESS_MINERAL_STOREROOM)
+	minimal_access = list(ACCESS_MAINT_TUNNELS, ACCESS_MAILSORTING, ACCESS_CARGO, ACCESS_QM, ACCESS_MINING, ACCESS_MINING_STATION, ACCESS_MINERAL_STOREROOM)
+	supervisors = "the head of personnel"
+
+
+/datum/job/mining/proc/EclipseStationChanges()
+	total_positions = 6
+	spawn_positions = 4
+
+/datum/outfit/job/miner
+	name = "Shaft Miner"
+	name = "Shaft Miner"
+	jobtype = /datum/job/mining
+
+	ears = /obj/item/radio/headset/headset_cargo/mining
+	shoes = /obj/item/clothing/shoes/workboots/mining
+	gloves = /obj/item/clothing/gloves/color/black
+	uniform = /obj/item/clothing/under/rank/miner/lavaland
+	neck = /obj/item/clothing/neck/bodycam/miner
+	l_pocket = /obj/item/reagent_containers/hypospray/medipen/survival
+	r_pocket = /obj/item/flashlight/seclite
+	backpack_contents = list(
+		/obj/item/storage/bag/ore=1,\
+		/obj/item/kitchen/knife/combat/survival=1,\
+		/obj/item/mining_voucher=1,\
+		/obj/item/stack/marker_beacon/ten=1)
+
+	backpack = /obj/item/storage/backpack/explorer
+	satchel = /obj/item/storage/backpack/satchel/explorer
+	duffelbag = /obj/item/storage/backpack/duffelbag
+	box = /obj/item/storage/box/survival_mining
+
+	chameleon_extras = /obj/item/gun/energy/kinetic_accelerator
+
+/datum/outfit/job/miner/equipped
+	name = "Shaft Miner (Equipment)"
+	suit = /obj/item/clothing/suit/hooded/explorer
+	mask = /obj/item/clothing/mask/gas/explorer
+	glasses = /obj/item/clothing/glasses/meson
+	suit_store = /obj/item/tank/internals/oxygen
+	internals_slot = SLOT_S_STORE
+	backpack_contents = list(
+		/obj/item/storage/bag/ore=1,
+		/obj/item/kitchen/knife/combat/survival=1,
+		/obj/item/mining_voucher=1,
+		/obj/item/t_scanner/adv_mining_scanner/lesser=1,
+		/obj/item/gun/energy/kinetic_accelerator=1,\
+		/obj/item/stack/marker_beacon/ten=1)
+
+/datum/outfit/job/miner/equipped/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	if(istype(H.wear_suit, /obj/item/clothing/suit/hooded))
+		var/obj/item/clothing/suit/hooded/S = H.wear_suit
+		S.ToggleHood()
+
+/datum/outfit/job/miner/equipped/hardsuit
+	name = "Shaft Miner (Equipment + Hardsuit)"
+	suit = /obj/item/clothing/suit/space/hardsuit/mining
+	mask = /obj/item/clothing/mask/breath
+
+
+undefined

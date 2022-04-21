@@ -1,1 +1,48 @@
-L2RhdHVtL2pvYi92aXJvbG9naXN0Cgl0aXRsZSA9ICJWaXJvbG9naXN0IgoJZmxhZyA9IFZJUk9MT0dJU1QKCWRlcGFydG1lbnRfaGVhZCA9IGxpc3QoIkNoaWVmIE1lZGljYWwgT2ZmaWNlciIpCglkZXBhcnRtZW50X2ZsYWcgPSBNRURTQ0kKCWZhY3Rpb24gPSAiU3RhdGlvbiIKCXRvdGFsX3Bvc2l0aW9ucyA9IDEKCXNwYXduX3Bvc2l0aW9ucyA9IDEKCXN1cGVydmlzb3JzID0gInRoZSBjaGllZiBtZWRpY2FsIG9mZmljZXIiCglzZWxlY3Rpb25fY29sb3IgPSAiI2Q0ZWJmMiIKCWV4cF90eXBlID0gRVhQX1RZUEVfQ1JFVwoJZXhwX3JlcXVpcmVtZW50cyA9IDEyMAoJZXhwX3R5cGVfZGVwYXJ0bWVudCA9IEVYUF9UWVBFX01FRElDQUwKCglvdXRmaXQgPSAvZGF0dW0vb3V0Zml0L2pvYi92aXJvbG9naXN0CgoJYWx0X3RpdGxlcyA9IGxpc3QoIk1pY3JvYmlvbG9naXN0IiwgIlBhdGhvbG9naXN0IiwgIkp1bmlvciBEaXNlYXNlIFJlc2VhcmNoZXIiLCAiRXBpZGVtaW9sb2dpc3QiKQoKCWFjY2VzcyA9IGxpc3QoQUNDRVNTX01FRElDQUwsIEFDQ0VTU19NT1JHVUUsIEFDQ0VTU19TVVJHRVJZLCBBQ0NFU1NfQ0hFTUlTVFJZLCBBQ0NFU1NfVklST0xPR1ksIEFDQ0VTU19NRUNIX01FRElDQUwsIEFDQ0VTU19HRU5FVElDUywgQUNDRVNTX0NMT05JTkcsIEFDQ0VTU19NSU5FUkFMX1NUT1JFUk9PTSkKCW1pbmltYWxfYWNjZXNzID0gbGlzdChBQ0NFU1NfTUVESUNBTCwgQUNDRVNTX1ZJUk9MT0dZLCBBQ0NFU1NfTUVDSF9NRURJQ0FMLCBBQ0NFU1NfTUlORVJBTF9TVE9SRVJPT00pCglwYXljaGVjayA9IFBBWUNIRUNLX01FRElVTQoJcGF5Y2hlY2tfZGVwYXJ0bWVudCA9IEFDQ09VTlRfTUVECgoJZGlzcGxheV9vcmRlciA9IEpPQl9ESVNQTEFZX09SREVSX1ZJUk9MT0dJU1QKCgljaGFuZ2VkX21hcHMgPSBsaXN0KCJPbWVnYVN0YXRpb24iKQoKL2RhdHVtL2pvYi92aXJvbG9naXN0L3Byb2MvT21lZ2FTdGF0aW9uQ2hhbmdlcygpCglyZXR1cm4gVFJVRQoKL2RhdHVtL291dGZpdC9qb2Ivdmlyb2xvZ2lzdAoJbmFtZSA9ICJWaXJvbG9naXN0IgoJbmFtZSA9ICJWaXJvbG9naXN0IgoJam9idHlwZSA9IC9kYXR1bS9qb2Ivdmlyb2xvZ2lzdAoKCWVhcnMgPSAvb2JqL2l0ZW0vcmFkaW8vaGVhZHNldC9oZWFkc2V0X21lZAoJdW5pZm9ybSA9IC9vYmovaXRlbS9jbG90aGluZy91bmRlci9yYW5rL3Zpcm9sb2dpc3QKCXVuaWZvcm1fc2tpcnQgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvdW5kZXIvcmFuay92aXJvbG9naXN0L3NraXJ0CgltYXNrID0gL29iai9pdGVtL2Nsb3RoaW5nL21hc2svc3VyZ2ljYWwKCXNob2VzID0gL29iai9pdGVtL2Nsb3RoaW5nL3Nob2VzL3NuZWFrZXJzL3doaXRlCglzdWl0ID0gIC9vYmovaXRlbS9jbG90aGluZy9zdWl0L3RvZ2dsZS9sYWJjb2F0L3Zpcm9sb2dpc3QKCXN1aXRfc3RvcmUgPSAgL29iai9pdGVtL2ZsYXNobGlnaHQvcGVuCgoJYmFja3BhY2sgPSAvb2JqL2l0ZW0vc3RvcmFnZS9iYWNrcGFjay92aXJvbG9neQoJc2F0Y2hlbCA9IC9vYmovaXRlbS9zdG9yYWdlL2JhY2twYWNrL3NhdGNoZWwvdmlyCglkdWZmZWxiYWcgPSAvb2JqL2l0ZW0vc3RvcmFnZS9iYWNrcGFjay9kdWZmZWxiYWcvbWVkCgp1bmRlZmluZWQK
+/datum/job/virologist
+	title = "Virologist"
+	flag = VIROLOGIST
+	department_head = list("Chief Medical Officer")
+	department_flag = MEDSCI
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the chief medical officer"
+	selection_color = "#d4ebf2"
+	exp_type = EXP_TYPE_CREW
+	exp_requirements = 120
+	exp_type_department = EXP_TYPE_MEDICAL
+
+	outfit = /datum/outfit/job/virologist
+
+	alt_titles = list("Microbiologist", "Pathologist", "Junior Disease Researcher", "Epidemiologist")
+
+	access = list(ACCESS_MEDICAL, ACCESS_MORGUE, ACCESS_SURGERY, ACCESS_CHEMISTRY, ACCESS_VIROLOGY, ACCESS_MECH_MEDICAL, ACCESS_GENETICS, ACCESS_CLONING, ACCESS_MINERAL_STOREROOM)
+	minimal_access = list(ACCESS_MEDICAL, ACCESS_VIROLOGY, ACCESS_MECH_MEDICAL, ACCESS_MINERAL_STOREROOM)
+	paycheck = PAYCHECK_MEDIUM
+	paycheck_department = ACCOUNT_MED
+
+	display_order = JOB_DISPLAY_ORDER_VIROLOGIST
+
+	changed_maps = list("OmegaStation")
+
+/datum/job/virologist/proc/OmegaStationChanges()
+	return TRUE
+
+/datum/outfit/job/virologist
+	name = "Virologist"
+	name = "Virologist"
+	jobtype = /datum/job/virologist
+
+	ears = /obj/item/radio/headset/headset_med
+	uniform = /obj/item/clothing/under/rank/virologist
+	uniform_skirt = /obj/item/clothing/under/rank/virologist/skirt
+	mask = /obj/item/clothing/mask/surgical
+	shoes = /obj/item/clothing/shoes/sneakers/white
+	suit =  /obj/item/clothing/suit/toggle/labcoat/virologist
+	suit_store =  /obj/item/flashlight/pen
+
+	backpack = /obj/item/storage/backpack/virology
+	satchel = /obj/item/storage/backpack/satchel/vir
+	duffelbag = /obj/item/storage/backpack/duffelbag/med
+
+undefined

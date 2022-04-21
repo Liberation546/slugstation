@@ -1,1 +1,49 @@
-L2RhdHVtL2pvYi9oeWRybwoJdGl0bGUgPSAiQm90YW5pc3QiCglmbGFnID0gQk9UQU5JU1QKCWRlcGFydG1lbnRfaGVhZCA9IGxpc3QoIkhlYWQgb2YgUGVyc29ubmVsIikKCWRlcGFydG1lbnRfZmxhZyA9IENJVklMSUFOCglmYWN0aW9uID0gIlN0YXRpb24iCgl0b3RhbF9wb3NpdGlvbnMgPSAzCglzcGF3bl9wb3NpdGlvbnMgPSAyCglzdXBlcnZpc29ycyA9ICJ0aGUgaGVhZCBvZiBwZXJzb25uZWwiCglzZWxlY3Rpb25fY29sb3IgPSAiI2JiZTI5MSIKCglvdXRmaXQgPSAvZGF0dW0vb3V0Zml0L2pvYi9ib3RhbmlzdAoKCWFsdF90aXRsZXMgPSBsaXN0KCJFY29sb2dpc3QiLCAiQWdyaWN1bHR1cmlzdCIsICJCb3RhbnkgR3JlZW5ob3JuIiwgIkh5ZHJvcG9uaWNpc3QiKQoKCWFjY2VzcyA9IGxpc3QoQUNDRVNTX0hZRFJPUE9OSUNTLCBBQ0NFU1NfQkFSLCBBQ0NFU1NfS0lUQ0hFTiwgQUNDRVNTX01PUkdVRSwgQUNDRVNTX01JTkVSQUxfU1RPUkVST09NKQoJbWluaW1hbF9hY2Nlc3MgPSBsaXN0KEFDQ0VTU19IWURST1BPTklDUywgQUNDRVNTX01PUkdVRSwgQUNDRVNTX01JTkVSQUxfU1RPUkVST09NKQoJcGF5Y2hlY2sgPSBQQVlDSEVDS19FQVNZCglwYXljaGVja19kZXBhcnRtZW50ID0gQUNDT1VOVF9TUlYKCWRpc3BsYXlfb3JkZXIgPSBKT0JfRElTUExBWV9PUkRFUl9CT1RBTklTVAoKCWNoYW5nZWRfbWFwcyA9IGxpc3QoIk9tZWdhU3RhdGlvbiIsICJFY2xpcHNlU3RhdGlvbiIpCgovZGF0dW0vam9iL2h5ZHJvL3Byb2MvT21lZ2FTdGF0aW9uQ2hhbmdlcygpCglhY2Nlc3MgPSBsaXN0KEFDQ0VTU19IWURST1BPTklDUywgQUNDRVNTX0JBUiwgQUNDRVNTX0tJVENIRU4sIEFDQ0VTU19NT1JHVUUsIEFDQ0VTU19NQUlOVF9UVU5ORUxTKQoJbWluaW1hbF9hY2Nlc3MgPSBsaXN0KEFDQ0VTU19IWURST1BPTklDUywgQUNDRVNTX0JBUiwgQUNDRVNTX0tJVENIRU4sIEFDQ0VTU19NT1JHVUUsIEFDQ0VTU19NQUlOVF9UVU5ORUxTKQoKL2RhdHVtL2pvYi9oeWRyby9wcm9jL0VjbGlwc2VTdGF0aW9uQ2hhbmdlcygpCgl0b3RhbF9wb3NpdGlvbnMgPSA0CglzcGF3bl9wb3NpdGlvbnMgPSAzCgovZGF0dW0vb3V0Zml0L2pvYi9ib3RhbmlzdAoJbmFtZSA9ICJCb3RhbmlzdCIKCW5hbWUgPSAiQm90YW5pc3QiCglqb2J0eXBlID0gL2RhdHVtL2pvYi9oeWRybwoKCWVhcnMgPSAvb2JqL2l0ZW0vcmFkaW8vaGVhZHNldC9oZWFkc2V0X3NydgoJdW5pZm9ybSA9IC9vYmovaXRlbS9jbG90aGluZy91bmRlci9yYW5rL2h5ZHJvcG9uaWNzCgl1bmlmb3JtX3NraXJ0ID0gL29iai9pdGVtL2Nsb3RoaW5nL3VuZGVyL3JhbmsvaHlkcm9wb25pY3Mvc2tpcnQKCXN1aXQgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvc3VpdC9hcHJvbgoJZ2xvdmVzICA9L29iai9pdGVtL2Nsb3RoaW5nL2dsb3Zlcy9ib3RhbmljX2xlYXRoZXIKCXN1aXRfc3RvcmUgPSAvb2JqL2l0ZW0vcGxhbnRfYW5hbHl6ZXIKCgliYWNrcGFjayA9IC9vYmovaXRlbS9zdG9yYWdlL2JhY2twYWNrL2JvdGFueQoJc2F0Y2hlbCA9IC9vYmovaXRlbS9zdG9yYWdlL2JhY2twYWNrL3NhdGNoZWwvaHlkCgoKCnVuZGVmaW5lZAo=
+/datum/job/hydro
+	title = "Botanist"
+	flag = BOTANIST
+	department_head = list("Head of Personnel")
+	department_flag = CIVILIAN
+	faction = "Station"
+	total_positions = 3
+	spawn_positions = 2
+	supervisors = "the head of personnel"
+	selection_color = "#bbe291"
+
+	outfit = /datum/outfit/job/botanist
+
+	alt_titles = list("Ecologist", "Agriculturist", "Botany Greenhorn", "Hydroponicist")
+
+	access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_MORGUE, ACCESS_MINERAL_STOREROOM)
+	minimal_access = list(ACCESS_HYDROPONICS, ACCESS_MORGUE, ACCESS_MINERAL_STOREROOM)
+	paycheck = PAYCHECK_EASY
+	paycheck_department = ACCOUNT_SRV
+	display_order = JOB_DISPLAY_ORDER_BOTANIST
+
+	changed_maps = list("OmegaStation", "EclipseStation")
+
+/datum/job/hydro/proc/OmegaStationChanges()
+	access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_MORGUE, ACCESS_MAINT_TUNNELS)
+	minimal_access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_MORGUE, ACCESS_MAINT_TUNNELS)
+
+/datum/job/hydro/proc/EclipseStationChanges()
+	total_positions = 4
+	spawn_positions = 3
+
+/datum/outfit/job/botanist
+	name = "Botanist"
+	name = "Botanist"
+	jobtype = /datum/job/hydro
+
+	ears = /obj/item/radio/headset/headset_srv
+	uniform = /obj/item/clothing/under/rank/hydroponics
+	uniform_skirt = /obj/item/clothing/under/rank/hydroponics/skirt
+	suit = /obj/item/clothing/suit/apron
+	gloves  =/obj/item/clothing/gloves/botanic_leather
+	suit_store = /obj/item/plant_analyzer
+
+	backpack = /obj/item/storage/backpack/botany
+	satchel = /obj/item/storage/backpack/satchel/hyd
+
+
+
+undefined

@@ -1,1 +1,167 @@
-L2RhdHVtL2pvYi9jaGFwbGFpbgoJdGl0bGUgPSAiQ2hhcGxhaW4iCglmbGFnID0gQ0hBUExBSU4KCWRlcGFydG1lbnRfaGVhZCA9IGxpc3QoIkhlYWQgb2YgUGVyc29ubmVsIikKCWRlcGFydG1lbnRfZmxhZyA9IENJVklMSUFOCglmYWN0aW9uID0gIlN0YXRpb24iCgl0b3RhbF9wb3NpdGlvbnMgPSAxCglzcGF3bl9wb3NpdGlvbnMgPSAxCglzdXBlcnZpc29ycyA9ICJ0aGUgaGVhZCBvZiBwZXJzb25uZWwiCglzZWxlY3Rpb25fY29sb3IgPSAiI2RkZGRkZCIKCglvdXRmaXQgPSAvZGF0dW0vb3V0Zml0L2pvYi9jaGFwbGFpbgoKCWFsdF90aXRsZXMgPSBsaXN0KCJQcmllc3QiLCAiUHJlYWNoZXIiLCAiQ2xlcmljIiwgIkV4b3JjaXN0IikKCglhY2Nlc3MgPSBsaXN0KEFDQ0VTU19NT1JHVUUsIEFDQ0VTU19DSEFQRUxfT0ZGSUNFLCBBQ0NFU1NfQ1JFTUFUT1JJVU0sIEFDQ0VTU19USEVBVFJFKQoJbWluaW1hbF9hY2Nlc3MgPSBsaXN0KEFDQ0VTU19NT1JHVUUsIEFDQ0VTU19DSEFQRUxfT0ZGSUNFLCBBQ0NFU1NfQ1JFTUFUT1JJVU0sIEFDQ0VTU19USEVBVFJFKQoJcGF5Y2hlY2sgPSBQQVlDSEVDS19FQVNZCglwYXljaGVja19kZXBhcnRtZW50ID0gQUNDT1VOVF9DSVYKCglkaXNwbGF5X29yZGVyID0gSk9CX0RJU1BMQVlfT1JERVJfQ0hBUExBSU4KCgovZGF0dW0vam9iL2NoYXBsYWluL2FmdGVyX3NwYXduKG1vYi9saXZpbmcvSCwgbW9iL00pCgkuID0gLi4oKQoKCXZhci9vYmovaXRlbS9zdG9yYWdlL2Jvb2svYmlibGUvYm9vemUvQiA9IG5ldwoKCWlmKEdMT0IucmVsaWdpb24pCgkJaWYoSC5taW5kKQoJCQlILm1pbmQuaG9seV9yb2xlID0gSE9MWV9ST0xFX1BSSUVTVAoJCUIuZGVpdHlfbmFtZSA9IEdMT0IuZGVpdHkKCQlCLm5hbWUgPSBHTE9CLmJpYmxlX25hbWUKCQlCLmljb25fc3RhdGUgPSBHTE9CLmJpYmxlX2ljb25fc3RhdGUKCQlCLml0ZW1fc3RhdGUgPSBHTE9CLmJpYmxlX2l0ZW1fc3RhdGUKCQl0b19jaGF0KEgsICJUaGVyZSBpcyBhbHJlYWR5IGFuIGVzdGFibGlzaGVkIHJlbGlnaW9uIG9uYm9hcmQgdGhlIHN0YXRpb24uIFlvdSBhcmUgYW4gYWNvbHl0ZSBvZiBbR0xPQi5kZWl0eV0uIERlZmVyIHRvIHRoZSBDaGFwbGFpbi4iKQoJCUguZXF1aXBfdG9fc2xvdF9vcl9kZWwoQiwgU0xPVF9JTl9CQUNLUEFDSykKCQl2YXIvbnJ0ID0gR0xPQi5ob2x5X3dlYXBvbl90eXBlIHx8IC9vYmovaXRlbS9udWxscm9kCgkJdmFyL29iai9pdGVtL251bGxyb2QvTiA9IG5ldyBucnQoSCkKCQlpZihHTE9CLmhvbHlfd2VhcG9uX3R5cGUpCgkJCU4ucmVza2lubmVkID0gVFJVRQoJCUgucHV0X2luX2hhbmRzKE4pCgkJaWYoR0xPQi5yZWxpZ2lvdXNfc2VjdCkKCQkJR0xPQi5yZWxpZ2lvdXNfc2VjdC5vbl9jb252ZXJzaW9uKEgpCgkJcmV0dXJuCglpZihILm1pbmQpCgkJSC5taW5kLmhvbHlfcm9sZSA9IEhPTFlfUk9MRV9ISUdIUFJJRVNUCgoJdmFyL25ld19yZWxpZ2lvbiA9IERFRkFVTFRfUkVMSUdJT04KCWlmKE0uY2xpZW50ICYmIE0uY2xpZW50LnByZWZzLmN1c3RvbV9uYW1lc1sicmVsaWdpb24iXSkKCQluZXdfcmVsaWdpb24gPSBNLmNsaWVudC5wcmVmcy5jdXN0b21fbmFtZXNbInJlbGlnaW9uIl0KCgl2YXIvbmV3X2RlaXR5ID0gREVGQVVMVF9ERUlUWQoJaWYoTS5jbGllbnQgJiYgTS5jbGllbnQucHJlZnMuY3VzdG9tX25hbWVzWyJkZWl0eSJdKQoJCW5ld19kZWl0eSA9IE0uY2xpZW50LnByZWZzLmN1c3RvbV9uYW1lc1siZGVpdHkiXQoKCUIuZGVpdHlfbmFtZSA9IG5ld19kZWl0eQoKCglzd2l0Y2gobG93ZXJ0ZXh0KG5ld19yZWxpZ2lvbikpCgkJaWYoImNocmlzdGlhbml0eSIpIC8vIERFRkFVTFRfUkVMSUdJT04KCQkJQi5uYW1lID0gcGljaygiVGhlIEhvbHkgQmlibGUiLCJUaGUgRGVhZCBTZWEgU2Nyb2xscyIpCgkJaWYoImJ1ZGRoaXNtIikKCQkJQi5uYW1lID0gIlRoZSBTdXRyYXMiCgkJaWYoInNwYWNlIGRpb255c3VzIiwic3BhY2UgYmFjY2h1cywgcGFydHlpbmcsIHNlcnZpY2lhLCIpCgkJCUIubmFtZSA9ICJUaGUgVGVuZXRzIG9mIFNlcnZpY2lhIgoJCQlCLmRlc2MgPSAiSGFwcHksIEZ1bGwsIENsZWFuLiBMaXZlIGl0IGFuZCBnaXZlIGl0LiIKCQlpZigiY2xvd25pc20iLCJob25rbW90aGVyIiwiaG9uayIsImhvbmtpc20iLCJjb21lZHkiKQoJCQlCLm5hbWUgPSBwaWNrKCJUaGUgSG9seSBKb2tlIEJvb2siLCAiSnVzdCBhIFByYW5rIiwgIkh5bW5zIHRvIHRoZSBIb25rbW90aGVyIikKCQlpZigiY2hhb3MiKQoJCQlCLm5hbWUgPSAiVGhlIEJvb2sgb2YgTG9yZ2FyIgoJCWlmKCJjdGh1bGh1IikKCQkJQi5uYW1lID0gIlRoZSBOZWNyb25vbWljb24iCgkJaWYoImhpbmR1aXNtIikKCQkJQi5uYW1lID0gIlRoZSBWZWRhcyIKCQlpZigiem9yb2FzdHJpYW5pc20iKQoJCQlCLm5hbWUgPSAiVGhlIEF2ZXN0YSIKCQlpZigiaG9tb3NleHVhbGl0eSIpCgkJCUIubmFtZSA9IHBpY2soIkd1eXMgR29uZSBXaWxkIiwiQ29taW5nIE91dCBvZiBUaGUgQ2xvc2V0IikKCQlpZigiaW1wZXJpdW0iKQoJCQlCLm5hbWUgPSAiVXBsaWZ0aW5nIFByaW1lciIKCQlpZigiaXNsYW0iKQoJCQlCLm5hbWUgPSAiUXVyYW4iCgkJaWYoImp1ZGFpc20iKQoJCQlCLm5hbWUgPSAiVGhlIFRvcmFoIgoJCWlmKCJsYW1waXNtIikKCQkJQi5uYW1lID0gIkZsdW9yZXNjZW50IEluY2FuZGVzY2VuY2UiCgkJaWYoImxvbCIsICJ3dGYiLCAiZ2F5IiwgInBlbmlzIiwgImFzcyIsICJwb28iLCAiYmFkbWluIiwgInNoaXRtaW4iLCAiZGVhZG1pbiIsICJjb2NrIiwgImNvY2tzIiwgIm1lbWUiLCAibWVtZXMiKQoJCQlCLm5hbWUgPSBwaWNrKCJXb29keXMgR290IFdvb2Q6IFRoZSBBZnRlcm1hdGgiLCAiV2FyIG9mIHRoZSBDb2NrcyIsICJTd2VldCBCcm8gYW5kIEhlbGxhIEplZjogRXhwYW5kZWQgRWRpdGlvbiIsIkYuQS5ULkEuTC4gUnVsZWJvb2siKQoJCQlILmFkanVzdE9yZ2FuTG9zcyhPUkdBTl9TTE9UX0JSQUlOLCAxMDApIC8vIHN0YXJ0cyBvZmYgcmV0YXJkZWQgYXMgZnVjawoJCWlmKCJtb25rZXlpc20iLCJhcGlzbSIsImdvcmlsbGlzbSIsInByaW1hdGlzbSIpCgkJCUIubmFtZSA9IHBpY2soIkdvaW5nIEJhbmFuYXMiLCAiQmFuYW5hcyBPdXQgRm9yIEhhcmFtYmUiKQoJCWlmKCJtb3Jtb25pc20iKQoJCQlCLm5hbWUgPSAiVGhlIEJvb2sgb2YgTW9ybW9uIgoJCWlmKCJwYXN0YWZhcmlhbmlzbSIpCgkJCUIubmFtZSA9ICJUaGUgR29zcGVsIG9mIHRoZSBGbHlpbmcgU3BhZ2hldHRpIE1vbnN0ZXIiCgkJaWYoInJhc3RhZmFyaWFuaXNtIiwicmFzdGEiKQoJCQlCLm5hbWUgPSAiVGhlIEhvbHkgUGlieSIKCQlpZigic2F0YW5pc20iKQoJCQlCLm5hbWUgPSAiVGhlIFVuaG9seSBCaWJsZSIKCQlpZigic2NpZW5jZSIpCgkJCUIubmFtZSA9IHBpY2soIlByaW5jaXBsZSBvZiBSZWxhdGl2aXR5IiwgIlF1YW50dW0gRW5pZ21hOiBQaHlzaWNzIEVuY291bnRlcnMgQ29uc2Npb3VzbmVzcyIsICJQcm9ncmFtbWluZyB0aGUgVW5pdmVyc2UiLCAiUXVhbnR1bSBQaHlzaWNzIGFuZCBUaGVvbG9neSIsICJTdHJpbmcgVGhlb3J5IGZvciBEdW1taWVzIiwgIkhvdyBUbzogQnVpbGQgWW91ciBPd24gV2FycCBEcml2ZSIsICJUaGUgTXlzdGVyaWVzIG9mIEJsdWVzcGFjZSIsICJQbGF5aW5nIEdvZDogQ29sbGVjdG9yJ3MgRWRpdGlvbiIpCgkJaWYoInNjaWVudG9sb2d5IikKCQkJQi5uYW1lID0gcGljaygiVGhlIEJpb2dyYXBoeSBvZiBMLiBSb24gSHViYmFyZCIsIkRpYW5ldGljcyIpCgkJaWYoInN1Ymdlbml1cyIpCgkJCUIubmFtZSA9ICJCb29rIG9mIHRoZSBTdWJHZW5pdXMiCgkJaWYoInRvb2xib3hpYSIsImdyZXl0aWRlIikKCQkJQi5uYW1lID0gcGljaygiVG9vbGJveCBNYW5pZmVzdG8iLCJpR2xvdmUgQXNzaXN0YW50cyIpCgkJaWYoIndlZWFib28iLCJrYXdhaWkiKQoJCQlCLm5hbWUgPSBwaWNrKCJGYW5maWN0aW9uIENvbXBlbmRpdW0iLCJKYXBhbmVzZSBmb3IgRHVtbWllcyIsIlRoZSBNYW5nYW5vbWljb24iLCJFc3RhYmxpc2hpbmcgWW91ciBPLlQuUCIpCgkJaWYoImN1bHQgb2YgdGhlIGdlb21ldGVyIikgIC8veW9ncyBzdGFydAoJCQlCLm5hbWUgPSAiQmxvb2Qgb2YgdGhlIEdlb21ldGVyIgoJCWlmKCJwbGFzbWFuaW11cyIpCgkJCUIubmFtZSA9IHBpY2soIlJhZGlvYWN0aXZlIEJpYmxlIiwgIkZ1c2lvbiBCaWJsZSIsICJBdG1vc2lhbiBCaWJsZSIpCgkJaWYoImJlZXRpc20iKQoJCQlCLm5hbWUgPSAiVGhlIEhvbHkgQm9vayBvZiBEYXJ0aCBCZWV0IgoJCWlmKCJzcGFjZSBjaHJpc3RpYW5pdHkiKQoJCQlCLm5hbWUgPSAiU3BhY2UgSmVzdXMiCgkJaWYoInNwYWNlIG1hZ2lja3MiKQoJCQlCLm5hbWUgPSAiRW5jaGFudGVkIEJpYmxlIgoJCWlmKCJnb25kb2xhIikKCQkJQi5uYW1lID0gIlRoZSBHb25kb2xhIE1hbmlmZXN0byIKCQlpZigidGhlIGJvbmUgbG9yZCIpCgkJCUIubmFtZSA9ICJUaGUgQm9uZSBMb3JkIgoJCWlmKCJjaHVyY2ggb2YgYWVzdGhldGljIikKCQkJQi5uYW1lID0gIjQyMFZlcnNlcyIKCQlpZigidGhlIGN1bHQgb2YgbG9yZCBzaW5ndWxvdGgiKQoJCQlCLm5hbWUgPSAiVGhlIFdvcmQgb2YgTG9yZCBTaW5ndWxvdGgiCgkJaWYoInByZXRob3J5biBzY291cmdlIGNsYW4iKQoJCQlCLm5hbWUgPSAiVGhlIENvbWluZyBTdG9ybSIKCQlpZigiY3VsdCBvZiB0aGUgc2hyb3VkIikKCQkJQi5uYW1lID0gIkVuZCBvZiB0aGUgQ3ljbGUiCgkJaWYoImZlbGxvd3NoaXAgb2YgdGhhbm9zIikKCQkJQi5uYW1lID0gIkFudG1hbnMgRGlhcnkiCgkJaWYoIm1ldGFpc20iKQoJCQlCLm5hbWUgPSAiNHRoIHdhbGwgYnJlYWsiCgkJaWYoImFsbGV0b2lkaWFuIikKCQkJQi5uYW1lID0gInN0YXRpb24gcmVwYWlyIGRyb25lIHVzZXIgbWFudWFsIgoJCWlmKCJudWdnZXQiKQoJCQlCLm5hbWUgPSAiQSB0ZW5kZXJzIHRhbGUiCgkJaWYoImVnb3Rpc20iKQoJCQlCLm5hbWUgPSAiTWFyamVzIGd1aWRlIHRvIHJvYnVzdG5lc3MiIC8veW9ncyBlbmQKCQllbHNlCgkJCUIubmFtZSA9ICJUaGUgSG9seSBCb29rIG9mIFtuZXdfcmVsaWdpb25dIgoKCUdMT0IucmVsaWdpb24gPSBuZXdfcmVsaWdpb24KCUdMT0IuYmlibGVfbmFtZSA9IEIubmFtZQoJR0xPQi5kZWl0eSA9IEIuZGVpdHlfbmFtZQoKCUguZXF1aXBfdG9fc2xvdF9vcl9kZWwoQiwgU0xPVF9JTl9CQUNLUEFDSykKCglTU2JsYWNrYm94LnJlY29yZF9mZWVkYmFjaygidGV4dCIsICJyZWxpZ2lvbl9uYW1lIiwgMSwgIltuZXdfcmVsaWdpb25dIiwgMSkKCVNTYmxhY2tib3gucmVjb3JkX2ZlZWRiYWNrKCJ0ZXh0IiwgInJlbGlnaW9uX2RlaXR5IiwgMSwgIltuZXdfZGVpdHldIiwgMSkKCi9kYXR1bS9vdXRmaXQvam9iL2NoYXBsYWluCgluYW1lID0gIkNoYXBsYWluIgoJbmFtZSA9ICJDaGFwbGFpbiIKCWpvYnR5cGUgPSAvZGF0dW0vam9iL2NoYXBsYWluCgoJZWFycyA9IC9vYmovaXRlbS9yYWRpby9oZWFkc2V0L2hlYWRzZXRfc3J2Cgl1bmlmb3JtID0gL29iai9pdGVtL2Nsb3RoaW5nL3VuZGVyL3JhbmsvY2hhcGxhaW4KCXVuaWZvcm1fc2tpcnQgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvdW5kZXIvcmFuay9jaGFwbGFpbi9za2lydAoJYmFja3BhY2tfY29udGVudHMgPSBsaXN0KC9vYmovaXRlbS9jYW1lcmEvc3Bvb2t5ID0gMSkKCWJhY2twYWNrID0gL29iai9pdGVtL3N0b3JhZ2UvYmFja3BhY2svY3VsdHBhY2sKCXNhdGNoZWwgPSAvb2JqL2l0ZW0vc3RvcmFnZS9iYWNrcGFjay9jdWx0cGFjawoKdW5kZWZpbmVkCg==
+/datum/job/chaplain
+	title = "Chaplain"
+	flag = CHAPLAIN
+	department_head = list("Head of Personnel")
+	department_flag = CIVILIAN
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the head of personnel"
+	selection_color = "#dddddd"
+
+	outfit = /datum/outfit/job/chaplain
+
+	alt_titles = list("Priest", "Preacher", "Cleric", "Exorcist")
+
+	access = list(ACCESS_MORGUE, ACCESS_CHAPEL_OFFICE, ACCESS_CREMATORIUM, ACCESS_THEATRE)
+	minimal_access = list(ACCESS_MORGUE, ACCESS_CHAPEL_OFFICE, ACCESS_CREMATORIUM, ACCESS_THEATRE)
+	paycheck = PAYCHECK_EASY
+	paycheck_department = ACCOUNT_CIV
+
+	display_order = JOB_DISPLAY_ORDER_CHAPLAIN
+
+
+/datum/job/chaplain/after_spawn(mob/living/H, mob/M)
+	. = ..()
+
+	var/obj/item/storage/book/bible/booze/B = new
+
+	if(GLOB.religion)
+		if(H.mind)
+			H.mind.holy_role = HOLY_ROLE_PRIEST
+		B.deity_name = GLOB.deity
+		B.name = GLOB.bible_name
+		B.icon_state = GLOB.bible_icon_state
+		B.item_state = GLOB.bible_item_state
+		to_chat(H, "There is already an established religion onboard the station. You are an acolyte of [GLOB.deity]. Defer to the Chaplain.")
+		H.equip_to_slot_or_del(B, SLOT_IN_BACKPACK)
+		var/nrt = GLOB.holy_weapon_type || /obj/item/nullrod
+		var/obj/item/nullrod/N = new nrt(H)
+		if(GLOB.holy_weapon_type)
+			N.reskinned = TRUE
+		H.put_in_hands(N)
+		if(GLOB.religious_sect)
+			GLOB.religious_sect.on_conversion(H)
+		return
+	if(H.mind)
+		H.mind.holy_role = HOLY_ROLE_HIGHPRIEST
+
+	var/new_religion = DEFAULT_RELIGION
+	if(M.client && M.client.prefs.custom_names["religion"])
+		new_religion = M.client.prefs.custom_names["religion"]
+
+	var/new_deity = DEFAULT_DEITY
+	if(M.client && M.client.prefs.custom_names["deity"])
+		new_deity = M.client.prefs.custom_names["deity"]
+
+	B.deity_name = new_deity
+
+
+	switch(lowertext(new_religion))
+		if("christianity") // DEFAULT_RELIGION
+			B.name = pick("The Holy Bible","The Dead Sea Scrolls")
+		if("buddhism")
+			B.name = "The Sutras"
+		if("space dionysus","space bacchus, partying, servicia,")
+			B.name = "The Tenets of Servicia"
+			B.desc = "Happy, Full, Clean. Live it and give it."
+		if("clownism","honkmother","honk","honkism","comedy")
+			B.name = pick("The Holy Joke Book", "Just a Prank", "Hymns to the Honkmother")
+		if("chaos")
+			B.name = "The Book of Lorgar"
+		if("cthulhu")
+			B.name = "The Necronomicon"
+		if("hinduism")
+			B.name = "The Vedas"
+		if("zoroastrianism")
+			B.name = "The Avesta"
+		if("homosexuality")
+			B.name = pick("Guys Gone Wild","Coming Out of The Closet")
+		if("imperium")
+			B.name = "Uplifting Primer"
+		if("islam")
+			B.name = "Quran"
+		if("judaism")
+			B.name = "The Torah"
+		if("lampism")
+			B.name = "Fluorescent Incandescence"
+		if("lol", "wtf", "gay", "penis", "ass", "poo", "badmin", "shitmin", "deadmin", "cock", "cocks", "meme", "memes")
+			B.name = pick("Woodys Got Wood: The Aftermath", "War of the Cocks", "Sweet Bro and Hella Jef: Expanded Edition","F.A.T.A.L. Rulebook")
+			H.adjustOrganLoss(ORGAN_SLOT_BRAIN, 100) // starts off retarded as fuck
+		if("monkeyism","apism","gorillism","primatism")
+			B.name = pick("Going Bananas", "Bananas Out For Harambe")
+		if("mormonism")
+			B.name = "The Book of Mormon"
+		if("pastafarianism")
+			B.name = "The Gospel of the Flying Spaghetti Monster"
+		if("rastafarianism","rasta")
+			B.name = "The Holy Piby"
+		if("satanism")
+			B.name = "The Unholy Bible"
+		if("science")
+			B.name = pick("Principle of Relativity", "Quantum Enigma: Physics Encounters Consciousness", "Programming the Universe", "Quantum Physics and Theology", "String Theory for Dummies", "How To: Build Your Own Warp Drive", "The Mysteries of Bluespace", "Playing God: Collector's Edition")
+		if("scientology")
+			B.name = pick("The Biography of L. Ron Hubbard","Dianetics")
+		if("subgenius")
+			B.name = "Book of the SubGenius"
+		if("toolboxia","greytide")
+			B.name = pick("Toolbox Manifesto","iGlove Assistants")
+		if("weeaboo","kawaii")
+			B.name = pick("Fanfiction Compendium","Japanese for Dummies","The Manganomicon","Establishing Your O.T.P")
+		if("cult of the geometer")  //yogs start
+			B.name = "Blood of the Geometer"
+		if("plasmanimus")
+			B.name = pick("Radioactive Bible", "Fusion Bible", "Atmosian Bible")
+		if("beetism")
+			B.name = "The Holy Book of Darth Beet"
+		if("space christianity")
+			B.name = "Space Jesus"
+		if("space magicks")
+			B.name = "Enchanted Bible"
+		if("gondola")
+			B.name = "The Gondola Manifesto"
+		if("the bone lord")
+			B.name = "The Bone Lord"
+		if("church of aesthetic")
+			B.name = "420Verses"
+		if("the cult of lord singuloth")
+			B.name = "The Word of Lord Singuloth"
+		if("prethoryn scourge clan")
+			B.name = "The Coming Storm"
+		if("cult of the shroud")
+			B.name = "End of the Cycle"
+		if("fellowship of thanos")
+			B.name = "Antmans Diary"
+		if("metaism")
+			B.name = "4th wall break"
+		if("alletoidian")
+			B.name = "station repair drone user manual"
+		if("nugget")
+			B.name = "A tenders tale"
+		if("egotism")
+			B.name = "Marjes guide to robustness" //yogs end
+		else
+			B.name = "The Holy Book of [new_religion]"
+
+	GLOB.religion = new_religion
+	GLOB.bible_name = B.name
+	GLOB.deity = B.deity_name
+
+	H.equip_to_slot_or_del(B, SLOT_IN_BACKPACK)
+
+	SSblackbox.record_feedback("text", "religion_name", 1, "[new_religion]", 1)
+	SSblackbox.record_feedback("text", "religion_deity", 1, "[new_deity]", 1)
+
+/datum/outfit/job/chaplain
+	name = "Chaplain"
+	name = "Chaplain"
+	jobtype = /datum/job/chaplain
+
+	ears = /obj/item/radio/headset/headset_srv
+	uniform = /obj/item/clothing/under/rank/chaplain
+	uniform_skirt = /obj/item/clothing/under/rank/chaplain/skirt
+	backpack_contents = list(/obj/item/camera/spooky = 1)
+	backpack = /obj/item/storage/backpack/cultpack
+	satchel = /obj/item/storage/backpack/cultpack
+
+undefined

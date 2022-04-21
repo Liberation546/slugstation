@@ -1,1 +1,57 @@
-L2RhdHVtL2pvYi9sYXd5ZXIKCXRpdGxlID0gIkxhd3llciIKCWZsYWcgPSBMQVdZRVIKCWRlcGFydG1lbnRfaGVhZCA9IGxpc3QoIkhlYWQgb2YgUGVyc29ubmVsIikKCWRlcGFydG1lbnRfZmxhZyA9IENJVklMSUFOCglmYWN0aW9uID0gIlN0YXRpb24iCgl0b3RhbF9wb3NpdGlvbnMgPSAyCglzcGF3bl9wb3NpdGlvbnMgPSAyCglzdXBlcnZpc29ycyA9ICJ0aGUgaGVhZCBvZiBwZXJzb25uZWwiCglzZWxlY3Rpb25fY29sb3IgPSAiI2RkZGRkZCIKCXZhci9sYXd5ZXJzID0gMCAvL0NvdW50cyBsYXd5ZXIgYW1vdW50CglhbHRfdGl0bGVzID0gbGlzdCgiUHJvc2VjdXRvciIsICJEZWZlbnNlIEF0dG9ybmV5IiwgIlBhcmFsZWdhbCIsICJBY2UgQXR0b3JuZXkiKQoKCW91dGZpdCA9IC9kYXR1bS9vdXRmaXQvam9iL2xhd3llcgoKCWFjY2VzcyA9IGxpc3QoQUNDRVNTX0xBV1lFUiwgQUNDRVNTX0NPVVJULCBBQ0NFU1NfU0VDX0RPT1JTKQoJbWluaW1hbF9hY2Nlc3MgPSBsaXN0KEFDQ0VTU19MQVdZRVIsIEFDQ0VTU19DT1VSVCwgQUNDRVNTX1NFQ19ET09SUykKCXBheWNoZWNrID0gUEFZQ0hFQ0tfRUFTWQoJcGF5Y2hlY2tfZGVwYXJ0bWVudCA9IEFDQ09VTlRfQ0lWCgltaW5kX3RyYWl0cyA9IGxpc3QoVFJBSVRfTEFXX0VORk9SQ0VNRU5UX01FVEFCT0xJU00pCgoJZGlzcGxheV9vcmRlciA9IEpPQl9ESVNQTEFZX09SREVSX0xBV1lFUgoKCWNoYW5nZWRfbWFwcyA9IGxpc3QoIk9tZWdhU3RhdGlvbiIpCgovZGF0dW0vam9iL2xhd3llci9wcm9jL09tZWdhU3RhdGlvbkNoYW5nZXMoKQoJcmV0dXJuIFRSVUUKCi9kYXR1bS9vdXRmaXQvam9iL2xhd3llcgoJbmFtZSA9ICJMYXd5ZXIiCgluYW1lID0gIkxhd3llciIKCWpvYnR5cGUgPSAvZGF0dW0vam9iL2xhd3llcgoKCWVhcnMgPSAvb2JqL2l0ZW0vcmFkaW8vaGVhZHNldC9oZWFkc2V0X3NydnNlYwoJdW5pZm9ybSA9IC9vYmovaXRlbS9jbG90aGluZy91bmRlci9sYXd5ZXIvYmx1ZXN1aXQKCXVuaWZvcm1fc2tpcnQgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvdW5kZXIvbGF3eWVyL2JsdWVzdWl0L3NraXJ0CglzdWl0ID0gL29iai9pdGVtL2Nsb3RoaW5nL3N1aXQvdG9nZ2xlL2xhd3llcgoJc2hvZXMgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvc2hvZXMvbGFjZXVwCglsX2hhbmQgPSAvb2JqL2l0ZW0vc3RvcmFnZS9icmllZmNhc2UvbGF3eWVyCglsX3BvY2tldCA9IC9vYmovaXRlbS9sYXNlcl9wb2ludGVyCglyX3BvY2tldCA9IC9vYmovaXRlbS9jbG90aGluZy9hY2Nlc3NvcnkvbGF3eWVyc19iYWRnZQoKCWNoYW1lbGVvbl9leHRyYXMgPSAvb2JqL2l0ZW0vc3RhbXAvbGF3CgoKL2RhdHVtL291dGZpdC9qb2IvbGF3eWVyL3ByZV9lcXVpcChtb2IvbGl2aW5nL2NhcmJvbi9odW1hbi9ILCB2aXN1YWxzT25seSA9IEZBTFNFKQoJLi4oKQoJaWYodmlzdWFsc09ubHkpCgkJcmV0dXJuCgoJdmFyL2RhdHVtL2pvYi9sYXd5ZXIvSiA9IFNTam9iLkdldEpvYlR5cGUoam9idHlwZSkKCUoubGF3eWVycysrCglpZihKLmxhd3llcnM+MSkKCQl1bmlmb3JtID0gL29iai9pdGVtL2Nsb3RoaW5nL3VuZGVyL2xhd3llci9wdXJwc3VpdAoJCXN1aXQgPSAvb2JqL2l0ZW0vY2xvdGhpbmcvc3VpdC90b2dnbGUvbGF3eWVyL3B1cnBsZQoKdW5kZWZpbmVkCg==
+/datum/job/lawyer
+	title = "Lawyer"
+	flag = LAWYER
+	department_head = list("Head of Personnel")
+	department_flag = CIVILIAN
+	faction = "Station"
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "the head of personnel"
+	selection_color = "#dddddd"
+	var/lawyers = 0 //Counts lawyer amount
+	alt_titles = list("Prosecutor", "Defense Attorney", "Paralegal", "Ace Attorney")
+
+	outfit = /datum/outfit/job/lawyer
+
+	access = list(ACCESS_LAWYER, ACCESS_COURT, ACCESS_SEC_DOORS)
+	minimal_access = list(ACCESS_LAWYER, ACCESS_COURT, ACCESS_SEC_DOORS)
+	paycheck = PAYCHECK_EASY
+	paycheck_department = ACCOUNT_CIV
+	mind_traits = list(TRAIT_LAW_ENFORCEMENT_METABOLISM)
+
+	display_order = JOB_DISPLAY_ORDER_LAWYER
+
+	changed_maps = list("OmegaStation")
+
+/datum/job/lawyer/proc/OmegaStationChanges()
+	return TRUE
+
+/datum/outfit/job/lawyer
+	name = "Lawyer"
+	name = "Lawyer"
+	jobtype = /datum/job/lawyer
+
+	ears = /obj/item/radio/headset/headset_srvsec
+	uniform = /obj/item/clothing/under/lawyer/bluesuit
+	uniform_skirt = /obj/item/clothing/under/lawyer/bluesuit/skirt
+	suit = /obj/item/clothing/suit/toggle/lawyer
+	shoes = /obj/item/clothing/shoes/laceup
+	l_hand = /obj/item/storage/briefcase/lawyer
+	l_pocket = /obj/item/laser_pointer
+	r_pocket = /obj/item/clothing/accessory/lawyers_badge
+
+	chameleon_extras = /obj/item/stamp/law
+
+
+/datum/outfit/job/lawyer/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+
+	var/datum/job/lawyer/J = SSjob.GetJobType(jobtype)
+	J.lawyers++
+	if(J.lawyers>1)
+		uniform = /obj/item/clothing/under/lawyer/purpsuit
+		suit = /obj/item/clothing/suit/toggle/lawyer/purple
+
+undefined
