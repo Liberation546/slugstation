@@ -28,6 +28,9 @@
 	spawn_positions = 1
 
 /datum/outfit/job/miningmedic
+/datum/outfit/job/miningmedic
+	name = "Mining Medic"
+	jobtype = /datum/job/miningmedic
 	name = "Mining Medic"
 	jobtype = /datum/job/miningmedic
 
@@ -41,11 +44,10 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat/emt/explorer
 	uniform = /obj/item/clothing/under/yogs/rank/miner/medic
 	l_hand = /obj/item/storage/firstaid/regular
-	l_pocket =  /obj/item/pda/miningmed
 	gloves = /obj/item/clothing/gloves/color/latex
 	head = /obj/item/clothing/head/soft/emt/mining
 	backpack = /obj/item/storage/backpack/medic
-	satchel = /obj/item/storage/backpack/satchel/med
-	duffelbag = /obj/item/storage/backpack/duffelbag/med
 	box = /obj/item/storage/box/survival_mining
 	pda_slot = SLOT_L_STORE
+
+undefined
