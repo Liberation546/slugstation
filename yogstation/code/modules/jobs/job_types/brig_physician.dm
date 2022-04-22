@@ -51,5 +51,3 @@
 	box = /obj/item/storage/box/survival
 
 	implants = list(/obj/item/implant/mindshield)
-
-undefined

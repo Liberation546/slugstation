@@ -37,5 +37,3 @@
 		/obj/item/storage/crayons = 1,
 		/obj/item/camera = 1
 	)
-
-undefined

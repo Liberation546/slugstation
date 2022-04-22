@@ -71,5 +71,3 @@
 	if(visualsOnly)
 		return
 
-
-undefined

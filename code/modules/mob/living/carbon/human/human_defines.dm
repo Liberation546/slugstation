@@ -63,5 +63,3 @@
 	var/account_id
 	var/xylophone = 0 //For the spoooooooky xylophone cooldown
 	var/blood_in_hands = 0
-
-undefined

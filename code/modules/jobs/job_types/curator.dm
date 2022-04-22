@@ -46,5 +46,3 @@
 		return
 
 	H.grant_all_languages(TRUE, TRUE, TRUE, LANGUAGE_CURATOR)
-
-undefined

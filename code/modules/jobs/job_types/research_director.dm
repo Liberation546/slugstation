@@ -71,5 +71,3 @@
 	suit = /obj/item/clothing/suit/space/hardsuit/rd
 	suit_store = /obj/item/tank/internals/oxygen
 	internals_slot = SLOT_S_STORE
-
-undefined

@@ -50,5 +50,3 @@
 
 	chameleon_extras = /obj/item/gun/syringe
 
-
-undefined

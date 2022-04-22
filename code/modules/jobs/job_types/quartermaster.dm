@@ -41,5 +41,3 @@
 
 	chameleon_extras = /obj/item/stamp/qm
 
-
-undefined

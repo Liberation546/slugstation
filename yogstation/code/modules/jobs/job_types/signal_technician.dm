@@ -47,5 +47,3 @@
 	box = /obj/item/storage/box/engineer
 
 	pda_slot = SLOT_L_STORE
-
-undefined

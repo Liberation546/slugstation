@@ -44,5 +44,3 @@
 	uniform_skirt = /obj/item/clothing/under/rank/cargotech/skirt
 	l_hand = /obj/item/export_scanner
 
-
-undefined

@@ -58,5 +58,3 @@
 	suit = /obj/item/clothing/suit/space/hardsuit/engine/atmos
 	suit_store = /obj/item/tank/internals/oxygen
 	internals_slot = SLOT_S_STORE
-
-undefined

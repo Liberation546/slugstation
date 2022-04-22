@@ -648,5 +648,3 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S.ImportText("/",file("[path].txt"))
 
 #endif
-
-undefined

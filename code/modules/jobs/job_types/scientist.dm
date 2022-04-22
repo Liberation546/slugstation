@@ -53,5 +53,3 @@
 	..()
 	if(prob(0.4))
 		neck = /obj/item/clothing/neck/tie/horrible
-
-undefined
