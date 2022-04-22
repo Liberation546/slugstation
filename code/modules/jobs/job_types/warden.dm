@@ -44,26 +44,7 @@
 	name = "Warden"
 	jobtype = /datum/job/warden
 
-	belt = /obj/item/pda/warden
+	pda_type = /obj/item/pda/warden
+
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/rank/warden
-	uniform_skirt = /obj/item/clothing/under/rank/warden/skirt
-	shoes = /obj/item/clothing/shoes/jackboots
-	suit = /obj/item/clothing/suit/armor/vest/warden/alt
-	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/warden
-	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
-	r_pocket = /obj/item/assembly/flash/handheld
-	l_pocket = /obj/item/restraints/handcuffs
-	suit_store = /obj/item/gun/energy/disabler
-	backpack_contents = list(/obj/item/melee/baton/loaded=1) //yogs - ~~added departmental budget ID~~ removes sec budget
-
-	backpack = /obj/item/storage/backpack/security
-	satchel = /obj/item/storage/backpack/satchel/sec
-	duffelbag = /obj/item/storage/backpack/duffelbag/sec
-	box = /obj/item/storage/box/security
-
-	implants = list(/obj/item/implant/mindshield)
-
-	chameleon_extras = /obj/item/gun/ballistic/shotgun/automatic/combat/compact
-

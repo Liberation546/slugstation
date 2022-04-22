@@ -44,6 +44,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/preferred_map = null
 	var/pda_style = MONO
 	var/pda_color = "#808000"
+	var/id_in_pda = FALSE
 	var/show_credits = TRUE
 	var/uses_glasses_colour = 0
 
@@ -658,6 +659,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<br>"
 			dat += "<b>PDA Color:</b> <span style='border:1px solid #161616; background-color: [pda_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=pda_color;task=input'>Change</a><BR>"
 			dat += "<b>PDA Style:</b> <a href='?_src_=prefs;task=input;preference=pda_style'>[pda_style]</a><br>"
+			dat += "<b>PDA Starts in ID Slot:</b> <a href='?_src_=prefs;task=input;preference=id_in_pda'>[id_in_pda ? "Enabled" : "Disabled"]</a><br>"
 			dat += "<b>Skillcape:</b> <a href='?_src_=prefs;task=input;preference=skillcape'>[(skillcape_id != "None") ? "[GLOB.skillcapes[skillcape_id]]" : "None"] </a><br>"
 			dat += "<b>Flare:</b> <a href='?_src_=prefs;task=input;preference=flare'>[flare ? "Enabled" : "Disabled"]</a><br>"
 			dat += "<b>Map:</b> <a href='?_src_=prefs;task=input;preference=map'>[map ? "Enabled" : "Disabled"]</a><br>"
@@ -1840,6 +1842,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					var/pickedPDAColor = input(user, "Choose your PDA Interface color.", "Character Preference",pda_color) as color|null
 					if(pickedPDAColor)
 						pda_color = pickedPDAColor
+				if("id_in_pda")
+					id_in_pda = !id_in_pda
 				if("skillcape")
 					var/list/selectablecapes = list()
 					var/max_eligable = TRUE
@@ -2126,62 +2130,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.backbag = backbag
 
 	character.jumpsuit_style = jumpsuit_style
+	character.id_in_pda = id_in_pda
 
 	var/datum/species/chosen_species
 	chosen_species = pref_species.type
-	if(roundstart_checks && !(pref_species.id in GLOB.roundstart_races) &&  (!(pref_species.id in GLOB.mentor_races) && !is_mentor(character))  && !(pref_species.id in (CONFIG_GET(keyed_list/roundstart_no_hard_check))))
-		chosen_species = /datum/species/human
-		pref_species = new /datum/species/human
-		save_character()
-
-	character.dna.features = features.Copy()
-	character.set_species(chosen_species, icon_update = FALSE, pref_load = TRUE)
-	character.dna.real_name = character.real_name
-
-	if("tail_lizard" in pref_species.default_features)
-		character.dna.species.mutant_bodyparts |= "tail_lizard"
-
-	if("tail_polysmorph" in pref_species.default_features)
-		character.dna.species.mutant_bodyparts |= "tail_polysmorph"
-
-	if(icon_updates)
-		character.update_body()
-		character.update_hair()
-		character.update_body_parts()
-
-/datum/preferences/proc/get_default_name(name_id)
-	switch(name_id)
-		if("human")
-			return random_unique_name()
-		if("ai")
-			return pick(GLOB.ai_names)
-		if("cyborg")
-			return DEFAULT_CYBORG_NAME
-		if("clown")
-			return pick(GLOB.clown_names)
-		if("mime")
-			return pick(GLOB.mime_names)
-		if("religion")
-			return DEFAULT_RELIGION
-		if("deity")
-			return DEFAULT_DEITY
-	return random_unique_name()
-
-/datum/preferences/proc/ask_for_custom_name(mob/user,name_id)
-	var/namedata = GLOB.preferences_custom_names[name_id]
-	if(!namedata)
-		return
-
-	var/raw_name = input(user, "Choose your character's [namedata["qdesc"]]:","Character Preference") as text|null
-	if(!raw_name)
-		if(namedata["allow_null"])
-			custom_names[name_id] = get_default_name(name_id)
-		else
-			return
-	else
-		var/sanitized_name = reject_bad_name(raw_name,namedata["allow_numbers"])
-		if(!sanitized_name)
-			to_chat(user, "<font color='red'>Invalid name. Your name should be at least 2 and at most [MAX_NAME_LEN] characters long. It may only contain the characters A-Z, a-z,[namedata["allow_numbers"] ? ",0-9," : ""] -, ' and .</font>")
-			return
-		else
-			custom_names[name_id] = sanitized_name

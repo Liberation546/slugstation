@@ -106,7 +106,7 @@ GLOBAL_LIST_INIT(available_depts_sec, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICA
 			qdel(H.ears)
 		H.equip_to_slot_or_del(new ears(H),SLOT_EARS)
 
-	var/obj/item/card/id/W = H.wear_id
+	var/obj/item/card/id/W = H.get_idcard()
 	W.access |= dep_access
 
 	var/teleport = 0
@@ -138,52 +138,7 @@ GLOBAL_LIST_INIT(available_depts_sec, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICA
 	name = "Security Officer"
 	jobtype = /datum/job/officer
 
-	belt = /obj/item/pda/security
+	pda_type = /obj/item/pda/security
+
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/rank/security
-	uniform_skirt = /obj/item/clothing/under/rank/security/skirt
-	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/helmet/sec
-	suit = /obj/item/clothing/suit/armor/vest/alt
-	shoes = /obj/item/clothing/shoes/jackboots
-	l_pocket = /obj/item/restraints/handcuffs
-	r_pocket = /obj/item/assembly/flash/handheld
-	suit_store = /obj/item/gun/energy/disabler
-	backpack_contents = list(/obj/item/melee/baton/loaded=1)
-
-	backpack = /obj/item/storage/backpack/security
-	satchel = /obj/item/storage/backpack/satchel/sec
-	duffelbag = /obj/item/storage/backpack/duffelbag/sec
-	box = /obj/item/storage/box/security
-
-	implants = list(/obj/item/implant/mindshield)
-
-	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet)
-	//The helmet is necessary because /obj/item/clothing/head/helmet/sec is overwritten in the chameleon list by the standard helmet, which has the same name and icon state
-
-
-/obj/item/radio/headset/headset_sec/alt/department/Initialize()
-	. = ..()
-	wires = new/datum/wires/radio(src)
-	secure_radio_connections = new
-	recalculateChannels()
-
-/obj/item/radio/headset/headset_sec/alt/department/engi
-	keyslot = new /obj/item/encryptionkey/headset_sec
-	keyslot2 = new /obj/item/encryptionkey/headset_eng
-
-/obj/item/radio/headset/headset_sec/alt/department/supply
-	keyslot = new /obj/item/encryptionkey/headset_sec
-	keyslot2 = new /obj/item/encryptionkey/headset_cargo
-
-/obj/item/radio/headset/headset_sec/alt/department/med
-	keyslot = new /obj/item/encryptionkey/headset_sec
-	keyslot2 = new /obj/item/encryptionkey/headset_med
-
-/obj/item/radio/headset/headset_sec/alt/department/sci
-	keyslot = new /obj/item/encryptionkey/headset_sec
-	keyslot2 = new /obj/item/encryptionkey/headset_sci
-
-/obj/item/radio/headset/headset_sec/alt/department/service
-	keyslot = new /obj/item/encryptionkey/headset_sec
-	keyslot2 = new /obj/item/encryptionkey/headset_service

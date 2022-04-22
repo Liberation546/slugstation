@@ -40,33 +40,7 @@
 	name = "Detective"
 	jobtype = /datum/job/detective
 
-	belt = /obj/item/pda/detective
+	pda_type = /obj/item/pda/detective
+
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/rank/det
-	uniform_skirt = /obj/item/clothing/under/rank/det/skirt
-	neck = /obj/item/clothing/neck/tie/detective
-	shoes = /obj/item/clothing/shoes/sneakers/brown
-	suit = /obj/item/clothing/suit/det_suit
-	gloves = /obj/item/clothing/gloves/color/black/forensic
-	head = /obj/item/clothing/head/fedora/det_hat
-	l_pocket = /obj/item/toy/crayon/white
-	r_pocket = /obj/item/lighter
-	backpack_contents = list(/obj/item/storage/box/evidence=1,\
-		/obj/item/detective_scanner=1,\
-		/obj/item/melee/classic_baton=1,\
-		/obj/item/modular_computer/tablet/pda/preset/basic=1)
-	mask = /obj/item/clothing/mask/cigarette
-
-	implants = list(/obj/item/implant/mindshield)
-
-	chameleon_extras = list(/obj/item/gun/ballistic/revolver/detective, /obj/item/clothing/glasses/sunglasses)
-
-/datum/outfit/job/detective/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
-	..()
-	var/obj/item/clothing/mask/cigarette/cig = H.wear_mask
-	if(istype(cig)) //Some species specfic changes can mess this up (plasmamen)
-		cig.light("")
-
-	if(visualsOnly)
-		return
-

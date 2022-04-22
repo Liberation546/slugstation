@@ -35,15 +35,8 @@
 	name = "Paramedic"
 	jobtype = /datum/job/paramedic
 
+	pda_type = /obj/item/pda/para
+
 	backpack_contents = list(/obj/item/storage/firstaid/regular)
-	belt = /obj/item/pda/para
 	ears = /obj/item/radio/headset/headset_med
 	uniform = /obj/item/clothing/under/rank/medical
-	suit = /obj/item/clothing/suit/toggle/labcoat/emt
-	shoes = /obj/item/clothing/shoes/sneakers/white
-	l_hand = /obj/item/roller
-	l_pocket = /obj/item/flashlight/pen/paramedic
-	r_pocket = /obj/item/gps
-	backpack = /obj/item/storage/backpack/medic
-	satchel = /obj/item/storage/backpack/satchel/med
-	duffelbag = /obj/item/storage/backpack/duffelbag/med

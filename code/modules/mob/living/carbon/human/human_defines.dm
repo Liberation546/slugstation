@@ -35,30 +35,7 @@
 	var/socks = "Nude" //Which socks the player wants
 	var/backbag = DBACKPACK		//Which backpack type the player has chosen.
 	var/jumpsuit_style = PREF_SUIT //suit/skirt
+	var/id_in_pda = FALSE //Whether the player wants their ID to start in their PDA
 
 	//Equipment slots
 	var/obj/item/clothing/wear_suit = null
-	var/obj/item/clothing/w_uniform = null
-	var/obj/item/belt = null
-	var/obj/item/wear_id = null
-	var/obj/item/r_store = null
-	var/obj/item/l_store = null
-	var/obj/item/s_store = null
-
-	var/special_voice = "" // For changing our voice. Used by a symptom.
-
-	var/bleedsuppress = 0 //for stopping bloodloss, eventually this will be limb-based like bleeding
-
-	var/name_override //For temporary visible name changes
-
-	var/datum/physiology/physiology
-
-	var/list/datum/bioware = list()
-
-	var/creamed = FALSE //to use with creampie overlays
-	var/static/list/can_ride_typecache = typecacheof(list(/mob/living/carbon/human, /mob/living/simple_animal/slime, /mob/living/simple_animal/parrot))
-	var/lastpuke = 0
-	var/last_fire_update
-	var/account_id
-	var/xylophone = 0 //For the spoooooooky xylophone cooldown
-	var/blood_in_hands = 0
