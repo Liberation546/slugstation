@@ -1100,7 +1100,8 @@ Traitors and the like can also be revived with the previous role mostly intact.
 									ADMIN_PUNISHMENT_CRACK,
 									ADMIN_PUNISHMENT_BLEED,
 									ADMIN_PUNISHMENT_PERFORATE,
-									ADMIN_PUNISHMENT_SCARIFY
+									ADMIN_PUNISHMENT_SCARIFY,
+									ADMIN_PUNISHMENT_SMSPIDER
 									)
 
 	var/punishment = input("Choose a punishment", "DIVINE SMITING") as null|anything in punishment_list
@@ -1190,6 +1191,17 @@ Traitors and the like can also be revived with the previous role mostly intact.
 				to_chat(target, span_reallybigphobia("HENK!! HENK!! HENK!! YOU DID SOMETHING EXTREMELY DUMB, AND MADE GOD MAD. CRY ABOUT IT."))
 			var/mob/living/carbon/human/H = target
 			H?.cluwneify()
+		if(ADMIN_PUNISHMENT_SMSPIDER)
+			var/confirm = alert(usr, "Dust target with a spider? There is no chance of revival!", "Supermatter Spider", "Yes", "No")
+			if(confirm == "No")
+				return
+			//What's an open turf within the target's sight? Lets make a list of them.
+			var/FOVlist = circleviewturfs(target,5)
+			//Okay, now we spawn a spider on the turf...
+			var/mob/living/simple_animal/hostile/smspider/spider = new /mob/living/simple_animal/hostile/smspider(pick(FOVlist))
+			//And have it target the victim.
+			spider.GiveTarget(target)
+			to_chat(usr, span_alert("Dusting target with a spider..."))
 		if(ADMIN_PUNISHMENT_CRACK)
 			if(!iscarbon(target))
 				to_chat(usr,span_warning("This must be used on a carbon mob."), confidential = TRUE)
@@ -1276,185 +1288,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
   * * wound_bonus- the wounding power we're assigning to the bullet, since we don't care about the base one
   * * damage- the damage we're assigning to the bullet, since we don't care about the base one
   */
+
 /proc/firing_squad(mob/living/carbon/target, turf/source_turf, body_zone, wound_bonus, damage)
 	if(!target.get_bodypart(body_zone))
 		return
-	playsound(target, 'sound/weapons/revolver357shot.ogg', 100)
-	var/obj/item/projectile/bullet/smite/divine_wrath = new(source_turf)
-	divine_wrath.damage = damage
-	divine_wrath.wound_bonus = wound_bonus
-	divine_wrath.original = target
-	divine_wrath.def_zone = body_zone
-	divine_wrath.spread = 0
-	divine_wrath.preparePixelProjectile(target, source_turf)
-	divine_wrath.fire()
-
-/client/proc/punish_log(var/whom, var/punishment)
-	var/msg = "[key_name(usr)] punished [key_name_admin(whom)] with [punishment]." //yogs - Yog tickets
-	message_admins(msg)
-	admin_ticket_log(whom, msg)
-	log_admin("[key_name(usr)] punished [key_name(whom)] with [punishment].")
-
-/client/proc/trigger_centcom_recall()
-	if(!check_rights(R_ADMIN))
-		return
-	var/message = pick(GLOB.admiral_messages)
-	message = input("Enter message from the on-call admiral to be put in the recall report.", "Admiral Message", message) as text|null
-
-	if(!message)
-		return
-
-	message_admins("[key_name_admin(usr)] triggered a CentCom recall, with the admiral message of: [message]")
-	log_game("[key_name(usr)] triggered a CentCom recall, with the message of: [message]")
-	SSshuttle.centcom_recall(SSshuttle.emergency.timer, message)
-
-/client/proc/cmd_admin_check_player_exp()	//Allows admins to determine who the newer players are.
-	set category = "Admin"
-	set name = "Player Playtime"
-	if(!check_rights(R_ADMIN))
-		return
-
-	if(!CONFIG_GET(flag/use_exp_tracking))
-		to_chat(usr, span_warning("Tracking is disabled in the server configuration file."), confidential=TRUE)
-		return
-
-	var/list/msg = list()
-	msg += "<html><head><meta charset='UTF-8'><title>Playtime Report</title></head><body>Playtime:<BR><UL>"
-	for(var/client/C in GLOB.clients)
-		msg += "<LI> - [key_name_admin(C)]: <A href='?_src_=holder;[HrefToken()];getplaytimewindow=[REF(C.mob)]'>" + C.get_exp_living() + "</a></LI>"
-	msg += "</UL></BODY></HTML>"
-	src << browse(msg.Join(), "window=Player_playtime_check")
-
-/datum/admins/proc/cmd_show_exp_panel(client/client_to_check)
-	if(!check_rights(R_ADMIN))
-		return
-	if(!client_to_check)
-		to_chat(usr, span_danger("ERROR: Client not found."), confidential = TRUE)
-		return
-	if(!CONFIG_GET(flag/use_exp_tracking))
-		to_chat(usr, span_warning("Tracking is disabled in the server configuration file."), confidential=TRUE)
-		return
-
-	new /datum/job_report_menu(client_to_check, usr)
-
-
-/datum/admins/proc/toggle_exempt_status(client/C)
-	if(!check_rights(R_ADMIN))
-		return
-	if(!C)
-		to_chat(usr, span_danger("ERROR: Client not found."), confidential=TRUE)
-		return
-
-	if(!C.set_db_player_flags())
-		to_chat(usr, span_danger("ERROR: Unable read player flags from database. Please check logs."), confidential=TRUE)
-	var/dbflags = C.prefs.db_flags
-	var/newstate = FALSE
-	if(dbflags & DB_FLAG_EXEMPT)
-		newstate = FALSE
-	else
-		newstate = TRUE
-
-	if(C.update_flag_db(DB_FLAG_EXEMPT, newstate))
-		to_chat(usr, span_danger("ERROR: Unable to update player flags. Please check logs."), confidential=TRUE)
-	else
-		message_admins("[key_name_admin(usr)] has [newstate ? "activated" : "deactivated"] job exp exempt status on [key_name_admin(C)]")
-		log_admin("[key_name(usr)] has [newstate ? "activated" : "deactivated"] job exp exempt status on [key_name(C)]")
-
-/mob/living/carbon/proc/adminpie(mob/user)
-	var/obj/item/reagent_containers/food/snacks/pie/cream/admin/p = new (get_turf(pick(oview(3,user))))
-	p.item_flags = UNCATCHABLE
-	p.throw_at(user, 10, 0.5, usr)
-	sleep(5)
-	var/mob/living/carbon/human/T = user
-	if(!T.IsParalyzed())
-		var/obj/item/reagent_containers/food/snacks/pie/cream/admin/pie = new (get_turf(pick(oview(1,user))))
-		pie.item_flags = UNCATCHABLE
-		pie.throw_at(user, 10, 0.5, usr)
-
-/client/proc/admincryo(mob/living/carbon/human/target as mob)
-	set category = "Misc.Unused"
-	set name = "Admin Cryo"
-	if(!check_rights(R_ADMIN))
-		return
-	var/confirm = alert(usr, "Are you Sure you want to offer them?", "Are you Sure", "Yes", "No")
-	if(confirm == "No")
-		return
-	for(var/obj/machinery/cryopod/cryopod in GLOB.cryopods)
-		if(cryopod.occupant)
-			continue
-		if(!istype(get_area(cryopod), /area/crew_quarters))
-			continue
-		new /obj/effect/particle_effect/sparks/quantum(get_turf(target))
-		target.forceMove(cryopod.loc)
-		var/msg = "[key_name_admin(usr)] has put [target.real_name]/[key_name(target)] into cryostorage at [ADMIN_VERBOSEJMP(target)]."
-		message_admins(msg)
-		log_admin(msg)
-		new /obj/effect/particle_effect/sparks/quantum(get_turf(target))
-		cryopod.close_machine(target)
-		return
-
-/datum/admins/proc/cmd_create_centcom()
-	set category = "Misc"
-	set name = "Spawn on Centcom"
-	if(!check_rights(R_ADMIN))
-		return
-	var/turf/T = locate(196,82,1) // Magic number alert!
-	if(ismob(usr))
-		var/mob/M = usr
-		if(isobserver(M))
-			var/mob/living/carbon/human/H = new(T)
-			var/datum/preferences/A = new
-			A.copy_to(H)
-			H.dna.update_dna_identity()
-			H.equipOutfit(/datum/outfit/centcom/official/nopda)
-
-			var/datum/mind/Mind = new /datum/mind(M.key) // Reusing the mob's original mind actually breaks objectives for any antag who had this person as their target.
-			// For that reason, we're making a new one. This mimics the behavior of, say, lone operatives, and I believe other ghostroles.
-			Mind.active = 1
-			Mind.transfer_to(H)
-
-			var/msg = "[key_name_admin(H)] has spawned in at centcom [ADMIN_VERBOSEJMP(H)]."
-			message_admins(msg)
-			log_admin(msg)
-			return
-	to_chat(usr,span_warning("Only observers can use this command!"))
-
-/datum/admins/proc/cmd_admin_fuckrads()
-	set category = "Admin.Round Interaction"
-	set name = "Delete All Rads"
-	if(!check_rights(R_ADMIN))
-		return
-	for(var/datum/a in SSradiation.processing)
-		qdel(a)
-	message_admins("[key_name_admin(usr)] has cleared all radiation.")
-	log_admin("[key_name_admin(usr)] has cleared all radiation.")
-
-
-/mob/living/proc/whistle()
-	INVOKE_ASYNC(src, .proc/whistletrigger, "whistle")
-
-/mob/living/proc/whistletrigger()
-	var/turf/T = get_turf(src)
-	var/mob/living/user = src
-	playsound(T,'sound/magic/warpwhistle.ogg', 200, 1)
-	user.mobility_flags &= ~MOBILITY_MOVE
-	new /obj/effect/temp_visual/tornado(T)
-	sleep(20)
-	user.invisibility = INVISIBILITY_MAXIMUM
-	user.status_flags |= GODMODE
-	sleep(20)
-	var/breakout = 0
-	while(breakout < 50)
-		var/turf/potential_T = find_safe_turf()
-		if(T.z != potential_T.z || abs(get_dist_euclidian(potential_T,T)) > 50 - breakout)
-			do_teleport(user, potential_T, channel = TELEPORT_CHANNEL_MAGIC)
-			user.mobility_flags &= ~MOBILITY_MOVE
-			T = potential_T
-			break
-		breakout += 1
-	new /obj/effect/temp_visual/tornado(T)
-	sleep(20)
-	user.invisibility = initial(user.invisibility)
-	user.status_flags &= ~GODMODE
-	user.update_mobility()
-	sleep(40)
