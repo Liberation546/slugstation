@@ -28,7 +28,6 @@
 	spawn_positions = 1
 
 /datum/outfit/job/miningmedic
-/datum/outfit/job/miningmedic
 	name = "Mining Medic"
 	jobtype = /datum/job/miningmedic
 	
@@ -36,9 +35,11 @@
 
 	backpack_contents = list(/obj/item/roller = 1,\
 		/obj/item/kitchen/knife/combat/survival = 1,\
+		/obj/item/gps/mining = 1)
+	belt = /obj/item/storage/belt/medical/mining
+	ears = /obj/item/radio/headset/headset_medcargo
 	glasses = /obj/item/clothing/glasses/hud/health/meson
 	shoes = /obj/item/clothing/shoes/workboots/mining
-	suit = /obj/item/clothing/suit/toggle/labcoat/emt/explorer
 	suit = /obj/item/clothing/suit/toggle/labcoat/emt/explorer
 	uniform = /obj/item/clothing/under/yogs/rank/miner/medic
 	l_hand = /obj/item/storage/firstaid/regular
@@ -48,4 +49,3 @@
 	satchel = /obj/item/storage/backpack/satchel/med
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 	box = /obj/item/storage/box/survival_mining
-	pda_slot = SLOT_L_STORE

@@ -19,7 +19,6 @@
 	display_order = JOB_DISPLAY_ORDER_ARTIST
 
 /datum/outfit/job/artist
-/datum/outfit/job/artist
 	name = "Artist"
 	jobtype = /datum/job/artist
 
@@ -29,10 +28,11 @@
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/artist
 	uniform_skirt = /obj/item/clothing/under/rank/artist/skirt
+	gloves = /obj/item/clothing/gloves/fingerless
+	neck = /obj/item/clothing/neck/artist
 	l_pocket = /obj/item/laser_pointer
 	backpack_contents = list(
 		/obj/item/stack/cable_coil/random/thirty = 1,
 		/obj/item/toy/crayon/spraycan = 1,
 		/obj/item/storage/crayons = 1,
 		/obj/item/camera = 1
-	)

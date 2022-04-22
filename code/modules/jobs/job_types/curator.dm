@@ -22,7 +22,6 @@
 
 /datum/outfit/job/curator
 	name = "Curator"
-	name = "Curator"
 	jobtype = /datum/job/curator
 
 	pda_type = /obj/item/pda/curator
@@ -30,6 +29,8 @@
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/curator
 	uniform_skirt = /obj/item/clothing/under/rank/curator/skirt
+	l_hand = /obj/item/storage/bag/books
+	r_pocket = /obj/item/key/displaycase
 	l_pocket = /obj/item/laser_pointer
 	accessory = /obj/item/clothing/accessory/pocketprotector/full
 	backpack_contents = list(
@@ -44,4 +45,3 @@
 	if(visualsOnly)
 		return
 
-	H.grant_all_languages(TRUE, TRUE, TRUE, LANGUAGE_CURATOR)

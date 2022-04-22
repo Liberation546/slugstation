@@ -104,13 +104,13 @@ GLOBAL_LIST_INIT(available_depts_sec, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICA
 	if(ears)
 		if(H.ears)
 			qdel(H.ears)
-			qdel(H.ears)
 		H.equip_to_slot_or_del(new ears(H),SLOT_EARS)
 
 	var/obj/item/card/id/W = H.get_idcard()
 	W.access |= dep_access
 
 	var/teleport = 0
+	if(!CONFIG_GET(flag/sec_start_brig))
 		if(destination || spawn_point)
 			teleport = 1
 	if(teleport)
@@ -143,6 +143,7 @@ GLOBAL_LIST_INIT(available_depts_sec, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICA
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/rank/security
 	uniform_skirt = /obj/item/clothing/under/rank/security/skirt
+	gloves = /obj/item/clothing/gloves/color/black
 	head = /obj/item/clothing/head/helmet/sec
 	suit = /obj/item/clothing/suit/armor/vest/alt
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -186,4 +187,3 @@ GLOBAL_LIST_INIT(available_depts_sec, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICA
 
 /obj/item/radio/headset/headset_sec/alt/department/service
 	keyslot = new /obj/item/encryptionkey/headset_sec
-	keyslot2 = new /obj/item/encryptionkey/headset_service

@@ -204,7 +204,6 @@
 	name = "Standard Gear"
 
 	var/jobtype = null
-	var/jobtype = null
 
 	uniform = /obj/item/clothing/under/color/grey
 	ears = /obj/item/radio/headset
@@ -217,6 +216,7 @@
 	var/backpack = /obj/item/storage/backpack
 	var/satchel  = /obj/item/storage/backpack/satchel
 	var/duffelbag = /obj/item/storage/backpack/duffelbag
+
 	var/uniform_skirt = null
 
 	var/pda_slot = SLOT_BELT
@@ -258,13 +258,13 @@
 	if(visualsOnly)
 		return
 
+	var/datum/job/J = SSjob.GetJobType(jobtype)
 	if(!J)
 		J = SSjob.GetJob(H.job)
 
 	var/obj/item/card/id/C = new id_type()
 	if(istype(C))
 		C.access = J.get_access()
-		shuffle_inplace(C.access) // Shuffle access list to make NTNet passkeys less predictable
 		shuffle_inplace(C.access) // Shuffle access list to make NTNet passkeys less predictable
 		C.registered_name = H.real_name
 		if(H.mind?.role_alt_title)
@@ -281,6 +281,8 @@
 		for(var/A in SSeconomy.bank_accounts)
 			var/datum/bank_account/B = A
 			if(B.account_id == H.account_id)
+				C.registered_account = B
+				B.bank_cards += C
 				break
 		H.sec_hud_set_ID()
 
@@ -308,3 +310,13 @@
 
 /datum/outfit/job/get_chameleon_disguise_info()
 	var/list/types = ..()
+	types -= /obj/item/storage/backpack //otherwise this will override the actual backpacks
+	types += backpack
+	types += satchel
+	types += duffelbag
+	return types
+
+//Warden and regular officers add this result to their get_access()
+/datum/job/proc/check_config_for_sec_maint()
+	if(CONFIG_GET(flag/security_has_maint_access))
+		return list(ACCESS_MAINT_TUNNELS)

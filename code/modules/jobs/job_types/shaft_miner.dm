@@ -35,7 +35,6 @@
 
 /datum/outfit/job/miner
 	name = "Shaft Miner"
-	name = "Shaft Miner"
 	jobtype = /datum/job/mining
 
 	pda_type = /obj/item/pda/shaftminer
@@ -43,6 +42,8 @@
 	ears = /obj/item/radio/headset/headset_cargo/mining
 	shoes = /obj/item/clothing/shoes/workboots/mining
 	gloves = /obj/item/clothing/gloves/color/black
+	uniform = /obj/item/clothing/under/rank/miner/lavaland
+	neck = /obj/item/clothing/neck/bodycam/miner
 	l_pocket = /obj/item/reagent_containers/hypospray/medipen/survival
 	r_pocket = /obj/item/flashlight/seclite
 	backpack_contents = list(
@@ -85,4 +86,3 @@
 	name = "Shaft Miner (Equipment + Hardsuit)"
 	suit = /obj/item/clothing/suit/space/hardsuit/mining
 	mask = /obj/item/clothing/mask/breath
-
