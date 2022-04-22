@@ -223,6 +223,9 @@ SUBSYSTEM_DEF(mapping)
 	// check that the total z count of all maps matches the list of traits
 	var/total_z = 0
 	var/list/parsed_maps = list()
+	//slug add
+	var/list/patch_types = list()
+	//slug end
 	for (var/file in files)
 		var/full_path = "_maps/[path]/[file]"
 		var/datum/parsed_map/pm = new(file(full_path))
@@ -231,6 +234,12 @@ SUBSYSTEM_DEF(mapping)
 			errorList |= full_path
 			continue
 		parsed_maps[pm] = total_z  // save the start Z of this file
+		//slug add
+
+		var/T = text2path(lowertext("/datum/slugstation/map_patch/[path]/[splittext(file, ".")[1]]"))
+		if (T)
+			patch_types[pm] = new T()  //get the patch type from the map name
+		//slug end
 		total_z += bounds[MAP_MAXZ] - bounds[MAP_MINZ] + 1
 
 	if (!length(traits))  // null or empty - default
@@ -255,6 +264,10 @@ SUBSYSTEM_DEF(mapping)
 		var/datum/parsed_map/pm = P
 		if (!pm.load(1, 1, start_z + parsed_maps[P], no_changeturf = TRUE))
 			errorList |= pm.original_path
+		//slug add
+		if (patch_types[P])
+			patch_types[P].PatchMap(1, 1, start_z + parsed_maps[P])
+			//slug end
 	if(!silent)
 		INIT_ANNOUNCE("Loaded [name] in [(REALTIMEOFDAY - start_time)/10]s!")
 	return parsed_maps
