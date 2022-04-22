@@ -39,7 +39,8 @@
 	name = "Medical Doctor"
 	jobtype = /datum/job/doctor
 
-	belt = /obj/item/pda/medical
+	pda_type= /obj/item/pda/medical
+
 	ears = /obj/item/radio/headset/headset_med
 	uniform = /obj/item/clothing/under/rank/medical
 	uniform_skirt = /obj/item/clothing/under/rank/medical/skirt
@@ -52,4 +53,3 @@
 	satchel = /obj/item/storage/backpack/satchel/med
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 
-	chameleon_extras = /obj/item/gun/syringe
