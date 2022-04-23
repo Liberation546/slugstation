@@ -83,7 +83,6 @@
 #define ADMIN_PUNISHMENT_BLEED ":B:loodless"
 #define ADMIN_PUNISHMENT_PERFORATE ":B:erforate"
 #define ADMIN_PUNISHMENT_SCARIFY "Scarify"
-#define ADMIN_PUNISHMENT_SMSPIDER "SM Spider"
 
 #define AHELP_ACTIVE 1
 #define AHELP_CLOSED 2
