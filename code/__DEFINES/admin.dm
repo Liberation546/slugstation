@@ -83,6 +83,7 @@
 #define ADMIN_PUNISHMENT_BLEED ":B:loodless"
 #define ADMIN_PUNISHMENT_PERFORATE ":B:erforate"
 #define ADMIN_PUNISHMENT_SCARIFY "Scarify"
+#define ADMIN_PUNISHMENT_SMSPIDER "SM Spider"
 
 #define AHELP_ACTIVE 1
 #define AHELP_CLOSED 2
@@ -118,4 +119,3 @@ GLOBAL_VAR_INIT(ghost_role_flags, (~0))
 //ie pais, posibrains
 #define GHOSTROLE_SILICONS			(1<<3)
 //ie mafia, ctf
-#define GHOSTROLE_MINIGAME			(1<<4)
