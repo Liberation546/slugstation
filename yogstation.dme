@@ -3211,8 +3211,6 @@
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
 #include "slugstation\code\datum\map_patch\yogstation.dm"
-#include "slugstation\code\modules\reagents\reagents\other_reagents.dm"
-#include "slugstation\code\modules\reagents\recipes\other_reagents.dm"
 #include "yogstation\code\__HELPERS\_lists.dm"
 #include "yogstation\code\__HELPERS\_logging.dm"
 #include "yogstation\code\__HELPERS\game.dm"
