@@ -134,6 +134,12 @@
 	//How I wish for RAII
 	Master.StartLoadingMap()
 	. = _load_impl(x_offset, y_offset, z_offset, cropMap, no_changeturf, x_lower, x_upper, y_lower, y_upper, placeOnTop)
+	//slug add
+	var/P = text2path("/datum/slugstation/map_patch" + copytext(original_path, 6, length(original_path) - 3))
+	if (P)
+		var/datum/slugstation/map_patch/MP = new P()
+		MP.PatchMap(x_offset, y_offset, z_offset)
+	//slug end
 	Master.StopLoadingMap()
 
 // Do not call except via load() above.

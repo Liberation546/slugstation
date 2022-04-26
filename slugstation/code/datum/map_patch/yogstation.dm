@@ -1,5 +1,3 @@
-/datum/slugstation/map_patch
-	proc/PatchMap(var/x, var/y, var/z)
 /datum/slugstation/map_patch/map_files/yogstation/yogstation
 	PatchMap(var/x, var/y, var/z)
 		//add patches here!
