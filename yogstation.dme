@@ -3210,6 +3210,8 @@
 #include "interface\menu.dm"
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
+#include "slugstation\code\datum\map_patch\_map_patch.dm"
+#include "slugstation\code\datum\map_patch\miningbase.dm"
 #include "slugstation\code\datum\map_patch\yogstation.dm"
 #include "slugstation\code\modules\reagents\reagents\other_reagents.dm"
 #include "slugstation\code\modules\reagents\recipes\other_reagents.dm"
