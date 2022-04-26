@@ -154,7 +154,7 @@
 
 /datum/emote/living/custom/run_emote(mob/user, params, type_override = null, intentional = FALSE)
 	if(intentional)
-		if(user.mind.has_antag_datum(ANTAG_DATUM_VAMPIRE)
+		if(user.mind.has_antag_datum(ANTAG_DATUM_VAMPIRE))
 			..()
 		return FALSE
 	..()
