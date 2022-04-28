@@ -152,7 +152,7 @@
 	key_third_person = "morbs"
 	message = "morbs the fuck out!!!"
 
-/datum/emote/living/custom/run_emote(mob/user, params, type_override = null, intentional = FALSE)
+/datum/emote/living/morb/run_emote(mob/user, params, type_override = null, intentional = FALSE)
 	if(user.mind.has_antag_datum(ANTAG_DATUM_VAMPIRE))
 		..()
 	else if(intentional)
