@@ -8,8 +8,8 @@
 /cfg/**/*
 
 #Ignore potentially changed configs
-config/*
 !config/*/
+config/*
 
 #Ignore changelog entries
 /html/changelogs/**/*
