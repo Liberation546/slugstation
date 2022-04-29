@@ -16,7 +16,19 @@
 /obj/item/twohanded/mithrix/ui_action_click(mob/user, action)
 	if(istype(action, /datum/action/item_action/toggle_shockwave))
 		shockwave = !shockwave
-		to_chat(user, span_warning("The hammer will [shockwave ? "not":""] make shockwaves."))
+		to_chat(user, span_warning("The hammer will [shockwave ? "no longer":"now"] make shockwaves."))
 		return
 	if(user)
 		user.update_action_buttons_icon()
+
+/obj/item/twohanded/mithrix/proc/make_shockwave(mob/living/user)
+	switch(user.dir)
+		if(NORTH)
+			epicenter = locate(user.x,user.y + 2,user.z)
+		if(SOUTH)
+			epicenter = locate(user.x,user.y - 2,user.z)
+		if(EAST)
+			epicenter = locate(user.x + 2,user.y,user.z)
+		if(WEST)
+			epicenter = locate(user.x - 2,user.y,user.z)
+		return epicenter
