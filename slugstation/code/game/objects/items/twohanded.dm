@@ -13,6 +13,10 @@
 	attack_verb = list("hammered", "slammed", "smashed")
 	var/shockwave = FALSE //do we make a shockwave?
 
+/obj/item/hierophant_club/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
+	if(!proximity_flag)
+		make_shockwave(user)
+
 /obj/item/twohanded/mithrix/ui_action_click(mob/user, action)
 	if(istype(action, /datum/action/item_action/toggle_shockwave))
 		shockwave = !shockwave
@@ -31,4 +35,5 @@
 			epicenter = locate(user.x + 2,user.y,user.z)
 		if(WEST)
 			epicenter = locate(user.x - 2,user.y,user.z)
-		return epicenter
+	if(epicenter)
+		explosion(epicenter, 0, 0, 2, 0)
