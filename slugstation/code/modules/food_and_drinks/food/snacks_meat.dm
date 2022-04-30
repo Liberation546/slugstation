@@ -7,4 +7,4 @@
 	filling_color = "#CD853F"
 	tastes = list("gondoland" = 1, "pacifism" = 1)
 	foodtype = MEAT | SUGAR
-	spawned_mob = /mob/living/carbon/gondola
+	spawned_mob = /mob/living/simple_animal/pet/gondola
