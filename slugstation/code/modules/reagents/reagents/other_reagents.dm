@@ -156,3 +156,11 @@
 	if (intentional)
 		return FALSE
 	..()
+
+	
+/datum/reagent/gondola_powder
+	name = "Gondola Powder"
+	description = "Just add water!"
+	color = "#9C5A19"
+	taste_description = "gondoland"
+	can_synth = TRUE
