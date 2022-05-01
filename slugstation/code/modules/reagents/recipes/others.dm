@@ -7,7 +7,7 @@
 /datum/chemical_reaction/gondola
 	name = "gondola"
 	id = "gondola"
-	required_reagents = list(/datum/reagent/gondola_powder = 30, /datum/reagent/water = 1)
+	required_reagents = list(/datum/reagent/gondola_powder = 30, /datum/reagent/pax = 30)
 	
 /datum/chemical_reaction/gondola/on_reaction(datum/reagents/holder, created_volume)
 	var/location = get_turf(holder.my_atom)
