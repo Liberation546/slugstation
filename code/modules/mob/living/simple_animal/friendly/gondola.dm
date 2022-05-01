@@ -25,6 +25,9 @@
 	maxHealth = 200
 	health = 200
 	del_on_death = TRUE
+	//slug add
+	dextrous = TRUE
+	//slug end
 
 	//Gondolas don't make footstep sounds
 
