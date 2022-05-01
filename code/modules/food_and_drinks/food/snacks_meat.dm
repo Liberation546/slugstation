@@ -491,6 +491,7 @@
 	var/faction
 	var/spawned_mob = /mob/living/carbon/monkey
 
+
 /obj/item/reagent_containers/food/snacks/monkeycube/proc/Expand()
 	var/mob/spammer = get_mob_by_key(fingerprintslast)
 	var/mob/living/bananas = new spawned_mob(drop_location(), TRUE, spammer)
@@ -566,3 +567,4 @@
 	list_reagents = list(/datum/reagent/consumable/nutriment = 15)
 	tastes = list("fur" = 1, "blood" = 1, "rage" = 1)
 	spawned_mob = /mob/living/simple_animal/hostile/retaliate/goat
+
