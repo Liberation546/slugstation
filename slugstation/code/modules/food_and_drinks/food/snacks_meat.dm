@@ -1,4 +1,4 @@
-/obj/item/reagent_containers/food/snacks/monkeycube/gondola
+/obj/item/reagent_containers/food/snacks/gondola
 	name = "gondola cube"
 	desc = "A cube with... something in it! Just add water!"
 	icon_state = "monkeycube"
@@ -7,4 +7,3 @@
 	filling_color = "#CD853F"
 	tastes = list("gondoland" = 1, "pacifism" = 1)
 	foodtype = MEAT | SUGAR
-	spawned_mob = /mob/living/simple_animal/pet/gondola
