@@ -172,12 +172,12 @@
 
 /datum/reagent/glue/reaction_mob(mob/living/M, method, reac_volume, show_message, touch_protection)
 	if(istype(M, /mob/living/simple_animal/cockroach))
-		roach = pick("Ohhhhh shit, ","") + pick("glue on the roach ","glue on roach ") + pick("baby!","bro!","!","!")
 		for(var/mob/living/carbon/C in view(4,M))
+			var/roach = pick("Ohhhhh shit, ","") + pick("glue on the roach","glue on roach") + pick(" baby!"," bro!","!","!")
 			C.say(roach, ignore_spam = TRUE, forced = TRUE)
 
 /datum/reagent/glue/on_mob_life(mob/living/carbon/M)
-	if(prob(50)
+	if(prob(50))
 		M.adjustToxLoss(2)
 	..()
 

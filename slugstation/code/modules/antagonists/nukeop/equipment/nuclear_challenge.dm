@@ -1,3 +1,8 @@
+#define CHALLENGE_TELECRYSTALS 280
+#define CHALLENGE_TIME_LIMIT 3000
+#define CHALLENGE_MIN_PLAYERS 40
+#define CHALLENGE_SHUTTLE_DELAY 15000 // 25 minutes, so the ops have at least 5 minutes before the shuttle is callable.
+
 /obj/item/nuclear_challenge/attack_self(mob/living/user, force = FALSE)
 	if(!check_allowed(user, force))
 		return
@@ -80,7 +85,7 @@
 
 	qdel(src)
 
-/obj/item/nuclear_challenge/proc/check_allowed(mob/living/user, override = FALSE)
+/obj/item/nuclear_challenge/check_allowed(mob/living/user, override = FALSE)
 	if(!override)
 		if(declaring_war)
 			to_chat(user, "You are already in the process of declaring war! Make your mind up.")
@@ -100,3 +105,8 @@
 				to_chat(user, "The shuttle has already been moved! You have forfeit the right to declare war.")
 				return FALSE
 	return TRUE
+
+#undef CHALLENGE_TELECRYSTALS
+#undef CHALLENGE_TIME_LIMIT
+#undef CHALLENGE_MIN_PLAYERS
+#undef CHALLENGE_SHUTTLE_DELAY
