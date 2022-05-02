@@ -13,7 +13,7 @@
 	attack_verb = list("hammered", "slammed", "smashed")
 	var/shockwave = FALSE //do we make a shockwave?
 
-/obj/item/hierophant_club/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
+/obj/item/twohanded/mithrix/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
 	if(!proximity_flag)
 		make_shockwave(user)
 
