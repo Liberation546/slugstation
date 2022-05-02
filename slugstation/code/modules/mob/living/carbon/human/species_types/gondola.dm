@@ -4,13 +4,12 @@
 	default_color = "A87855"
 	fixed_mut_color = "A87855"
 	species_traits = list(LIPS,HAS_FLESH,HAS_BONE,MUTCOLORS,NOCOLORCHANGE,NOEYESPRITES, NO_UNDERWEAR)
-	skinned_type = /obj/item/stack/sheet/animalhide/human
+	skinned_type = /obj/item/stack/sheet/animalhide/gondola
 	liked_food = JUNKFOOD | FRIED | GRILLED | RAW | GROSS
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | RACE_SWAP
 	inherent_traits = list(TRAIT_NOHUNGER,TRAIT_RESISTCOLD,TRAIT_RESISTLOWPRESSURE,TRAIT_NOBREATH)
 	payday_modifier = 1.1 //The Perfect Beings.
 	meat = /obj/item/reagent_containers/food/snacks/meat/slab/gondola
-	/obj/item/stack/sheet/animalhide/gondola
 	limbs_id = "gondola"
 	burnmod = 0.75
 	brutemod = 0.75
