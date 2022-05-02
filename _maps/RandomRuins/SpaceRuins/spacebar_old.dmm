@@ -54,16 +54,6 @@
 /obj/machinery/vending/snack,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/powered/spacebar)
-"az" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/structure/window/spawner{
-	dir = 4;
-	icon_state = "window"
-	},
-/turf/open/floor/plasteel/airless/dark,
-/area/ruin/space/has_grav/powered/spacebar)
 "aC" = (
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/stripes/line{
@@ -108,10 +98,6 @@
 /obj/machinery/chem_dispenser,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/powered/spacebar)
-"cQ" = (
-/obj/effect/mob_spawn/human/bartender/alive/space,
-/turf/open/floor/plasteel/airless/dark,
-/area/ruin/space/has_grav/powered/spacebar)
 "eC" = (
 /obj/effect/turf_decal/tile/bar{
 	dir = 1;
@@ -138,8 +124,14 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/powered/spacebar)
 "eZ" = (
-/obj/item/hierophant_club/station,
-/turf/open/floor/plasteel/airless/dark,
+/obj/structure/table,
+/obj/item/paper_bin{
+	pixel_y = 7
+	},
+/obj/item/pen{
+	pixel_y = 4
+	},
+/turf/open/floor/carpet,
 /area/ruin/space/has_grav/powered/spacebar)
 "ff" = (
 /obj/structure/disposalpipe/segment,
@@ -235,10 +227,6 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/powered/spacebar)
-"hy" = (
-/obj/machinery/door/keycard,
-/turf/open/floor/plasteel/airless/dark,
-/area/ruin/space/has_grav/powered/spacebar)
 "if" = (
 /obj/structure/urinal{
 	dir = 8;
@@ -306,11 +294,6 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/powered/spacebar)
-"kT" = (
-/obj/item/storage/backpack/duffelbag/clothing/sec,
-/obj/item/storage/backpack/satchel/sec,
-/turf/open/floor/carpet,
-/area/ruin/space/has_grav/powered/spacebar)
 "ld" = (
 /obj/effect/turf_decal/tile/slightlydarkerblue,
 /obj/effect/turf_decal/tile/slightlydarkerblue{
@@ -337,8 +320,9 @@
 "mh" = (
 /obj/structure/bed,
 /obj/item/bedsheet/brown,
-/obj/item/holo/esword,
-/obj/item/holo/esword,
+/obj/effect/mob_spawn/human/bartender/alive/space{
+	dir = 8
+	},
 /turf/open/floor/carpet,
 /area/ruin/space/has_grav/powered/spacebar)
 "mG" = (
@@ -376,10 +360,10 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/structure/sign/poster/official/soft_cap_pop_art{
+	pixel_x = 32
+	},
 /turf/open/floor/carpet,
-/area/ruin/space/has_grav/powered/spacebar)
-"nq" = (
-/turf/open/floor/plasteel/airless/dark,
 /area/ruin/space/has_grav/powered/spacebar)
 "nK" = (
 /obj/effect/turf_decal/tile/bar{
@@ -426,10 +410,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/cafeteria,
 /area/ruin/space/has_grav/powered/spacebar)
-"pl" = (
-/obj/item/keycard,
-/turf/closed/mineral,
-/area/ruin/unpowered/no_grav)
 "pV" = (
 /obj/machinery/light{
 	dir = 4
@@ -674,10 +654,6 @@
 /obj/machinery/teleport/station,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/powered/spacebar)
-"An" = (
-/obj/item/keycard,
-/turf/open/floor/plating/asteroid/airless,
-/area/ruin/unpowered/no_grav)
 "AV" = (
 /obj/machinery/door/airlock/external,
 /turf/open/floor/plating,
@@ -718,14 +694,6 @@
 	dir = 8
 	},
 /turf/open/floor/engine,
-/area/ruin/space/has_grav/powered/spacebar)
-"CT" = (
-/obj/structure/table,
-/obj/item/paper_bin{
-	pixel_y = 7
-	},
-/obj/item/pen/edagger,
-/turf/open/floor/carpet,
 /area/ruin/space/has_grav/powered/spacebar)
 "Dz" = (
 /obj/machinery/light/small{
@@ -817,12 +785,6 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-/area/ruin/space/has_grav/powered/spacebar)
-"FS" = (
-/obj/machinery/door/airlock/hatch{
-	name = "Office Utility"
-	},
-/turf/open/floor/plating,
 /area/ruin/space/has_grav/powered/spacebar)
 "GD" = (
 /turf/open/floor/plasteel/freezer,
@@ -927,23 +889,11 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/powered/spacebar)
 "JG" = (
-/obj/machinery/shower{
-	dir = 8
-	},
-/turf/open/floor/plasteel/airless/dark,
+/obj/structure/chair/stool,
+/turf/open/floor/carpet,
 /area/ruin/space/has_grav/powered/spacebar)
 "JO" = (
 /turf/open/floor/wood,
-/area/ruin/space/has_grav/powered/spacebar)
-"Kq" = (
-/obj/machinery/door/window{
-	base_state = "right";
-	dir = 1;
-	icon_state = "right";
-	name = "Shower";
-	req_access_txt = "20"
-	},
-/turf/open/floor/plasteel/airless/dark,
 /area/ruin/space/has_grav/powered/spacebar)
 "KL" = (
 /obj/structure/table/reinforced,
@@ -1298,10 +1248,6 @@
 /obj/machinery/light/small,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/powered/spacebar)
-"XV" = (
-/obj/item/holo/esword,
-/turf/closed/mineral,
-/area/ruin/unpowered/no_grav)
 "XW" = (
 /obj/effect/turf_decal/tile/slightlydarkerblue,
 /obj/effect/turf_decal/tile/slightlydarkerblue{
@@ -2151,7 +2097,7 @@ sM
 sM
 FB
 lS
-kT
+zE
 zE
 qz
 Rp
@@ -2183,9 +2129,9 @@ ZN
 ZN
 ZN
 KO
-CT
 zE
 zE
+JG
 FB
 VN
 Rp
@@ -2199,7 +2145,7 @@ FB
 sM
 sM
 sM
-pl
+sM
 sM
 YH
 YH
@@ -2218,7 +2164,7 @@ sM
 FB
 mh
 nf
-zE
+eZ
 FB
 co
 Rp
@@ -2247,11 +2193,11 @@ YH
 ZN
 ZN
 ZN
-XV
+sM
 FB
 FB
 FB
-FS
+FB
 FB
 Ok
 Qz
@@ -2282,9 +2228,9 @@ sM
 sM
 sM
 sM
-FB
-cQ
-nq
+sM
+sM
+sM
 FB
 FB
 Dz
@@ -2315,10 +2261,10 @@ ZN
 sM
 sM
 sM
-FB
-az
-nq
-FB
+sM
+sM
+sM
+sM
 FB
 FB
 FB
@@ -2348,12 +2294,12 @@ YH
 sM
 sM
 sM
-FB
-JG
-Kq
-hy
-eZ
-FB
+sM
+sM
+sM
+sM
+sM
+sM
 sM
 ZN
 ZN
@@ -2381,12 +2327,12 @@ YH
 YH
 sM
 sM
-FB
-FB
-FB
-FB
-FB
-FB
+sM
+sM
+sM
+sM
+sM
+sM
 sM
 sM
 ZN
@@ -2553,7 +2499,7 @@ YH
 YH
 YH
 YH
-An
+ZN
 ZN
 ZN
 YH

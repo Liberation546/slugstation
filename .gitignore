@@ -7,6 +7,10 @@
 #Ignore byond config folder.
 /cfg/**/*
 
+#Ignore potentially changed configs
+!config/*/
+config/*
+
 #Ignore changelog entries
 /html/changelogs/**/*
 /html/changelog.html
