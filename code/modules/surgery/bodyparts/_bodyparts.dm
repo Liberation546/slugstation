@@ -838,6 +838,17 @@
 				limb.icon_state = "[species_id]_[body_zone]_[icon_gender]"
 			else
 				limb.icon_state = "[species_id]_[body_zone]" //yogs end
+		//slug add
+		if("[species_id]" == "gondola" && body_zone == BODY_ZONE_HEAD)
+			limb.icon = 'icons/mob/gondola_parts_greyscale.dmi'
+			limb.icon_state = "gondola_head"
+		else if ("[species_id]" == "gondola")
+			limb.icon ='icons/mob/human_parts_greyscale.dmi'
+			if (should_draw_gender)
+				limb.icon_state = "human_[body_zone]_[icon_gender]"
+			else
+				limb.icon_state = "human_[body_zone]"
+		//slug end
 		if(aux_zone)
 			aux = image(limb.icon, "[species_id]_[aux_zone]", -aux_layer, image_dir)
 			. += aux
