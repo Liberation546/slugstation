@@ -152,11 +152,43 @@
 	key_third_person = "morbs"
 	message = "morbs the fuck out!!!"
 
-/datum/emote/living/morb/run_emote(mob/user, params, type_override = null, intentional = FALSE)
+/datum/emote/living/custom/run_emote(mob/user, params, type_override = null, intentional = FALSE)
 	if(user.mind.has_antag_datum(ANTAG_DATUM_VAMPIRE))
 		..()
 	else if(intentional)
 		return FALSE
+	//..() TODO: do this on not this pr and also test it
+
+/datum/reagent/glue
+	name = "Glue"
+	description = "A sticky substance made from heating gibs. Put this on a cockroach."
+	glass_name = "glass of glue"
+	glass_desc = "Who thought this was a good idea?"
+	reagent_state = LIQUID
+	color = "#ffffff"
+	taste_description = "glue"
+	metabolization_rate = 0.25 * REAGENTS_METABOLISM
+	overdose_threshold = 20
+
+/datum/reagent/glue/reaction_mob(mob/living/M, method, reac_volume, show_message, touch_protection)
+	if(istype(M, /mob/living/simple_animal/cockroach))
+		for(var/mob/living/carbon/C in view(4,M))
+			var/roach = pick("Ohhhhh shit, ","") + pick("glue on the roach","glue on roach") + pick(" baby!"," bro!","!","!")
+			C.say(roach, ignore_spam = TRUE, forced = TRUE)
+
+/datum/reagent/glue/on_mob_life(mob/living/carbon/M)
+	if(prob(50))
+		M.adjustToxLoss(2)
+	..()
+
+/datum/reagent/glue/overdose_start(mob/living/M)
+	to_chat(M, span_userdanger("You feel sticky..."))
+	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[type]_overdose", /datum/mood_event/overdose, name)
+	return
+
+/datum/reagent/glue/overdose_process(mob/living/M)
+	if(M.hallucination < volume && prob(20))
+		M.hallucination += 5
 	..()
 
 	
