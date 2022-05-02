@@ -14,8 +14,10 @@
 	var/shockwave = FALSE //do we make a shockwave?
 
 /obj/item/twohanded/mithrix/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
-	if(!proximity_flag)
-		make_shockwave(user)
+	..()
+	if(shockwave)
+		if(!proximity_flag)
+			make_shockwave(user)
 
 /obj/item/twohanded/mithrix/ui_action_click(mob/user, action)
 	if(istype(action, /datum/action/item_action/toggle_shockwave))
