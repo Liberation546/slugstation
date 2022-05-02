@@ -25,9 +25,7 @@
 	maxHealth = 200
 	health = 200
 	del_on_death = TRUE
-	//slug add
-	dextrous = TRUE
-	//slug end
+	
 
 	//Gondolas don't make footstep sounds
 
@@ -58,6 +56,7 @@
 	add_overlay(body_overlay)
 	add_overlay(eyes_overlay)
 	add_overlay(moustache_overlay)
+
 
 /mob/living/simple_animal/pet/gondola/IsVocal() //Gondolas are the silent walker.
 	return FALSE
