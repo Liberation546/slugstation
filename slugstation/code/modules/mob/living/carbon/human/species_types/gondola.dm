@@ -48,10 +48,6 @@
 	C.unignore_slowdown(type)
 	if (break_gondoloath)
 		break_gondoloath.Remove(C)
-	var/obj/item/bodypart/arm = C.newBodyPart(BODY_ZONE_L_ARM)
-	arm.species_id = new_species.limbs_id
-	arm = C.newBodyPart(BODY_ZONE_R_ARM)
-	arm.species_id = new_species.limbs_id
 	REMOVE_TRAIT(C, TRAIT_MUTE, SPECIES_TRAIT)
 	REMOVE_TRAIT(C, TRAIT_PACIFISM, SPECIES_TRAIT)
 

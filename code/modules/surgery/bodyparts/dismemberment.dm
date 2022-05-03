@@ -419,11 +419,6 @@
 	var/list/limb_list = list(BODY_ZONE_HEAD, BODY_ZONE_CHEST, BODY_ZONE_R_ARM, BODY_ZONE_L_ARM, BODY_ZONE_R_LEG, BODY_ZONE_L_LEG)
 	if(excluded_limbs)
 		limb_list -= excluded_limbs
-	//slug add
-	if (dna.species.id == "gondola")
-		limb_list -= BODY_ZONE_L_ARM
-		limb_list -= BODY_ZONE_R_ARM
-	//slug end
 	for(var/Z in limb_list)
 		. += regenerate_limb(Z, noheal)
 	if(("legs" in dna?.species?.mutant_bodyparts) && dna.features["legs"] == "Digitigrade Legs")
