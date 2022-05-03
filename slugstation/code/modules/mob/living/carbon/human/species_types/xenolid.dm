@@ -23,7 +23,6 @@
 	if(prob(1)
 		to_chat(H, span_info("<b>You are a <s>Slugcat</s> Xenolid.</b>"))
 	else 
-
 		to_chat(H, span_info("<b>You are a Xenolid.</b>"))
 	to_chat(H, span_info("Most Xenolids are more likely to answer to their peers than anyone else. Special circumstances may change this."))
 	to_chat(H, span_info("This means that you do not have to follow orders from the heads or other superiors, but you may face consequences in doing so."))
