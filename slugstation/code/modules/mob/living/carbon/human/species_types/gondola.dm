@@ -19,14 +19,14 @@
 	var/gondoloath_broken = FALSE
 	var/mutable_appearance/moustache
 
-/datum/species/gondola/handle_mutant_bodyparts(mob/living/carbon/human/H, forced_colour)
-	..()
-	H.add_overlay(list(moustache))
+
 
 /datum/species/gondola/on_species_gain(mob/living/carbon/C, datum/species/old_species, pref_load)
 	..()
 	moustache =  mutable_appearance('icons/mob/gondola_face.dmi', "facial_walrus", layer = -HAIR_LAYER)
+	C.add_overlay(list(moustache))
 	C.ignore_slowdown(C)
+
 	if (C.get_bodypart(BODY_ZONE_L_ARM))
 		var/obj/item/bodypart/arm = C.get_bodypart(BODY_ZONE_L_ARM)
 		arm.drop_limb()
@@ -50,8 +50,11 @@
 		break_gondoloath.Remove(C)
 	var/obj/item/bodypart/arm = C.newBodyPart(BODY_ZONE_L_ARM)
 	arm.species_id = new_species.limbs_id
+	arm.attach_limb(C)
 	arm = C.newBodyPart(BODY_ZONE_R_ARM)
+	C.cut_overlay(moustache)
 	arm.species_id = new_species.limbs_id
+	arm.attach_limb(C)
 	REMOVE_TRAIT(C, TRAIT_MUTE, SPECIES_TRAIT)
 	REMOVE_TRAIT(C, TRAIT_PACIFISM, SPECIES_TRAIT)
 
