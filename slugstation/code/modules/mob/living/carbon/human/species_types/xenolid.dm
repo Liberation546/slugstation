@@ -19,7 +19,7 @@
 	species_language_holder = /datum/language_holder/english
 	payday_modifier = 0.5 //boil in hell
 
-/datum/species/proc/before_equip_job(datum/job/J, mob/living/carbon/human/H)
+/datum/species/before_equip_job(datum/job/J, mob/living/carbon/human/H)
 	to_chat(H, span_info("<b>You are a Xenolid.</b>"))
 	to_chat(H, span_info("Most Xenolids are more likely to answer to their peers than anyone else. Special circumstances may change this."))
 	to_chat(H, span_info("This means that you do not have to follow orders from the heads or other superiors, but you may face consequences in doing so."))
