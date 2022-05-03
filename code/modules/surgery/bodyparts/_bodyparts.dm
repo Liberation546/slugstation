@@ -851,6 +851,8 @@
 		//slug end
 		if(aux_zone)
 			aux = image(limb.icon, "[species_id]_[aux_zone]", -aux_layer, image_dir)
+			if("[species_id]" == "gondola")
+				aux = image(limb.icon, "human_[aux_zone]", -aux_layer , image_dir)
 			. += aux
 
 	else
