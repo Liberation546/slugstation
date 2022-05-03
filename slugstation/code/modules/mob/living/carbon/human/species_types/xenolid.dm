@@ -20,7 +20,7 @@
 	payday_modifier = 0.5 //boil in hell
 
 /datum/species/before_equip_job(datum/job/J, mob/living/carbon/human/H)
-	if(prob(1)
+	if(prob(1))
 		to_chat(H, span_info("<b>You are a <s>Slugcat</s> Xenolid.</b>"))
 	else 
 		to_chat(H, span_info("<b>You are a Xenolid.</b>"))
