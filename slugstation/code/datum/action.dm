@@ -9,8 +9,8 @@
 		UpdateButtonIcon()
 
 /datum/action/item_action/toggle_shockwave/UpdateButtonIcon(status_only = FALSE, force)
-	if(istype(target, /obj/item/twohanded/mithrix))
-		var/obj/item/twohanded/mithrix/H = target
+	if(istype(target, /obj/item/twohanded/required/mithrix))
+		var/obj/item/twohanded/required/mithrix/H
 		if(H.shockwave)
 			button_icon_state = "vortex_ff_off"
 			name = "Toggle Shockwave \[OFF\]"

@@ -1,4 +1,4 @@
-/obj/item/twohanded/mithrix
+/obj/item/twohanded/required/mithrix
 	name = "lunar hammer"
 	desc = "A large hammer made of some sort of lunar material. How could someone hold this?"
 	icon = 'icons/obj/mining.dmi'
@@ -13,13 +13,13 @@
 	attack_verb = list("hammered", "slammed", "smashed")
 	var/shockwave = FALSE //do we make a shockwave?
 
-/obj/item/twohanded/mithrix/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
+/obj/item/twohanded/required/mithrix/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
 	..()
 	if(shockwave)
 		if(!proximity_flag)
 			make_shockwave(user)
 
-/obj/item/twohanded/mithrix/ui_action_click(mob/user, action)
+/obj/item/twohanded/required/mithrix/ui_action_click(mob/user, action)
 	if(istype(action, /datum/action/item_action/toggle_shockwave))
 		shockwave = !shockwave
 		to_chat(user, span_warning("The hammer will [shockwave ? "no longer":"now"] make shockwaves."))
@@ -27,7 +27,8 @@
 	if(user)
 		user.update_action_buttons_icon()
 
-/obj/item/twohanded/mithrix/proc/make_shockwave(mob/living/user)
+/obj/item/twohanded/required/mithrix/proc/make_shockwave(mob/living/user)
+	var/epicenter
 	switch(user.dir)
 		if(NORTH)
 			epicenter = locate(user.x,user.y + 2,user.z)
