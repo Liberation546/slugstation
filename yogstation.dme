@@ -3213,6 +3213,8 @@
 #include "slugstation\code\datum\map_patch\_map_patch.dm"
 #include "slugstation\code\datum\map_patch\miningbase.dm"
 #include "slugstation\code\datum\map_patch\yogstation.dm"
+#include "slugstation\code\datum\action.dm"
+#include "slugstation\code\game\objects\items\twohanded.dm"
 #include "slugstation\code\modules\antagonists\nukeop\equipment\nuclear_challenge.dm"
 #include "slugstation\code\modules\clothing\spacesuits\hardsuit.dm"
 #include "slugstation\code\modules\food_and_drinks\food\snacks_meat.dm"
