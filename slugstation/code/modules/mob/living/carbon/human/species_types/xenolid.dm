@@ -7,6 +7,8 @@
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,HAS_FLESH,HAS_BONE,MUTCOLORS)
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | RACE_SWAP | SLIME_EXTRACT
 	default_features = list("mcolor" = "FFF", "wings" = "None")
+	coldmod = 0.80
+	heatmod = 1.25
 	disliked_food = GROSS
 	liked_food = JUNKFOOD | FRIED | GRILLED | RAW
 	mutanttongue = /obj/item/organ/tongue/polysmorph
