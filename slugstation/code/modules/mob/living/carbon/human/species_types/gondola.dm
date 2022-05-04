@@ -119,15 +119,12 @@
 	var/stage5	= list(span_danger("You have become a Gondola."))
 	viable_mobtypes = list(/mob/living/carbon/human, /mob/living/carbon/monkey, /mob/living/carbon/alien)
 
-/datum/disease/gondola/infect(mob/living/infectee, make_copy)
-	if(istype(affected_mob.dna.species, /datum/species/gondola))
-		qdel(src)
-	else
-		. = ..()
-	
+
 
 /datum/disease/gondola/stage_act()
 	..()
+	if (istype(affected_mob.dna.species,/datum/species/gondola))
+		remove_disease()
 	switch(stage)
 		if(1)
 			if (prob(stage_prob) && stage1)
