@@ -1,7 +1,7 @@
 /obj/item/mod/core
 	name = "MOD core"
 	desc = "A non-functional MOD core. Inform the admins if you see this."
-	icon = 'icons/obj/clothing/modsuit/mod_construction.dmi'
+	icon = 'slugstation/icons/obj/clothing/modsuit/mod_construction.dmi'
 	icon_state = "mod-core"
 	inhand_icon_state = "electronic"
 	lefthand_file = 'icons/mob/inhands/misc/devices_lefthand.dmi'

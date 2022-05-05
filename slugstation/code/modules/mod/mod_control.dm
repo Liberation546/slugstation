@@ -2,8 +2,8 @@
 /obj/item/mod
 	name = "Base MOD"
 	desc = "You should not see this, yell at a coder!"
-	icon = 'icons/obj/clothing/modsuit/mod_clothing.dmi'
-	worn_icon = 'icons/mob/clothing/modsuit/mod_clothing.dmi'
+	icon = 'slugstation/icons/obj/clothing/modsuit/mod_clothing.dmi'
+	worn_icon = 'slugstation/icons/mob/clothing/modsuit/mod_clothing.dmi'
 
 /obj/item/mod/control
 	name = "MOD control unit"
@@ -491,11 +491,11 @@
 		display_names[module.name] = REF(module)
 		var/image/module_image = image(icon = module.icon, icon_state = module.icon_state)
 		if(module == selected_module)
-			module_image.underlays += image(icon = 'icons/hud/radial.dmi', icon_state = "module_selected")
+			module_image.underlays += image(icon = 'slugstation/icons/hud/radial.dmi', icon_state = "module_selected")
 		else if(module.active)
-			module_image.underlays += image(icon = 'icons/hud/radial.dmi', icon_state = "module_active")
+			module_image.underlays += image(icon = 'slugstation/icons/hud/radial.dmi', icon_state = "module_active")
 		if(!COOLDOWN_FINISHED(module, cooldown_timer))
-			module_image.add_overlay(image(icon = 'icons/hud/radial.dmi', icon_state = "module_cooldown"))
+			module_image.add_overlay(image(icon = 'slugstation/icons/hud/radial.dmi', icon_state = "module_cooldown"))
 		items += list(module.name = module_image)
 	if(!length(items))
 		return

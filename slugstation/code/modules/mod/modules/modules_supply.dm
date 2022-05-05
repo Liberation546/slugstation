@@ -554,7 +554,7 @@
 	name = "mining bomb"
 	desc = "A bomb. Why are you examining this?"
 	icon_state = "mine_bomb"
-	icon = 'icons/obj/clothing/modsuit/mod_modules.dmi'
+	icon = 'slugstation/icons/obj/clothing/modsuit/mod_modules.dmi'
 	damage = 0
 	nodamage = TRUE
 	range = 6
@@ -570,7 +570,7 @@
 	name = "mining bomb"
 	desc = "A bomb. Why are you examining this?"
 	icon_state = "mine_bomb"
-	icon = 'icons/obj/clothing/modsuit/mod_modules.dmi'
+	icon = 'slugstation/icons/obj/clothing/modsuit/mod_modules.dmi'
 	anchored = TRUE
 	resistance_flags = FIRE_PROOF|LAVA_PROOF
 	light_system = MOVABLE_LIGHT
