@@ -19,7 +19,7 @@
 	species_language_holder = /datum/language_holder/english
 	payday_modifier = 0.5 //boil in hell
 
-/datum/species/before_equip_job(datum/job/J, mob/living/carbon/human/H)
+/datum/species/xenolid/before_equip_job(datum/job/J, mob/living/carbon/human/H)
 	if(prob(1))
 		to_chat(H, span_info("<b>You are a <s>Slugcat</s> Xenolid.</b>"))
 	else 
