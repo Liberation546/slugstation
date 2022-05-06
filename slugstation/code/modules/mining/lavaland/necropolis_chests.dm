@@ -1,0 +1,5 @@
+/obj/item/rod_of_asclepius/attack_hand(mob/user)
+	if(activated)
+		visible_message(span_notice("[user] pets [src]."),span_notice("You pet the snake on [src]."))
+		playsound(loc, 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
+	..()
