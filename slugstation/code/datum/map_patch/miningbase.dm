@@ -3,4 +3,4 @@
 		var/turf/T = locate(x + 12 - 1, y + 26 - 1, z)
 		var/mob/M = locate(/mob/living/simple_animal/turtle) in T
 		qdel(M)
-		var/mob/living/simple_animal/pet/cat/Proc/P = new /mob/living/simple_animal/pet/cat/Proc(T)
+		new /mob/living/simple_animal/pet/cat/Proc(T)

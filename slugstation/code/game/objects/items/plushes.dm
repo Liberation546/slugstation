@@ -6,3 +6,4 @@
 			if(user.client.prefs.toggles & SOUND_ANNOUNCEMENTS)
 				SEND_SOUND(user, sound('sound/misc/delta_alert.ogg'))
 	else
+		return
