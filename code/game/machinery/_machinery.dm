@@ -256,8 +256,8 @@ Class Procs:
 		if(interaction_flags_machine & INTERACT_MACHINE_REQUIRES_SILICON)
 			return FALSE
 		
-		if(is_species(user, /datum/species/lizard/ashwalker))
-			return FALSE
+		//if(is_species(user, /datum/species/lizard/ashwalker))
+		//	return FALSE
 		var/mob/living/carbon/H = user
 		if(istype(H) && H.has_dna() && H.dna.check_mutation(ACTIVE_HULK))
 			to_chat(H, span_warning("HULK NOT NERD. HULK SMASH!!!"))
