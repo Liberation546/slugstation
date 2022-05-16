@@ -103,7 +103,6 @@
 	passtable_off(owner, GENETIC_MUTATION)
 	owner.visible_message(span_danger("[owner] suddenly grows!"), span_notice("Everything around you seems to shrink.."))
 
-
 //Clumsiness has a very large amount of small drawbacks depending on item.
 /datum/mutation/human/clumsy
 	name = "Clumsiness"
