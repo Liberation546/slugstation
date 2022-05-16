@@ -9,7 +9,6 @@
 	else ..()
 	if(istype(pickaxe, /obj/item/pickaxe/drill))
 		..()
-	held_item = get_inactive_held_item()
 	if(DWARFISM in user.dna.mutations)
 			user.emote("me","raises [user.p_their()] [pickaxe]!")
 			user.say(pick(POSSIBLE_SALUTES))
