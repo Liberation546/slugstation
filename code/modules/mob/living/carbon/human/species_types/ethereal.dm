@@ -26,7 +26,7 @@
 	mutant_bodyparts = list("ethereal_mark")
 	default_features = list("ethereal_mark" = "Eyes")
 	species_language_holder = /datum/language_holder/ethereal
-	sexes = FALSE //no fetish content allowed
+	//sexes = FALSE //no fetish content allowed // slug - gives ethereals gender
 	toxic_food = NONE
 	inert_mutation = SHOCKTOUCH
 	hair_color = "fixedmutcolor"
