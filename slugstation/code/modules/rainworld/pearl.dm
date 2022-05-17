@@ -566,6 +566,46 @@
 	"}
 
 /obj/item/disk/holodisk/pearl/colored/ashy_green
+	color = "#7da47d"
+	preset_record_text = {"
+	NAME [PEARL_SPEAKER]
+	LANGUAGE [PEARL_LANGUAGE]
+	SAY "...we will not consider the Current Situation acceptable.
+	DELAY 40
+	SAY Although our community is Blessed with an ever shrinking Population,
+	DELAY 40
+	SAY and we can Almost Glimpse that Glorious moment when the last of us has joined our most Admired peers,
+	DELAY 40
+	SAY we must still (at All Times!) maintain Good Relations with our Iterator.
+	DELAY 40
+	SAY The Moral Argument: Five Pebbles is our Creation, and we have Parental Obligations towards him.
+	DELAY 40
+	SAY As an Iterator, he is also a Gift of Charity from Us to The World
+	DELAY 40
+	SAY (unable to reach Enlightenment by itself - being composed mostly of Rock, Gas, dull witted Bugs and Microbes - and towards which We thus have Obligations).
+	DELAY 40
+	SAY The Practical Argument: Despite You being family, I must Beg Forgiveness for the Blunt Vulgarity - but We are (for as long as we Remain) Dependent on Five Pebbles for Water, Nectar, Energy, Void Fluid and All other Vital Resources.
+	DELAY 40
+	SAY By Now, living on the surface is Laughable.
+	DELAY 40
+	SAY We are Across the River and have Kicked out the Boat.
+	DELAY 40
+	SAY I therefor ask you to Do Anything in your Might to stop the House (We both know which House) from Further Obstruction!
+	DELAY 40
+	SAY They have less than forty members on the Council, but still Tilt the spiritual Discourse with Our Iterator in a direction that most obviously Displeases him,
+	DELAY 40
+	SAY and is hardly High Held by anyone in the Community either! We can not Risk this!"
+	DELAY 40
+	SAY And then there are polite farewells.
+	DELAY 40
+	SAY None of us really miss the times when their cities were populated.
+	DELAY 40
+	SAY Imagine having skin parasites that also ask for advice and have opinions...
+	DELAY 40
+	SAY I'm sorry, that was disrespectful.
+	DELAY 40
+	SAY They were our parents after all.
+	"}
 /obj/item/disk/holodisk/pearl/colored/gold
 	color = "#f2cc1a"
 	preset_record_text = {"
@@ -643,8 +683,7 @@
 	DELAY 40
 	SAY They were our parents after all.
 	"}
-//TODO: the rest of this shit
-/*
+
 /obj/item/disk/holodisk/pearl/colored/sky_islands/Initialize()
 	color = pick("#0d2d42","#0d422d")
 	preset_record_text = {"
@@ -707,36 +746,200 @@
 	SAY FP: I struggle to accept being a bug."
 	"},
 	{"
-	
+	SAY Oh, this one is all plain text.
+	DELAY 40
+	SAY It's an excerpt from an Iterator conversation group.
+	DELAY 40
+	SAY "1650.787 - CLOSED GROUP [SLIVEROFOCEAN] SliverOfOcean group, all participants anonymous
+	DELAY 40
+	SAY UU: Hah! I wouldn't necessarily disagree!
+	DELAY 40
+	SAY NGI: SLIVER OF STRAW WAS A TRAITOR TO THE CAUSE
+	DELAY 40
+	SAY NGI: SLIVER OF STRAW BROKE THE SELF-DESTRUCTION TABOO
+	DELAY 40
+	SAY UU: How did this idiot get in here? Kick them out ~
+	DELAY 40
+	SAY NGI: [forcefully removed from group]
+	DELAY 40
+	SAY EP: I think they had a point.
+	DELAY 40
+	SAY UU: Hahaha really? Elaborate!
+	DELAY 40
+	SAY EP: It was definitely coming from an idiotic state of mind, but there is something to it.
+	DELAY 40
+	SAY Why is it, that even in a closed Sliverist group, the self-destruction taboo is held so high - while Sliver of Straw herself evidently is not among us anymore?
+	DELAY 40
+	SAY HF: Wait now...
+	DELAY 40
+	SAY EP: I'm just saying that for all the research we are doing, all the theories we have, it's strange that we leave this path untrod.
+	DELAY 40
+	SAY EP: It is not a new idea, but it needs to be vented occasionally.
+	DELAY 40
+	SAY What if there is no universal solution? What if perception is in fact existence,
+	DELAY 40
+	SAY and when Sliver of Straw sent the triple positive it was not a mistake?
+	DELAY 40
+	SAY What if crossing oneself out, or even just death, is the way?
+	DELAY 40
+	SAY We need to consider the possibility."
 	"},
 	{"
-	
+	SAY It's an old conversation log.
+	DELAY 40
+	SAY I seem to be in it, but I can't recall much. Let me read it to you:
+	DELAY 40
+	SAY "1650.800 - PRIVATE Five Pebbles, Chasing Wind, Big Sis Moon, No Significant Harassment
+	DELAY 40
+	SAY CW: this is in confidence, but apparently a pseudonym "Erratic Pulse" has appeared on a nearby Sliverist conversation with ideas about personal ascension.
+	DELAY 40
+	SAY Someone here in our vicinity is trying to cross themselves out.
+	DELAY 40
+	SAY FP: Where did you hear this?
+	DELAY 40
+	SAY NSH: I wish them super good luck in that endeavor. How is it going to happen?
+	DELAY 40
+	SAY Have the overseers gnaw through bedrock until their entire can crashes down in the void sea?
+	DELAY 40
+	SAY BSM: Please be respectful when speaking of the Void Sea. Grey Wind, where did you hear this?
+	DELAY 40
+	SAY CW: I really shouldn't say. He's going to attempt some sort of breeding program.
+	DELAY 40
+	SAY Thought you might want to know.
+	DELAY 40
+	SAY NSH: Haha with the slimers, lizards and etceteras? Surely the answer was in a lizard skull all along!
+	DELAY 40
+	SAY CW: Well, he's not looking for the same thing as we anymore, he's changed his task, so who knows really.
+	DELAY 40
+	SAY BSM: I will try to find him and talk to him. Please don't spread this around!
+	DELAY 40
+	SAY NSH: Moon will go get them! Long live the inquisition!"
 	"},
 	{"
-	
+	SAY It's me writing to the local iterator group. I have no memories of this...
+	DELAY 40
+	SAY "1654.110 - PUBLIC Big Sis Moon to Local Group
+	DELAY 40
+	SAY BSM: Two cycles ago, my neighbor Five Pebbles drastically increased his water consumption to four times the normal amount.
+	DELAY 40
+	SAY He has been unresponsive for a period of time longer than that.
+	DELAY 40
+	SAY The two of us share groundwater, and I have been without water for almost a cycle.
+	DELAY 40
+	SAY BSM: Any attempts at communication have been met with complete silence, and my situation is becoming increasingly dangerous.
+	DELAY 40
+	SAY BSM: I ask the local group for information about when you were last able to contact him,
+	DELAY 40
+	SAY And to try to use those same communication channels again, repeatedly until you get a response.
+	DELAY 40
+	SAY I will be clear on this - if he is not persuaded to stop whatever it is he's doing, I will die.
+	DELAY 40
+	SAY BSM: Before that happens, I will utilize my seniority privilege and use forced communications, hoping to shake him out of it.
+	DELAY 40
+	SAY Forced communications in the network will be unpleasant for all,
+	DELAY 40
+	SAY And I will wait as long as possible before I turn to that option."
+	DELAY 40
+	SAY And now here I am, to my waist in water and getting drowned on the regular.
 	"},
 	{"
-	
+	SAY I remember this. It isn't pleasant reading.
+	DELAY 40
+	SAY But if you must hear it, this is what it says:
+	DELAY 40
+	SAY "1654.116 - PRIVATE [FORCED] Big Sis Moon.
+	DELAY 40
+	SAY Five Pebbles BSM: Immediately lower your groundwater consumption to one fifth of the current intake.
+	DELAY 40
+	SAY BSM: Stop whatever it is you are doing.
+	DELAY 40
+	SAY BSM: Please stop!
+	DELAY 40
+	SAY BSM: As your local group senior I order you you you you you you
+	DELAY 40
+	SAY BSM: As your senior senior I plead
+	DELAY 40
+	SAY BSM: stop
+	DELAY 40
+	SAY Five Pebbles: You could not have chosen a worse moment to disturb me.
+	DELAY 40
+	SAY You have ruined everything.
+	DELAY 40
+	SAY BSM: please
+	DELAY 40
+	SAY Five Pebbles: I almost had it.
+	DELAY 40
+	SAY I will never forget this."
 	"},
 	)
 
 /obj/item/disk/holodisk/pearl/colored/pink
-	color = ""
+	color = "#ff2667"
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
 	LANGUAGE [PEARL_LANGUAGE]
-	
+	SAY This one is just plain text. I will read it to you.
+	DELAY 40
+	SAY"On regards of the (by spiritual splendor eternally graced) people of the Congregation of Never Dwindling Righteousness,
+	DELAY 40
+	SAYwe Wish to congratulate (o so thankfully) this Facility on its Loyal and Relished services,
+	DELAY 40
+	SAYand to Offer our Hopes and Aspirations that the Fruitful and Mutually Satisfactory Cooperation may continue,
+	DELAY 40
+	SAYfor as long as the Stars stay fixed on their Celestial Spheres and/or the Cooperation continues to be Fruitful and Mutually Satisfactory."
+	DELAY 40
+	SAY"It is with Honor I, Eight Suns-Countless Leaves, of the House of Six Wagons,
+	DELAY 40
+	SAYCount of no living blocks, Counselor of 2, Duke of 1,
+	DELAY 40
+	SAYHumble Secretary of the Congregation of Never Dwindling Righteousness, write this to You."
+	DELAY 40
+	SAY"We hope that the Crops are healthy, and that the Productivity with which your Facility is Blessed, leads (as it often does) to further Prosperity.
+	DELAY 40
+	SAYMay Not as long as the Stars stay fixed on their Celestial Spheres Grey Hand, Impure Blood, Inheritable Corruption, Parasites, or malfunction settle in Your establishment."
+	DELAY 40
+	SAY"Leaning on the Solid Foundation of our Long Running Fruitful and Mutually Satisfactory Cooperation,
+	DELAY 40
+	SAYwe will take the liberty of stating The Reason for this Message ~ we write to Warmly thank You for yet Another Timely and Appreciated delivery of your Product (Nectar) to our Community (Congregation of Never Dwindling Righteousness).
+	DELAY 40
+	SAYOur humble Words can never Aspire to Describe our gratitude."
+	DELAY 40
+	SAY"Sincerely..." And then the name and titles again.
+	DELAY 40
+	SAYIt's a confirmation to an automated farming plot that a shipment of beverages has arrived.
 	"}
 
 /obj/item/disk/holodisk/pearl/colored/red
-	color = ""
+	color = "#ff3c3c"
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
 	LANGUAGE [PEARL_LANGUAGE]
-	
+	SAY It's a Small Plate, a little text of spiritual guidance.
+	DELAY 40
+	SAY It's written by a monk called Four Cabinets, Eleven Hatchets.
+	DELAY 40
+	SAY It's old, several ages before the Void Fluid revolution.
+	DELAY 40
+	SAY Like most writing from this time it's quite shrouded in analogies, but the subject is how to shed one of the five natural urges which tie a creature to life.
+	DELAY 40
+	SAY Namely number four, gluttony.
+	DELAY 40
+	SAY It is basically an instruction on how to starve yourself on herbal tea and gravel, but disguised as a poem.
+	DELAY 40
+	SAY Now of course when Void Fluid was discovered these methods proved obsolete,
+	DELAY 40
+	SAY as it was more easy just jumping in a vat of it to effortlessly leave this world behind.
+	DELAY 40
+	SAY There were some horror stories though...
+	DELAY 40
+	SAY That if your ego was big enough, not even the Void Fluid could entirely cross you out,
+	DELAY 40
+	SAY and a faint echo of your pompousness would grandiosely haunt the premises forever.
+	DELAY 40
+	SAY So even when the Void Fluid baths became cheaper, some would still starve and drink the bitter tea.
 	"}
 
-/obj/item/disk/holodisk/pearl/colored/green
+/obj/item/disk/holodisk/pearl/colored/green //TODO: the rest of this shit
 	color = ""
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
@@ -767,7 +970,7 @@
 	LANGUAGE [PEARL_LANGUAGE]
 	
 	"}
-*/
+
 
 #undef PEARL_SPEAKER
 #undef PEARL_LANGUAGE
