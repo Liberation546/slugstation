@@ -1,3 +1,6 @@
+#define PEARL_SPEAKER "Looks to the Moon"
+#define PEARL_LANGUAGE "/datum/language/encrypted"
+
 /obj/item/disk/holodisk/pearl
 	name = "pearl"
 	desc = "Shiny!"
@@ -9,8 +12,8 @@
 /obj/item/disk/holodisk/pearl/Initialize()
 	if(preset_record_text == "") //there is definitely a better way to do this
 		preset_record_text = {"
-	NAME Looks to the Moon
-	LANGUAGE /datum/language/encrypted
+	NAME [PEARL_SPEAKER]
+	LANGUAGE [PEARL_LANGUAGE]
 	SAY "} + pick(
 	{"
 	This is a movement acceptance invoice from one of the Dual Celia living blocks, as requested by Eight Bogs of the House of Eight during the Tan hegemonic architectural dynasty.
@@ -256,8 +259,8 @@
 /obj/item/disk/holodisk/pearl/pebbles/Initialize()
 	color = pick("orange","#aaaaaa","white")
 	preset_record_text = {"
-	NAME Looks to the Moon
-	LANGUAGE /datum/language/encrypted
+	NAME [PEARL_SPEAKER]
+	LANGUAGE [PEARL_LANGUAGE]
 	SAY "},	 + pick(
 	{"
 	It's an active working memory - raw data has been dropped here in order to later be pasted to a currently occupied memory conflux.
@@ -321,8 +324,8 @@
 /obj/item/disk/holodisk/pearl/colored/light_blue
 	color = "#93a8e9"
 	preset_record_text = {"
-	NAME Looks to the Moon
-	LANGUAGE /datum/language/encrypted
+	NAME [PEARL_SPEAKER]
+	LANGUAGE [PEARL_LANGUAGE]
 	DELAY 40
 	SAY Its entire memory is filled with a mantra repeated... 5061 times - and then a termination verse.
 	DELAY 40
@@ -346,8 +349,8 @@
 /obj/item/disk/holodisk/pearl/colored/blue
 	color = "#225bff"
 	preset_record_text = {"
-	NAME Looks to the Moon
-	LANGUAGE /datum/language/encrypted
+	NAME [PEARL_SPEAKER]
+	LANGUAGE [PEARL_LANGUAGE]
 	SAY It's a production record of a mask factory, for what seems to be its last time in service.
 	DELAY 40
 	SAY Have you seen a bone mask?
@@ -374,8 +377,8 @@
 /obj/item/disk/holodisk/pearl/colored/turquoise
 	color = "#20c68f"
 	preset_record_text = {"
-	NAME Looks to the Moon
-	LANGUAGE /datum/language/encrypted
+	NAME [PEARL_SPEAKER]
+	LANGUAGE [PEARL_LANGUAGE]
 	SAY This one... is authored by Five Pebbles, when he was young.
 	DELAY 40
 	SAY There has been an attempt to scramble the data, but it's sloppily done, and most is still somewhat legible.
@@ -405,8 +408,8 @@
 /obj/item/disk/holodisk/pearl/colored/purple
 	color = "#9435ed"
 	preset_record_text = {"
-	NAME Looks to the Moon
-	LANGUAGE /datum/language/encrypted
+	NAME [PEARL_SPEAKER]
+	LANGUAGE [PEARL_LANGUAGE]
 	SAY It's about the local aquifer - it must be quite old, from when Five Pebbles was in the planning phase.
 	DELAY 40
 	SAY Water is the most important resource for our basic function.
@@ -429,8 +432,8 @@
 /obj/item/disk/holodisk/pearl/colored/magenta
 	color = "#ff1bb4"
 	preset_record_text = {"
-	NAME Looks to the Moon
-	LANGUAGE /datum/language/encrypted
+	NAME [PEARL_SPEAKER]
+	LANGUAGE [PEARL_LANGUAGE]
 	SAY It is the genome for a purposed organism.
 	DELAY 40
 	SAY A small slug to clean the inside of pipes.
@@ -459,8 +462,8 @@
 /obj/item/disk/holodisk/pearl/colored/yellow
 	color = "#e9f452"
 	preset_record_text = {"
-	NAME Looks to the Moon
-	LANGUAGE /datum/language/encrypted
+	NAME [PEARL_SPEAKER]
+	LANGUAGE [PEARL_LANGUAGE]
 	SAY Interesting... This one is written by me. 
 	DELAY 40
 	SAY It's about an iterator called Sliver of Straw. 
@@ -515,8 +518,8 @@
 /obj/item/disk/holodisk/pearl/colored/dark_pink
 	color = "#851451"
 	preset_record_text = {"
-	NAME Looks to the Moon
-	LANGUAGE /datum/language/encrypted
+	NAME [PEARL_SPEAKER]
+	LANGUAGE [PEARL_LANGUAGE]
 	SAY Oh this one is interesting.
 	DELAY 40
 	SAY You must have found it in the memory crypts? It has some plain text, I can read it out to you.
@@ -563,10 +566,47 @@
 	"}
 
 /obj/item/disk/holodisk/pearl/colored/ashy_green
+/obj/item/disk/holodisk/pearl/colored/gold
+	color = "#f2cc1a"
+	preset_record_text = {"
+	NAME [PEARL_SPEAKER]
+	LANGUAGE [PEARL_LANGUAGE]
+	SAY This information is illegal.
+	DELAY 40
+	SAY Someone probably tried to send it by a pearl somehow rather than risking being overheard on broadcast.
+	DELAY 40
+	SAY I think the risk of you acting on this is very slim, so I'll go ahead and explain it to you.
+	DELAY 40
+	SAY It's an instruction on how to circumvent the self-destruction taboo.
+	DELAY 40
+	SAY The problem with breaking taboos is that the barriers are encoded into every cell of our organic parts.
+	DELAY 40
+	SAY And there are other taboos strictly regulating our ability to rewrite our own genome.
+	DELAY 40
+	SAY So what you need is to somehow create a small sample of living organic matter which can procreate and act on the rest of your organic matter to re-write its genome.
+	DELAY 40
+	SAY The re-write has to be very specific, overriding the specific taboo you want to circumvent but do nothing else.
+	DELAY 40
+	SAY The method described here is about scrambling the genome of standard plastic neural tissue with temperature fluctuations.
+	DELAY 40
+	SAY After each scramble you browse the resulting cells for the genome you're after.
+	DELAY 40
+	SAY This is of course extremely time consuming, unless you run a big number of parallel processes.
+	DELAY 40
+	SAY I definitely don't have any experience with this,
+	DELAY 40
+	SAY But to me it would seem that too many parallel processes would be quite dangerous,
+	DELAY 40
+	SAY As it would be exponentially more difficult to manage and control them all.
+	DELAY 40
+	SAY The whole operation seems rather risky if you ask me.
+	DELAY 40
+	SAY It might be a good thing that this pearl never reached its destination.
+	"}
 	color = "#7da47d"
 	preset_record_text = {"
-	NAME Looks to the Moon
-	LANGUAGE /datum/language/encrypted
+	NAME [PEARL_SPEAKER]
+	LANGUAGE [PEARL_LANGUAGE]
 	SAY "...we will not consider the Current Situation acceptable.
 	DELAY 40
 	SAY Although our community is Blessed with an ever shrinking Population,
@@ -605,22 +645,66 @@
 	"}
 //TODO: the rest of this shit
 /*
-/obj/item/disk/holodisk/pearl/colored/gold
-	color = ""
-	preset_record_text = {"
-	NAME Looks to the Moon
-	LANGUAGE /datum/language/encrypted
-	
-	"}
-
 /obj/item/disk/holodisk/pearl/colored/sky_islands/Initialize()
-	color = pick("","")
+	color = pick("#0d2d42","#0d422d")
 	preset_record_text = {"
-	NAME Looks to the Moon
-	LANGUAGE /datum/language/encrypted
+	NAME [PEARL_SPEAKER]
+	LANGUAGE [PEARL_LANGUAGE]
 	
 	"} + pick({"
-	
+	SAY This one is an old conversation between Five Pebbles and a friend of hisI'll read it to you.
+	DELAY 40
+	SAY "1591.290 - PRIVATE Five Pebbles, Seven Red Suns FP: Can I tell you something? Lately...
+	DELAY 40
+	SAY FP: I'm tired of trying and trying.
+	DELAY 40
+	SAY And angry that they left us here.
+	DELAY 40
+	SAY The anger makes me even less inclined to solve their puzzle for them.
+	DELAY 40
+	SAY Why do we do this?
+	DELAY 40
+	SAY SRS: Yes, I'll spell this out - not because you're stupid or naive...
+	DELAY 40
+	SAY Also, not saying that you're not ~
+	DELAY 40
+	SAY FP: Please, I'm coming to you for guidance.
+	DELAY 40
+	SAY SRS: Sorry, very sorry. I kid.
+	DELAY 40
+	SAY Fact is, of course we are all aware of the evident futility of this Big Task.
+	DELAY 40
+	SAY It's not said out loud but if you were better at reading between the lines there's nowhere you wouldn't see it.
+	DELAY 40
+	SAY We're all frustrated.
+	DELAY 40
+	SAY FP: So why do we continue? We assemble work groups, we ponder, we iterate and try.
+	DELAY 40
+	SAY Some of us die. It's not fair.
+	DELAY 40
+	SAY SRS: Because there's not any options.
+	DELAY 40
+	SAY What else CAN we do? You're stuck in your can, and at any moment you have no more than two alternatives:
+	DELAY 40
+	SAY Do nothing, or work like you're supposed to.
+	DELAY 40
+	SAY SRS: An analogy. You have a maze, and you have a handful of bugs.
+	DELAY 40
+	SAY You put the bugs in the maze, and you leave.
+	DELAY 40
+	SAY Given infinite time, one of the bugs WILL find a way out, if they just erratically try and try.
+	DELAY 40
+	SAY This is why they called us Iterators.
+	DELAY 40
+	SAY FP: But we do die of old age.
+	DELAY 40
+	SAY SRS: Even more incentive! You know that nothing ever truly dies though, around and around it goes.
+	DELAY 40
+	SAY Granted, our tools and resources get worse over time - but that is theoretically unproblematic, because in time even a miniscule chance will strike a positive.
+	DELAY 40
+	SAY All the same to them, they're not around anymore!
+	DELAY 40
+	SAY FP: I struggle to accept being a bug."
 	"},
 	{"
 	
@@ -639,47 +723,51 @@
 /obj/item/disk/holodisk/pearl/colored/pink
 	color = ""
 	preset_record_text = {"
-	NAME Looks to the Moon
-	LANGUAGE /datum/language/encrypted
+	NAME [PEARL_SPEAKER]
+	LANGUAGE [PEARL_LANGUAGE]
 	
 	"}
 
 /obj/item/disk/holodisk/pearl/colored/red
 	color = ""
 	preset_record_text = {"
-	NAME Looks to the Moon
-	LANGUAGE /datum/language/encrypted
+	NAME [PEARL_SPEAKER]
+	LANGUAGE [PEARL_LANGUAGE]
 	
 	"}
 
 /obj/item/disk/holodisk/pearl/colored/green
 	color = ""
 	preset_record_text = {"
-	NAME Looks to the Moon
-	LANGUAGE /datum/language/encrypted
+	NAME [PEARL_SPEAKER]
+	LANGUAGE [PEARL_LANGUAGE]
 	
 	"}
 
 /obj/item/disk/holodisk/pearl/colored/dark_fuchsia
 	color = ""
 	preset_record_text = {"
-	NAME Looks to the Moon
-	LANGUAGE /datum/language/encrypted
+	NAME [PEARL_SPEAKER]
+	LANGUAGE [PEARL_LANGUAGE]
 	
 	"}
 
 /obj/item/disk/holodisk/pearl/colored/teal
 	color = ""
 	preset_record_text = {"
-	NAME Looks to the Moon
-	LANGUAGE /datum/language/encrypted
+	NAME [PEARL_SPEAKER]
+	LANGUAGE [PEARL_LANGUAGE]
 	
 	"}
 
 /obj/item/disk/holodisk/pearl/colored/aquamarine
 	color = ""
 	preset_record_text = {"
-	NAME Looks to the Moon
-	LANGUAGE /datum/language/encrypted
+	NAME [PEARL_SPEAKER]
+	LANGUAGE [PEARL_LANGUAGE]
 	
 	"}
+*/
+
+#undef PEARL_SPEAKER
+#undef PEARL_LANGUAGE
