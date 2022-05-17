@@ -939,15 +939,35 @@
 	SAY So even when the Void Fluid baths became cheaper, some would still starve and drink the bitter tea.
 	"}
 
-/obj/item/disk/holodisk/pearl/colored/green //TODO: the rest of this shit
-	color = ""
+/obj/item/disk/holodisk/pearl/colored/green
+	color = "#26be3c"
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
 	LANGUAGE [PEARL_LANGUAGE]
-	
+	SAY It's an old text. The verses are familiar to me, but I don't remember by whom they were written.
+	DELAY 40
+	SAY The language is very old and intricate.
+	DELAY 40
+	SAY The first verse starts by drawing a comparison between the world and a tangled rug. It says that the world is an unfortunate mess.
+	DELAY 40
+	SAY Like a knot, the nature of its existence is the fact that the parts are locking each other, none able to spring free.
+	DELAY 40
+	SAY Then as it goes on the world becomes a furry animal hide, I suppose... because now us living beings are like insects crawling in the fur.
+	DELAY 40
+	SAY And then it's a fishing net, because the more we struggle and squirm, the more entangled we become.
+	DELAY 40
+	SAY It says that only the limp body of the jellyfish cannot be captured in the net.
+	DELAY 40
+	SAY So we should try to be like the jellyfish, because the jellyfish doesn't try.
+	DELAY 40
+	SAY This was an eternal dilemma to them - they were burdened by great ambition, yet deeply convinced that striving in itself was an unforgivable vice.
+	DELAY 40
+	SAY They tried very hard to be effortless. Perhaps that's what we were to them, someone to delegate that unrestrained effort to.
+	DELAY 40
+	SAY I know I have tried very hard.
 	"}
 
-/obj/item/disk/holodisk/pearl/colored/dark_fuchsia
+/obj/item/disk/holodisk/pearl/colored/dark_fuchsia //TODO: the rest of this shit
 	color = ""
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
