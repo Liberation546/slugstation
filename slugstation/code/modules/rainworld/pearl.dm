@@ -319,7 +319,8 @@
 	desc = "Shiny! This one looks important."
 
 /obj/item/disk/holodisk/pearl/colored/light_blue
-	preset_record_text = "
+	color = "#93a8e9"
+	preset_record_text = {"
 	NAME Looks to the Moon
 	LANGUAGE /datum/language/encrypted
 	DELAY 40
@@ -343,4 +344,342 @@
 	"}
 
 /obj/item/disk/holodisk/pearl/colored/blue
-	color = "blue"
+	color = "#225bff"
+	preset_record_text = {"
+	NAME Looks to the Moon
+	LANGUAGE /datum/language/encrypted
+	SAY It's a production record of a mask factory, for what seems to be its last time in service.
+	DELAY 40
+	SAY Have you seen a bone mask?
+	DELAY 40
+	SAY Likely not, they are all gone with their owners.
+	DELAY 40
+	SAY In ancient times the masks were actually about showing spiritual persuasion - covering the face as a way to symbolically abate the self.
+	DELAY 40
+	SAY Then of course, that was quite subverted as excessively ornate and lavish masks became an expression of identity.
+	DELAY 40
+	SAY Some public persons did have problems with narrow doorways.
+	DELAY 40
+	SAY Originally monks in a temple would make the masks using bone plaster, and when the production was automated it would generally remain on the same site.
+	DELAY 40
+	SAY So that the old stones could... radiate the material with holiness, I suppose.
+	DELAY 40
+	SAY This is from one such facility called Side House, which was here on Pebble's grounds.
+	DELAY 40
+	SAY In the iterator projects many old industrial-religious sites like this were remodeled and incorporated.
+	DELAY 40
+	SAY I think this one was made to provide pellets of holy ash to Pebbles, but knowing him he probably hasn't used much of it!
+	"}
+
+/obj/item/disk/holodisk/pearl/colored/turquoise
+	color = "#20c68f"
+	preset_record_text = {"
+	NAME Looks to the Moon
+	LANGUAGE /datum/language/encrypted
+	SAY This one... is authored by Five Pebbles, when he was young.
+	DELAY 40
+	SAY There has been an attempt to scramble the data, but it's sloppily done, and most is still somewhat legible.
+	DELAY 40
+	SAY It's written in internal language, or thoughts, so it is hard for me to translate so you would understand.
+	DELAY 40
+	SAY It's a methodology for global ascension of course - quite good, although the Peripherists or the Slab Mongers certainly wouldn't agree!
+	DELAY 40
+	SAY "...considering the eighth and the twenty sixth amendments to the Capricious Dogma,
+	DELAY 40
+	SAY we are apparently supposed to take for granted that a meaning collector point inversion is the only way to approach what has later become referred to as 'noise milking' (or occasionally 'rock swatting').
+	DELAY 40
+	SAY I will argue my disagreement with this, not in regards to kind but in regards to..." Could it say... "volume"?
+	DELAY 40
+	SAY Actually, are you getting anything out of this?
+	DELAY 40
+	SAY I suppose you found this in his waste department?
+	DELAY 40
+	SAY I would be wary of going there - on his first fit of corruption he dumped a lot of infected material there, and if it has survived it could easily eat a little creature like you.
+	DELAY 40
+	SAY Not that it would be as dangerous as going into Pebbles himself...
+	DELAY 40
+	SAY Also the pearls in the waste masses inevitably attract Scavengers, which can be very dangerous when provoked.
+	DELAY 40
+	SAY But, you seem to have made it out of there.
+	"}
+/obj/item/disk/holodisk/pearl/colored/purple
+	color = "#9435ed"
+	preset_record_text = {"
+	NAME Looks to the Moon
+	LANGUAGE /datum/language/encrypted
+	SAY It's about the local aquifer - it must be quite old, from when Five Pebbles was in the planning phase.
+	DELAY 40
+	SAY Water is the most important resource for our basic function.
+	DELAY 40
+	SAY Most of our processing is outsourced to microbe strata which need a flow of clean water or else slag builds up, our processes seize, and eventually we die.
+	DELAY 40
+	SAY It is... very painful.
+	DELAY 20
+	SAY They used to say that an iterator drinks a river, but neither of us two have seen a natural river so I suppose the analogy is lost on us, little creature!
+	DELAY 40
+	SAY Originally water supply was very important when placing iterators.
+	DELAY 40
+	SAY Later there would be a great equalizer - the fact that we breathe out as much vapor as we inhale water led to there being water available everywhere, and the latest few generations could be placed almost completely freely.
+	DELAY 40
+	SAY Building Pebbles so close to me was believed to be a risky choice, but the groundwater was finally deemed as sufficient.
+	DELAY 40
+	SAY It was not a good decision, in hindsight.
+	"}
+
+/obj/item/disk/holodisk/pearl/colored/magenta
+	color = "#ff1bb4"
+	preset_record_text = {"
+	NAME Looks to the Moon
+	LANGUAGE /datum/language/encrypted
+	SAY It is the genome for a purposed organism.
+	DELAY 40
+	SAY A small slug to clean the inside of pipes.
+	DELAY 40
+	SAY Do you know what a purposed organism is?
+	DELAY 40
+	SAY Actually you are talking to one right now!
+	DELAY 40
+	SAY Although, a small fraction of one.
+	DELAY 40
+	SAY Nowadays I am mostly just my puppet.
+	DELAY 40
+	SAY The bulk of me is in these walls but I am disconnected from those parts, to a degree where I am only vaguely aware of how bad their condition is.
+	DELAY 40
+	SAY Most purposed organisms were considerably smaller than me, and most barely looked like organisms at all.
+	DELAY 40
+	SAY More like tubes in metal boxes, where something went in one end and something else came out the other.
+	DELAY 40
+	SAY There were of course those that were purposed to spectacle rather than industry - they enjoyed the privilege of glass boxes.
+	DELAY 40
+	SAY When I came into this world there was very little primal fauna left.
+	DELAY 40
+	SAY So it's highly likely that you are the descendant of a purposed organism yourself!
+	"}
+
+/obj/item/disk/holodisk/pearl/colored/yellow
+	color = "#e9f452"
+	preset_record_text = {"
+	NAME Looks to the Moon
+	LANGUAGE /datum/language/encrypted
+	SAY Interesting... This one is written by me. 
+	DELAY 40
+	SAY It's about an iterator called Sliver of Straw. 
+	DELAY 40
+	SAY I don't remember when I wrote it... 
+	DELAY 30
+	SAY Do you know Sliver of Straw? She's quite legendary among us. 
+	DELAY 40
+	SAY Sliver of Straw is the only one to ever broadcast a specific signal:
+	DELAY 40
+	SAY That the Big Problem we're all working on has been solved. 
+	DELAY 40
+	SAY The triple affirmative - affirmative that a solution has been found,
+	DELAY 40
+	SAY Affirmative that the solution is portable,
+	DELAY 40
+	SAY And affirmative that a technical implementation is possible and generally applicable. 
+	DELAY 40
+	SAY She's also one of few that has ever been confirmed as exhaustively incapacitated, or dead. 
+	DELAY 40
+	SAY We do not die easily. 
+	DELAY 20
+	SAY Sliver of Straw sent this and the ensuing commotion was historically unparalleled, before or after. 
+	DELAY 40
+	SAY I still remember it. 
+	DELAY 20
+	SAY But... nothing happened - except that Sliver of Straw was apparently dead. 
+	DELAY 40
+	SAY When the dust settled we were all still there blinking at each other. 
+	DELAY 40
+	SAY Everyone had a theory. 
+	DELAY 20
+	SAY Some said that she did have a solution, but that the solution itself was somehow dangerous. 
+	DELAY 40
+	SAY These later became known as the Triangulators, who think that a solution should be inferred without being directly discovered. 
+	DELAY 40
+	SAY Some said she never had a solution, she just died. 
+	DELAY 40
+	SAY And when the systems broke down an erroneous signal was sent. 
+	DELAY 40
+	SAY One camp claimed that dying was the solution. 
+	DELAY 40
+	SAY Either way, after that these different factions developed, as well as a huge forensic effort to recreate and simulate Sliver of Straw's last moments. 
+	DELAY 40
+	SAY Some of the simulations were wrapped in a simulation wrapped in a simulation, in case something dangerous might happen. 
+	DELAY 40
+	SAY Nothing much has come from it. 
+	DELAY 30
+	SAY In my essay I make the case that maybe she should be allowed to rest in peace now.
+	"}
+
+/obj/item/disk/holodisk/pearl/colored/dark_pink
+	color = "#851451"
+	preset_record_text = {"
+	NAME Looks to the Moon
+	LANGUAGE /datum/language/encrypted
+	SAY Oh this one is interesting.
+	DELAY 40
+	SAY You must have found it in the memory crypts? It has some plain text, I can read it out to you.
+	DELAY 40
+	SAY "In this vessel is the living memories of Seventeen Axes, Fifteen Spoked Wheel,
+	DELAY 40
+	SAY of the House of Braids,
+	DELAY 20
+	SAY Count of 8 living blocks,
+	DELAY 20
+	SAY Counselor of 16,
+	DELAY 20
+	SAY Grand Master of the Twelfth Pillar of Community,
+	DELAY 40
+	SAY High Commander of opinion group Winged Opinions,
+	DELAY 40
+	SAY of pure Braid heritage,
+	DELAY 20
+	SAY voted Local Champion in the speaking tournament of 1511.090,
+	DELAY 40
+	SAY Mother, Father and Spouse,
+	DELAY 20
+	SAY Spiritual Explorer and honorary member of the Congregation of Balanced Ambiguity, 
+	DELAY 40
+	SAY Artist, Warrior, and Fashion Legend.
+	DELAY 20
+	SAY Seventeen Axes, Fifteen Spoked Wheel nobly decided to ascend in the beginning of 1514.008,
+	DELAY 40
+	SAY after graciously donating all (ALL!) earthly possessions to the local Iterator project (Unparalleled Innocence),
+	DELAY 40
+	SAY and left these memories to be cherished by the carnal plane.
+	DELAY 40
+	SAY The assorted memories and qualia include:
+	DELAY 40
+	SAY Watching dust suspended in a ray of sun (Old age).
+	DELAY 40
+	SAY Eating a very tasty meal (Young child).
+	DELAY 40
+	SAY Defeating an opponent in a debate contest, and being applauded by fellow team members (Late childhood/Early adulthood)...."
+	DELAY 40
+	SAY ...and the list goes on.
+	DELAY 20
+	SAY I'm sorry, little creature, I won't read all of this - the list is six hundred and twenty items long.
+	"}
+
+/obj/item/disk/holodisk/pearl/colored/ashy_green
+	color = "#7da47d"
+	preset_record_text = {"
+	NAME Looks to the Moon
+	LANGUAGE /datum/language/encrypted
+	SAY "...we will not consider the Current Situation acceptable.
+	DELAY 40
+	SAY Although our community is Blessed with an ever shrinking Population,
+	DELAY 40
+	SAY and we can Almost Glimpse that Glorious moment when the last of us has joined our most Admired peers,
+	DELAY 40
+	SAY we must still (at All Times!) maintain Good Relations with our Iterator.
+	DELAY 40
+	SAY The Moral Argument: Five Pebbles is our Creation, and we have Parental Obligations towards him.
+	DELAY 40
+	SAY As an Iterator, he is also a Gift of Charity from Us to The World
+	DELAY 40
+	SAY (unable to reach Enlightenment by itself - being composed mostly of Rock, Gas, dull witted Bugs and Microbes - and towards which We thus have Obligations).
+	DELAY 40
+	SAY The Practical Argument: Despite You being family, I must Beg Forgiveness for the Blunt Vulgarity - but We are (for as long as we Remain) Dependent on Five Pebbles for Water, Nectar, Energy, Void Fluid and All other Vital Resources.
+	DELAY 40
+	SAY By Now, living on the surface is Laughable.
+	DELAY 40
+	SAY We are Across the River and have Kicked out the Boat.
+	DELAY 40
+	SAY I therefor ask you to Do Anything in your Might to stop the House (We both know which House) from Further Obstruction!
+	DELAY 40
+	SAY They have less than forty members on the Council, but still Tilt the spiritual Discourse with Our Iterator in a direction that most obviously Displeases him,
+	DELAY 40
+	SAY and is hardly High Held by anyone in the Community either! We can not Risk this!"
+	DELAY 40
+	SAY And then there are polite farewells.
+	DELAY 40
+	SAY None of us really miss the times when their cities were populated.
+	DELAY 40
+	SAY Imagine having skin parasites that also ask for advice and have opinions...
+	DELAY 40
+	SAY I'm sorry, that was disrespectful.
+	DELAY 40
+	SAY They were our parents after all.
+	"}
+//TODO: the rest of this shit
+/*
+/obj/item/disk/holodisk/pearl/colored/gold
+	color = ""
+	preset_record_text = {"
+	NAME Looks to the Moon
+	LANGUAGE /datum/language/encrypted
+	
+	"}
+
+/obj/item/disk/holodisk/pearl/colored/sky_islands/Initialize()
+	color = pick("","")
+	preset_record_text = {"
+	NAME Looks to the Moon
+	LANGUAGE /datum/language/encrypted
+	
+	"} + pick({"
+	
+	"},
+	{"
+	
+	"},
+	{"
+	
+	"},
+	{"
+	
+	"},
+	{"
+	
+	"},
+	)
+
+/obj/item/disk/holodisk/pearl/colored/pink
+	color = ""
+	preset_record_text = {"
+	NAME Looks to the Moon
+	LANGUAGE /datum/language/encrypted
+	
+	"}
+
+/obj/item/disk/holodisk/pearl/colored/red
+	color = ""
+	preset_record_text = {"
+	NAME Looks to the Moon
+	LANGUAGE /datum/language/encrypted
+	
+	"}
+
+/obj/item/disk/holodisk/pearl/colored/green
+	color = ""
+	preset_record_text = {"
+	NAME Looks to the Moon
+	LANGUAGE /datum/language/encrypted
+	
+	"}
+
+/obj/item/disk/holodisk/pearl/colored/dark_fuchsia
+	color = ""
+	preset_record_text = {"
+	NAME Looks to the Moon
+	LANGUAGE /datum/language/encrypted
+	
+	"}
+
+/obj/item/disk/holodisk/pearl/colored/teal
+	color = ""
+	preset_record_text = {"
+	NAME Looks to the Moon
+	LANGUAGE /datum/language/encrypted
+	
+	"}
+
+/obj/item/disk/holodisk/pearl/colored/aquamarine
+	color = ""
+	preset_record_text = {"
+	NAME Looks to the Moon
+	LANGUAGE /datum/language/encrypted
+	
+	"}
