@@ -16,7 +16,9 @@
 	LANGUAGE [PEARL_LANGUAGE]
 	SAY "} + pick(
 	{"
-	This is a movement acceptance invoice from one of the Dual Celia living blocks, as requested by Eight Bogs of the House of Eight during the Tan hegemonic architectural dynasty.
+	This is a movement acceptance invoice from one of the Dual Celia living blocks, 
+	DELAY 40
+	SAY as requested by Eight Bogs of the House of Eight during the Tan hegemonic architectural dynasty.
 	DELAY 40
 	SAY All very standard stuff.
 	DELAY 40
@@ -30,7 +32,11 @@
 	SAY I would assume this was sent sometime during the final cycles leading up to final public ascension, when interest in biosphere sustainability was at an all-time low.
 	"}
 	{"
-	"We, of the Five-hundred-and-ninety-second High Convocation of the True Anointed Citadel, do hereby demand, with full force of Law and Religious doctrine, an Immediate end to construction of the Apostate Superstructure Abomination. To place shadow upon the Divine Body of the True Anointed Citadel is outrageous blasphemy and cannot be tolerated, no matter the circumstances..."
+	"We, of the Five-hundred-and-ninety-second High Convocation of the True Anointed Citadel, do hereby demand, with full force of Law and Religious doctrine,
+	DELAY 40
+	SAY an Immediate end to construction of the Apostate Superstructure Abomination.
+	DELAY 40
+	SAY To place shadow upon the Divine Body of the True Anointed Citadel is outrageous blasphemy and cannot be tolerated, no matter the circumstances..."
 	DELAY 40
 	SAY Clearly this was ignored.
 	"}
@@ -257,7 +263,7 @@
 	..()
 
 /obj/item/disk/holodisk/pearl/pebbles/Initialize()
-	color = pick("orange","#aaaaaa","white")
+	color = pick("orange","#040404","#ffffff")
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
 	LANGUAGE [PEARL_LANGUAGE]
@@ -967,7 +973,7 @@
 	SAY I know I have tried very hard.
 	"}
 
-/obj/item/disk/holodisk/pearl/colored/dark_fuchsia //TODO: the rest of this shit
+/obj/item/disk/holodisk/pearl/colored/dark_fuchsia
 	color = "#420d2d"
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
