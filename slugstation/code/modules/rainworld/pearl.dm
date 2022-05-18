@@ -968,27 +968,99 @@
 	"}
 
 /obj/item/disk/holodisk/pearl/colored/dark_fuchsia //TODO: the rest of this shit
-	color = ""
+	color = "#420d2d"
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
 	LANGUAGE [PEARL_LANGUAGE]
-	
+	SAY 1681.662 - PRIVATE Seven Red Suns, Chasing Wind
+	DELAY 40
+	SAY CW: Have you had any contact with Five Pebbles recently?
+	DELAY 40
+	SAY SRS: Not in a long while actually! Unless worrying about him counts.
+	DELAY 40
+	SAY CW: One of his neighbors, Unparalleled Innocence, sent an overseer to his can and got some images.
+	DELAY 40
+	SAY They were made public in the local group, in an effort to be mean I suppose.
+	DELAY 40
+	SAY There's no other way of putting it - he looks awful.
+	DELAY 40
+	SAY SRS: Tell me.
+	DELAY 40
+	SAY CW: He's got the rot, very badly.
+	DELAY 40
+	SAY Big cysts have become mobile and are scattering down the west and middle legs.
+	DELAY 40
+	SAY He does listen to you, and few others by now, so you should talk to him.
+	DELAY 40
+	SAY SRS: I will try to contact him. Does Moon know?
+	DELAY 40
+	SAY CW: Moon has been unavailable for some time.
 	"}
 
 /obj/item/disk/holodisk/pearl/colored/teal
-	color = ""
+	color = "#3c9393"
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
 	LANGUAGE [PEARL_LANGUAGE]
-	
+	SAY It's the blueprint for a Void Fluid filtration system.
+	DELAY 40
+	SAY Do you know what Void Fluid is? I think you don't.
+	DELAY 40
+	SAY If you leave a stone on the ground, and come back some time later, it's covered in dust.
+	DELAY 40
+	SAY This happens everywhere, and over several lifetimes of creatures such as you, the ground slowly builds upwards.
+	DELAY 40
+	SAY So why doesn't the ground collide with the sky?
+	DELAY 40
+	SAY Because far down, under the very very old layers of the earth, the rock is being dissolved or removed.
+	DELAY 40
+	SAY The entity which does this is known as the Void Sea.
+	DELAY 40
+	SAY If you drill far enough into the earth you begin encountering a substance called Void Fluid.
+	DELAY 40
+	SAY The deeper you go, the less rock and more Void Fluid.
+	DELAY 40
+	SAY It's believed that there is a point where the rock completely gives way - below that would be the Void Sea.
+	DELAY 40
+	SAY When that stone you placed on the ground has finally done its time in the sediments, it meets the Void Fluid and is dissolved, leaving the physical world.
+	DELAY 40
+	SAY My creators, or rather my creators' ancestors, figured out a way to use Void Fluid.
+	DELAY 40
+	SAY Because you can generate energy by creating a vacuum... never mind.
+	DELAY 40
+	SAY Anyways, the Void Fluid drills were what started the big technological leap,
+	DELAY 40
+	SAY but this is very long before I entered this world - so I can only tell you what I remember from priming.
+	DELAY 40
+	SAY A Void Fluid filtration system is used because if you take Void Fluid from close to the bedrock horizon, it will contain traces of rock and dirt.
+	DELAY 40
+	SAY They bring in dirty fluid and then filter it to increase its purity.
+	DELAY 40
+	SAY The other way is to put a pipe deeper, which works well for some time, but the pipe dissolves.
+	DELAY 40
+	SAY Or is broken by some... force - no one really knows, you don't go down there and come back up.
+	DELAY 40
+	SAY I hope that satisfied your curiosity, little creature?
 	"}
 
 /obj/item/disk/holodisk/pearl/colored/aquamarine
-	color = ""
+	color = "#99ffe6"
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
 	LANGUAGE [PEARL_LANGUAGE]
-	
+	SAY "Triple affirmative! Triple affirmative!
+	DELAY 40
+	SAY In all seriousness though, noticed barely any rain from your can so figured a little support might be in order.
+	DELAY 40
+	SAY Wasn't that easy to see of course with Pebbles' shall we say healthy output.
+	DELAY 40
+	SAY Enjoy the slag keys! Excuse the unorthodox delivery method. Equipment eroding ect ect.
+	DELAY 40
+	SAY Be well NSH"
+	DELAY 30
+	SAY Oh. I see now.
+	DELAY 20
+	SAY Again thank you little friend.
 	"}
 
 
