@@ -7,3 +7,7 @@
 	design_ids = list("bluespace_miner")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	export_price = 5000
+
+/datum/techweb_node/ai/Initialize()
+	..()
+	design_ids += "iterator_module"
