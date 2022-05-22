@@ -4,7 +4,7 @@
 /obj/item/disk/holodisk/pearl
 	name = "pearl"
 	desc = "Shiny!"
-	icon = 'slugstation/icons/obj/pearl.dm'
+	icon = 'slugstation/icons/obj/pearl.dmi'
 	icon_state = "pearl"
 	preset_image_type = /datum/preset_holoimage/ai/core
 	preset_record_text = ""
@@ -14,7 +14,7 @@
 		preset_record_text = {"
 	NAME [PEARL_SPEAKER]
 	LANGUAGE [PEARL_LANGUAGE]
-	SAY "} + pick(
+	SAY "} + pick(list(
 	{"
 	This is a movement acceptance invoice from one of the Dual Celia living blocks, 
 	DELAY 40
@@ -23,14 +23,14 @@
 	SAY All very standard stuff.
 	DELAY 40
 	SAY I can't imagine that you'd be interested.
-	"}
+	"},
 	{"
 	This is an official decree of cultivation sent from the twenty-second Subsistence Council ordering the eastern spoke Farm Array administration to "immediately harvest and process all viable crops, despite whatever misgivings they might have."
 	DELAY 40
 	SAY A short-sighted endeavor for sure.
 	DELAY 40
 	SAY I would assume this was sent sometime during the final cycles leading up to final public ascension, when interest in biosphere sustainability was at an all-time low.
-	"}
+	"},
 	{"
 	"We, of the Five-hundred-and-ninety-second High Convocation of the True Anointed Citadel, do hereby demand, with full force of Law and Religious doctrine,
 	DELAY 40
@@ -39,115 +39,115 @@
 	SAY To place shadow upon the Divine Body of the True Anointed Citadel is outrageous blasphemy and cannot be tolerated, no matter the circumstances..."
 	DELAY 40
 	SAY Clearly this was ignored.
-	"}
+	"},
 	{"
 	I see a vague memory of a family portrait, painted in the High Classical manner that was famous during the Yellow hegemonic literary dynasty.
 	DELAY 40
 	SAY The portrait is likely a fake, as this style was quite fashionable for aspirational lower caste aristocrats to impress each-other with.
 	DELAY 40
 	SAY This one does not impress, I assure you.
-	"}
+	"},
 	{"
 	It's a catalog of bolts and screws for sky-sail joinery.
 	DELAY 40
 	SAY We iterators were built for pragmatism, so it is an understatement to say that we were not known for our appreciation of beauty...
 	DELAY 40
 	SAY but the sky-sails in flight during the big festivals always filled my soul with emotion.
-	"}
+	"},
 	{"
 	A small portion is still legible: "and Thus we Conclude, that Gold and Water shall..."
 	DELAY 40
 	SAY Some sort of metaphysical or alchemical treatise perhaps.
-	"}
+	"},
 	{"
 	This one I don't know...
 	DELAY 40
 	SAY It could be an old text, but some parts don't add up.
 	DELAY 40
 	SAY Might be a re-imagination of a classic text that I'm not familiar with.
-	"}
+	"},
 	{"
 	This is a blueprint for a support beam used for the construction of early industrial areas.
 	DELAY 40
 	SAY You can see these in use not too far from here.
-	"}
+	"},
 	{"
 	Here we have a schematic for a refuse reclamation automaton.
 	DELAY 40
 	SAY It's an early design, but the long tubular body and single eye-mouth are quite similar to the later models.
-	"}
+	"},
 	{"
 	A schematic of a bunch of gas pipes.
 	DELAY 40
 	SAY I don't know the purpose for this machine, but it doesn't look particularly well crafted.
-	"}
+	"},
 	{"
 	This is the genome of a sulfur-processing microbe.
 	DELAY 40
 	SAY In my opinion these were used far too late to have any effect.
-	"}
+	"},
 	{"
 	It's the blueprint for a small incense purification filter.
 	DELAY 40
 	SAY Life on the superstructure archologies.
-	"}
+	"},
 	{"
 	It's a design for a machine that makes bolts.
-	"}
+	"},
 	{"
 	A model of a pipe section.
-	"}
+	"},
 	{"
 	Unfortunately I can't read this as it isn't a memory construct pearl.
 	DELAY 40
 	SAY This is just a simple diamond sphere, as worthless as the carbon it's printed from.
-	"}
+	"},
 	{"
 	This one has a small crack and has been pretty badly corrupted.
 	DELAY 40
 	SAY There is a slight impression of the shape of a wing on it, but I can't get a clear image.
-	"}
+	"},
 	{"
 	I am sorry, this pearl is damaged and cannot be read.
 	DELAY 40
 	SAY I suggest you use it for trade with the scavengers, as they won't know the difference.
-	"}
+	"},
 	{"
 	This one seems to have an image on it, but the pearl has been exposed to sunlight and it's very faded.
 	DELAY 40
 	SAY I see a tall structure with banners unfurled.
-	"}
+	"},
 	{"
 	There might be something on here, but the pearl has been lying in the sun and it's all very pale.
 	DELAY 40
 	SAY I'm too tired to look any deeper, I apologize.
-	"}
+	"},
 	{"
 	I can't make anything out of this pearl, it's just too faded.
 	DELAY 40
 	SAY But there might have been something on it once.
-	"}
+	"},
 	{"
 	I am sorry, all of that work for nothing! This pearl is completely blank.
-	"}
+	"},
 	{"
 	Can't make out anything legible on this one, sorry.
-	"}
+	"},
 	{"
 	There's nothing on this one, unfortunately.
-	"}
+	"},
 	{"
 	I'm sorry, this one has nothing on it.
-	"}
+	"},
 	{"
 	This one has nothing on it.
-	"}
+	"},
 	{"
 	This one is all blank, sorry.
-	"}
+	"},
 	{"
 	There's nothing on this one.
-	"}
+	"},
 	{"
 	Oh? This contains an image of another pearl just like it.
 	DELAY 40
@@ -156,63 +156,63 @@
 	SAY yes, as I thought, the image also contains an image of a pearl in it, and so on.
 	DELAY 40
 	SAY Some comedian playing recursion games, I would guess.
-	"}
+	"},
 	{"
 	"...through the mists of memory, your image dances, like the motes of dust, in a ray of sunlight, that pierces a dark room."
 	DELAY 40
 	SAY A line of verse from the ancient farmer-poet Pel.
 	DELAY 40
 	SAY Very dreary if you ask me.
-	"}
+	"},
 	{"
 	"Fifteen stems of sun bark, hydrolyzed. Twelve to nineteen bushels of atomized chalk powder. Assorted Root vegetation..."
 	DELAY 40
 	SAY It goes on and on.
 	DELAY 40
 	SAY A shopping list, or perhaps a recipe.
-	"}
+	"},
 	{"
 	It's a... recipe of some kind? 
 	DELAY 40
 	SAY "Two parts rot bar extract, one part bone ash." 
 	DELAY 40
 	SAY Nothing I recognize.
-	"}
+	"},
 	{"
 	An image... of five bottles, standing on a surface made of... plants?
 	DELAY 40
 	SAY I have no idea what this is.
-	"}
+	"},
 	{"
 	It's an image of a hand drawn document.
 	DELAY 40
 	SAY The calligraphy is quite beautiful, but the text itself is a very dull classical poem.
-	"}
+	"},
 	{"
 	A list of someone's lucky numbers.
 	DELAY 40
 	SAY There are no less than 71 of them.
-	"}
+	"},
 	{"
 	No.
 	DELAY 40
 	SAY I don't want to talk about the content of this pearl.
-	"}
+	"},
 	{"
 	It's a song, or hymn rather.
 	DELAY 40
 	SAY Very repetitive.
-	"}
+	"},
 	{"
 	"Dear diary..." and that's it.
-	"}
+	"},
 	{"
 	Oh, interesting.
 	DELAY 40
 	SAY This is a diary entry of a pre-Iterator era laborer during the construction of the subterranean transit system south of here.
 	DELAY 40
 	SAY In it they describe restless nights filled with disturbing dreams, where millions glowing stars move menacingly in the distance.
-	"}
+	"},
 	{"
 	There isn't much to the data here, it's just basic theory for karmic transform of n-dimensional geometries.
 	DELAY 40
@@ -223,51 +223,51 @@
 	SAY I honestly can't fathom how they achieve this with their primitive level of technology!
 	DELAY 40
 	SAY Fascinating.
-	"}
+	"},
 	{"
 	It has been written to, but then scrambled, and then scrambled again.
 	DELAY 40
 	SAY Suspicious behavior to be sure.
-	"}
+	"},
 	{"
 	This one has been purposefully scrambled, it's completely illegible.
 	DELAY 40
 	SAY Business documents perhaps.
-	"}
+	"},
 	{"
 	This is a growing instruction for the skeleton of a creature, but I don't recognize the creature.
 	DELAY 40
 	SAY It was small, about your size.
-	"}
+	"},
 	{"
 	It just has the number "8" written on it, the rest is empty.
-	"}
+	"},
 	{"
 	This one seems to be a number series...
 	DELAY 40
 	SAY Perhaps a key?
-	"}
+	"},
 	{"
 	A number series...
 	DELAY 40
 	SAY I would guess some kind of cipher.
-	"}
+	"},
 	{"
 	It's just the numbers 14, 13, 5, repeated over and over.
 	DELAY 40
 	SAY I have no idea what the purpose for this would be.
-	"}
+	"},
 	{"
 	This one is filled with active working memory - without knowing the surrounding process this information is meaningless.
-	"})
+	"}))
 	..()
 
 /obj/item/disk/holodisk/pearl/pebbles/Initialize()
-	color = pick("orange","#040404","#ffffff")
+	color = pick(list("orange","#202020","#ffffff"))
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
 	LANGUAGE [PEARL_LANGUAGE]
-	SAY "},	 + pick(
+	SAY "}	 + pick(list(
 	{"
 	It's an active working memory - raw data has been dropped here in order to later be pasted to a currently occupied memory conflux.
 	DELAY 40
@@ -323,11 +323,12 @@
 	SAY It reminds of the feeling of a warm wind, but not the physical feeling but the... inner feeling.
 	DELAY 40
 	SAY I don't think it has much utility unless you are doing some very fringe Regeneraist research.
-	"})
+	"}))
+	..()
 /obj/item/disk/holodisk/pearl/colored
 	desc = "Shiny! This one looks important."
 
-/obj/item/disk/holodisk/pearl/colored/light_blue
+/obj/item/disk/holodisk/pearl/colored/light_blue/Initialize()
 	color = "#93a8e9"
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
@@ -351,8 +352,9 @@
 	DELAY 40
 	SAY That doesn't apply to you or me though, you are too entangled in your animal struggles, and for me not breaking that cycle is an integral part of the design.
 	"}
+	..()
 
-/obj/item/disk/holodisk/pearl/colored/blue
+/obj/item/disk/holodisk/pearl/colored/blue/Initialize()
 	color = "#225bff"
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
@@ -379,8 +381,9 @@
 	DELAY 40
 	SAY I think this one was made to provide pellets of holy ash to Pebbles, but knowing him he probably hasn't used much of it!
 	"}
+	..()
 
-/obj/item/disk/holodisk/pearl/colored/turquoise
+/obj/item/disk/holodisk/pearl/colored/turquoise/Initialize()
 	color = "#20c68f"
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
@@ -411,7 +414,9 @@
 	DELAY 40
 	SAY But, you seem to have made it out of there.
 	"}
-/obj/item/disk/holodisk/pearl/colored/purple
+	..()
+
+/obj/item/disk/holodisk/pearl/colored/purple/Initialize()
 	color = "#9435ed"
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
@@ -434,8 +439,9 @@
 	DELAY 40
 	SAY It was not a good decision, in hindsight.
 	"}
+	..()
 
-/obj/item/disk/holodisk/pearl/colored/magenta
+/obj/item/disk/holodisk/pearl/colored/magenta/Initialize()
 	color = "#ff1bb4"
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
@@ -464,8 +470,9 @@
 	DELAY 40
 	SAY So it's highly likely that you are the descendant of a purposed organism yourself!
 	"}
+	..()
 
-/obj/item/disk/holodisk/pearl/colored/yellow
+/obj/item/disk/holodisk/pearl/colored/yellow/Initialize()
 	color = "#e9f452"
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
@@ -520,8 +527,9 @@
 	DELAY 30
 	SAY In my essay I make the case that maybe she should be allowed to rest in peace now.
 	"}
+	..()
 
-/obj/item/disk/holodisk/pearl/colored/dark_pink
+/obj/item/disk/holodisk/pearl/colored/dark_pink/Initialize()
 	color = "#851451"
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
@@ -570,8 +578,9 @@
 	DELAY 20
 	SAY I'm sorry, little creature, I won't read all of this - the list is six hundred and twenty items long.
 	"}
+	..()
 
-/obj/item/disk/holodisk/pearl/colored/ashy_green
+/obj/item/disk/holodisk/pearl/colored/ashy_green/Initialize()
 	color = "#7da47d"
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
@@ -612,7 +621,9 @@
 	DELAY 40
 	SAY They were our parents after all.
 	"}
-/obj/item/disk/holodisk/pearl/colored/gold
+	..()
+
+/obj/item/disk/holodisk/pearl/colored/gold/Initialize()
 	color = "#f2cc1a"
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
@@ -649,49 +660,10 @@
 	DELAY 40
 	SAY It might be a good thing that this pearl never reached its destination.
 	"}
-	color = "#7da47d"
-	preset_record_text = {"
-	NAME [PEARL_SPEAKER]
-	LANGUAGE [PEARL_LANGUAGE]
-	SAY "...we will not consider the Current Situation acceptable.
-	DELAY 40
-	SAY Although our community is Blessed with an ever shrinking Population,
-	DELAY 40
-	SAY and we can Almost Glimpse that Glorious moment when the last of us has joined our most Admired peers,
-	DELAY 40
-	SAY we must still (at All Times!) maintain Good Relations with our Iterator.
-	DELAY 40
-	SAY The Moral Argument: Five Pebbles is our Creation, and we have Parental Obligations towards him.
-	DELAY 40
-	SAY As an Iterator, he is also a Gift of Charity from Us to The World
-	DELAY 40
-	SAY (unable to reach Enlightenment by itself - being composed mostly of Rock, Gas, dull witted Bugs and Microbes - and towards which We thus have Obligations).
-	DELAY 40
-	SAY The Practical Argument: Despite You being family, I must Beg Forgiveness for the Blunt Vulgarity - but We are (for as long as we Remain) Dependent on Five Pebbles for Water, Nectar, Energy, Void Fluid and All other Vital Resources.
-	DELAY 40
-	SAY By Now, living on the surface is Laughable.
-	DELAY 40
-	SAY We are Across the River and have Kicked out the Boat.
-	DELAY 40
-	SAY I therefor ask you to Do Anything in your Might to stop the House (We both know which House) from Further Obstruction!
-	DELAY 40
-	SAY They have less than forty members on the Council, but still Tilt the spiritual Discourse with Our Iterator in a direction that most obviously Displeases him,
-	DELAY 40
-	SAY and is hardly High Held by anyone in the Community either! We can not Risk this!"
-	DELAY 40
-	SAY And then there are polite farewells.
-	DELAY 40
-	SAY None of us really miss the times when their cities were populated.
-	DELAY 40
-	SAY Imagine having skin parasites that also ask for advice and have opinions...
-	DELAY 40
-	SAY I'm sorry, that was disrespectful.
-	DELAY 40
-	SAY They were our parents after all.
-	"}
+	..()
 
 /obj/item/disk/holodisk/pearl/colored/sky_islands/Initialize()
-	color = pick("#0d2d42","#0d422d")
+	color = pick(list("#0d2d42","#0d422d"))
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
 	LANGUAGE [PEARL_LANGUAGE]
@@ -751,7 +723,7 @@
 	DELAY 40
 	SAY FP: I struggle to accept being a bug."
 	"},
-	{"
+	@{"
 	SAY Oh, this one is all plain text.
 	DELAY 40
 	SAY It's an excerpt from an Iterator conversation group.
@@ -848,7 +820,7 @@
 	DELAY 40
 	SAY And now here I am, to my waist in water and getting drowned on the regular.
 	"},
-	{"
+	@{"
 	SAY I remember this. It isn't pleasant reading.
 	DELAY 40
 	SAY But if you must hear it, this is what it says:
@@ -878,44 +850,46 @@
 	SAY I will never forget this."
 	"},
 	)
+	..()
 
-/obj/item/disk/holodisk/pearl/colored/pink
+/obj/item/disk/holodisk/pearl/colored/pink/Initialize()
 	color = "#ff2667"
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
 	LANGUAGE [PEARL_LANGUAGE]
 	SAY This one is just plain text. I will read it to you.
 	DELAY 40
-	SAY"On regards of the (by spiritual splendor eternally graced) people of the Congregation of Never Dwindling Righteousness,
+	SAY "On regards of the (by spiritual splendor eternally graced) people of the Congregation of Never Dwindling Righteousness,
 	DELAY 40
-	SAYwe Wish to congratulate (o so thankfully) this Facility on its Loyal and Relished services,
+	SAY we Wish to congratulate (o so thankfully) this Facility on its Loyal and Relished services,
 	DELAY 40
-	SAYand to Offer our Hopes and Aspirations that the Fruitful and Mutually Satisfactory Cooperation may continue,
+	SAY and to Offer our Hopes and Aspirations that the Fruitful and Mutually Satisfactory Cooperation may continue,
 	DELAY 40
-	SAYfor as long as the Stars stay fixed on their Celestial Spheres and/or the Cooperation continues to be Fruitful and Mutually Satisfactory."
+	SAY for as long as the Stars stay fixed on their Celestial Spheres and/or the Cooperation continues to be Fruitful and Mutually Satisfactory."
 	DELAY 40
-	SAY"It is with Honor I, Eight Suns-Countless Leaves, of the House of Six Wagons,
+	SAY "It is with Honor I, Eight Suns-Countless Leaves, of the House of Six Wagons,
 	DELAY 40
-	SAYCount of no living blocks, Counselor of 2, Duke of 1,
+	SAY Count of no living blocks, Counselor of 2, Duke of 1,
 	DELAY 40
-	SAYHumble Secretary of the Congregation of Never Dwindling Righteousness, write this to You."
+	SAY Humble Secretary of the Congregation of Never Dwindling Righteousness, write this to You."
 	DELAY 40
-	SAY"We hope that the Crops are healthy, and that the Productivity with which your Facility is Blessed, leads (as it often does) to further Prosperity.
+	SAY "We hope that the Crops are healthy, and that the Productivity with which your Facility is Blessed, leads (as it often does) to further Prosperity.
 	DELAY 40
-	SAYMay Not as long as the Stars stay fixed on their Celestial Spheres Grey Hand, Impure Blood, Inheritable Corruption, Parasites, or malfunction settle in Your establishment."
+	SAY May Not as long as the Stars stay fixed on their Celestial Spheres Grey Hand, Impure Blood, Inheritable Corruption, Parasites, or malfunction settle in Your establishment."
 	DELAY 40
-	SAY"Leaning on the Solid Foundation of our Long Running Fruitful and Mutually Satisfactory Cooperation,
+	SAY "Leaning on the Solid Foundation of our Long Running Fruitful and Mutually Satisfactory Cooperation,
 	DELAY 40
-	SAYwe will take the liberty of stating The Reason for this Message ~ we write to Warmly thank You for yet Another Timely and Appreciated delivery of your Product (Nectar) to our Community (Congregation of Never Dwindling Righteousness).
+	SAY we will take the liberty of stating The Reason for this Message ~ we write to Warmly thank You for yet Another Timely and Appreciated delivery of your Product (Nectar) to our Community (Congregation of Never Dwindling Righteousness).
 	DELAY 40
-	SAYOur humble Words can never Aspire to Describe our gratitude."
+	SAY Our humble Words can never Aspire to Describe our gratitude."
 	DELAY 40
-	SAY"Sincerely..." And then the name and titles again.
+	SAY "Sincerely..." And then the name and titles again.
 	DELAY 40
-	SAYIt's a confirmation to an automated farming plot that a shipment of beverages has arrived.
+	SAY It's a confirmation to an automated farming plot that a shipment of beverages has arrived.
 	"}
+	..()
 
-/obj/item/disk/holodisk/pearl/colored/red
+/obj/item/disk/holodisk/pearl/colored/red/Initialize()
 	color = "#ff3c3c"
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
@@ -944,8 +918,9 @@
 	DELAY 40
 	SAY So even when the Void Fluid baths became cheaper, some would still starve and drink the bitter tea.
 	"}
+	..()
 
-/obj/item/disk/holodisk/pearl/colored/green
+/obj/item/disk/holodisk/pearl/colored/green/Initialize()
 	color = "#26be3c"
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
@@ -972,8 +947,9 @@
 	DELAY 40
 	SAY I know I have tried very hard.
 	"}
+	..()
 
-/obj/item/disk/holodisk/pearl/colored/dark_fuchsia
+/obj/item/disk/holodisk/pearl/colored/dark_fuchsia/Initialize()
 	color = "#420d2d"
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
@@ -1002,8 +978,9 @@
 	DELAY 40
 	SAY CW: Moon has been unavailable for some time.
 	"}
+	..()
 
-/obj/item/disk/holodisk/pearl/colored/teal
+/obj/item/disk/holodisk/pearl/colored/teal/Initialize()
 	color = "#3c9393"
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
@@ -1048,8 +1025,9 @@
 	DELAY 40
 	SAY I hope that satisfied your curiosity, little creature?
 	"}
+	..()
 
-/obj/item/disk/holodisk/pearl/colored/aquamarine
+/obj/item/disk/holodisk/pearl/colored/aquamarine/Initialize()
 	color = "#99ffe6"
 	preset_record_text = {"
 	NAME [PEARL_SPEAKER]
@@ -1068,7 +1046,7 @@
 	DELAY 20
 	SAY Again thank you little friend.
 	"}
-
+	..()
 
 #undef PEARL_SPEAKER
 #undef PEARL_LANGUAGE
