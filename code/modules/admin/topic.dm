@@ -1070,10 +1070,10 @@
 		for(var/obj/item/I in L)
 			L.dropItemToGround(I, TRUE)
 
-		L.Unconscious(100)
-		sleep(5)
+		L.Unconscious(10 SECONDS)
+		sleep(0.5 SECONDS)
 		L.forceMove(pick(GLOB.tdome1))
-		spawn(50)
+		spawn(5 SECONDS)
 			to_chat(L, span_adminnotice("You have been sent to the Thunderdome."))
 		log_admin("[key_name(usr)] has sent [key_name(L)] to the thunderdome. (Team 1)")
 		message_admins("[key_name_admin(usr)] has sent [key_name_admin(L)] to the thunderdome. (Team 1)")
@@ -1097,10 +1097,10 @@
 		for(var/obj/item/I in L)
 			L.dropItemToGround(I, TRUE)
 
-		L.Unconscious(100)
-		sleep(5)
+		L.Unconscious(10 SECONDS)
+		sleep(0.5 SECONDS)
 		L.forceMove(pick(GLOB.tdome2))
-		spawn(50)
+		spawn(5 SECONDS)
 			to_chat(L, span_adminnotice("You have been sent to the Thunderdome."))
 		log_admin("[key_name(usr)] has sent [key_name(L)] to the thunderdome. (Team 2)")
 		message_admins("[key_name_admin(usr)] has sent [key_name_admin(L)] to the thunderdome. (Team 2)")
@@ -1121,10 +1121,10 @@
 			return
 		var/mob/living/L = M
 
-		L.Unconscious(100)
-		sleep(5)
+		L.Unconscious(10 SECONDS)
+		sleep(0.5 SECONDS)
 		L.forceMove(pick(GLOB.tdomeadmin))
-		spawn(50)
+		spawn(5 SECONDS)
 			to_chat(L, span_adminnotice("You have been sent to the Thunderdome."))
 		log_admin("[key_name(usr)] has sent [key_name(L)] to the thunderdome. (Admin.)")
 		message_admins("[key_name_admin(usr)] has sent [key_name_admin(L)] to the thunderdome. (Admin.)")
@@ -1152,10 +1152,10 @@
 			var/mob/living/carbon/human/observer = L
 			observer.equip_to_slot_or_del(new /obj/item/clothing/under/suit_jacket(observer), SLOT_W_UNIFORM)
 			observer.equip_to_slot_or_del(new /obj/item/clothing/shoes/sneakers/black(observer), SLOT_SHOES)
-		L.Unconscious(100)
-		sleep(5)
+		L.Unconscious(10 SECONDS)
+		sleep(0.5 SECONDS)
 		L.forceMove(pick(GLOB.tdomeobserve))
-		spawn(50)
+		spawn(5 SECONDS)
 			to_chat(L, span_adminnotice("You have been sent to the Thunderdome."))
 		log_admin("[key_name(usr)] has sent [key_name(L)] to the thunderdome. (Observer.)")
 		message_admins("[key_name_admin(usr)] has sent [key_name_admin(L)] to the thunderdome. (Observer.)")
@@ -1285,7 +1285,7 @@
 		var/client/C = usr.client
 		if(!isobserver(usr))
 			C.admin_ghost()
-		sleep(2)
+		sleep(0.2 SECONDS)
 		C.jumptocoord(x,y,z)
 
 	else if(href_list["adminchecklaws"])
@@ -2315,6 +2315,13 @@
 				message_admins("[key_name_admin(src.owner)] replied to a fax message from [key_name_admin(H)]", 1)
 				return
 		to_chat(src.owner, span_danger("Unable to locate fax!"))
+	else if(href_list["checkAIDash"])
+		var/mob/living/silicon/ai/AI = locate(href_list["checkAIDash"])
+		if(!AI)
+			return
+		if(!AI.dashboard)
+			return
+		AI.dashboard.ui_interact(src.owner.mob)
 
 /datum/admins/proc/HandleCMode()
 	if(!check_rights(R_ADMIN))

@@ -144,6 +144,10 @@
 		qdel(old_part) //do this here since they potentially don't normally have a tail
 		if(decattification)
 			decattification = new decattification
+			if(istype(decattification, /obj/item/organ/tail/lizard))
+				var/obj/item/organ/tail/lizard/nyaamrrow = decattification
+				nyaamrrow.tail_type = H.dna.features["tail_lizard"]
+				nyaamrrow.spines = H.dna.features["spines"]
 			decattification.Insert(H)
 		decattification = H.dna?.species.mutantears
 		old_part = H.getorganslot(ORGAN_SLOT_EARS)
@@ -162,3 +166,28 @@
 
 /datum/species/human/felinid/get_scream_sound(mob/living/carbon/human/H)
 	return pick(screamsound)
+
+/datum/species/human/felinid/spec_life(mob/living/carbon/human/H)
+	. = ..()
+	if((H.client && H.client.prefs.mood_tail_wagging) && !is_wagging_tail() && H.mood_enabled)
+		var/datum/component/mood/mood = H.GetComponent(/datum/component/mood)
+		if(!istype(mood) || !(mood.shown_mood >= MOOD_LEVEL_HAPPY2)) 
+			return
+		var/chance = 0
+		switch(mood.shown_mood)
+			if(0 to MOOD_LEVEL_SAD4)
+				chance = -0.1
+			if(MOOD_LEVEL_SAD4 to MOOD_LEVEL_SAD3)
+				chance = -0.01
+			if(MOOD_LEVEL_HAPPY2 to MOOD_LEVEL_HAPPY3)
+				chance = 0.001
+			if(MOOD_LEVEL_HAPPY3 to MOOD_LEVEL_HAPPY4)
+				chance = 0.1
+			if(MOOD_LEVEL_HAPPY4 to INFINITY)
+				chance = 1
+		if(prob(abs(chance)))
+			switch(SIGN(chance))
+				if(1)
+					H.emote("wag")
+				if(-1)
+					stop_wagging_tail(H)
