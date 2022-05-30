@@ -73,6 +73,12 @@
 	var/choice = input(src, "What would you like to use for your holochassis composite?") as null|anything in possible_chassis
 	if(!choice)
 		return FALSE
+	if(choice == "slugcat")
+		icon = 'slugstation/icons/mob/slugcat.dmi'
+		color = "#aaaaaa"
+	else
+		icon = initial(icon)
+		color = initial(color)
 	chassis = choice
 	update_resting()
 	to_chat(src, span_boldnotice("You switch your holochassis projection composite to [chassis]."))
