@@ -4,7 +4,6 @@
 	icon = 'slugstation/icons/mob/slugcat.dmi'
 	icon_state = "slugcat"
 	icon_living = "slugcat"
-	icon_dead = "slugcat_dead"
 	possible_a_intents = list(INTENT_HELP, INTENT_HARM)
 	health = 30
 	maxHealth = 30
@@ -101,3 +100,43 @@
 	var/obj/item/twohanded/spear/spear = new /obj/item/twohanded/spear(get_turf(src))
 	spear.color = "black"
 	put_in_hands(spear)
+
+/mob/living/simple_animal/slugcat/rivulet
+	name = "rivulet"
+	icon_state = "rivulet"
+
+/mob/living/simple_animal/slugcat/artificer
+	name = "artificer"
+	icon_state = "artificer"
+
+/mob/living/simple_animal/slugcat/spearmaster
+	name = "spearmaster"
+	icon_state = "spearmaster"
+
+/mob/living/simple_animal/slugcat/gourmand
+	name = "gourmand"
+	icon_state = "gourmand"
+
+/mob/living/simple_animal/slugcat/saint
+	name = "saint"
+	color = "green"
+
+/mob/living/simple_animal/slugcat/psychic
+	name = "psychic"
+	color = "purple"
+
+/mob/living/simple_animal/slugcat/martyr
+	name = "martyr"
+	icon_state = "martyr"
+
+/mob/living/simple_animal/slugcat/runner
+	name = "scorerunner"
+	icon_state = "runner"
+
+/mob/living/simple_animal/slugcat/automaton
+	name = "automaton"
+	icon_state = "automaton"
+
+/mob/living/simple_animal/slugcat/wanderer
+	name = "wanderer"
+	icon_state = "wanderer"
