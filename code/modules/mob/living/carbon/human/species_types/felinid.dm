@@ -158,12 +158,12 @@
 		return
 
 	H.set_species(/datum/species/human)
-
+/* slug - removes catsip
 /datum/species/human/felinid/handle_chemicals(datum/reagent/chem, mob/living/carbon/human/H)
 	. = ..()
 	if(H.reagents.has_reagent(/datum/reagent/consumable/ethanol/catsip))
 		H.adjustBruteLoss(-0.5*REAGENTS_EFFECT_MULTIPLIER,FALSE,FALSE, BODYPART_ANY)
-
+*/
 /datum/species/human/felinid/get_scream_sound(mob/living/carbon/human/H)
 	return pick(screamsound)
 
