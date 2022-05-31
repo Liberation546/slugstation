@@ -1,5 +1,5 @@
 /mob/living/simple_animal/slugcat
-	name = "slugcat"
+	name = "\proper slugcat"
 	desc = "What fate a slugcat?"
 	icon = 'slugstation/icons/mob/slugcat.dmi'
 	icon_state = "slugcat"
@@ -88,11 +88,12 @@
 		changeNext_move(CLICK_CD_RANGE)
 
 /mob/living/simple_animal/slugcat/monk
-	name = "monk"
+	name = "\proper monk"
+	desc = "MONK ACTIVITY"
 	color = "yellow"
 
 /mob/living/simple_animal/slugcat/hunter
-	name = "hunter"
+	name = "\proper hunter"
 	color = "red"
 
 /mob/living/simple_animal/slugcat/hunter/Initialize()
@@ -102,41 +103,47 @@
 	put_in_hands(spear)
 
 /mob/living/simple_animal/slugcat/rivulet
-	name = "rivulet"
+	name = "\proper rivulet"
 	icon_state = "rivulet"
 
 /mob/living/simple_animal/slugcat/artificer
-	name = "artificer"
+	name = "\proper artificer"
 	icon_state = "artificer"
 
 /mob/living/simple_animal/slugcat/spearmaster
-	name = "spearmaster"
+	name = "\proper spearmaster"
 	icon_state = "spearmaster"
 
 /mob/living/simple_animal/slugcat/gourmand
-	name = "gourmand"
+	name = "\proper gourmand"
 	icon_state = "gourmand"
 
 /mob/living/simple_animal/slugcat/saint
-	name = "saint"
+	name = "\proper saint"
 	color = "green"
 
 /mob/living/simple_animal/slugcat/psychic
-	name = "psychic"
+	name = "\proper psychic"
 	color = "purple"
 
 /mob/living/simple_animal/slugcat/martyr
-	name = "martyr"
+	name = "\proper martyr"
 	icon_state = "martyr"
 
 /mob/living/simple_animal/slugcat/runner
-	name = "scorerunner"
+	name = "\proper scorerunner"
 	icon_state = "runner"
 
 /mob/living/simple_animal/slugcat/automaton
-	name = "automaton"
+	name = "\proper automaton"
 	icon_state = "automaton"
 
 /mob/living/simple_animal/slugcat/wanderer
-	name = "wanderer"
+	name = "\proper wanderer"
 	icon_state = "wanderer"
+
+/mob/living/simple_animal/slugcat/evil
+	name = "\proper evil slugcat"
+
+/mob/living/simple_animal/slugcat/evil
+	head = new /obj/item/clothing/head/helmet/space/hardsuit/syndi

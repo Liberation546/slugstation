@@ -75,11 +75,10 @@
 		return FALSE
 	if(choice == "slugcat")
 		icon = 'slugstation/icons/mob/slugcat.dmi'
-		color = "#aaaaaa"
+		chassis = "pai"
 	else
 		icon = initial(icon)
-		color = initial(color)
-	chassis = choice
+		chassis = choice
 	update_resting()
 	to_chat(src, span_boldnotice("You switch your holochassis projection composite to [chassis]."))
 
