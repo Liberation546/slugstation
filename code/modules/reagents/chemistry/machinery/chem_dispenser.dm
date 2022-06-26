@@ -43,6 +43,7 @@
 		/datum/reagent/fluorine,
 		/datum/reagent/hydrogen,
 		/datum/reagent/iodine,
+		/datum/reagent/iron,
 		/datum/reagent/lithium,
 		/datum/reagent/mercury,
 		/datum/reagent/nitrogen,
@@ -56,21 +57,17 @@
 		/datum/reagent/stable_plasma,
 		/datum/reagent/consumable/sugar,
 		/datum/reagent/sulfur,
-		/datum/reagent/toxin/acid
-	)
-	var/list/t2_upgrade_reagents = list(
-		/datum/reagent/iron,
+		/datum/reagent/toxin/acid,
 		/datum/reagent/water,
 		/datum/reagent/fuel
 	)
-	var/list/t3_upgrade_reagents = list(
+	//these become available once the manipulator has been upgraded to tier 4 (femto)
+	var/list/upgrade_reagents = list(
+		/datum/reagent/acetone,
 		/datum/reagent/ammonia,
 		/datum/reagent/ash,
-		/datum/reagent/oil
-	)
-	var/list/t4_upgrade_reagents = list(
-		/datum/reagent/acetone,
 		/datum/reagent/diethylamine,
+		/datum/reagent/oil,
 		/datum/reagent/saltpetre
 	)
 	var/list/emagged_reagents = list(
@@ -88,12 +85,8 @@
 	dispensable_reagents = sortList(dispensable_reagents, /proc/cmp_reagents_asc)
 	if(emagged_reagents)
 		emagged_reagents = sortList(emagged_reagents, /proc/cmp_reagents_asc)
-	if(t2_upgrade_reagents)
-		t2_upgrade_reagents = sortList(t2_upgrade_reagents, /proc/cmp_reagents_asc)
-	if(t3_upgrade_reagents)
-		t3_upgrade_reagents = sortList(t3_upgrade_reagents, /proc/cmp_reagents_asc)
-	if(t4_upgrade_reagents)
-		t4_upgrade_reagents = sortList(t4_upgrade_reagents, /proc/cmp_reagents_asc)
+	if(upgrade_reagents)
+		upgrade_reagents = sortList(upgrade_reagents, /proc/cmp_reagents_asc)
 	update_icon()
 
 /obj/machinery/chem_dispenser/Destroy()
@@ -108,8 +101,8 @@
 	if(in_range(user, src) || isobserver(user))
 		. += "<span class='notice'>The status display reads: \n"+\
 		"Recharging <b>[recharge_amount]</b> power units per interval.\n"+\
-		"Power efficiency increased by <b>[round((powerefficiency*1000)-100, 1)]%</b>.</span>"
-		//"Macro granularity at <b>[macroresolution]u</b>.</span>"
+		"Power efficiency increased by <b>[round((powerefficiency*1000)-100, 1)]%</b>.\n"+\
+		"Macro granularity at <b>[macroresolution]u</b>.</span>"
 
 /obj/machinery/chem_dispenser/process()
 	if (recharge_counter >= 4)
@@ -376,13 +369,10 @@
 	for(var/obj/item/stock_parts/capacitor/C in component_parts)
 		recharge_amount *= C.rating
 	for(var/obj/item/stock_parts/manipulator/M in component_parts)
-		if (M.rating > 1) // T2+
-			dispensable_reagents |= t2_upgrade_reagents
+		if (M.rating > 1)
 			macroresolution -= M.rating		//5 for t1, 3 for t2, 2 for t3, 1 for t4
-		if (M.rating > 2) // T3+
-			dispensable_reagents |= t3_upgrade_reagents
-		if (M.rating > 3) // T4+
-			dispensable_reagents |= t4_upgrade_reagents
+		if (M.rating > 3)
+			dispensable_reagents |= upgrade_reagents
 	powerefficiency = round(newpowereff, 0.01)
 
 /obj/machinery/chem_dispenser/proc/replace_beaker(mob/living/user, obj/item/reagent_containers/new_beaker)
@@ -498,9 +488,7 @@
 		/datum/reagent/consumable/menthol,
 		/datum/reagent/consumable/berryjuice
 	)
-	t2_upgrade_reagents = null
-	t3_upgrade_reagents = null
-	t4_upgrade_reagents = null
+	upgrade_reagents = null
 	emagged_reagents = list(
 		/datum/reagent/consumable/ethanol/thirteenloko,
 		/datum/reagent/consumable/ethanol/whiskey_cola,
@@ -554,9 +542,7 @@
 		/datum/reagent/consumable/ethanol/applejack,
 		/datum/reagent/consumable/ethanol/amaretto
 	)
-	t2_upgrade_reagents = null
-	t3_upgrade_reagents = null
-	t4_upgrade_reagents = null
+	upgrade_reagents = null
 	emagged_reagents = list(
 		/datum/reagent/consumable/ethanol,
 		/datum/reagent/iron,
@@ -587,9 +573,7 @@
 	name = "mutagen dispenser"
 	desc = "Creates and dispenses mutagen."
 	dispensable_reagents = list(/datum/reagent/toxin/mutagen)
-	t2_upgrade_reagents = null
-	t3_upgrade_reagents = null
-	t4_upgrade_reagents = null
+	upgrade_reagents = null
 	emagged_reagents = list(/datum/reagent/toxin/plasma)
 
 
@@ -612,9 +596,7 @@
 		/datum/reagent/ammonia,
 		/datum/reagent/ash,
 		/datum/reagent/diethylamine)
-	t2_upgrade_reagents = null
-	t3_upgrade_reagents = null
-	t4_upgrade_reagents = null
+	upgrade_reagents = null
 
 /obj/machinery/chem_dispenser/mutagensaltpeter/Initialize()
 	. = ..()
