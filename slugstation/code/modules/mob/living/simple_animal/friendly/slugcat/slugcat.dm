@@ -90,11 +90,11 @@
 /mob/living/simple_animal/slugcat/monk
 	name = "\proper monk"
 	desc = "MONK ACTIVITY"
-	color = "yellow"
+	icon_state = "monk"
 
 /mob/living/simple_animal/slugcat/hunter
 	name = "\proper hunter"
-	color = "red"
+	icon_state = "hunter"
 
 /mob/living/simple_animal/slugcat/hunter/Initialize()
 	. = ..()
@@ -120,10 +120,12 @@
 
 /mob/living/simple_animal/slugcat/saint
 	name = "\proper saint"
+	icon = 'slugstation/icons/mob/slugcat_old.dmi'
 	color = "green"
 
 /mob/living/simple_animal/slugcat/psychic
 	name = "\proper psychic"
+	icon = 'slugstation/icons/mob/slugcat_old.dmi'
 	color = "purple"
 
 /mob/living/simple_animal/slugcat/martyr
@@ -132,6 +134,7 @@
 
 /mob/living/simple_animal/slugcat/runner
 	name = "\proper scorerunner"
+	icon = 'slugstation/icons/mob/slugcat_old.dmi'
 	icon_state = "runner"
 
 /mob/living/simple_animal/slugcat/automaton
@@ -140,6 +143,7 @@
 
 /mob/living/simple_animal/slugcat/wanderer
 	name = "\proper wanderer"
+	icon = 'slugstation/icons/mob/slugcat_old.dmi'
 	icon_state = "wanderer"
 
 /mob/living/simple_animal/slugcat/evil
