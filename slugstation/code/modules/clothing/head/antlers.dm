@@ -2,7 +2,7 @@
 	name = "antlers"
 	desc = "These antlers look strange."
 	icon = 'slugstation/icons/obj/antlers.dmi'
-	alternate_worn_icon = 'slugstation/icons/mob/antlers.dmi'
+	mob_overlay_icon = 'slugstation/icons/mob/antlers.dmi'
 	icon_state = "inhabitant"
 	item_state = "inhabitant"
 

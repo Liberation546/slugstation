@@ -383,9 +383,11 @@
 		return
 
 	//can only infect non-ssd alive people / corpses with ghosts attached / current target
+	/* slug - makes horrors better
 	if((C.stat == DEAD || !C.key) && (C.stat != DEAD || !C.get_ghost()) && (!target || C != target.current))
 		to_chat(src, span_warning("[C]'s mind seems unresponsive. Try someone else!"))
 		return
+	*/
 
 	if(hiding)
 		var/datum/action/innate/horror/H = has_ability(/datum/action/innate/horror/toggle_hide)
@@ -731,10 +733,12 @@
 		log_game("[src]/([src.ckey]) assumed control of [victim]/([victim.ckey] with eldritch powers.")
 		to_chat(src, span_warning("You plunge your probosci deep into the cortex of the host brain, interfacing directly with [victim.p_their()] nervous system.")) // Yogs -- pronouns
 		to_chat(victim, span_userdanger("You feel a strange shifting sensation behind your eyes as an alien consciousness displaces yours."))
-
+		
+		/* slug - makes horrors better
 		clothing = victim.get_equipped_items()
 		for(var/obj/item/I in clothing)
 			ADD_TRAIT(I, TRAIT_NODROP, HORROR_TRAIT)
+		*/
 
 		qdel(host_brain)
 		host_brain = new(src)
@@ -791,9 +795,11 @@
 	RefreshAbilities()
 	talk_to_horror_action.Grant(victim)
 
+	/* slug - makes horrors better
 	for(var/obj/item/I in clothing)
 		REMOVE_TRAIT(I, TRAIT_NODROP, HORROR_TRAIT)
 	clothing = list()
+	*/
 
 	victim.med_hud_set_status()
 	victim.remove_status_effect(/datum/status_effect/agent_pinpointer/horror)
