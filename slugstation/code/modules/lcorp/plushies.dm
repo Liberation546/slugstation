@@ -1,7 +1,7 @@
 // LC plushes
 // Sephirots
 /obj/item/toy/plush/lcorp
-	icon = 'slugstation/icons/mob/lcorp_plushie.dmi'
+	icon = 'slugstation/icons/obj/lcorp_plushie.dmi'
 
 /obj/item/toy/plush/lcorp/malkuth
 	name = "malkuth plushie"
@@ -97,3 +97,8 @@
 	name = "melting love plushie"
 	desc = "A plushie depicting a slime girl, you think."
 	icon_state = "melt"
+
+/obj/item/toy/plush/bongbong
+	name = "bongbong plushie"
+	desc = "A plushie depicting the Lobotomy Corporation."
+	icon_state = "bongbong"
