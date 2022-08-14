@@ -40801,33 +40801,6 @@
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plating,
 /area/maintenance/aft)
-"vNO" = (
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_y = 2
-	},
-/obj/structure/table/reinforced,
-/obj/machinery/button/door{
-	id = "misclab";
-	name = "Test Chamber Blast Doors";
-	pixel_x = -7;
-	pixel_y = 8;
-	req_access_txt = "55"
-	},
-/obj/item/paper_bin{
-	pixel_x = 4;
-	pixel_y = -2
-	},
-/obj/item/pen{
-	pixel_x = -4;
-	pixel_y = -4
-	},
-/obj/item/folder/white{
-	pixel_x = 5;
-	pixel_y = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/science/xenobiology)
 "vNV" = (
 /obj/machinery/light{
 	dir = 4
@@ -48717,7 +48690,6 @@ vRP
 vRP
 vRP
 vRP
-iYZ
 vRP
 vRP
 vRP
@@ -49090,8 +49062,6 @@ vRP
 vRP
 vRP
 vRP
-"}
-(15,1,1) = {"
 vRP
 vRP
 vRP
@@ -49198,84 +49168,6 @@ vRP
 vRP
 vRP
 vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-iYZ
 vRP
 vRP
 vRP
@@ -49515,82 +49407,6 @@ vRP
 vRP
 vRP
 vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-vRP
-"}
-(17,1,1) = {"
 vRP
 vRP
 vRP
@@ -86071,10 +85887,6 @@ qKl
 uzX
 vIw
 vIw
-vIw
-imc
-vIw
-tBA
 imc
 vIw
 tBA
