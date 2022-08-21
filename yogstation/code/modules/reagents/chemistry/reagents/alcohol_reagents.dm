@@ -1,3 +1,4 @@
+/* slug - soy!!!!!!!!!
 /datum/reagent/consumable/ethanol/catsip
 	name = "Catsip"
 	description = "A kawaii drink from space-Japan."
@@ -21,6 +22,7 @@
 	if(!M.dna.species.is_wagging_tail())
 		M.emote("wag")
 	return ..()
+*/
 
 /datum/reagent/consumable/ethanol/whiskey/kong
 	name = "Kong"
