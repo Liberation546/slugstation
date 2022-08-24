@@ -26,6 +26,19 @@
 			adjustCloneLoss(damage * hit_percent)
 		if(STAMINA)
 			adjustStaminaLoss(damage * hit_percent)
+		if(RED_DAMAGE) // slug start - adds lcorp damage types
+			to_chat(src, "red damage")
+			adjustRedLoss(damage * hit_percent)
+		if(WHITE_DAMAGE)
+			to_chat(src, "white damage")
+			adjustWhiteLoss(damage * hit_percent)
+		if(BLACK_DAMAGE)
+			to_chat(src, "black damage")
+			adjustBlackLoss(damage * hit_percent)
+		if(PALE_DAMAGE)
+			to_chat(src, "pale damage")
+			adjustPaleLoss(damage * hit_percent)
+		// slug end
 	return 1
 
 /mob/living/proc/apply_damage_type(damage = 0, damagetype = BRUTE, required_status) //like apply damage except it always uses the damage procs
@@ -42,6 +55,14 @@
 			return adjustCloneLoss(damage)
 		if(STAMINA)
 			return adjustStaminaLoss(damage)
+		if(RED_DAMAGE)
+			return adjustRedLoss(damage)
+		if(WHITE_DAMAGE)
+			return adjustWhiteLoss(damage)
+		if(BLACK_DAMAGE)
+			return adjustBlackLoss(damage)
+		if(PALE_DAMAGE)
+			return adjustPaleLoss(damage)
 
 /mob/living/proc/get_damage_amount(damagetype = BRUTE)
 	switch(damagetype)
@@ -243,6 +264,23 @@
 
 /mob/living/proc/setStaminaLoss(amount, updating_health = TRUE, forced = FALSE)
 	return
+
+// slug start - adds lcorp damage types
+/mob/living/proc/adjustRedLoss(amount, updating_health = TRUE, forced = FALSE)
+	return adjustBruteLoss(amount, forced = forced)
+
+/mob/living/proc/adjustWhiteLoss(amount, updating_health = TRUE, forced = FALSE, white_healable = FALSE)
+	return adjustBruteLoss(amount, forced = forced) // White damage deals brute for everyone but humans
+
+/mob/living/proc/adjustBlackLoss(amount, updating_health = TRUE, forced = FALSE, white_healable = FALSE)
+	adjustBruteLoss(amount, forced = forced)
+	adjustWhiteLoss(amount, forced = forced, white_healable = white_healable)
+	return amount
+
+/mob/living/proc/adjustPaleLoss(amount, updating_health = TRUE, forced = FALSE)
+	var/damage_amt = maxHealth * (amount/100)
+	return adjustBruteLoss(damage_amt, forced = forced)
+// slug end
 
 // heal ONE external organ, organ gets randomly selected from damaged ones.
 /mob/living/proc/heal_bodypart_damage(brute = 0, burn = 0, stamina = 0, updating_health = TRUE, required_status)

@@ -1,4 +1,11 @@
-//just stole drone code for this one
+
+/////////////////
+//DRONE VISUALS//
+/////////////////
+//Drone overlays
+//Drone visuals
+
+
 /mob/living/simple_animal/slugcat/proc/apply_overlay(cache_index)
 	if((. = drone_overlays[cache_index]))
 		add_overlay(.)
@@ -17,7 +24,7 @@
 
 	var/obj/item/l_hand = get_item_for_held_index(1)
 	var/obj/item/r_hand = get_item_for_held_index(2)
-
+	
 	var/y_shift = 0
 
 	if(r_hand)
