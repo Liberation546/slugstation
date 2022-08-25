@@ -91,7 +91,7 @@
 				var/energy_transfer = (hot_subsection_temp - cold_subsection_temp)*internal_heat_cap
 
 				//produce electricity
-				lastgen += (energy_transfer*efficiency) * powermodifier
+				lastgen += (energy_transfer*efficiency)
 				lastgen = max(lastgen, 0)
 
 				//transfer rest of energy into waste heat/chill

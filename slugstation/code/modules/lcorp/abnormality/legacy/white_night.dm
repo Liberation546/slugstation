@@ -89,7 +89,7 @@ GLOBAL_LIST_EMPTY(apostles)
 	var/apostle_prev //Used for previous apostle's name, to reference in next line.
 	var/datum/action/innate/abnormality_attack/rapture/rapture_skill = new /datum/action/innate/abnormality_attack/rapture
 
-/mob/living/simple_animal/hostile/abnormality/white_night/ex_act(severity, target)
+/mob/living/simple_animal/hostile/abnormality/legacy/white_night/ex_act(severity, target)
 	return //Resistant to explosions
 
 /datum/action/innate/abnormality_attack/holy_revival
@@ -127,13 +127,13 @@ GLOBAL_LIST_EMPTY(apostles)
 	chosen_message = "<span class='colossus'>Finale...</span>"
 	chosen_attack_num = 5
 
-/mob/living/simple_animal/hostile/abnormality/white_night/Life()
+/mob/living/simple_animal/hostile/abnormality/legacy/white_night/Life()
 	if(client) // player controlled
 		speed = 1
 	else
 		speed = 2
 
-/mob/living/simple_animal/hostile/abnormality/white_night/AttackingTarget()
+/mob/living/simple_animal/hostile/abnormality/legacy/white_night/AttackingTarget()
 	if(isliving(target))
 		var/mob/living/L = target
 		if("apostle" in L.faction)
@@ -150,7 +150,7 @@ GLOBAL_LIST_EMPTY(apostles)
 		else
 			devour(L)
 
-/mob/living/simple_animal/hostile/abnormality/white_night/proc/devour(mob/living/L)
+/mob/living/simple_animal/hostile/abnormality/legacy/white_night/proc/devour(mob/living/L)
 	if(apostle_num < 13)
 		var/mob/dead/observer/ghost = L.get_ghost(TRUE, TRUE)
 		if(ishuman(L))
@@ -159,7 +159,7 @@ GLOBAL_LIST_EMPTY(apostles)
 				return
 	L.gib()
 
-/mob/living/simple_animal/hostile/abnormality/white_night/OpenFire()
+/mob/living/simple_animal/hostile/abnormality/legacy/white_night/OpenFire()
 	if(client)
 		switch(chosen_attack)
 			if(1)
@@ -184,14 +184,14 @@ GLOBAL_LIST_EMPTY(apostles)
 		else if(scream_cooldown <= world.time)
 			deafening_scream()
 
-/mob/living/simple_animal/hostile/abnormality/white_night/death(gibbed)
+/mob/living/simple_animal/hostile/abnormality/legacy/white_night/death(gibbed)
 	for(var/datum/antagonist/apostle/A in GLOB.apostles)
 		if(!A.owner || !ishuman(A.owner.current))
 			continue
 		A.prophet_death()
 	return ..()
 
-/mob/living/simple_animal/hostile/abnormality/white_night/proc/revive_humans(range_override = null, faction_check = "apostle")
+/mob/living/simple_animal/hostile/abnormality/legacy/white_night/proc/revive_humans(range_override = null, faction_check = "apostle")
 	if(holy_revival_cooldown > world.time)
 		return
 	if(range_override == null)
@@ -218,7 +218,7 @@ GLOBAL_LIST_EMPTY(apostles)
 					L.adjustBruteLoss(holy_revival_damage)
 		SLEEP_CHECK_DEATH(1.5)
 
-/mob/living/simple_animal/hostile/abnormality/white_night/proc/revive_target(mob/living/carbon/human/H, attack_range = 1, faction_check = "apostle")
+/mob/living/simple_animal/hostile/abnormality/legacy/white_night/proc/revive_target(mob/living/carbon/human/H, attack_range = 1, faction_check = "apostle")
 	if(!(faction_check in H.faction))
 		var/max_apostles = 0
 		for(var/mob/living/carbon/human/C in GLOB.carbon_list)
@@ -347,7 +347,7 @@ GLOBAL_LIST_EMPTY(apostles)
 			H.regenerate_organs()
 			to_chat(H, "<span class='notice'>The holy light heals you!</span>")
 
-/mob/living/simple_animal/hostile/abnormality/white_night/proc/fire_field()
+/mob/living/simple_animal/hostile/abnormality/legacy/white_night/proc/fire_field()
 	if(fire_field_cooldown > world.time)
 		return
 	var/turf/target_c = get_turf(src)
@@ -373,7 +373,7 @@ GLOBAL_LIST_EMPTY(apostles)
 				to_chat(L, "<span class='userdanger'>You're hit by [src]'s fire field!</span>")
 		SLEEP_CHECK_DEATH(1.5)
 
-/mob/living/simple_animal/hostile/abnormality/white_night/proc/deafening_scream()
+/mob/living/simple_animal/hostile/abnormality/legacy/white_night/proc/deafening_scream()
 	if(scream_cooldown > world.time)
 		return
 	scream_cooldown = (world.time + scream_cooldown_base)
@@ -394,7 +394,7 @@ GLOBAL_LIST_EMPTY(apostles)
 			L.break_light_tube()
 			L.on = FALSE
 
-/mob/living/simple_animal/hostile/abnormality/white_night/proc/holy_blink(blink_target)
+/mob/living/simple_animal/hostile/abnormality/legacy/white_night/proc/holy_blink(blink_target)
 	if(blink_cooldown > world.time)
 		return
 	if(!blink_target)
@@ -421,7 +421,7 @@ GLOBAL_LIST_EMPTY(apostles)
 	playsound(T, 'sound/effects/bamf.ogg', 100, 1)
 	forceMove(T)
 
-/mob/living/simple_animal/hostile/abnormality/white_night/proc/rapture()
+/mob/living/simple_animal/hostile/abnormality/legacy/white_night/proc/rapture()
 	rapture_skill.Remove(src)
 	chosen_attack = 1 // To avoid rapture spam
 	to_chat(src, "<span class='userdanger'>You begin the final ritual...</span>")
