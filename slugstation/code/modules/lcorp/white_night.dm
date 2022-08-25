@@ -104,7 +104,7 @@ GLOBAL_LIST_EMPTY(apostles)
 	deathsound = 'slugstation/sound/lcorp/apostle_death.ogg'
 	attack_action_types = list(/datum/action/innate/abnormality_attack/holy_revival,
 							   /datum/action/innate/abnormality_attack/fire_field,
-							   /datum/action/innate/abnormality_attack/deafening_scream,
+							   ///datum/action/innate/abnormality_attack/deafening_scream,
 							   /datum/action/innate/abnormality_attack/holy_blink)
 	
 	light_color = "#FAE48E"
@@ -225,7 +225,8 @@ GLOBAL_LIST_EMPTY(apostles)
 			if(2)
 				fire_field()
 			if(3)
-				deafening_scream()
+				//Fuck deafening screen, all my homies hate deafening scream.
+				//deafening_scream()
 			if(4)
 				holy_blink(target)
 			if(5)
@@ -239,8 +240,8 @@ GLOBAL_LIST_EMPTY(apostles)
 			revive_humans()
 		else if(fire_field_cooldown <= world.time)
 			fire_field()
-		else if(scream_cooldown <= world.time)
-			deafening_scream()
+		//else if(scream_cooldown <= world.time)
+			//deafening_scream()
 
 /mob/living/simple_animal/hostile/abnormality/white_night/death(gibbed)
 	for(var/datum/antagonist/apostle/A in GLOB.apostles)
