@@ -1,4 +1,3 @@
-// HEAVY WIP, DO NOT ATTEMPT HOSTING
 /mob/living/simple_animal/hostile/abnormality/melting_love
 	name = "Melting Love"
 	desc = "A pink slime creature, resembling a female humanoid."
@@ -13,10 +12,11 @@
 	/* Stats */
 	health = 4000
 	maxHealth = 4000
-	obj_damage = 600
+	obj_damage = 0
+	environment_smash = ENVIRONMENT_SMASH_NONE
 	melee_damage_type = BRUTE
-	melee_damage_lower = 30
-	melee_damage_upper = 50
+	melee_damage_lower = 0
+	melee_damage_upper = 0
 	projectiletype = /obj/item/projectile/melting_blob
 	ranged = TRUE
 	minimum_distance = 0
@@ -33,6 +33,7 @@
 	del_on_death = FALSE
 	var/is_breaching = FALSE
 	var/spawned_big_slime = FALSE
+	var/dead_big_slime = FALSE
 
 /datum/action/innate/abnormality_attack/melt_breach
 	name = "Toggle Breach Status"
@@ -58,6 +59,14 @@
 	gender = PLURAL
 	pixel_x = -32
 	desc = "A pink hunched creature with long arms, there are also visible bones coming from insides of the slime."
+	obj_damage = 600
+	environment_smash = ENVIRONMENT_SMASH_STRUCTURES
+	if(dead_big_slime)
+		melee_damage_lower = 40
+		melee_damage_upper = 64
+	else
+		melee_damage_lower = 30
+		melee_damage_upper = 50
 	is_breaching = TRUE
 	return
 
@@ -69,6 +78,10 @@
 	gender = initial(gender)
 	pixel_x = initial(pixel_x)
 	desc = initial(desc)
+	obj_damage = initial(obj_damage)
+	environment_smash = initial(environment_smash)
+	melee_damage_lower = initial(melee_damage_lower)
+	melee_damage_upper = initial(melee_damage_upper)
 	is_breaching = FALSE
 	return
 
@@ -163,8 +176,10 @@
 
 /* Checking if bigslime is dead or not and apply a damage buff if yes */
 /mob/living/simple_animal/hostile/abnormality/melting_love/proc/SlimeDeath(datum/source, gibbed)
-	melee_damage_lower = 40
-	melee_damage_upper = 64
+	if(is_breaching)
+		melee_damage_lower = 40
+		melee_damage_upper = 64
+	dead_big_slime = TRUE
 	projectiletype = /obj/item/projectile/melting_blob/enraged
 	adjustBruteLoss(-maxHealth)
 	for(var/mob/M in GLOB.player_list)
