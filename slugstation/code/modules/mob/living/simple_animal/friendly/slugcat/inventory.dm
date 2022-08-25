@@ -1,4 +1,11 @@
-/* TODO: fix this
+
+///////////////////
+//DRONE INVENTORY//
+///////////////////
+//Drone inventory
+//Drone hands
+
+
 /mob/living/simple_animal/slugcat/doUnEquip(obj/item/I, force, newloc, no_move, invdrop = TRUE, silent = FALSE)
 	if(..())
 		update_inv_hands()
@@ -10,7 +17,7 @@
 			update_inv_internal_storage()
 		return 1
 	return 0
-*/
+
 
 /mob/living/simple_animal/slugcat/can_equip(obj/item/I, slot, disable_warning = FALSE, bypass_equip_delay_self = FALSE)
 	switch(slot)
@@ -58,14 +65,15 @@
 	switch(slot)
 		if(SLOT_HEAD)
 			head = I
-			//update_inv_head()
+			update_inv_head()
 		if(SLOT_GENERC_DEXTROUS_STORAGE)
 			internal_storage = I
-			//update_inv_internal_storage()
+			update_inv_internal_storage()
 		else
 			to_chat(src, span_danger("You are trying to equip this item to an unsupported inventory slot. Report this to a coder!"))
 			return
 
+	//Call back for item being equipped to drone
 	I.equipped(src, slot)
 
 /mob/living/simple_animal/slugcat/getBackSlot()

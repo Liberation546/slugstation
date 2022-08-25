@@ -1,4 +1,11 @@
-//just stole drone code for this one
+
+/////////////////
+//DRONE VISUALS//
+/////////////////
+//Drone overlays
+//Drone visuals
+
+
 /mob/living/simple_animal/slugcat/proc/apply_overlay(cache_index)
 	if((. = drone_overlays[cache_index]))
 		add_overlay(.)
@@ -17,7 +24,7 @@
 
 	var/obj/item/l_hand = get_item_for_held_index(1)
 	var/obj/item/r_hand = get_item_for_held_index(2)
-
+	
 	var/y_shift = 0
 
 	if(r_hand)
@@ -66,7 +73,6 @@
 			head.screen_loc = ui_drone_head
 			client.screen += head
 		var/mutable_appearance/head_overlay = head.build_worn_icon(default_layer = DRONE_HEAD_LAYER, default_icon_file = 'icons/mob/clothing/head/head.dmi')
-		head_overlay.pixel_y -= 15
 
 		drone_overlays[DRONE_HEAD_LAYER] = head_overlay
 
