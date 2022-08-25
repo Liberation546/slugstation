@@ -35,7 +35,7 @@ GLOBAL_LIST_EMPTY(apostles)
 
 	return T
 
-/mob/living/simple_animal/hostile/abnormality/white_night
+/mob/living/simple_animal/hostile/abnormality/legacy/white_night
 	name = "White night"
 	desc = "The heavens' wrath. Say your prayers, heretic, the day has come."
 	health = 2000
