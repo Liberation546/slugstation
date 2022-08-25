@@ -67,6 +67,7 @@
 	else
 		melee_damage_lower = 30
 		melee_damage_upper = 50
+	ranged = TRUE
 	is_breaching = TRUE
 	return
 
@@ -82,6 +83,7 @@
 	environment_smash = initial(environment_smash)
 	melee_damage_lower = initial(melee_damage_lower)
 	melee_damage_upper = initial(melee_damage_upper)
+	ranged = FALSE
 	is_breaching = FALSE
 	return
 
