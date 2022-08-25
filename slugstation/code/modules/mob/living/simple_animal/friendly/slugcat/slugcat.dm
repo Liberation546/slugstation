@@ -8,10 +8,10 @@
 	health = 30
 	maxHealth = 30
 	unsuitable_atmos_damage = 0
-	wander = 0
+	wander = 1
 	speed = -1
 	ventcrawler = VENTCRAWLER_ALWAYS
-	healable = 0
+	healable = 1
 	density = FALSE
 	pass_flags = PASSTABLE | PASSMOB
 	status_flags = (CANPUSH | CANSTUN | CANKNOCKDOWN)
@@ -53,7 +53,7 @@
 
 /mob/living/simple_animal/slugcat/proc/throw_mode_on()
 	in_throw_mode = 1
-
+/*
 /mob/living/simple_animal/slugcat/throw_item(atom/target) //lets slugcats throw shit (like spears)
 	. = ..()
 	throw_mode_off()
@@ -86,6 +86,7 @@
 		newtonian_move(get_dir(target, src))
 		thrown_thing.safe_throw_at(target, thrown_thing.throw_range, thrown_thing.throw_speed + power_throw, src, null, null, null, move_force)
 		changeNext_move(CLICK_CD_RANGE)
+*/
 
 /mob/living/simple_animal/slugcat/monk
 	name = "\proper monk"
@@ -148,6 +149,7 @@
 
 /mob/living/simple_animal/slugcat/evil
 	name = "\proper evil slugcat"
+	icon = 'slugstation/icons/mob/slugcat_old.dmi'
 
 /mob/living/simple_animal/slugcat/evil
 	head = new /obj/item/clothing/head/helmet/space/hardsuit/syndi
