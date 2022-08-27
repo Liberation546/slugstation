@@ -331,3 +331,9 @@
 	name = "ornate mantle"
 	desc = "An ornate mantle commonly worn by a shaman or chieftain."
 	icon_state = "tribal-mantle"
+
+/obj/item/clothing/neck/cloak/arbiter
+	name = "arbiter's cloak"
+	desc = "A fancy cloak worn by the Arbiters of the Head."
+	icon_state = "arbitercloak"
+	icon = 'icons/obj/clothing/neck.dmi'
