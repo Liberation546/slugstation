@@ -17,6 +17,7 @@
 	pull_force = MOVE_FORCE_STRONG
 	mob_size = MOB_SIZE_HUGE // No more lockers, Whitaker
 	blood_volume = 560 // THERE WILL BE BLOOD. SHED.
+	sm_proof = TRUE
 	/// Copy-pasted from megafauna.dm: This allows player controlled mobs to use abilities
 	var/chosen_attack = 1
 	/// Attack actions, sets chosen_attack to the number in the action

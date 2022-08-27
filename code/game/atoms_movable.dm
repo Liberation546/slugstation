@@ -40,6 +40,7 @@
 	var/throwforce = 0
 	var/datum/component/orbiter/orbiting
 	var/can_be_z_moved = TRUE
+	var/sm_proof = FALSE //slug - allows things to be sm proof
 
 	var/zfalling = FALSE
 

@@ -930,29 +930,40 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 	Consume(AM)
 
 /obj/machinery/power/supermatter_crystal/proc/Consume(atom/movable/AM)
-	if(isliving(AM))
-		var/mob/living/user = AM
-		if(user.status_flags & GODMODE)
+	var/do_we_dust = TRUE // slug start - allows things to be sm proof
+	if(!isnull(AM.sm_proof))
+		do_we_dust = !AM.sm_proof
+	if(do_we_dust) // slug end
+		if(isliving(AM))
+			var/mob/living/user = AM
+			if(user.status_flags & GODMODE)
+				return
+			if(messages_admins || user.client)
+				message_admins("[src] has consumed [key_name_admin(user)] [ADMIN_JMP(src)].")
+			investigate_log("has consumed [key_name(user)].", INVESTIGATE_SUPERMATTER)
+			user.dust(force = TRUE)
+			matter_power += 200
+		else if(istype(AM, /obj/singularity))
 			return
-		if(messages_admins || user.client)
-			message_admins("[src] has consumed [key_name_admin(user)] [ADMIN_JMP(src)].")
-		investigate_log("has consumed [key_name(user)].", INVESTIGATE_SUPERMATTER)
-		user.dust(force = TRUE)
-		matter_power += 200
-	else if(istype(AM, /obj/singularity))
-		return
-	else if(isobj(AM))
+		else if(isobj(AM))
+			if(!iseffect(AM))
+				var/suspicion = ""
+				if(AM.fingerprintslast)
+					suspicion = "last touched by [AM.fingerprintslast]"
+					if(messages_admins)
+						message_admins("[src] has consumed [AM], [suspicion] [ADMIN_JMP(src)].")
+				investigate_log("has consumed [AM] - [suspicion].", INVESTIGATE_SUPERMATTER)
+			qdel(AM)
 		if(!iseffect(AM))
-			var/suspicion = ""
-			if(AM.fingerprintslast)
-				suspicion = "last touched by [AM.fingerprintslast]"
-				if(messages_admins)
-					message_admins("[src] has consumed [AM], [suspicion] [ADMIN_JMP(src)].")
-			investigate_log("has consumed [AM] - [suspicion].", INVESTIGATE_SUPERMATTER)
-		qdel(AM)
-	if(!iseffect(AM))
-		matter_power += 200
-
+			matter_power += 200
+	else // slug start - allows things to be sm proof
+		if(isliving(AM))
+			AM.visible_message(span_danger("Somehow, [AM] still stands!"),\
+			span_userdanger("Somehow, you survive!"))
+		else
+			AM.visible_message(span_danger("Somehow, [AM] is still there!"))
+	// slug end
+	
 	//Some poor sod got eaten, go ahead and irradiate people nearby.
 	radiation_pulse(src, 3000, 2, TRUE)
 	for(var/mob/living/L in range(10))

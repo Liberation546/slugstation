@@ -55,6 +55,7 @@
 	icon_state = "wrench_medical"
 	force = 2 //MEDICAL
 	throwforce = 4
+	sm_proof = TRUE // slug - power
 
 	attack_verb = list("wrenched", "medicaled", "tapped", "jabbed", "whacked")
 
