@@ -81,7 +81,29 @@
 	sound = 'sound/magic/arbiter/fairy.ogg'
 	active_msg = "You activate the power of Fairy singularity!"
 	deactive_msg = "You let the energy flow out of your hands back into its storage space..."
-	projectile_type = /obj/projectile/beam/fairy
+	projectile_type = /obj/item/projectile/beam/fairy
+
+/obj/item/projectile/beam/fairy
+	name = "fairy"
+	icon_state = "fairy"
+	damage = 50
+	damage_type = BLACK_DAMAGE
+	flag = BLACK_DAMAGE
+	projectile_piercing = PASSMOB
+	projectile_phasing = (ALL & (~PASSMOB) & (~PASSCLOSEDTURF))
+
+	light_color = LIGHT_COLOR_YELLOW
+	beam_type = list("fairy", 'icons/effects/beam.dmi')
+	hitscan = TRUE
+	hitscan_light_intensity = 2
+	hitscan_light_range = 1
+	hitscan_light_color_override = LIGHT_COLOR_YELLOW
+	muzzle_flash_intensity = 3
+	muzzle_flash_range = 2
+	muzzle_flash_color_override = LIGHT_COLOR_YELLOW
+	impact_light_intensity = 4
+	impact_light_range = 3
+	impact_light_color_override = LIGHT_COLOR_YELLOW
 
 /obj/effect/proc_holder/spell/aimed/pillar
 	name = "Pillar"
@@ -112,6 +134,61 @@
 		addtimer(CALLBACK (P, .obj/projectile/proc/fire), fire_delay)
 		fired_projs += P
 	return fired_projs
+
+/obj/projectile/magic/aoe/pillar
+	name = "pillar"
+	icon = 'ModularTegustation/Teguicons/64x64.dmi'
+	icon_state = "pillar"
+	alpha = 0
+	pixel_x = -16
+	base_pixel_x = -16
+	pixel_y = -16
+	base_pixel_y = -16
+
+	damage = 350
+	damage_type = BRUTE
+	flag = BRUTE
+	armour_penetration = 0
+	speed = 1.3 // Slow
+	nodamage = FALSE
+	projectile_piercing = PASSMOB
+	projectile_phasing = (ALL & (~PASSMOB))
+	hitsound = 'sound/magic/arbiter/pillar_hit.ogg'
+	var/list/been_hit = list()
+
+/obj/projectile/magic/aoe/pillar/Initialize()
+	. = ..()
+	animate(src, alpha = 255, time = 5)
+
+/obj/projectile/magic/aoe/pillar/Moved(atom/OldLoc, Dir)
+	..()
+	for(var/turf/T in range(1, get_turf(src)))
+		new /obj/effect/temp_visual/revenant(T)
+
+/obj/effect/proc_holder/spell/aoe_turf/repulse/arbiter
+	sound = 'sound/magic/arbiter/repulse.ogg'
+	charge_max = 150
+	clothes_req = FALSE
+	antimagic_allowed = TRUE
+	anti_magic_check = FALSE
+	range = 5
+	invocation_type = "none"
+	sparkle_path = /obj/effect/temp_visual/sparks
+	var/repulse_damage = 50
+
+/obj/effect/proc_holder/spell/aoe_turf/repulse/arbiter/cast(list/targets, mob/user = usr)
+	. = ..(targets, user, 20)
+	var/list/thrown_atoms = .
+	for(var/mob/living/L in thrown_atoms)
+		if(user.faction_check_mob(L))
+			continue
+		L.apply_damage(repulse_damage, BRUTE)
+
+/obj/effect/proc_holder/spell/aoe_turf/knock/arbiter
+	invocation_type = "none"
+	charge_max = 50
+	sound = 'sound/magic/arbiter/knock.ogg'
+	open_sound = null
 
 /obj/item/clothing/neck/cloak/arbiter
 	name = "arbiter's cloak"
