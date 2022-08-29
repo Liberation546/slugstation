@@ -4,12 +4,6 @@
 	give_objectives = FALSE
 	move_to_lair = FALSE
 	outfit_type = /datum/outfit/arbiter
-	antag_attributes = list(
-		FORTITUDE_ATTRIBUTE = 130,
-		PRUDENCE_ATTRIBUTE = 130,
-		TEMPERANCE_ATTRIBUTE = 130,
-		JUSTICE_ATTRIBUTE = 130
-		)
 
 	var/list/spell_types = list(
 		/obj/effect/proc_holder/spell/aimed/fairy,
@@ -35,7 +29,6 @@
 	ADD_TRAIT(M, TRAIT_NOFIRE, "Arbiter")
 	ADD_TRAIT(M, TRAIT_NODISMEMBER, "Arbiter")
 	ADD_TRAIT(M, TRAIT_SANITYIMMUNE, "Arbiter")
-	M.adjust_attribute_buff(FORTITUDE_ATTRIBUTE, 500) // Obviously they are very tough
 	for(var/spell_type in spell_types)
 		var/obj/effect/proc_holder/spell/S = new spell_type
 		M.mind?.AddSpell(S)
@@ -54,7 +47,6 @@
 	REMOVE_TRAIT(M, TRAIT_NOFIRE, "Arbiter")
 	REMOVE_TRAIT(M, TRAIT_NODISMEMBER, "Arbiter")
 	REMOVE_TRAIT(M, TRAIT_SANITYIMMUNE, "Arbiter")
-	M.adjust_attribute_buff(FORTITUDE_ATTRIBUTE, -500)
 
 /datum/outfit/arbiter
 	name = "Arbiter"
