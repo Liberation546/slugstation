@@ -1,10 +1,10 @@
 
 /obj/effect/proc_holder/spell/aimed
 	name = "aimed projectile spell"
-	base_icon_state = "projectile"
-	var/projectile_type = /obj/projectile/magic/teleport
+	var/projectile_type = /obj/item/projectile/magic/teleport
 	var/deactive_msg = "You discharge your projectile..."
 	var/active_msg = "You charge your projectile!"
+	var/base_icon_state = "projectile"
 	var/active_icon_state = "projectile"
 	var/list/projectile_var_overrides = list()
 	var/projectile_amount = 1	//Projectiles per cast.
@@ -17,11 +17,11 @@
 		return
 	var/msg
 	if(!can_cast(user))
-		msg = "<span class='warning'>You can no longer cast [name]!</span>"
+		msg = span_warning("You can no longer cast [name]!")
 		remove_ranged_ability(msg)
 		return
 	if(active)
-		msg = "<span class='notice'>[deactive_msg]</span>"
+		msg = span_notice("[deactive_msg]")
 		if(charge_type == "recharge")
 			var/refund_percent = current_amount/projectile_amount
 			charge_counter = charge_max * refund_percent
@@ -29,7 +29,7 @@
 		remove_ranged_ability(msg)
 		on_deactivation(user)
 	else
-		msg = "<span class='notice'>[active_msg] <B>Left-click to shoot it at a target!</B></span>"
+		msg = span_notice("[active_msg] <B>Left-click to shoot it at a target!</B>")
 		current_amount = projectile_amount
 		add_ranged_ability(user, msg, TRUE)
 		on_activation(user)
@@ -74,9 +74,8 @@
 
 /obj/effect/proc_holder/spell/aimed/proc/fire_projectile(mob/living/user, atom/target)
 	current_amount--
-	var/list/fired_projs = list()
 	for(var/i in 1 to projectiles_per_fire)
-		var/obj/projectile/P = new projectile_type(user.loc)
+		var/obj/item/projectile/P = new projectile_type(user.loc)
 		P.firer = user
 		P.preparePixelProjectile(target, user)
 		for(var/V in projectile_var_overrides)
@@ -84,41 +83,41 @@
 				P.vv_edit_var(V, projectile_var_overrides[V])
 		ready_projectile(P, target, user, i)
 		P.fire()
-		fired_projs += P
-	return fired_projs
+	return TRUE
 
-/obj/effect/proc_holder/spell/aimed/proc/ready_projectile(obj/projectile/P, atom/target, mob/user, iteration)
+/obj/effect/proc_holder/spell/aimed/proc/ready_projectile(obj/item/projectile/P, atom/target, mob/user, iteration)
 	return
 
 /obj/effect/proc_holder/spell/aimed/lightningbolt
 	name = "Lightning Bolt"
-	desc = "Fire a lightning bolt at your foes! It will jump between targets, but can't knock them down."
-	school = SCHOOL_EVOCATION
+	desc = "Fire a lightning bolt at your foes! It will jump between targets, but can't knock them down. Insulated gloves can protect people from the blast."
+	school = "evocation"
 	charge_max = 100
 	clothes_req = FALSE
-	invocation = "P'WAH, UNLIM'TED P'WAH"
-	invocation_type = INVOCATION_SHOUT
-	cooldown_min = 20
+	invocation = "UN'LTD P'WAH"
+	invocation_type = "shout"
+	cooldown_min = 30
+	active_icon_state = "lightning"
 	base_icon_state = "lightning"
-	action_icon_state = "lightning0"
 	sound = 'sound/magic/lightningbolt.ogg'
 	active = FALSE
-	projectile_var_overrides = list("zap_range" = 15, "zap_power" = 20000, "zap_flags" = ZAP_MOB_DAMAGE)
-	active_msg = "You energize your hands with arcane lightning!"
+	projectile_var_overrides = list("tesla_range" = 15, "tesla_power" = 20000, "tesla_flags" = TESLA_MOB_DAMAGE)
+	active_msg = "You energize your hand with arcane lightning!"
 	deactive_msg = "You let the energy flow out of your hands back into yourself..."
-	projectile_type = /obj/projectile/magic/aoe/lightning
+	projectile_type = /obj/item/projectile/magic/aoe/lightning
 
 /obj/effect/proc_holder/spell/aimed/fireball
 	name = "Fireball"
 	desc = "This spell fires an explosive fireball at a target."
-	school = SCHOOL_EVOCATION
+	school = "evocation"
 	charge_max = 60
 	clothes_req = FALSE
 	invocation = "ONI SOMA"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = "shout"
 	range = 20
 	cooldown_min = 20 //10 deciseconds reduction per rank
-	projectile_type = /obj/projectile/magic/aoe/fireball
+	projectile_type = /obj/item/projectile/magic/aoe/fireball
+	action_icon = 'icons/mob/actions/humble/actions_humble.dmi'
 	base_icon_state = "fireball"
 	action_icon_state = "fireball0"
 	sound = 'sound/magic/fireball.ogg'
@@ -126,26 +125,19 @@
 	deactive_msg = "You extinguish your fireball... for now."
 	active = FALSE
 
-/obj/effect/proc_holder/spell/aimed/fireball/fire_projectile(list/targets, mob/living/user)
-	var/range = 6 + 2*spell_level
-	projectile_var_overrides = list("range" = range)
-	return ..()
-
 /obj/effect/proc_holder/spell/aimed/spell_cards
 	name = "Spell Cards"
 	desc = "Blazing hot rapid-fire homing cards. Send your foes to the shadow realm with their mystical power!"
-	school = SCHOOL_EVOCATION
+	school = "evocation"
 	charge_max = 50
 	clothes_req = FALSE
 	invocation = "Sigi'lu M'Fan 'Tasia"
-	invocation_type = INVOCATION_SHOUT
+	invocation_type = "shout"
 	range = 40
 	cooldown_min = 10
 	projectile_amount = 5
 	projectiles_per_fire = 7
-	projectile_type = /obj/projectile/spellcard
-	base_icon_state = "spellcard"
-	action_icon_state = "spellcard0"
+	projectile_type = /obj/item/projectile/spellcard
 	var/datum/weakref/current_target_weakref
 	var/projectile_turnrate = 10
 	var/projectile_pixel_homing_spread = 32
@@ -171,7 +163,7 @@
 /obj/effect/proc_holder/spell/aimed/spell_cards/on_deactivation(mob/M)
 	QDEL_NULL(lockon_component)
 
-/obj/effect/proc_holder/spell/aimed/spell_cards/ready_projectile(obj/projectile/P, atom/target, mob/user, iteration)
+/obj/effect/proc_holder/spell/aimed/spell_cards/ready_projectile(obj/item/projectile/P, atom/target, mob/user, iteration)
 	if(current_target_weakref)
 		var/atom/A = current_target_weakref.resolve()
 		if(A && get_dist(A, user) < 7)
@@ -187,49 +179,3 @@
 	P.pixel_x = rand(-projectile_location_spread_amount, projectile_location_spread_amount)
 	P.pixel_y = rand(-projectile_location_spread_amount, projectile_location_spread_amount)
 	P.preparePixelProjectile(target, user, null, current_angle)
-
-
-/obj/effect/proc_holder/spell/aimed/fairy 
-	name = "Fairy" 
-	desc = "Fire a line of damaging essence using power of the Fairy singularity."
-	school = SCHOOL_EVOCATION
-	charge_max = 100
-	clothes_req = FALSE
-	projectile_amount = 5
-	invocation_type = "none"
-	base_icon_state = "lightning"
-	action_icon_state = "lightning0"
-	sound = 'sound/magic/arbiter/fairy.ogg'
-	active_msg = "You activate the power of Fairy singularity!"
-	deactive_msg = "You let the energy flow out of your hands back into its storage space..."
-	projectile_type = /obj/projectile/beam/fairy
-
-/obj/effect/proc_holder/spell/aimed/pillar
-	name = "Pillar"
-	desc = "Fire a heavy pillar that will initiate meltdown process for each console it hits and throw enemies around."
-	school = SCHOOL_EVOCATION
-	charge_max = 300
-	clothes_req = FALSE
-	invocation_type = "none"
-	base_icon_state = "immrod"
-	action_icon_state = "immrod"
-	sound = 'sound/magic/arbiter/pillar_start.ogg'
-	active_msg = "You prepare the pillar."
-	deactive_msg = "You remove the pillar from this plane, for now..."
-	projectile_type = /obj/projectile/magic/aoe/pillar
-	var/fire_delay = 1 SECONDS
-
-/obj/effect/proc_holder/spell/aimed/pillar/fire_projectile(mob/living/user, atom/target)
-	current_amount--
-	var/list/fired_projs = list()
-	for(var/i in 1 to projectiles_per_fire)
-		var/obj/projectile/P = new projectile_type(get_turf(user))
-		P.firer = user
-		P.preparePixelProjectile(target, user)
-		for(var/V in projectile_var_overrides)
-			if(P.vars[V])
-				P.vv_edit_var(V, projectile_var_overrides[V])
-		ready_projectile(P, target, user, i)
-		addtimer(CALLBACK (P, .obj/projectile/proc/fire), fire_delay)
-		fired_projs += P
-	return fired_projs
