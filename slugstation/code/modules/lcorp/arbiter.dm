@@ -31,3 +31,47 @@
 	mob_overlay_icon = 'slugstation/icons/mob/clothing/arbiter.dmi'
 	icon_state = "uniform"
 	item_state = "uniform"
+//gonna try to fix the fairy spell
+
+var/list/spell_types = list(
+		/obj/effect/proc_holder/spell/aimed/fairy,
+		//obj/effect/proc_holder/spell/aimed/pillar,
+		//obj/effect/proc_holder/spell/aoe_turf/repulse/arbiter,
+		//obj/effect/proc_holder/spell/aoe_turf/knock/arbiter
+		)
+
+/obj/effect/proc_holder/spell/aimed/fairy
+	name = "Fairy"
+	desc = "Fire a line of damaging essence using power of the Fairy singularity."
+	school = "evocation"
+	charge_max = 100
+	clothes_req = FALSE
+	projectile_amount = 5
+	invocation_type = "none"
+	base_icon_state = "lightning"
+	action_icon_state = "lightning0"
+	sound = 'slugstation/sound/lcorp/arbiter/fairy.ogg'
+	active_msg = "You activate the power of Fairy singularity!"
+	deactive_msg = "You let the energy flow out of your hands back into its storage space..."
+	projectile_type = /obj/item/projectile/beam/fairy
+
+/obj/item/projectile/beam/fairy
+	name = "fairy"
+	icon_state = "fairy"
+	icon = 'slugstation/icons/fairy.dmi'
+	damage = 50
+	damage_type = BRUTE
+	//flag = BLACK_DAMAGE
+
+	light_color = LIGHT_COLOR_YELLOW
+	//beam_type = list("fairy", 'slugstation/slugstation/icons/fairy.dmi')
+	hitscan = TRUE
+	hitscan_light_intensity = 2
+	hitscan_light_range = 1
+	hitscan_light_color_override = LIGHT_COLOR_YELLOW
+	muzzle_flash_intensity = 3
+	muzzle_flash_range = 2
+	muzzle_flash_color_override = LIGHT_COLOR_YELLOW
+	//impact_light_intensity = 4
+	//impact_light_range = 3
+	//impact_light_color_override = LIGHT_COLOR_YELLOW
