@@ -3,6 +3,7 @@
 	roundend_category = "arbiters"
 	give_objectives = FALSE
 	move_to_lair = FALSE
+	show_in_antagpanel = TRUE
 	outfit_type = /datum/outfit/arbiter
 	antag_attributes = list(
 		FORTITUDE_ATTRIBUTE = 130,
@@ -17,6 +18,7 @@
 		/obj/effect/proc_holder/spell/aoe_turf/repulse/arbiter,
 		/obj/effect/proc_holder/spell/aoe_turf/knock/arbiter
 		)
+ 
 
 /datum/antagonist/wizard/arbiter/greet()
 	to_chat(owner, "<span class='boldannounce'>You are the Arbiter!</span>")
