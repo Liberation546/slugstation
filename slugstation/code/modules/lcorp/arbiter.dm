@@ -59,7 +59,7 @@ var/list/spell_types = list(
 	name = "fairy"
 	icon_state = "fairy"
 	icon = 'slugstation/icons/fairy.dmi'
-	damage = 50
+	damage = 20
 	damage_type = BRUTE
 	//flag = BLACK_DAMAGE
 
