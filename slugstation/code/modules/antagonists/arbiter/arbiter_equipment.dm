@@ -31,6 +31,16 @@
 	mob_overlay_icon = 'slugstation/icons/mob/clothing/arbiter.dmi'
 	icon_state = "uniform"
 	item_state = "uniform"
+
+/obj/item/radio/headset/arbiter	
+	name = "A Corp Headset"
+	desc = "A headset used by the arbiters of A corp"
+	icon = 'slugstation/icons/obj/clothing/arbiter.dmi'
+	mob_overlay_icon = 'slugstation/icons/mob/clothing/arbiter.dmi'
+	icon_state = "head_headset_alt"
+	item_state = "head_headset_alt"
+	subspace_transmission = TRUE
+
 //gonna try to fix the fairy spell
 
 var/list/spell_types = list(
