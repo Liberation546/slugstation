@@ -5,6 +5,7 @@
 	mob_overlay_icon = 'slugstation/icons/mob/clothing/arbiter.dmi'
 	icon_state = "cloak"
 	item_state = "cloak"
+	resistance_flags = FIRE_PROOF
 
 /obj/item/clothing/suit/armor/arbiter
 	name = "arbiter's armored coat"
@@ -31,6 +32,7 @@
 	mob_overlay_icon = 'slugstation/icons/mob/clothing/arbiter.dmi'
 	icon_state = "uniform"
 	item_state = "uniform"
+	resistance_flags = FIRE_PROOF
 
 /obj/item/radio/headset/arbiter	
 	name = "A Corp Headset"
@@ -71,15 +73,13 @@ var/list/spell_types = list(
 	icon = 'slugstation/icons/fairy.dmi'
 	damage = 20
 	damage_type = BRUTE
-	//flag = BLACK_DAMAGE
 
 	light_color = LIGHT_COLOR_YELLOW
-	//beam_type = list("fairy", 'slugstation/slugstation/icons/fairy.dmi')
 	hitscan = TRUE
 	tracer_type = /obj/item/projectile/beam/fairy
 	impact_type = /obj/item/projectile/beam/fairy
 	muzzle_type = /obj/item/projectile/beam/fairy
-	constant_tracer = TRUE
+	var/constant_tracer = TRUE
 	beam_segments = 'slugstation/icons/fairy.dmi'
 	hitscan_light_intensity = 2
 	hitscan_light_range = 1
@@ -87,6 +87,3 @@ var/list/spell_types = list(
 	muzzle_flash_intensity = 3
 	muzzle_flash_range = 2
 	muzzle_flash_color_override = LIGHT_COLOR_YELLOW
-	//impact_light_intensity = 4
-	//impact_light_range = 3
-	//impact_light_color_override = LIGHT_COLOR_YELLOW
