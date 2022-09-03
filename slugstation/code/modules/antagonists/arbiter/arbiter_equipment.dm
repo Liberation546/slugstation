@@ -52,6 +52,9 @@ var/list/spell_types = list(
 		//obj/effect/proc_holder/spell/aoe_turf/knock/arbiter
 		)
 
+// many tears were shed in the following lines
+// abandon all hope ye who enter here
+
 /obj/effect/proc_holder/spell/aimed/fairy
 	name = "Fairy"
 	desc = "Fire a line of damaging essence using power of the Fairy singularity."
@@ -67,6 +70,11 @@ var/list/spell_types = list(
 	deactive_msg = "You let the energy flow out of your hands back into its storage space..."
 	projectile_type = /obj/item/projectile/beam/fairy
 
+/obj/effect/projectile/fairy
+	name = "fairy"
+	icon = 'slugstation/icons/fairy.dmi'
+	icon_state = "fairy"
+
 /obj/item/projectile/beam/fairy
 	name = "fairy"
 	icon_state = "fairy"
@@ -76,11 +84,10 @@ var/list/spell_types = list(
 
 	light_color = LIGHT_COLOR_YELLOW
 	hitscan = TRUE
-	tracer_type = /obj/item/projectile/beam/fairy
-	impact_type = /obj/item/projectile/beam/fairy
-	muzzle_type = /obj/item/projectile/beam/fairy
-	var/constant_tracer = TRUE
-	beam_segments = 'slugstation/icons/fairy.dmi'
+	tracer_type = /obj/effect/projectile/fairy
+	impact_type = /obj/effect/projectile/fairy
+	muzzle_type = /obj/effect/projectile/fairy
+	//beam_segments = 'slugstation/icons/fairy.dmi'
 	hitscan_light_intensity = 2
 	hitscan_light_range = 1
 	hitscan_light_color_override = LIGHT_COLOR_YELLOW
@@ -89,22 +96,4 @@ var/list/spell_types = list(
 	muzzle_flash_color_override = LIGHT_COLOR_YELLOW
 
 /obj/item/projectile/beam/fairy/fuckyou //dont fucking use this shit
-	name = "fairy"
-	icon_state = "fairy"
-	icon = 'slugstation/icons/fairy.dmi'
 	damage = 500
-	damage_type = BRUTE
-
-	light_color = LIGHT_COLOR_YELLOW
-	hitscan = TRUE
-	tracer_type = /obj/item/projectile/beam/fairy
-	impact_type = /obj/item/projectile/beam/fairy
-	muzzle_type = /obj/item/projectile/beam/fairy
-	var/constant_tracer = TRUE
-	beam_segments = 'slugstation/icons/fairy.dmi'
-	hitscan_light_intensity = 2
-	hitscan_light_range = 1
-	hitscan_light_color_override = LIGHT_COLOR_YELLOW
-	muzzle_flash_intensity = 3
-	muzzle_flash_range = 2
-	muzzle_flash_color_override = LIGHT_COLOR_YELLOW
