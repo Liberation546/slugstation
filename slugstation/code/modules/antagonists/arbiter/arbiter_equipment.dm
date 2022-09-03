@@ -87,3 +87,24 @@ var/list/spell_types = list(
 	muzzle_flash_intensity = 3
 	muzzle_flash_range = 2
 	muzzle_flash_color_override = LIGHT_COLOR_YELLOW
+
+/obj/item/projectile/beam/fairy/fuckyou //dont fucking use this shit
+	name = "fairy"
+	icon_state = "fairy"
+	icon = 'slugstation/icons/fairy.dmi'
+	damage = 500
+	damage_type = BRUTE
+
+	light_color = LIGHT_COLOR_YELLOW
+	hitscan = TRUE
+	tracer_type = /obj/item/projectile/beam/fairy
+	impact_type = /obj/item/projectile/beam/fairy
+	muzzle_type = /obj/item/projectile/beam/fairy
+	var/constant_tracer = TRUE
+	beam_segments = 'slugstation/icons/fairy.dmi'
+	hitscan_light_intensity = 2
+	hitscan_light_range = 1
+	hitscan_light_color_override = LIGHT_COLOR_YELLOW
+	muzzle_flash_intensity = 3
+	muzzle_flash_range = 2
+	muzzle_flash_color_override = LIGHT_COLOR_YELLOW
