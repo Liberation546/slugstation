@@ -43,15 +43,6 @@
 	item_state = "head_headset_alt"
 	subspace_transmission = TRUE
 
-//gonna try to fix the fairy spell
-
-var/list/spell_types = list(
-		/obj/effect/proc_holder/spell/aimed/fairy,
-		//obj/effect/proc_holder/spell/aimed/pillar,
-		//obj/effect/proc_holder/spell/aoe_turf/repulse/arbiter,
-		//obj/effect/proc_holder/spell/aoe_turf/knock/arbiter
-		)
-
 // many tears were shed in the following lines
 // abandon all hope ye who enter here
 
@@ -97,3 +88,29 @@ var/list/spell_types = list(
 
 /obj/item/projectile/beam/fairy/fuckyou //dont fucking use this shit
 	damage = 500
+
+/obj/effect/proc_holder/spell/aoe_turf/repulse/arbiter
+	sound = 'slugstation/sound/lcorp/arbiter/repulse.ogg'
+	charge_max = 150
+	clothes_req = FALSE
+	antimagic_allowed = TRUE
+	anti_magic_check = FALSE
+	range = 5
+	invocation_type = "none"
+	sparkle_path = /obj/effect/temp_visual/sparks
+	var/repulse_damage = 20
+
+/obj/effect/proc_holder/spell/aoe_turf/repulse/arbiter/cast(list/targets, mob/user = usr)
+	. = ..(targets, user, 20)
+	var/list/thrown_atoms = .
+	for(var/mob/living/L in thrown_atoms)
+		if(user.faction_check_mob(L))
+			continue
+		L.apply_damage(repulse_damage, BRUTE)
+
+
+/obj/effect/proc_holder/spell/aoe_turf/knock/arbiter
+	invocation_type = "none"
+	charge_max = 50
+	sound = 'sound/magic/arbiter/knock.ogg'
+	open_sound = null

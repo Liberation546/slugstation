@@ -7,10 +7,10 @@
 	outfit_type = /datum/outfit/arbiter
 
 	var/list/spell_types = list(
-		/obj/effect/proc_holder/spell/aimed/fairy, /*
-		/obj/effect/proc_holder/spell/aimed/pillar,
+		/obj/effect/proc_holder/spell/aimed/fairy, 
+		// /obj/effect/proc_holder/spell/aimed/pillar,
 		/obj/effect/proc_holder/spell/aoe_turf/repulse/arbiter,
-		/obj/effect/proc_holder/spell/aoe_turf/knock/arbiter */
+		/obj/effect/proc_holder/spell/aoe_turf/knock/arbiter 
 		)
 		//dont delete the other spell types we'll probably make them eventually
 
