@@ -37,6 +37,6 @@
 	understood_languages = list(/datum/language/common = list(LANGUAGE_ATOM),
 									/datum/language/inkling = list(LANGUAGE_ATOM))
 	spoken_languages = list(/datum/language/common = list(LANGUAGE_ATOM),
-							/datum/language/inkling = list(LANGUAGE_ATOM))
+									/datum/language/inkling = list(LANGUAGE_ATOM))
 
 
