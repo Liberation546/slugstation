@@ -198,3 +198,13 @@
 	color = "#9C5A19"
 	taste_description = "gondoland"
 	can_synth = TRUE
+
+/datum/reagent/ink
+	name = "Ink"
+	description = "ink, considering its color it probably came from an inkling"
+	color = "#ff1493"
+	taste_description = "Freshness"
+	can_synth = TRUE
+	glass_name = "glass of ink"
+	glass_desc = "who did you murder for this?"
+	metabolization_rate = REAGENTS_METABOLISM
