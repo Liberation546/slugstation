@@ -3358,6 +3358,7 @@
 #include "slugstation\code\modules\mining\machine_bluespaceminer.dm"
 #include "slugstation\code\modules\mining\lavaland\necropolis_chests.dm"
 #include "slugstation\code\modules\mob\living\carbon\human\species_types\gondola.dm"
+#include "slugstation\code\modules\mob\living\carbon\human\species_types\inkling.dm"
 #include "slugstation\code\modules\mob\living\carbon\human\species_types\xenolid.dm"
 #include "slugstation\code\modules\mob\living\simple_animal\friendly\cat.dm"
 #include "slugstation\code\modules\mob\living\simple_animal\friendly\slugcat\inventory.dm"
