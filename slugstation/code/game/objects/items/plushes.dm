@@ -9,6 +9,6 @@
 		return
 /obj/item/toy/plush/grizz
 	name = "Mr. Grizz"
-	desc = "A stuffed toy bear, theres a radio inside"
+	desc = "A stuffed toy bear, theres a dead radio inside"
 	icon = 'yogstation/icons/obj/toy.dmi'
 	icon_state = "teddybear"

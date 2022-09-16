@@ -3332,6 +3332,7 @@
 #include "slugstation\code\datums\map_patch\miningbase.dm"
 #include "slugstation\code\datums\map_patch\yogstation.dm"
 #include "slugstation\code\datums\ruins\space.dm"
+#include "slugstation\code\game\elevator.dm"
 #include "slugstation\code\game\objects\items\AI_modules.dm"
 #include "slugstation\code\game\objects\items\baseball_boof.dm"
 #include "slugstation\code\game\objects\items\plushes.dm"

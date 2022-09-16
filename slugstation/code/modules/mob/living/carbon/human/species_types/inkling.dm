@@ -46,7 +46,7 @@
 /obj/item/organ/tongue/inkling
 	name = "inkling tongue"
 	desc = "Well it could change color, but you ripped it out."
-	icon_state = "inktongue"
+	icon_state = "tongue"
 	icon = 'slugstation/icons/obj/tongue.dmi'
 	say_mod = "bubbles"
 	taste_sensitivity = 10 //if you cant taste fish by eating metal i think theres something wrong with you
