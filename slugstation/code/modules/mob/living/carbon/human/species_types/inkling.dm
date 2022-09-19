@@ -5,8 +5,8 @@
 	id = "inkling"
 	default_color = "FFFFFF"
 	limbs_id = "human"
-	species_traits = list(EYECOLOR,HAIR,LIPS,HAS_FLESH)
-	default_features = list("mcolor" = "FFF", "wings" = "None")
+	species_traits = list(EYECOLOR,LIPS,HAS_FLESH)
+	default_features = list("mcolor" = "FFF", "wings" = "None", "tentacles" = "Haircut")
 	use_skintones = 1
 	skinned_type = /obj/item/stack/sheet/animalhide/human
 	brutemod = 0.5 //no bones, feel free to balance this its probably busted
@@ -18,8 +18,10 @@
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP | SLIME_EXTRACT
 	species_language_holder = /datum/language_holder/inkling
 	mutanttongue = /obj/item/organ/tongue/inkling
+	mutant_bodyparts = list("tentacles")
 	swimming_component = /datum/component/swimming/dissolve
 	exotic_blood = /datum/reagent/ink //finally i can refill my printer
+	species_gibs = "none"
 
 //their language
 /datum/language/inkling
@@ -45,7 +47,7 @@
 //because im far too lazy to edit the dme a ton im just gonna put all the code for them in here
 /obj/item/organ/tongue/inkling
 	name = "inkling tongue"
-	desc = "Well it could change color, but you ripped it out."
+	desc = "inky strip of flesh usually used for speaking"
 	icon_state = "tongue"
 	icon = 'slugstation/icons/obj/tongue.dmi'
 	say_mod = "bubbles"
@@ -54,4 +56,4 @@
 	var/static/list/languages_possible_alien = typecacheof(list(
 		/datum/language/inkling,
 		/datum/language/common,
-		))
+		))\
