@@ -1,3 +1,4 @@
+/* its not funny anymore
 /datum/reagent/medicine/morbphine
 	name = "Morbphine"
 	description = "It's Morbin' Time! Gives a speed boost to all vampires, but acts like normal morphine for others."
@@ -158,6 +159,7 @@
 	else if(intentional)
 		return FALSE
 	//..() TODO: test it
+*/
 
 /datum/reagent/glue
 	name = "Glue"
