@@ -92,8 +92,12 @@
 	dispensable_reagents = sortList(dispensable_reagents, /proc/cmp_reagents_asc)
 	if(emagged_reagents)
 		emagged_reagents = sortList(emagged_reagents, /proc/cmp_reagents_asc)
-	if(upgrade_reagents)
-		upgrade_reagents = sortList(upgrade_reagents, /proc/cmp_reagents_asc)
+	if(t2_upgrade_reagents)
+		t2_upgrade_reagents = sortList(t2_upgrade_reagents, /proc/cmp_reagents_asc)
+	if(t3_upgrade_reagents)
+		t3_upgrade_reagents = sortList(t3_upgrade_reagents, /proc/cmp_reagents_asc)
+	if(t4_upgrade_reagents)
+		t4_upgrade_reagents = sortList(t4_upgrade_reagents, /proc/cmp_reagents_asc)
 	update_icon()
 
 /obj/machinery/chem_dispenser/Destroy()
@@ -394,8 +398,12 @@
 	for(var/obj/item/stock_parts/manipulator/M in component_parts)
 		if (M.rating > 1)
 			macroresolution -= M.rating		//5 for t1, 3 for t2, 2 for t3, 1 for t4
+		if (M.rating > 2)
+			dispensable_reagents |= t2_upgrade_reagents
 		if (M.rating > 3)
-			dispensable_reagents |= upgrade_reagents
+			dispensable_reagents |= t3_upgrade_reagents
+		if (M.rating > 4)
+			dispensable_reagents |= t4_upgrade_reagents
 	powerefficiency = round(newpowereff, 0.01)
 
 /obj/machinery/chem_dispenser/proc/replace_beaker(mob/living/user, obj/item/reagent_containers/new_beaker)
@@ -511,7 +519,9 @@
 		/datum/reagent/consumable/menthol,
 		/datum/reagent/consumable/berryjuice
 	)
-	upgrade_reagents = null
+	t2_upgrade_reagents = null
+	t3_upgrade_reagents = null
+	t4_upgrade_reagents = null
 	emagged_reagents = list(
 		/datum/reagent/consumable/ethanol/thirteenloko,
 		/datum/reagent/consumable/ethanol/whiskey_cola,
@@ -565,7 +575,9 @@
 		/datum/reagent/consumable/ethanol/applejack,
 		/datum/reagent/consumable/ethanol/amaretto
 	)
-	upgrade_reagents = null
+	t2_upgrade_reagents = null
+	t3_upgrade_reagents = null
+	t4_upgrade_reagents = null
 	emagged_reagents = list(
 		/datum/reagent/consumable/ethanol,
 		/datum/reagent/iron,
@@ -597,7 +609,9 @@
 	desc = "Creates and dispenses mutagen."
 	icon_state = "minidispenserb"
 	dispensable_reagents = list(/datum/reagent/toxin/mutagen)
-	upgrade_reagents = null
+	t2_upgrade_reagents = null
+	t3_upgrade_reagents = null
+	t4_upgrade_reagents = null
 	emagged_reagents = list(/datum/reagent/toxin/plasma)
 
 
@@ -620,7 +634,9 @@
 		/datum/reagent/ammonia,
 		/datum/reagent/ash,
 		/datum/reagent/diethylamine)
-	upgrade_reagents = null
+	t2_upgrade_reagents = null
+	t3_upgrade_reagents = null
+	t4_upgrade_reagents = null
 
 /obj/machinery/chem_dispenser/mutagensaltpeter/Initialize()
 	. = ..()
