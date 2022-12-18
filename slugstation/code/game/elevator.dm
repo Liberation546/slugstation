@@ -44,30 +44,26 @@
 	w_class = WEIGHT_CLASS_BULKY
 
 /datum/emote/living/griddy
-	key = "hitthegriddy"
-	key_third_person = "hitsthegriddy"
-	message = "Hits the griddy"
-	message_robot = "Hits the griddy"
-	message_AI = "Hits the griddy"
-	message_alien = "Hits the griddy"
-	message_larva = "Hits the griddy"
-	message_monkey = "Hits the griddy"
-	message_ipc = "Attempts to hit the griddy, however their coding prevents it" //ipcs cannot hit the griddy
-	message_simple =  "Attempts to hit the griddy, failing horribly" //simplemobs must not hit the griddy :1984:
-	cooldown = 0.1
+	key = "griddy"
+	message = "hits the griddy."
+	message_ipc = "attempts to hit the griddy, however they are unable to due to their programming." //ipcs cannot hit the griddy
+	message_simple =  "attempts to hit the griddy, failing horribly." //simplemobs must not hit the griddy :1984:
+	restraint_check = TRUE
 
-datum/emote/living/crungo //this makes me crungo
+/datum/emote/living/crungo //this makes me crungo
 	key = "crungo"
-	key_third_person = "crungo"
-	message = "crungoes"
-	message_robot = "crungoes"
-	message_AI = "crungoes"
-	message_alien = "crungoes"
-	message_larva = "crungoes"
-	message_monkey = "crungoes"
-	message_ipc = "crungoes"
-	message_simple =  "crungoes"
-	cooldown = 0.1
+	message = "crungoes."
+	restraint_check = TRUE
+
+/datum/emote/living/crungo/run_emote(mob/user, params, type_override, intentional)
+	if(!can_run_emote(user, TRUE, intentional))
+		return FALSE
+	if(prob(1))
+		if(intentional)
+			user.visible_message(span_userdanger("[user] suddenly falls over, dead!"))
+			user.death()
+	. = ..()
+
 
 
 //DO NOT UNCOMMENT THIS CODE, WE MUST NOT SET HIM FREE 
