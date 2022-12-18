@@ -1,3 +1,4 @@
+/datum/job/ai
 	title = "AI"
 	flag = AI_JF
 	auto_deadmin_role_flags = DEADMIN_POSITION_SILICON|DEADMIN_POSITION_CRITICAL
