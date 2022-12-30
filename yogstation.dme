@@ -3382,6 +3382,7 @@
 #include "slugstation\code\modules\barotrauma\guns.dm"
 #include "slugstation\code\modules\barotrauma\knife.dm"
 #include "slugstation\code\modules\clothing\head\antlers.dm"
+#include "slugstation\code\modules\clothing\head\dense_hat.dm"
 #include "slugstation\code\modules\clothing\spacesuits\hardsuit.dm"
 #include "slugstation\code\modules\donor\unique_donator_items.dm"
 #include "slugstation\code\modules\food_and_drinks\food\snacks_meat.dm"
