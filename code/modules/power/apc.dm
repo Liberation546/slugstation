@@ -531,6 +531,15 @@
 			opened = APC_COVER_OPENED
 			update_icon()
 			return
+	else
+		W.play_tool_sound(src)
+		to_chat(user, span_notice("You attempt to pry off the broken cover..."))
+		if(W.use_tool(src, user, 3 SECONDS))
+			W.play_tool_sound(src)
+			to_chat(user, span_notice("You pry the broken cover off of [src]."))
+			opened = APC_COVER_REMOVED
+			update_icon()
+			return
 
 /obj/machinery/power/apc/screwdriver_act(mob/living/user, obj/item/W)
 	if(..())
@@ -1196,9 +1205,9 @@
 	user.visible_message(span_notice("[user] slots [card] into [src]..."), span_notice("Transfer process initiated. Sending request for AI approval..."))
 	playsound(src, 'sound/machines/click.ogg', 50, 1)
 	SEND_SOUND(occupier, sound('sound/misc/notice2.ogg')) //To alert the AI that someone's trying to card them if they're tabbed out
-	if(alert(occupier, "[user] is attempting to transfer you to \a [card.name]. Do you consent to this?", "APC Transfer", "Yes - Transfer Me", "No - Keep Me Here") == "No - Keep Me Here")
-		to_chat(user, span_danger("AI denied transfer request. Process terminated."))
-		playsound(src, 'sound/machines/buzz-sigh.ogg', 50, 1)
+	if(tgui_alert(occupier, "[user] is attempting to transfer you to \a [card.name]. Do you consent to this?", "APC Transfer", list("Yes - Transfer Me", "No - Keep Me Here")) == "No - Keep Me Here")
+		to_chat(user, "<span class='danger'>AI denied transfer request. Process terminated.</span>")
+		playsound(src, 'sound/machines/buzz-sigh.ogg', 50, TRUE)
 		transfer_in_progress = FALSE
 		return
 	if(user.loc != T)
@@ -1255,12 +1264,12 @@
 		force_update = 1
 		return
 
-	lastused_light = area.usage(STATIC_LIGHT)
-	lastused_light += area.usage(LIGHT)
-	lastused_equip = area.usage(EQUIP)
-	lastused_equip += area.usage(STATIC_EQUIP)
-	lastused_environ = area.usage(ENVIRON)
-	lastused_environ += area.usage(STATIC_ENVIRON)
+	lastused_light = area.usage(AREA_USAGE_STATIC_LIGHT)
+	lastused_light += area.usage(AREA_USAGE_LIGHT)
+	lastused_equip = area.usage(AREA_USAGE_EQUIP)
+	lastused_equip += area.usage(AREA_USAGE_STATIC_EQUIP)
+	lastused_environ = area.usage(AREA_USAGE_ENVIRON)
+	lastused_environ += area.usage(AREA_USAGE_STATIC_ENVIRON)
 	area.clear_usage()
 
 	lastused_total = lastused_light + lastused_equip + lastused_environ
@@ -1324,9 +1333,9 @@
 			lighting = autoset(lighting, 2)
 			environ = autoset(environ, 1)
 			area.poweralert(0, src)
-		else if(cell.percent() < 30 && longtermpower < 0)			// <30%, turn off equipment
-			equipment = autoset(equipment, 2)
-			lighting = autoset(lighting, 1)
+		else if(cell.percent() < 40 && longtermpower < 0)			// <40%, turn off Lighting
+			equipment = autoset(equipment, 1)
+			lighting = autoset(lighting, 2)
 			environ = autoset(environ, 1)
 			area.poweralert(0, src)
 		else									// otherwise all can be on

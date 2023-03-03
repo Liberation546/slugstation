@@ -22,6 +22,9 @@ config/*
 *.lk
 *.int
 *.backup
+*.mdme.*
+*.m.dme
+*.test.dme
 ### https://raw.github.com/github/gitignore/cc542de017c606138a87ee4880e5f06b3a306def/Global/Linux.gitignore
 
 *~
@@ -63,13 +66,11 @@ __pycache__/
 # Distribution / packaging
 .Python
 env/
-build/
 develop-eggs/
 dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -228,3 +229,4 @@ tgui/.yarn/*
 
 # Common build tooling
 !/tools/build
+*.orig

@@ -1,6 +1,5 @@
 import { toFixed } from 'common/math';
 import { toTitleCase } from 'common/string';
-import { Fragment } from 'inferno';
 import { useBackend } from '../backend';
 import { AnimatedNumber, Box, Button, Icon, LabeledList, ProgressBar, Section } from '../components';
 import { Window } from '../layouts';
@@ -102,12 +101,12 @@ export const ChemDispenser = (props, context) => {
                 && 'Virtual beaker'
                 || data.isBeakerLoaded
                   && (
-                    <Fragment>
+                    <>
                       <AnimatedNumber
                         initial={0}
                         value={data.beakerCurrentVolume} />
                       /{data.beakerMaxVolume} units
-                    </Fragment>
+                    </>
                   )
                 || 'No beaker'}
             </LabeledList.Item>

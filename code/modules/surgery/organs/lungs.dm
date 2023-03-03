@@ -3,6 +3,7 @@
 	var/operated = FALSE	//whether we can still have our damages fixed through surgery
 	name = "lungs"
 	icon_state = "lungs"
+	visual = FALSE
 	zone = BODY_ZONE_CHEST
 	slot = ORGAN_SLOT_LUNGS
 	gender = PLURAL
@@ -285,7 +286,8 @@
 			H.adjustFireLoss(nitryl_pp/4)
 		gas_breathed = breath.get_moles(/datum/gas/nitryl)
 		if (gas_breathed > gas_stimulation_min)
-			H.reagents.add_reagent(/datum/reagent/nitryl,1*eff)
+			var/existing = H.reagents.get_reagent_amount(/datum/reagent/nitryl)
+			H.reagents.add_reagent(/datum/reagent/nitryl,max(0, 1*eff - existing))
 
 		breath.adjust_moles(/datum/gas/nitryl, -gas_breathed)
 
@@ -480,6 +482,9 @@
 	var/obj/S = ..()
 	S.reagents.add_reagent(/datum/reagent/medicine/salbutamol, 5)
 	return S
+
+/obj/item/organ/lungs/get_availability(datum/species/species)
+	return !(TRAIT_NOBREATH in species.inherent_traits)
 
 /obj/item/organ/lungs/ipc
 	name = "cooling radiator"
